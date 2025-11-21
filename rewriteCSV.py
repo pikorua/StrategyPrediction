@@ -1,36 +1,34 @@
-import numpy as np
 import pandas as pd
 
-# CSV-Datei einlesen
-df = pd.read_csv("qfnia_ln_res.csv")
+# CSV einlesen
+df = pd.read_csv("input.csv")
 
 # Ergebnisliste
 results = []
 
-# Alle Dateinamen-Spalten (alles außer 'strat')
+# Alle Dateinamen (alles außer 'strat')
 files = df.columns[1:]
 
 for file in files:
-    times = df[file]
+    for _, row in df.iterrows():
+        strategy = row["strat"]
+        runtime = row[file]
 
-    if (times == -10).all():
-        # Alle -10 → irgendeine Strategie nehmen, Runtime = 180
-        fastest_strategy = df.loc[0, "strat"]
-        runtime = 180
-    else:
-        # Nur gültige Zeiten betrachten
-        valid_times = times.where(times != -10)
-        runtime = np.abs(valid_times.min())
-        fastest_strategy = df.loc[valid_times.idxmin(), "strat"]
+        # Nur erfolgreiche Lösungen übernehmen
+        if runtime != -10:
+            results.append({
+                "filename": file,
+                "strategy": strategy,
+                "runtime": abs(runtime)
+            })
 
-    results.append({
-        "filename": file,
-        "fastest_strategy": fastest_strategy,
-        "runtime": runtime
-    })
-
-# In DataFrame umwandeln und speichern
+# In DataFrame umwandeln
 result_df = pd.DataFrame(results)
+
+# Sortieren optional: Erst nach filename, dann nach runtime
+result_df = result_df.sort_values(by=["filename", "runtime"])
+
+# Speichern
 result_df.to_csv("output.csv", index=False)
 
-print("CSV erfolgreich erstellt!")
+print("Fertig! output.csv erstellt.")
