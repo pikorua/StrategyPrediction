@@ -6,7 +6,13 @@ Given a benchmark filename, returns symbol counts and command features.
 """
 
 import sqlite3
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional, Tuple, List
+import sys
+import os
+
+# Import logic_features module from the same directory
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from logic_features import get_relevant_features
 
 """
 Get features for a single non-incremental benchmark by name.
@@ -56,15 +62,16 @@ Example:
 
 def get_benchmark_features(
     db_path: str,
-    benchmark_name: str
+    benchmark_name: str,
+    logic: Optional[str] = None
 ) -> Optional[Dict[str, Any]]:
-    
+
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
-    
+
     # Get benchmark and query info (1:1 mapping for non-incremental)
     query = """
-    SELECT 
+    SELECT
         b.id as benchmark_id,
         b.name as benchmark_name,
         b.logic,
@@ -85,10 +92,18 @@ def get_benchmark_features(
     FROM Benchmarks b
     JOIN Queries q ON q.benchmark = b.id
     WHERE b.name = ? AND b.isIncremental = 0
-    LIMIT 1
     """
-    
-    cursor.execute(query, (benchmark_name,))
+
+    params = [benchmark_name]
+
+    # Add logic filter if provided (important when benchmark names are not unique across logics)
+    if logic is not None:
+        query += " AND b.logic = ?"
+        params.append(logic)
+
+    query += " LIMIT 1"
+
+    cursor.execute(query, params)
     result = cursor.fetchone()
     
     if not result:
@@ -148,6 +163,77 @@ def get_benchmark_features(
         'metadata': metadata,
     }
 
+
+def get_padded_feature_vector(
+    db_path: str,
+    benchmark_name: str,
+    logic: Optional[str] = None
+) -> Tuple[Optional[List[int]], Optional[List[str]]]:
+    """
+    Get a fixed-size, zero-padded feature vector for a benchmark.
+
+    Returns a feature vector where:
+    - All features relevant to the benchmark's logic are included
+    - Features present in the benchmark have their actual counts
+    - Features not present in the benchmark are padded with 0
+    - Feature ordering is consistent across all benchmarks of the same logic
+
+    Args:
+        db_path: Path to SQLite database
+        benchmark_name: Benchmark filename (e.g., "calc2_sec2_bmc25.smt2")
+        logic: Optional logic filter (recommended when benchmark names are not unique)
+
+    Returns:
+        Tuple of (feature_values, feature_names):
+        - feature_values: List of counts/values in fixed order
+        - feature_names: List of feature names in same order
+
+        Returns (None, None) if benchmark not found or is incremental.
+
+    Example:
+        >>> values, names = get_padded_feature_vector('smtlib2025.sqlite', 'calc2_sec2_bmc25.smt2', 'QF_NIA')
+        >>> print(len(values), len(names))  # Same length
+        >>> print(values[:5])  # First 5 feature values
+        [10, 5, 0, 2, 15]
+        >>> print(names[:5])   # First 5 feature names
+        ['assert', 'declare-fun', 'declare-const', 'define-fun', 'and']
+    """
+    # Get raw benchmark features (with logic filter to handle duplicate names)
+    features = get_benchmark_features(db_path, benchmark_name, logic=logic)
+
+    if features is None:
+        return None, None
+
+    # Get the logic
+    logic = features['logic']
+
+    # Get all relevant features for this logic (commands + theory operators + metadata)
+    relevant_features = get_relevant_features(logic, include_commands=True, include_metadata=True)
+
+    # Merge all actual features into a single dictionary
+    actual_features = {}
+
+    # Add command counts
+    actual_features.update(features['commands'])
+
+    # Add symbol counts
+    actual_features.update(features['symbol_counts'])
+
+    # Add metadata
+    actual_features.update(features['metadata'])
+
+    # Build the padded feature vector
+    feature_values = []
+    feature_names = []
+
+    for feature_name in relevant_features:
+        feature_names.append(feature_name)
+        # Use actual count if present, otherwise 0
+        feature_values.append(actual_features.get(feature_name, 0))
+
+    return feature_values, feature_names
+
+
 def main():
     """Example usage."""
     import sys
@@ -189,7 +275,28 @@ def main():
     
     print(f"\n=== Full JSON Output ===")
     print(json.dumps(features, indent=2, default=str))
-    
+
+    # Demonstrate padded feature vector
+    print(f"\n{'='*60}")
+    print("=== Padded Feature Vector ===")
+    print(f"{'='*60}")
+
+    feature_values, feature_names = get_padded_feature_vector(db_path, benchmark_name)
+
+    if feature_values is not None:
+        print(f"\nTotal features for logic '{features['logic']}': {len(feature_values)}")
+        print(f"Non-zero features: {sum(1 for v in feature_values if v > 0)}")
+        print(f"Zero-padded features: {sum(1 for v in feature_values if v == 0)}")
+
+        print(f"\n=== First 10 Features ===")
+        for i in range(min(10, len(feature_names))):
+            print(f"  [{i:3d}] {feature_names[i]:20s}: {feature_values[i]:6,}")
+
+        print(f"\n=== Non-zero Features ===")
+        for i, (name, value) in enumerate(zip(feature_names, feature_values)):
+            if value > 0:
+                print(f"  [{i:3d}] {name:20s}: {value:6,}")
+
     return 0
 
 

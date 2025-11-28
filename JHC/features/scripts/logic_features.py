@@ -101,6 +101,11 @@ uf_theory = [
     # UF doesn't have specific operators beyond core theory
 ]
 
+# Metadata features (structural metrics, always included regardless of logic)
+metadata_features = [
+    'maxTermDepth', 'normalizedSize',
+]
+
 # Logic mapping to relevant theories
 logic_to_theories = {
     # Quantifier-Free Logics
@@ -158,23 +163,24 @@ logic_to_theories = {
 }
 
 
-def get_relevant_features(logic, include_commands=True):
+def get_relevant_features(logic, include_commands=True, include_metadata=True):
     """
     Get the list of relevant features for Catalog Database based on the SMT logic.
-    
+
     Args:
         logic (str): The SMT logic (e.g., 'QF_BV', 'AUFLIA', 'ALL')
         include_commands (bool): Whether to include command-level features
-        
+        include_metadata (bool): Whether to include metadata features (maxTermDepth, normalizedSize)
+
     Returns:
         list: Combined list of all relevant features for the logic
     """
     relevant_features = []
-    
+
     # Always include command keywords if requested
     if include_commands:
         relevant_features.extend(command_keywords)
-    
+
     # Add theory-specific operators based on the logic
     if logic in logic_to_theories:
         theories = logic_to_theories[logic]
@@ -182,7 +188,7 @@ def get_relevant_features(logic, include_commands=True):
         # If logic is unknown, use all theories
         print(f"Warning: Unknown logic '{logic}', using all features")
         theories = logic_to_theories['ALL']
-    
+
     # Collect all features from relevant theories
     seen = set(relevant_features)  # Track seen features to avoid duplicates
     for theory in theories:
@@ -190,7 +196,14 @@ def get_relevant_features(logic, include_commands=True):
             if feature not in seen:
                 relevant_features.append(feature)
                 seen.add(feature)
-    
+
+    # Add metadata features if requested
+    if include_metadata:
+        for feature in metadata_features:
+            if feature not in seen:
+                relevant_features.append(feature)
+                seen.add(feature)
+
     return relevant_features
 
 

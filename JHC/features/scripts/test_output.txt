@@ -1,4 +1,0 @@
-QF_UFBV
-{'ite': 8871, 'not': 445, 'or': 812, 'and': 1154, '=': 6396, 'let': 3660, 'concat': 481, 'extract': 1275, 'bvnot': 46, 'bvor': 568, 'bvadd': 831, 'bvsub': 87, 'bvshl': 46, 'bvlshr': 46, 'sign_extend': 48}
-{'assert': 1, 'declare-fun': 8, 'declare-const': 150, 'declare-sort': 0, 'define-fun': 0, 'define-fun-rec': 0, 'define-funs-rec': 0, 'constant-fun': 0, 'define-sort': 0, 'declare-datatype': 0, 'declare-datatypes': 0}
-{'maxTermDepth': 3951, 'normalizedSize': 469604}
