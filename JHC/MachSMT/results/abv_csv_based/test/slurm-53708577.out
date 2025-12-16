@@ -1,0 +1,1562 @@
+Job ID: 53708577
+Node: nc11128
+Start time: Mon 15 Dec 2025 09:54:15 PM EST
+[DEBUG] Loading test results from /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/ABV/abv_test_long.csv
+[DEBUG] Loaded results for 498 unique benchmarks
+[DEBUG] Found 498 unique benchmark paths in CSV
+[DEBUG] Found 498 benchmark files from CSV
+[DEBUG] Selected 498 benchmarks for processing
+
+================================================================================
+FEATURE CONFIGURATION
+================================================================================
+Using original MachSMT feature space (full grammatical construct list)
+Description features: DISABLED (prevents BERT model loading)
+Feature extraction timeout: 60 seconds
+Parallel cores: 16
+Feature dimensions will be printed after processing first benchmark
+================================================================================
+
+[DEBUG] Training MachSMT model...
+[DEBUG] Changed working directory to: /home/jchen688/scratch/non-incremental
+
+Initializing description feature model ('bert-base-uncased')...
+Using device: cpu
+✅ Model loaded successfully. Embedding dimension: 768
+Parsing Input File |████████████████████████████████████████| 5967/5967 [100%] in 15.8s (376.48/s) 
+Processing Benchmark Files |████████████████████████████████████████| 1989/1989 [100%] in 11:17.1 (2.94/s) 
+[DEBUG] Changed back to: /lustre06/project/6001884/jchen688/github/z3alpha
+[DEBUG] Model trained in 1357.88 seconds
+[DEBUG] Configuration saved to: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/results/abv_csv_based/test/run_20251215_215754_882781/config.json
+
+[DEBUG] Starting predictions on test benchmarks...
+[DEBUG] Processing 1/498: ABV/20230321-UltimateAutomizerSvcomp2023/complex_data_creation_test02-2.i_13.smt2
+
+================================================================================
+FEATURE SPACE DIMENSIONS
+================================================================================
+Total feature dimensions: 189
+================================================================================
+
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/complex_data_creation_test02-2.i_13.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/complex_data_creation_test02-2.i_13.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 2/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_6.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_6.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_6.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 3/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-1.i_64.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-1.i_64.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-1.i_64.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 4/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test6_1.i_13.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test6_1.i_13.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test6_1.i_13.smt2: solved=True, runtime=0.56s, PAR-2=0.56s
+[DEBUG] Processing 5/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_318.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_318.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_318.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 6/498: ABV/20230321-UltimateAutomizerSvcomp2023/list_search-1.i_6.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list_search-1.i_6.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list_search-1.i_6.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 7/498: ABV/20230321-UltimateAutomizerSvcomp2023/simple_search_value-2.i_38.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple_search_value-2.i_38.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple_search_value-2.i_38.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 8/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test6_1.i_2.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test6_1.i_2.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test6_1.i_2.smt2: solved=True, runtime=0.50s, PAR-2=0.50s
+[DEBUG] Processing 9/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_36.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_36.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_36.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 10/498: ABV/20230321-UltimateAutomizerSvcomp2023/eureka_05.i_1.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/eureka_05.i_1.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/eureka_05.i_1.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 11/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_184.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_184.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_184.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 12/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-1.i_42.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-1.i_42.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-1.i_42.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 13/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test20-2.i_7.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test20-2.i_7.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test20-2.i_7.smt2: solved=True, runtime=0.53s, PAR-2=0.53s
+[DEBUG] Processing 14/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_109.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_109.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_109.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 15/498: ABV/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_30.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_30.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_30.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 16/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_316.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_316.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_316.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 17/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test7-1.i_12.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test7-1.i_12.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test7-1.i_12.smt2: solved=True, runtime=0.50s, PAR-2=0.50s
+[DEBUG] Processing 18/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_unequal.i_45.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_unequal.i_45.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_unequal.i_45.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 19/498: ABV/20230321-UltimateAutomizerSvcomp2023/complex_data_creation_test02-2.i_3.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/complex_data_creation_test02-2.i_3.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/complex_data_creation_test02-2.i_3.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 20/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_89.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_89.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_89.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 21/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll-rb-sentinel-2.i_36.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll-rb-sentinel-2.i_36.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll-rb-sentinel-2.i_36.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 22/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_2.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_2.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_2.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 23/498: ABV/20190429-UltimateAutomizerSvcomp2019/list_search_true-unreach-call_false-valid-memcleanup.i_2.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20190429-UltimateAutomizerSvcomp2019/list_search_true-unreach-call_false-valid-memcleanup.i_2.smt2
+[DEBUG] Benchmark ABV/20190429-UltimateAutomizerSvcomp2019/list_search_true-unreach-call_false-valid-memcleanup.i_2.smt2: solved=True, runtime=0.52s, PAR-2=0.52s
+[DEBUG] Processing 24/498: ABV/20230321-UltimateAutomizerSvcomp2023/simple_search_value-2.i_51.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple_search_value-2.i_51.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple_search_value-2.i_51.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 25/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_update_all_reverse.i_13.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_update_all_reverse.i_13.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_update_all_reverse.i_13.smt2: solved=True, runtime=0.51s, PAR-2=0.51s
+[DEBUG] Processing 26/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_update_all.i_49.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_update_all.i_49.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_update_all.i_49.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 27/498: ABV/20190429-UltimateAutomizerSvcomp2019/dll_of_dll_false-unreach-call_false-valid-memcleanup.i_8.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20190429-UltimateAutomizerSvcomp2019/dll_of_dll_false-unreach-call_false-valid-memcleanup.i_8.smt2
+[DEBUG] Benchmark ABV/20190429-UltimateAutomizerSvcomp2019/dll_of_dll_false-unreach-call_false-valid-memcleanup.i_8.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 28/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_61.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_61.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_61.smt2: solved=True, runtime=0.67s, PAR-2=0.67s
+[DEBUG] Processing 29/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_29.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_29.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_29.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 30/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_188.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_188.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_188.smt2: solved=True, runtime=0.54s, PAR-2=0.54s
+[DEBUG] Processing 31/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_11.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_11.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_11.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 32/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_35.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_35.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_35.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 33/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll_circular_traversal-1.i_17.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_circular_traversal-1.i_17.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_circular_traversal-1.i_17.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 34/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test20-2.i_3.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test20-2.i_3.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test20-2.i_3.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 35/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test14.i_5.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test14.i_5.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test14.i_5.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 36/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_87.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_87.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_87.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 37/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_31.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_31.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_31.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 38/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll-rb-sentinel-1.i_41.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll-rb-sentinel-1.i_41.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll-rb-sentinel-1.i_41.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 39/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-1.i_18.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-1.i_18.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-1.i_18.smt2: solved=True, runtime=0.53s, PAR-2=0.53s
+[DEBUG] Processing 40/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_96.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_96.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_96.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 41/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-0234-1.i_1.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0234-1.i_1.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0234-1.i_1.smt2: solved=True, runtime=0.48s, PAR-2=0.48s
+[DEBUG] Processing 42/498: ABV/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_12.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_12.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_12.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 43/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_155.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_155.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_155.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 44/498: ABV/20230321-UltimateAutomizerSvcomp2023/list_flag-2.i_2.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list_flag-2.i_2.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list_flag-2.i_2.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 45/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-0513.i_28.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513.i_28.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513.i_28.smt2: solved=True, runtime=0.48s, PAR-2=0.48s
+[DEBUG] Processing 46/498: ABV/20190429-UltimateAutomizerSvcomp2019/sll-sorted_false-unreach-call_false-valid-memcleanup.i_10.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20190429-UltimateAutomizerSvcomp2019/sll-sorted_false-unreach-call_false-valid-memcleanup.i_10.smt2
+[DEBUG] Benchmark ABV/20190429-UltimateAutomizerSvcomp2019/sll-sorted_false-unreach-call_false-valid-memcleanup.i_10.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 47/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_385.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_385.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_385.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 48/498: ABV/20190429-UltimateAutomizerSvcomp2019/standard_running_true-unreach-call.i_2.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20190429-UltimateAutomizerSvcomp2019/standard_running_true-unreach-call.i_2.smt2
+[DEBUG] Benchmark ABV/20190429-UltimateAutomizerSvcomp2019/standard_running_true-unreach-call.i_2.smt2: solved=True, runtime=0.50s, PAR-2=0.50s
+[DEBUG] Processing 49/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_80.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_80.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_80.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 50/498: ABV/20230321-UltimateAutomizerSvcomp2023/splice-2.i_32.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/splice-2.i_32.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/splice-2.i_32.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 51/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_update_all_reverse.i_0.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_update_all_reverse.i_0.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_update_all_reverse.i_0.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 52/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_0.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_0.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_0.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 53/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_496.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_496.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_496.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 54/498: ABV/20190429-UltimateAutomizerSvcomp2019/dll_of_dll_true-unreach-call_true-valid-memsafety.i_16.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20190429-UltimateAutomizerSvcomp2019/dll_of_dll_true-unreach-call_true-valid-memsafety.i_16.smt2
+[DEBUG] Benchmark ABV/20190429-UltimateAutomizerSvcomp2019/dll_of_dll_true-unreach-call_true-valid-memsafety.i_16.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 55/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_26.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_26.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_26.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 56/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_30.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_30.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_30.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 57/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test22_2-2.i_0.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test22_2-2.i_0.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test22_2-2.i_0.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 58/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_10.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_10.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_10.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 59/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_587.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_587.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_587.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 60/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_unequal.i_26.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_unequal.i_26.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_unequal.i_26.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 61/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll-sorted-1.i_16.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll-sorted-1.i_16.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll-sorted-1.i_16.smt2: solved=True, runtime=0.57s, PAR-2=0.57s
+[DEBUG] Processing 62/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_434.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_434.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_434.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 63/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-0513.i_7.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513.i_7.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513.i_7.smt2: solved=True, runtime=0.57s, PAR-2=0.57s
+[DEBUG] Processing 64/498: ABV/20230321-UltimateAutomizerSvcomp2023/sum_array-2.i_28.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sum_array-2.i_28.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sum_array-2.i_28.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 65/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_19.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_19.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_19.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 66/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all.i_75.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all.i_75.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all.i_75.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 67/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll-simple-white-blue-1.i_5.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll-simple-white-blue-1.i_5.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll-simple-white-blue-1.i_5.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 68/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_177.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_177.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_177.smt2: solved=True, runtime=0.56s, PAR-2=0.56s
+[DEBUG] Processing 69/498: ABV/20230321-UltimateAutomizerSvcomp2023/simple-2.i_9.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple-2.i_9.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple-2.i_9.smt2: solved=True, runtime=0.56s, PAR-2=0.56s
+[DEBUG] Processing 70/498: ABV/20230321-UltimateAutomizerSvcomp2023/eureka_05.i_102.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/eureka_05.i_102.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/eureka_05.i_102.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 71/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-0234-1.i_4.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0234-1.i_4.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0234-1.i_4.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 72/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test17_3.i_5.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test17_3.i_5.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test17_3.i_5.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 73/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_update_all_reverse.i_51.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_update_all_reverse.i_51.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_update_all_reverse.i_51.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 74/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_68.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_68.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_68.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 75/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_110.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_110.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_110.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 76/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_138.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_138.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_138.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 77/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test15-1.i_1.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test15-1.i_1.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test15-1.i_1.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 78/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_226.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_226.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_226.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 79/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_73.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_73.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_73.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 80/498: ABV/20230321-UltimateAutomizerSvcomp2023/tree_stack.i_0.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/tree_stack.i_0.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/tree_stack.i_0.smt2: solved=True, runtime=0.45s, PAR-2=0.45s
+[DEBUG] Processing 81/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test18_3.i_33.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test18_3.i_33.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test18_3.i_33.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 82/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_536.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_536.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_536.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 83/498: ABV/20230321-UltimateAutomizerSvcomp2023/simple_built_from_end.i_12.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple_built_from_end.i_12.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple_built_from_end.i_12.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 84/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test11.i_0.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test11.i_0.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test11.i_0.smt2: solved=True, runtime=0.50s, PAR-2=0.50s
+[DEBUG] Processing 85/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll-token-1.i_42.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll-token-1.i_42.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll-token-1.i_42.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 86/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_32.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_32.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_32.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 87/498: ABV/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_105.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_105.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_105.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 88/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_63.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_63.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_63.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 89/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_545.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_545.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_545.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 90/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_92.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_92.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_92.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 91/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_241.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_241.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_241.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 92/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_218.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_218.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_218.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 93/498: ABV/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_8.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_8.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_8.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 94/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-0134.i_28.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0134.i_28.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0134.i_28.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 95/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_10.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_10.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_10.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 96/498: ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_55.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_55.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_55.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 97/498: ABV/20230321-UltimateAutomizerSvcomp2023/dancing.i_41.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dancing.i_41.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dancing.i_41.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 98/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test18_3.i_28.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test18_3.i_28.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test18_3.i_28.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 99/498: ABV/20230321-UltimateAutomizerSvcomp2023/tree_stack.i_2.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/tree_stack.i_2.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/tree_stack.i_2.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 100/498: ABV/20230321-UltimateAutomizerSvcomp2023/test_add-2.i_24.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_add-2.i_24.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_add-2.i_24.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 101/498: ABV/20230321-UltimateAutomizerSvcomp2023/tree_of_cslls.i_14.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/tree_of_cslls.i_14.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/tree_of_cslls.i_14.smt2: solved=True, runtime=0.34s, PAR-2=0.34s
+[DEBUG] Processing 102/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_221.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_221.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_221.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 103/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_168.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_168.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_168.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 104/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_54.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_54.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_54.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 105/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-1.i_43.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-1.i_43.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-1.i_43.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 106/498: ABV/20230321-UltimateAutomizerSvcomp2023/running_example.i_23.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/running_example.i_23.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/running_example.i_23.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 107/498: ABV/20230321-UltimateAutomizerSvcomp2023/list_search-1.i_33.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list_search-1.i_33.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list_search-1.i_33.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 108/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13_2.i_38.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13_2.i_38.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13_2.i_38.smt2: solved=True, runtime=0.52s, PAR-2=0.52s
+[DEBUG] Processing 109/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_345.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_345.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_345.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 110/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_306.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_306.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_306.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 111/498: ABV/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_108.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_108.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_108.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 112/498: ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_70.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_70.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_70.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 113/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_equal.i_79.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_equal.i_79.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_equal.i_79.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 114/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_72.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_72.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_72.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 115/498: ABV/20230321-UltimateAutomizerSvcomp2023/elimination_max.c_5.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/elimination_max.c_5.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/elimination_max.c_5.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 116/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_94.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_94.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_94.smt2: solved=True, runtime=0.53s, PAR-2=0.53s
+[DEBUG] Processing 117/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test14.i_9.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test14.i_9.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test14.i_9.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 118/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_298.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_298.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_298.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 119/498: ABV/20230321-UltimateAutomizerSvcomp2023/test_add-2.i_8.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_add-2.i_8.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_add-2.i_8.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 120/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_503.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_503.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_503.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 121/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_120.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_120.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_120.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 122/498: ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-2.i_32.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-2.i_32.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-2.i_32.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 123/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_335.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_335.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_335.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 124/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_unequal.i_2.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_unequal.i_2.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_unequal.i_2.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 125/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_14.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_14.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_14.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 126/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_37.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_37.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_37.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 127/498: ABV/20230321-UltimateAutomizerSvcomp2023/eureka_05.i_15.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/eureka_05.i_15.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/eureka_05.i_15.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 128/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_36.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_36.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_36.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 129/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_append_unequal.i_26.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_append_unequal.i_26.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_append_unequal.i_26.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 130/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_184.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_184.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_184.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 131/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_65.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_65.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_65.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 132/498: ABV/20230321-UltimateAutomizerSvcomp2023/split_list_test05-2.i_12.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/split_list_test05-2.i_12.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/split_list_test05-2.i_12.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 133/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-0102-1.i_5.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0102-1.i_5.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0102-1.i_5.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 134/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test7-2.i_0.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test7-2.i_0.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test7-2.i_0.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 135/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_31.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_31.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_31.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 136/498: ABV/20230321-UltimateAutomizerSvcomp2023/simple_built_from_end.i_20.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple_built_from_end.i_20.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple_built_from_end.i_20.smt2: solved=True, runtime=0.59s, PAR-2=0.59s
+[DEBUG] Processing 137/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test23_3.i_2.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test23_3.i_2.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test23_3.i_2.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 138/498: ABV/20230321-UltimateAutomizerSvcomp2023/test_add-2.i_3.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_add-2.i_3.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_add-2.i_3.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 139/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_61.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_61.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_61.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 140/498: ABV/20190429-UltimateAutomizerSvcomp2019/list_flag_true-unreach-call_false-valid-memtrack.i_5.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20190429-UltimateAutomizerSvcomp2019/list_flag_true-unreach-call_false-valid-memtrack.i_5.smt2
+[DEBUG] Benchmark ABV/20190429-UltimateAutomizerSvcomp2019/list_flag_true-unreach-call_false-valid-memtrack.i_5.smt2: solved=True, runtime=0.53s, PAR-2=0.53s
+[DEBUG] Processing 141/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_464.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_464.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_464.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 142/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_58.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_58.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_58.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 143/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_125.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_125.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_125.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 144/498: ABV/20230321-UltimateAutomizerSvcomp2023/packet_filter.i_21.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/packet_filter.i_21.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/packet_filter.i_21.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 145/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_337.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_337.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_337.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 146/498: ABV/20230321-UltimateAutomizerSvcomp2023/tree_stack.i_5.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/tree_stack.i_5.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/tree_stack.i_5.smt2: solved=True, runtime=0.47s, PAR-2=0.47s
+[DEBUG] Processing 147/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_163.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_163.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_163.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 148/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_485.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_485.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_485.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 149/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_28.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_28.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_28.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 150/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_equal.i_45.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_equal.i_45.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_equal.i_45.smt2: solved=True, runtime=0.51s, PAR-2=0.51s
+[DEBUG] Processing 151/498: ABV/20230321-UltimateAutomizerSvcomp2023/eureka_05.i_71.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/eureka_05.i_71.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/eureka_05.i_71.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 152/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_36.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_36.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_36.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 153/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test15-1.i_0.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test15-1.i_0.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test15-1.i_0.smt2: solved=True, runtime=0.48s, PAR-2=0.48s
+[DEBUG] Processing 154/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_499.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_499.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_499.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 155/498: ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-2.i_21.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-2.i_21.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-2.i_21.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 156/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_158.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_158.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_158.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 157/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_update_all.i_3.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_update_all.i_3.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_update_all.i_3.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 158/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_49.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_49.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_49.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 159/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13_1.i_38.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13_1.i_38.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13_1.i_38.smt2: solved=True, runtime=0.58s, PAR-2=0.58s
+[DEBUG] Processing 160/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_append_unequal.i_22.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_append_unequal.i_22.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_append_unequal.i_22.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 161/498: ABV/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-1.i_32.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-1.i_32.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-1.i_32.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 162/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_478.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_478.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_478.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 163/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_insert_equal.i_4.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_insert_equal.i_4.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_insert_equal.i_4.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 164/498: ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_107.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_107.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_107.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 165/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_10.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_10.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_10.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 166/498: ABV/20230321-UltimateAutomizerSvcomp2023/sum_array-2.i_12.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sum_array-2.i_12.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sum_array-2.i_12.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 167/498: ABV/20190429-UltimateAutomizerSvcomp2019/splice_true-unreach-call_false-valid-memtrack.i_3.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20190429-UltimateAutomizerSvcomp2019/splice_true-unreach-call_false-valid-memtrack.i_3.smt2
+[DEBUG] Benchmark ABV/20190429-UltimateAutomizerSvcomp2019/splice_true-unreach-call_false-valid-memtrack.i_3.smt2: solved=True, runtime=0.51s, PAR-2=0.51s
+[DEBUG] Processing 168/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_remove_all.i_2.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_remove_all.i_2.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_remove_all.i_2.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 169/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_1.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_1.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_1.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 170/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_22.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_22.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_22.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 171/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_update_all.i_2.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_update_all.i_2.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_update_all.i_2.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 172/498: ABV/20230321-UltimateAutomizerSvcomp2023/splice-2.i_61.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/splice-2.i_61.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/splice-2.i_61.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 173/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_77.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_77.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_77.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 174/498: ABV/20190429-UltimateAutomizerSvcomp2019/list_true-unreach-call_false-valid-memtrack.i_0.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20190429-UltimateAutomizerSvcomp2019/list_true-unreach-call_false-valid-memtrack.i_0.smt2
+[DEBUG] Benchmark ABV/20190429-UltimateAutomizerSvcomp2019/list_true-unreach-call_false-valid-memtrack.i_0.smt2: solved=True, runtime=0.49s, PAR-2=0.49s
+[DEBUG] Processing 175/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test6.i_4.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test6.i_4.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test6.i_4.smt2: solved=True, runtime=0.47s, PAR-2=0.47s
+[DEBUG] Processing 176/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_66.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_66.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_66.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 177/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_60.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_60.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_60.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 178/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_582.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_582.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_582.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 179/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_10.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_10.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_10.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 180/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test21-2.i_6.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test21-2.i_6.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test21-2.i_6.smt2: solved=True, runtime=0.52s, PAR-2=0.52s
+[DEBUG] Processing 181/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test7-2.i_24.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test7-2.i_24.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test7-2.i_24.smt2: solved=True, runtime=0.53s, PAR-2=0.53s
+[DEBUG] Processing 182/498: ABV/20230321-UltimateAutomizerSvcomp2023/optional_data_creation_test04-1.i_4.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/optional_data_creation_test04-1.i_4.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/optional_data_creation_test04-1.i_4.smt2: solved=True, runtime=0.50s, PAR-2=0.50s
+[DEBUG] Processing 183/498: ABV/20230321-UltimateAutomizerSvcomp2023/simple_search_value-2.i_46.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple_search_value-2.i_46.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple_search_value-2.i_46.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 184/498: ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_67.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_67.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_67.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 185/498: ABV/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_8.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_8.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_8.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 186/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all.i_0.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all.i_0.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all.i_0.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 187/498: ABV/20230321-UltimateAutomizerSvcomp2023/alternating_list-1.i_34.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/alternating_list-1.i_34.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/alternating_list-1.i_34.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 188/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test14.i_8.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test14.i_8.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test14.i_8.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 189/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_63.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_63.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_63.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 190/498: ABV/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_3.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_3.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_3.smt2: solved=True, runtime=0.45s, PAR-2=0.45s
+[DEBUG] Processing 191/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test14.i_4.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test14.i_4.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test14.i_4.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 192/498: ABV/20230321-UltimateAutomizerSvcomp2023/list_flag-2.i_14.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list_flag-2.i_14.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list_flag-2.i_14.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 193/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_92.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_92.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_92.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 194/498: ABV/20230321-UltimateAutomizerSvcomp2023/test_add-2.i_1.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_add-2.i_1.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_add-2.i_1.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 195/498: ABV/20230321-UltimateAutomizerSvcomp2023/simple-ext_1.i_31.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple-ext_1.i_31.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple-ext_1.i_31.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 196/498: ABV/20230321-UltimateAutomizerSvcomp2023/alternating_list-1.i_28.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/alternating_list-1.i_28.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/alternating_list-1.i_28.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 197/498: ABV/20230321-UltimateAutomizerSvcomp2023/tree_of_cslls.i_17.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/tree_of_cslls.i_17.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/tree_of_cslls.i_17.smt2: solved=True, runtime=0.61s, PAR-2=0.61s
+[DEBUG] Processing 198/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13.i_49.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13.i_49.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13.i_49.smt2: solved=True, runtime=0.57s, PAR-2=0.57s
+[DEBUG] Processing 199/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_55.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_55.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_55.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 200/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13_2.i_31.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13_2.i_31.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13_2.i_31.smt2: solved=True, runtime=0.51s, PAR-2=0.51s
+[DEBUG] Processing 201/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all.i_65.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all.i_65.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all.i_65.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 202/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_217.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_217.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_217.smt2: solved=True, runtime=0.55s, PAR-2=0.55s
+[DEBUG] Processing 203/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13_2.i_18.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13_2.i_18.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13_2.i_18.smt2: solved=True, runtime=0.50s, PAR-2=0.50s
+[DEBUG] Processing 204/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_4.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_4.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_4.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 205/498: ABV/20230321-UltimateAutomizerSvcomp2023/split_list_test05-1.i_13.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/split_list_test05-1.i_13.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/split_list_test05-1.i_13.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 206/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_45.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_45.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_45.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 207/498: ABV/20230321-UltimateAutomizerSvcomp2023/sum_array-2-2.i_2.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sum_array-2-2.i_2.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sum_array-2-2.i_2.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 208/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_21.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_21.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_21.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 209/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_444.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_444.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_444.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 210/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_equal.i_91.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_equal.i_91.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_equal.i_91.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 211/498: ABV/20230321-UltimateAutomizerSvcomp2023/list_search-2.i_10.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list_search-2.i_10.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list_search-2.i_10.smt2: solved=True, runtime=0.54s, PAR-2=0.54s
+[DEBUG] Processing 212/498: ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-2.i_82.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-2.i_82.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-2.i_82.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 213/498: ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex.i_2.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex.i_2.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex.i_2.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 214/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_281.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_281.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_281.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 215/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_377.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_377.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_377.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 216/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_107.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_107.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_107.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 217/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_6.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_6.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_6.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 218/498: ABV/20230321-UltimateAutomizerSvcomp2023/list_flag-2.i_18.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list_flag-2.i_18.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list_flag-2.i_18.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 219/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_323.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_323.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_323.smt2: solved=True, runtime=0.57s, PAR-2=0.57s
+[DEBUG] Processing 220/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_188.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_188.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_188.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 221/498: ABV/20230321-UltimateAutomizerSvcomp2023/cart.i_10.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/cart.i_10.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/cart.i_10.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 222/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_unequal.i_5.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_unequal.i_5.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_unequal.i_5.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 223/498: ABV/20230321-UltimateAutomizerSvcomp2023/dancing.i_19.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dancing.i_19.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dancing.i_19.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 224/498: ABV/20230321-UltimateAutomizerSvcomp2023/splice-2.i_98.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/splice-2.i_98.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/splice-2.i_98.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 225/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_195.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_195.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_195.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 226/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll-token-2.i_27.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll-token-2.i_27.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll-token-2.i_27.smt2: solved=True, runtime=0.70s, PAR-2=0.70s
+[DEBUG] Processing 227/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_12.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_12.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_12.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 228/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_261.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_261.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_261.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 229/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_79.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_79.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_79.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 230/498: ABV/20230321-UltimateAutomizerSvcomp2023/split_list_test05-1.i_11.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/split_list_test05-1.i_11.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/split_list_test05-1.i_11.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 231/498: ABV/20230321-UltimateAutomizerSvcomp2023/sep20-1.i_2.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sep20-1.i_2.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sep20-1.i_2.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 232/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test11.i_7.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test11.i_7.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test11.i_7.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 233/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_3.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_3.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_3.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 234/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_remove_all.i_14.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_remove_all.i_14.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_remove_all.i_14.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 235/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll-queue-1.i_16.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll-queue-1.i_16.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll-queue-1.i_16.smt2: solved=True, runtime=0.58s, PAR-2=0.58s
+[DEBUG] Processing 236/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_update_all.i_9.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_update_all.i_9.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_update_all.i_9.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 237/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_134.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_134.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_134.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 238/498: ABV/20230321-UltimateAutomizerSvcomp2023/complex_data_creation_test01-1.i_16.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/complex_data_creation_test01-1.i_16.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/complex_data_creation_test01-1.i_16.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 239/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test17_1-2.i_0.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test17_1-2.i_0.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test17_1-2.i_0.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 240/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_250.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_250.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_250.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 241/498: ABV/20230321-UltimateAutomizerSvcomp2023/tree_of_cslls.i_26.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/tree_of_cslls.i_26.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/tree_of_cslls.i_26.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 242/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_5.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_5.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_5.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 243/498: ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-2.i_38.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-2.i_38.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-2.i_38.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 244/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_58.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_58.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_58.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 245/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_24.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_24.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_24.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 246/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_301.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_301.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_301.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 247/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_113.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_113.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_113.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 248/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_130.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_130.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_130.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 249/498: ABV/20230321-UltimateAutomizerSvcomp2023/running_example.i_16.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/running_example.i_16.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/running_example.i_16.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 250/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_241.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_241.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_241.smt2: solved=True, runtime=0.69s, PAR-2=0.69s
+[DEBUG] Processing 251/498: ABV/20230321-UltimateAutomizerSvcomp2023/test_add-2.i_4.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_add-2.i_4.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_add-2.i_4.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 252/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_extends_pointer.i_0.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_extends_pointer.i_0.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_extends_pointer.i_0.smt2: solved=True, runtime=0.45s, PAR-2=0.45s
+[DEBUG] Processing 253/498: ABV/20230321-UltimateAutomizerSvcomp2023/packet_filter.i_37.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/packet_filter.i_37.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/packet_filter.i_37.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 254/498: ABV/20230321-UltimateAutomizerSvcomp2023/sum_array-2-1.i_12.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sum_array-2-1.i_12.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sum_array-2-1.i_12.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 255/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_append_unequal.i_28.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_append_unequal.i_28.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_append_unequal.i_28.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 256/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_99.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_99.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_99.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 257/498: ABV/20230321-UltimateAutomizerSvcomp2023/simple-ext_1.i_1.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple-ext_1.i_1.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple-ext_1.i_1.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 258/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-0102-1.i_14.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0102-1.i_14.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0102-1.i_14.smt2: solved=True, runtime=0.54s, PAR-2=0.54s
+[DEBUG] Processing 259/498: ABV/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-1.i_9.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-1.i_9.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-1.i_9.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 260/498: ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_4.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_4.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_4.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 261/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_413.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_413.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_413.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 262/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_remove_all.i_10.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_remove_all.i_10.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_remove_all.i_10.smt2: solved=True, runtime=0.61s, PAR-2=0.61s
+[DEBUG] Processing 263/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_68.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_68.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_68.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 264/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_prepend_equal.i_44.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_prepend_equal.i_44.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_prepend_equal.i_44.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 265/498: ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_85.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_85.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_85.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 266/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-0134.i_8.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0134.i_8.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0134.i_8.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 267/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll-token-1.i_12.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll-token-1.i_12.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll-token-1.i_12.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 268/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_46.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_46.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_46.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 269/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test18.i_4.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test18.i_4.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test18.i_4.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 270/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_47.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_47.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_47.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 271/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_242.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_242.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_242.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 272/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_2.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_2.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_2.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 273/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_26.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_26.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_26.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 274/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_8.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_8.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_8.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 275/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-0134.i_6.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0134.i_6.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0134.i_6.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 276/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_12.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_12.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_12.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 277/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_117.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_117.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_117.smt2: solved=True, runtime=0.47s, PAR-2=0.47s
+[DEBUG] Processing 278/498: ABV/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-1.i_5.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-1.i_5.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-1.i_5.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 279/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_373.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_373.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_373.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 280/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_93.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_93.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_93.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 281/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13_2.i_11.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13_2.i_11.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13_2.i_11.smt2: solved=True, runtime=0.52s, PAR-2=0.52s
+[DEBUG] Processing 282/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_206.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_206.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_206.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 283/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_237.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_237.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_237.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 284/498: ABV/20230321-UltimateAutomizerSvcomp2023/tree_of_cslls.i_20.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/tree_of_cslls.i_20.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/tree_of_cslls.i_20.smt2: solved=True, runtime=0.38s, PAR-2=0.38s
+[DEBUG] Processing 285/498: ABV/20230321-UltimateAutomizerSvcomp2023/sep05-2.i_0.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sep05-2.i_0.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sep05-2.i_0.smt2: solved=True, runtime=0.96s, PAR-2=0.96s
+[DEBUG] Processing 286/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_96.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_96.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_96.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 287/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_129.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_129.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_129.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 288/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_89.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_89.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_89.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 289/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test18_3.i_34.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test18_3.i_34.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test18_3.i_34.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 290/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_56.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_56.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_56.smt2: solved=True, runtime=0.56s, PAR-2=0.56s
+[DEBUG] Processing 291/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_84.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_84.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_84.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 292/498: ABV/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_54.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_54.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_54.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 293/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_94.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_94.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_94.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 294/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_update_all.i_24.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_update_all.i_24.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_update_all.i_24.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 295/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_499.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_499.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_499.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 296/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_23.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_23.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_23.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 297/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_57.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_57.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_57.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 298/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_570.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_570.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_570.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 299/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_238.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_238.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_238.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 300/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-1.i_15.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-1.i_15.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-1.i_15.smt2: solved=True, runtime=0.51s, PAR-2=0.51s
+[DEBUG] Processing 301/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_133.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_133.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_133.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 302/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll-rb-sentinel-1.i_36.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll-rb-sentinel-1.i_36.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll-rb-sentinel-1.i_36.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 303/498: ABV/20230321-UltimateAutomizerSvcomp2023/merge_sort-2.i_2.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/merge_sort-2.i_2.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/merge_sort-2.i_2.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 304/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_516.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_516.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_516.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 305/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_12.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_12.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_12.smt2: solved=True, runtime=0.55s, PAR-2=0.55s
+[DEBUG] Processing 306/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_455.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_455.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_455.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 307/498: ABV/20230321-UltimateAutomizerSvcomp2023/running_example.i_48.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/running_example.i_48.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/running_example.i_48.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 308/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll_circular_traversal-1.i_32.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_circular_traversal-1.i_32.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_circular_traversal-1.i_32.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 309/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_41.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_41.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_41.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 310/498: ABV/20230321-UltimateAutomizerSvcomp2023/simple_search_value-2.i_80.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple_search_value-2.i_80.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple_search_value-2.i_80.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 311/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_262.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_262.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_262.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 312/498: ABV/20230321-UltimateAutomizerSvcomp2023/sum_array-2.i_34.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sum_array-2.i_34.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sum_array-2.i_34.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 313/498: ABV/20230321-UltimateAutomizerSvcomp2023/sum_array-2.i_26.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sum_array-2.i_26.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sum_array-2.i_26.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 314/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_32.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_32.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_32.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 315/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_95.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_95.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_95.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 316/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_198.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_198.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_198.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 317/498: ABV/20190429-UltimateAutomizerSvcomp2019/sll-sorted_false-unreach-call_false-valid-memcleanup.i_6.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20190429-UltimateAutomizerSvcomp2019/sll-sorted_false-unreach-call_false-valid-memcleanup.i_6.smt2
+[DEBUG] Benchmark ABV/20190429-UltimateAutomizerSvcomp2019/sll-sorted_false-unreach-call_false-valid-memcleanup.i_6.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 318/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_46.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_46.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_46.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 319/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_57.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_57.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_57.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 320/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_353.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_353.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_353.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 321/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll-sorted-1.i_10.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll-sorted-1.i_10.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll-sorted-1.i_10.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 322/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_317.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_317.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_317.smt2: solved=True, runtime=0.60s, PAR-2=0.60s
+[DEBUG] Processing 323/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_85.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_85.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_85.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 324/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test12-1.i_7.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test12-1.i_7.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test12-1.i_7.smt2: solved=True, runtime=0.55s, PAR-2=0.55s
+[DEBUG] Processing 325/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test14_1.i_2.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test14_1.i_2.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test14_1.i_2.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 326/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_544.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_544.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_544.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 327/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_210.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_210.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_210.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 328/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_unequal.i_28.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_unequal.i_28.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_unequal.i_28.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 329/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_163.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_163.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_163.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 330/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_13.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_13.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_13.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 331/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_prepend_equal.i_48.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_prepend_equal.i_48.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_prepend_equal.i_48.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 332/498: ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_89.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_89.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_89.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 333/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_23.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_23.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_23.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 334/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_217.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_217.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_217.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 335/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_82.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_82.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_82.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 336/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_251.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_251.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_251.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 337/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_145.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_145.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_145.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 338/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-0513.i_17.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513.i_17.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513.i_17.smt2: solved=True, runtime=0.57s, PAR-2=0.57s
+[DEBUG] Processing 339/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13.i_58.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13.i_58.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13.i_58.smt2: solved=True, runtime=0.58s, PAR-2=0.58s
+[DEBUG] Processing 340/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_36.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_36.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_36.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 341/498: ABV/20190429-UltimateAutomizerSvcomp2019/sep10_true-unreach-call.i_0.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20190429-UltimateAutomizerSvcomp2019/sep10_true-unreach-call.i_0.smt2
+[DEBUG] Benchmark ABV/20190429-UltimateAutomizerSvcomp2019/sep10_true-unreach-call.i_0.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 342/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll-token-1.i_14.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll-token-1.i_14.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll-token-1.i_14.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 343/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-0102-1.i_10.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0102-1.i_10.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0102-1.i_10.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 344/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_171.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_171.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_171.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 345/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_572.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_572.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_572.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 346/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-0513.i_12.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513.i_12.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513.i_12.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 347/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_24.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_24.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_24.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 348/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll-rb-sentinel-2.i_9.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll-rb-sentinel-2.i_9.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll-rb-sentinel-2.i_9.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 349/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_11.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_11.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_11.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 350/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test7-2.i_15.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test7-2.i_15.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test7-2.i_15.smt2: solved=True, runtime=0.48s, PAR-2=0.48s
+[DEBUG] Processing 351/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_581.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_581.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_581.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 352/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_1.i_14.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_1.i_14.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_1.i_14.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 353/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_71.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_71.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_71.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 354/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_18.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_18.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_18.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 355/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-1.i_61.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-1.i_61.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-1.i_61.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 356/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll-token-1.i_36.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll-token-1.i_36.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll-token-1.i_36.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 357/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_28.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_28.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_28.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 358/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_62.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_62.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_62.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 359/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_381.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_381.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_381.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 360/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_50.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_50.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_50.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 361/498: ABV/20190429-UltimateAutomizerSvcomp2019/sll-sorted_false-unreach-call_false-valid-memcleanup.i_9.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20190429-UltimateAutomizerSvcomp2019/sll-sorted_false-unreach-call_false-valid-memcleanup.i_9.smt2
+[DEBUG] Benchmark ABV/20190429-UltimateAutomizerSvcomp2019/sll-sorted_false-unreach-call_false-valid-memcleanup.i_9.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 362/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-0504_1.i_0.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0504_1.i_0.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0504_1.i_0.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 363/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_1.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_1.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_1.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 364/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_285.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_285.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_285.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 365/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_37.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_37.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_37.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 366/498: ABV/20230321-UltimateAutomizerSvcomp2023/eureka_05.i_0.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/eureka_05.i_0.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/eureka_05.i_0.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 367/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_149.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_149.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_149.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 368/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_309.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_309.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_309.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 369/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_442.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_442.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_442.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 370/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_216.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_216.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_216.smt2: solved=True, runtime=0.58s, PAR-2=0.58s
+[DEBUG] Processing 371/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test15-1.i_18.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test15-1.i_18.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test15-1.i_18.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 372/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_488.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_488.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_488.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 373/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_update_all.i_21.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_update_all.i_21.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_update_all.i_21.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 374/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_76.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_76.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_76.smt2: solved=True, runtime=24.45s, PAR-2=24.45s
+[DEBUG] Processing 375/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_69.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_69.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_69.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 376/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_94.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_94.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_94.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 377/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_384.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_384.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_384.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 378/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_53.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_53.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_53.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 379/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_246.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_246.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_246.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 380/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test17_3.i_6.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test17_3.i_6.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test17_3.i_6.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 381/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_270.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_270.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_270.smt2: solved=True, runtime=0.56s, PAR-2=0.56s
+[DEBUG] Processing 382/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_31.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_31.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_31.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 383/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_540.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_540.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_540.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 384/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test7-2.i_6.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test7-2.i_6.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test7-2.i_6.smt2: solved=True, runtime=0.53s, PAR-2=0.53s
+[DEBUG] Processing 385/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_257.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_257.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_257.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 386/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_552.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_552.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_552.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 387/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_199.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_199.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_199.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 388/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test6_2.i_8.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test6_2.i_8.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test6_2.i_8.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 389/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll-rb-sentinel-1.i_4.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll-rb-sentinel-1.i_4.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll-rb-sentinel-1.i_4.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 390/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll-queue-1.i_8.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll-queue-1.i_8.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll-queue-1.i_8.smt2: solved=True, runtime=0.60s, PAR-2=0.60s
+[DEBUG] Processing 391/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test18_3.i_43.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test18_3.i_43.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test18_3.i_43.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 392/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_546.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_546.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_546.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 393/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_20.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_20.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_20.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 394/498: ABV/20230321-UltimateAutomizerSvcomp2023/packet_filter.i_35.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/packet_filter.i_35.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/packet_filter.i_35.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 395/498: ABV/20230321-UltimateAutomizerSvcomp2023/optional_data_creation_test04-1.i_41.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/optional_data_creation_test04-1.i_41.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/optional_data_creation_test04-1.i_41.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 396/498: ABV/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_10.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_10.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_10.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 397/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_108.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_108.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0513_1.i_108.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 398/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13_2.i_63.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13_2.i_63.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13_2.i_63.smt2: solved=True, runtime=0.54s, PAR-2=0.54s
+[DEBUG] Processing 399/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_228.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_228.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_228.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 400/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test12-1.i_19.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test12-1.i_19.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test12-1.i_19.smt2: solved=True, runtime=0.54s, PAR-2=0.54s
+[DEBUG] Processing 401/498: ABV/20230321-UltimateAutomizerSvcomp2023/splice-2.i_77.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/splice-2.i_77.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/splice-2.i_77.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 402/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_229.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_229.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_229.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 403/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_27.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_27.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_27.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 404/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-0102-1.i_6.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0102-1.i_6.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0102-1.i_6.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 405/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_215.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_215.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_215.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 406/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll_circular_traversal-1.i_14.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_circular_traversal-1.i_14.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_circular_traversal-1.i_14.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 407/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test6_1.i_8.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test6_1.i_8.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test6_1.i_8.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 408/498: ABV/20230321-UltimateAutomizerSvcomp2023/simple_search_value-2.i_95.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple_search_value-2.i_95.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple_search_value-2.i_95.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 409/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_40.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_40.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_40.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 410/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_201.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_201.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_201.smt2: solved=True, runtime=0.51s, PAR-2=0.51s
+[DEBUG] Processing 411/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_112.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_112.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_112.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 412/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_35.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_35.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_35.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 413/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_prepend_unequal.i_2.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_prepend_unequal.i_2.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_prepend_unequal.i_2.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 414/498: ABV/20230321-UltimateAutomizerSvcomp2023/sum_array-2.i_27.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sum_array-2.i_27.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sum_array-2.i_27.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 415/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_91.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_91.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_91.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 416/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_51.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_51.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_51.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 417/498: ABV/20230321-UltimateAutomizerSvcomp2023/packet_filter.i_41.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/packet_filter.i_41.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/packet_filter.i_41.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 418/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_505.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_505.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_505.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 419/498: ABV/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_8.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_8.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_8.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 420/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_19.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_19.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_19.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 421/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_402.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_402.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_402.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 422/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test6.i_34.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test6.i_34.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test6.i_34.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 423/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll-sorted-2.i_3.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll-sorted-2.i_3.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll-sorted-2.i_3.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 424/498: ABV/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_55.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_55.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_55.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 425/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll_circular_traversal-1.i_2.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_circular_traversal-1.i_2.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_circular_traversal-1.i_2.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 426/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test18_3.i_50.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test18_3.i_50.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test18_3.i_50.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 427/498: ABV/20230321-UltimateAutomizerSvcomp2023/splice-2.i_43.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/splice-2.i_43.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/splice-2.i_43.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 428/498: ABV/20230321-UltimateAutomizerSvcomp2023/duplets.c_2.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/duplets.c_2.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/duplets.c_2.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 429/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_209.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_209.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_209.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 430/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_93.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_93.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_93.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 431/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all.i_8.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all.i_8.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all.i_8.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 432/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_289.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_289.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_289.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 433/498: ABV/20230321-UltimateAutomizerSvcomp2023/split_list_test05-1.i_24.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/split_list_test05-1.i_24.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/split_list_test05-1.i_24.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 434/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_145.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_145.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_145.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 435/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_49.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_49.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_49.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 436/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_230.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_230.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_230.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 437/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_17.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_17.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_17.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 438/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_200.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_200.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_200.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 439/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_remove_all.i_0.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_remove_all.i_0.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_remove_all.i_0.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 440/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_57.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_57.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_57.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 441/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test6_1.i_4.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test6_1.i_4.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test6_1.i_4.smt2: solved=True, runtime=0.50s, PAR-2=0.50s
+[DEBUG] Processing 442/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_68.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_68.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_68.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 443/498: ABV/20190429-UltimateAutomizerSvcomp2019/list_flag_true-unreach-call_false-valid-memtrack.i_7.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20190429-UltimateAutomizerSvcomp2019/list_flag_true-unreach-call_false-valid-memtrack.i_7.smt2
+[DEBUG] Benchmark ABV/20190429-UltimateAutomizerSvcomp2019/list_flag_true-unreach-call_false-valid-memtrack.i_7.smt2: solved=True, runtime=0.31s, PAR-2=0.31s
+[DEBUG] Processing 444/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_35.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_35.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_35.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 445/498: ABV/20230321-UltimateAutomizerSvcomp2023/dancing.i_1.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dancing.i_1.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dancing.i_1.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 446/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-0134.i_30.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0134.i_30.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-0134.i_30.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 447/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_65.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_65.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_65.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 448/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_327.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_327.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_327.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 449/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_230.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_230.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_230.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 450/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_362.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_362.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_362.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 451/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_43.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_43.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_43.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 452/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_unequal.i_21.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_unequal.i_21.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_append_unequal.i_21.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 453/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test7-2.i_20.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test7-2.i_20.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test7-2.i_20.smt2: solved=True, runtime=0.48s, PAR-2=0.48s
+[DEBUG] Processing 454/498: ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-2.i_76.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-2.i_76.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-2.i_76.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 455/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_22.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_22.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_22.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 456/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_119.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_119.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_119.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 457/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_49.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_49.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_49.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 458/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll-sorted-1.i_18.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll-sorted-1.i_18.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll-sorted-1.i_18.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 459/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_34.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_34.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_34.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 460/498: ABV/20190429-UltimateAutomizerSvcomp2019/list_search_true-unreach-call_false-valid-memcleanup.i_0.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20190429-UltimateAutomizerSvcomp2019/list_search_true-unreach-call_false-valid-memcleanup.i_0.smt2
+[DEBUG] Benchmark ABV/20190429-UltimateAutomizerSvcomp2019/list_search_true-unreach-call_false-valid-memcleanup.i_0.smt2: solved=True, runtime=0.51s, PAR-2=0.51s
+[DEBUG] Processing 461/498: ABV/20230321-UltimateAutomizerSvcomp2023/list_search-1.i_63.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list_search-1.i_63.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list_search-1.i_63.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 462/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_57.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_57.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_57.smt2: solved=True, runtime=0.54s, PAR-2=0.54s
+[DEBUG] Processing 463/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_194.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_194.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_194.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 464/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_prepend_equal.i_47.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_prepend_equal.i_47.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_prepend_equal.i_47.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 465/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_2.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_2.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_2.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 466/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_68.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_68.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_68.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 467/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_16.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_16.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_16.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 468/498: ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_22.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_22.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_22.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 469/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_405.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_405.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_405.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 470/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_118.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_118.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_118.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 471/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-1.i_72.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-1.i_72.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-1.i_72.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 472/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_30.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_30.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_30.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 473/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_47.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_47.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_47.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 474/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_insert_equal.i_2.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_insert_equal.i_2.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2n_insert_equal.i_2.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 475/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13_1.i_34.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13_1.i_34.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test13_1.i_34.smt2: solved=True, runtime=0.53s, PAR-2=0.53s
+[DEBUG] Processing 476/498: ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test12-1.i_6.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test12-1.i_6.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/memleaks_test12-1.i_6.smt2: solved=True, runtime=0.54s, PAR-2=0.54s
+[DEBUG] Processing 477/498: ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_138.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_138.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test-memleak_nexttime.i_138.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 478/498: ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_37.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_37.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_37.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 479/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_18.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_18.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_18.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 480/498: ABV/20230321-UltimateAutomizerSvcomp2023/splice-2.i_34.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/splice-2.i_34.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/splice-2.i_34.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 481/498: ABV/20230321-UltimateAutomizerSvcomp2023/dancing.i_20.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dancing.i_20.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dancing.i_20.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 482/498: ABV/20190429-UltimateAutomizerSvcomp2019/sll-sorted_false-unreach-call_false-valid-memcleanup.i_3.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20190429-UltimateAutomizerSvcomp2019/sll-sorted_false-unreach-call_false-valid-memcleanup.i_3.smt2
+[DEBUG] Benchmark ABV/20190429-UltimateAutomizerSvcomp2019/sll-sorted_false-unreach-call_false-valid-memcleanup.i_3.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 483/498: ABV/20230321-UltimateAutomizerSvcomp2023/merge_sort-2.i_0.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/merge_sort-2.i_0.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/merge_sort-2.i_0.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 484/498: ABV/20230321-UltimateAutomizerSvcomp2023/split_list_test05-1.i_6.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/split_list_test05-1.i_6.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/split_list_test05-1.i_6.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 485/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_0.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_0.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_0.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 486/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_equal.i_64.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_equal.i_64.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_equal.i_64.smt2: solved=True, runtime=0.33s, PAR-2=0.33s
+[DEBUG] Processing 487/498: ABV/20230321-UltimateAutomizerSvcomp2023/complex_data_creation_test02-1.i_10.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/complex_data_creation_test02-1.i_10.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/complex_data_creation_test02-1.i_10.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 488/498: ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_36.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_36.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_36.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 489/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_256.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_256.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_256.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 490/498: ABV/20230321-UltimateAutomizerSvcomp2023/simple_search_value-2.i_105.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple_search_value-2.i_105.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple_search_value-2.i_105.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 491/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_113.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_113.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_113.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 492/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_equal.i_0.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_equal.i_0.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_equal.i_0.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 493/498: ABV/20230321-UltimateAutomizerSvcomp2023/simple_search_value-1.i_73.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple_search_value-1.i_73.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple_search_value-1.i_73.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 494/498: ABV/20230321-UltimateAutomizerSvcomp2023/simple_search_value-1.i_43.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple_search_value-1.i_43.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/simple_search_value-1.i_43.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 495/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_409.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_409.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_409.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 496/498: ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_330.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_330.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_330.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 497/498: ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_60.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_60.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_60.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 498/498: ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_18.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_18.smt2
+[DEBUG] Benchmark ABV/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_18.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Results written to CSV: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/results/abv_csv_based/test/run_20251215_215754_882781/results.csv
+[DEBUG] Solved 494/498 benchmarks (99.20%)
+[DEBUG] PAR-2 Score: 9763.23s total, 19.60s average
+
+================================================================================
+EXECUTION TIME SUMMARY
+================================================================================
+Model training time:        1357.88 seconds ( 22.63 minutes)
+Prediction time:             607.03 seconds ( 10.12 minutes)
+  - Avg per benchmark:         1.22 seconds
+--------------------------------------------------------------------------------
+Total execution time:       1964.91 seconds ( 32.75 minutes)
+================================================================================
+
+================================================================================
+PAR-2 PERFORMANCE SUMMARY
+================================================================================
+Benchmarks solved:              494 / 498 ( 99.20%)
+Benchmarks unsolved:              4 / 498 (  0.80%)
+--------------------------------------------------------------------------------
+Total PAR-2 score:          9763.23 seconds
+Average PAR-2 score:          19.60 seconds
+Timeout value:              1200.00 seconds
+PAR-2 penalty factor:             2x timeout
+================================================================================
+
+[DEBUG] CSV results saved to: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/results/abv_csv_based/test/run_20251215_215754_882781/results.csv
+[DEBUG] Configuration saved to: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/results/abv_csv_based/test/run_20251215_215754_882781/config.json
+End time: Mon 15 Dec 2025 10:30:43 PM EST

@@ -1,0 +1,692 @@
+Job ID: 53710728
+Node: nc11024
+Start time: Mon 15 Dec 2025 10:48:49 PM EST
+[DEBUG] Loading test results from /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/BV/bv_test_long.csv
+[DEBUG] Loaded results for 208 unique benchmarks
+[DEBUG] Found 208 unique benchmark paths in CSV
+[DEBUG] Found 208 benchmark files from CSV
+[DEBUG] Selected 208 benchmarks for processing
+
+================================================================================
+FEATURE CONFIGURATION
+================================================================================
+Using original MachSMT feature space (full grammatical construct list)
+Description features: DISABLED (prevents BERT model loading)
+Feature extraction timeout: 60 seconds
+Parallel cores: 16
+Feature dimensions will be printed after processing first benchmark
+================================================================================
+
+[DEBUG] Training MachSMT model...
+[DEBUG] Changed working directory to: /home/jchen688/scratch/non-incremental
+
+Initializing description feature model ('bert-base-uncased')...
+Using device: cpu
+✅ Model loaded successfully. Embedding dimension: 768
+Parsing Input File |████████████████████████████████████████| 4160/4160 [100%] in 8:32.2 (8.12/s) 
+Processing Benchmark Files |████████████████████████████████████████| 832/832 [100%] in 8:08.7 (1.70/s) 
+[DEBUG] Changed back to: /lustre06/project/6001884/jchen688/github/z3alpha
+[DEBUG] Model trained in 1757.10 seconds
+[DEBUG] Configuration saved to: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/results/bv_csv_based/test/run_20251215_225741_372092/config.json
+
+[DEBUG] Starting predictions on test benchmarks...
+[DEBUG] Processing 1/208: BV/20170501-Heizmann-UltimateAutomizer/jain_6_true-unreach-call_true-no-overflow.i_434.smt2
+
+================================================================================
+FEATURE SPACE DIMENSIONS
+================================================================================
+Total feature dimensions: 189
+================================================================================
+
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_6_true-unreach-call_true-no-overflow.i_434.smt2
+[DEBUG] Benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_6_true-unreach-call_true-no-overflow.i_434.smt2: solved=True, runtime=0.62s, PAR-2=0.62s
+[DEBUG] Processing 2/208: BV/2017-Preiner-psyco/110.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-psyco/110.smt2
+[DEBUG] Benchmark BV/2017-Preiner-psyco/110.smt2: solved=True, runtime=0.55s, PAR-2=0.55s
+[DEBUG] Processing 3/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node630639.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node630639.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node630639.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 4/208: BV/20230321-UltimateAutomizerSvcomp2023/soft_float_4-1.c.cil.c_7.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20230321-UltimateAutomizerSvcomp2023/soft_float_4-1.c.cil.c_7.smt2
+[DEBUG] Benchmark BV/20230321-UltimateAutomizerSvcomp2023/soft_float_4-1.c.cil.c_7.smt2: solved=True, runtime=0.84s, PAR-2=0.84s
+[DEBUG] Processing 5/208: BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node29839.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node29839.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node29839.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 6/208: BV/20230321-UltimateAutomizerSvcomp2023/heapsort.i_9.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20230321-UltimateAutomizerSvcomp2023/heapsort.i_9.smt2
+[DEBUG] Benchmark BV/20230321-UltimateAutomizerSvcomp2023/heapsort.i_9.smt2: solved=True, runtime=0.71s, PAR-2=0.71s
+[DEBUG] Processing 7/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node605722.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node605722.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node605722.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 8/208: BV/2017-Preiner-scholl-smt08/RNDPRE/RNDPRE_3_55.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/RNDPRE/RNDPRE_3_55.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/RNDPRE/RNDPRE_3_55.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 9/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node385140.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node385140.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node385140.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 10/208: BV/2020-Preiner-fmcad20/cons/check_cc_x_s_64.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark BV/2020-Preiner-fmcad20/cons/check_cc_x_s_64.smt2
+[DEBUG] Benchmark BV/2020-Preiner-fmcad20/cons/check_cc_x_s_64.smt2: solved=True, runtime=0.31s, PAR-2=0.31s
+[DEBUG] Processing 11/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node249484.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node249484.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node249484.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 12/208: BV/2020-Preiner-fmcad20/cons/check_cc_bvsge_s_x_64.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark BV/2020-Preiner-fmcad20/cons/check_cc_bvsge_s_x_64.smt2
+[DEBUG] Benchmark BV/2020-Preiner-fmcad20/cons/check_cc_bvsge_s_x_64.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 13/208: BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node38802.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node38802.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node38802.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 14/208: BV/2017-Preiner-scholl-smt08/model/model_5_64.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark BV/2017-Preiner-scholl-smt08/model/model_5_64.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/model/model_5_64.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 15/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node351731.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node351731.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node351731.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 16/208: BV/2018-Preiner-cav18/check_bvsge_bvshl0_32bit.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2018-Preiner-cav18/check_bvsge_bvshl0_32bit.smt2
+[DEBUG] Benchmark BV/2018-Preiner-cav18/check_bvsge_bvshl0_32bit.smt2: solved=True, runtime=0.57s, PAR-2=0.57s
+[DEBUG] Processing 17/208: BV/2020-Preiner-fmcad20/inv/check_ic_bvurem_s_x_64.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark BV/2020-Preiner-fmcad20/inv/check_ic_bvurem_s_x_64.smt2
+[DEBUG] Benchmark BV/2020-Preiner-fmcad20/inv/check_ic_bvurem_s_x_64.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 18/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node677435.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node677435.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node677435.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 19/208: BV/2017-Preiner-scholl-smt08/RNDPRE/RNDPRE_4_58.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/RNDPRE/RNDPRE_4_58.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/RNDPRE/RNDPRE_4_58.smt2: solved=True, runtime=709.15s, PAR-2=709.15s
+[DEBUG] Processing 20/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node198058.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node198058.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node198058.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 21/208: BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node44538.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node44538.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node44538.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 22/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node166425.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node166425.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node166425.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 23/208: BV/2020-Preiner-fmcad20/inv/check_ic_concat_s_x_4.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2020-Preiner-fmcad20/inv/check_ic_concat_s_x_4.smt2
+[DEBUG] Benchmark BV/2020-Preiner-fmcad20/inv/check_ic_concat_s_x_4.smt2: solved=True, runtime=0.94s, PAR-2=0.94s
+[DEBUG] Processing 24/208: BV/2017-Preiner-scholl-smt08/RNDPRE/RNDPRE_4_49.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/RNDPRE/RNDPRE_4_49.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/RNDPRE/RNDPRE_4_49.smt2: solved=True, runtime=701.40s, PAR-2=701.40s
+[DEBUG] Processing 25/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node156618.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node156618.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node156618.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 26/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node347403.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node347403.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node347403.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 27/208: BV/20190429-UltimateAutomizerSvcomp2019/jain_2_true-unreach-call_true-no-overflow_false-termination.i_13.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20190429-UltimateAutomizerSvcomp2019/jain_2_true-unreach-call_true-no-overflow_false-termination.i_13.smt2
+[DEBUG] Benchmark BV/20190429-UltimateAutomizerSvcomp2019/jain_2_true-unreach-call_true-no-overflow_false-termination.i_13.smt2: solved=True, runtime=0.49s, PAR-2=0.49s
+[DEBUG] Processing 28/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node95128.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node95128.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node95128.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 29/208: BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node17882.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node17882.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node17882.smt2: solved=True, runtime=6.13s, PAR-2=6.13s
+[DEBUG] Processing 30/208: BV/2017-Preiner-scholl-smt08/RND/RND_3_15.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/RND/RND_3_15.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/RND/RND_3_15.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 31/208: BV/20170501-Heizmann-UltimateAutomizer/jain_4_true-unreach-call_true-no-overflow.i_342.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_4_true-unreach-call_true-no-overflow.i_342.smt2
+[DEBUG] Benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_4_true-unreach-call_true-no-overflow.i_342.smt2: solved=True, runtime=0.52s, PAR-2=0.52s
+[DEBUG] Processing 32/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node682293.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node682293.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node682293.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 33/208: BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node21762.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node21762.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node21762.smt2: solved=True, runtime=0.46s, PAR-2=0.46s
+[DEBUG] Processing 34/208: BV/2017-Preiner-keymaera/bouncing-ball-simple-node5981.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2017-Preiner-keymaera/bouncing-ball-simple-node5981.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/bouncing-ball-simple-node5981.smt2: solved=True, runtime=0.51s, PAR-2=0.51s
+[DEBUG] Processing 35/208: BV/20170501-Heizmann-UltimateAutomizer/jain_6_true-unreach-call_true-no-overflow.i_225.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_6_true-unreach-call_true-no-overflow.i_225.smt2
+[DEBUG] Benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_6_true-unreach-call_true-no-overflow.i_225.smt2: solved=True, runtime=0.75s, PAR-2=0.75s
+[DEBUG] Processing 36/208: BV/20170501-Heizmann-UltimateAutomizer/jain_6_true-unreach-call_true-no-overflow.i_432.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_6_true-unreach-call_true-no-overflow.i_432.smt2
+[DEBUG] Benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_6_true-unreach-call_true-no-overflow.i_432.smt2: solved=True, runtime=0.53s, PAR-2=0.53s
+[DEBUG] Processing 37/208: BV/20190429-UltimateAutomizerSvcomp2019/jain_2_true-unreach-call_true-no-overflow_false-termination.i_17.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20190429-UltimateAutomizerSvcomp2019/jain_2_true-unreach-call_true-no-overflow_false-termination.i_17.smt2
+[DEBUG] Benchmark BV/20190429-UltimateAutomizerSvcomp2019/jain_2_true-unreach-call_true-no-overflow_false-termination.i_17.smt2: solved=True, runtime=0.58s, PAR-2=0.58s
+[DEBUG] Processing 38/208: BV/2018-Preiner-cav18/check_eq_bvmul_64bit.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2018-Preiner-cav18/check_eq_bvmul_64bit.smt2
+[DEBUG] Benchmark BV/2018-Preiner-cav18/check_eq_bvmul_64bit.smt2: solved=True, runtime=0.94s, PAR-2=0.94s
+[DEBUG] Processing 39/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node351044.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node351044.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node351044.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 40/208: BV/2017-Preiner-scholl-smt08/RND/RND_3_29.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/RND/RND_3_29.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/RND/RND_3_29.smt2: solved=True, runtime=0.32s, PAR-2=0.32s
+[DEBUG] Processing 41/208: BV/llvm13-smtlib/03.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/llvm13-smtlib/03.smt2
+[DEBUG] Benchmark BV/llvm13-smtlib/03.smt2: solved=True, runtime=0.94s, PAR-2=0.94s
+[DEBUG] Processing 42/208: BV/2018-Preiner-cav18/check_bvsgt_bvmul_32bit.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2018-Preiner-cav18/check_bvsgt_bvmul_32bit.smt2
+[DEBUG] Benchmark BV/2018-Preiner-cav18/check_bvsgt_bvmul_32bit.smt2: solved=True, runtime=28.95s, PAR-2=28.95s
+[DEBUG] Processing 43/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node362512.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node362512.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node362512.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 44/208: BV/2020-Preiner-fmcad20/cons/check_cc_bvashr_x_s_32.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark BV/2020-Preiner-fmcad20/cons/check_cc_bvashr_x_s_32.smt2
+[DEBUG] Benchmark BV/2020-Preiner-fmcad20/cons/check_cc_bvashr_x_s_32.smt2: solved=True, runtime=1038.73s, PAR-2=1038.73s
+[DEBUG] Processing 45/208: BV/2020-Preiner-fmcad20/cons/check_cc_bvxor_x_s_32.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark BV/2020-Preiner-fmcad20/cons/check_cc_bvxor_x_s_32.smt2
+[DEBUG] Benchmark BV/2020-Preiner-fmcad20/cons/check_cc_bvxor_x_s_32.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 46/208: BV/2020-Preiner-fmcad20/cons/check_cc_x_s_32.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark BV/2020-Preiner-fmcad20/cons/check_cc_x_s_32.smt2
+[DEBUG] Benchmark BV/2020-Preiner-fmcad20/cons/check_cc_x_s_32.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 47/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node488920.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node488920.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node488920.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 48/208: BV/2017-Preiner-scholl-smt08/model/model_5_14.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2017-Preiner-scholl-smt08/model/model_5_14.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/model/model_5_14.smt2: solved=True, runtime=0.63s, PAR-2=0.63s
+[DEBUG] Processing 49/208: BV/wintersteiger/fmsd13/ranking/audio_ac97_wavepcistream2.cpp.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/wintersteiger/fmsd13/ranking/audio_ac97_wavepcistream2.cpp.smt2
+[DEBUG] Benchmark BV/wintersteiger/fmsd13/ranking/audio_ac97_wavepcistream2.cpp.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 50/208: BV/20230321-UltimateAutomizerSvcomp2023/jain_7-1.c_4.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20230321-UltimateAutomizerSvcomp2023/jain_7-1.c_4.smt2
+[DEBUG] Benchmark BV/20230321-UltimateAutomizerSvcomp2023/jain_7-1.c_4.smt2: solved=True, runtime=0.52s, PAR-2=0.52s
+[DEBUG] Processing 51/208: BV/2017-Preiner-scholl-smt08/RNDPRE/RNDPRE_3_43.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/RNDPRE/RNDPRE_3_43.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/RNDPRE/RNDPRE_3_43.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 52/208: BV/2020-Preiner-fmcad20/inv/check_ic_bvudiv_s_x_4.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2020-Preiner-fmcad20/inv/check_ic_bvudiv_s_x_4.smt2
+[DEBUG] Benchmark BV/2020-Preiner-fmcad20/inv/check_ic_bvudiv_s_x_4.smt2: solved=True, runtime=2.38s, PAR-2=2.38s
+[DEBUG] Processing 53/208: BV/20230321-UltimateAutomizerSvcomp2023/jain_2-2.c_0.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20230321-UltimateAutomizerSvcomp2023/jain_2-2.c_0.smt2
+[DEBUG] Benchmark BV/20230321-UltimateAutomizerSvcomp2023/jain_2-2.c_0.smt2: solved=True, runtime=0.46s, PAR-2=0.46s
+[DEBUG] Processing 54/208: BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node46832.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node46832.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node46832.smt2: solved=True, runtime=0.37s, PAR-2=0.37s
+[DEBUG] Processing 55/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node351935.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node351935.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node351935.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 56/208: BV/2018-Preiner-cav18/check_ne_bvudiv0_32bit.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2018-Preiner-cav18/check_ne_bvudiv0_32bit.smt2
+[DEBUG] Benchmark BV/2018-Preiner-cav18/check_ne_bvudiv0_32bit.smt2: solved=True, runtime=0.46s, PAR-2=0.46s
+[DEBUG] Processing 57/208: BV/2017-Preiner-scholl-smt08/model/model_5_63.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark BV/2017-Preiner-scholl-smt08/model/model_5_63.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/model/model_5_63.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 58/208: BV/20170501-Heizmann-UltimateAutomizer/jain_1_true-unreach-call_true-no-overflow.i_407.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_1_true-unreach-call_true-no-overflow.i_407.smt2
+[DEBUG] Benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_1_true-unreach-call_true-no-overflow.i_407.smt2: solved=True, runtime=0.52s, PAR-2=0.52s
+[DEBUG] Processing 59/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node189817.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node189817.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node189817.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 60/208: BV/2018-Preiner-cav18/check_bvugt_bvconcat0_62_4bit.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2018-Preiner-cav18/check_bvugt_bvconcat0_62_4bit.smt2
+[DEBUG] Benchmark BV/2018-Preiner-cav18/check_bvugt_bvconcat0_62_4bit.smt2: solved=True, runtime=0.45s, PAR-2=0.45s
+[DEBUG] Processing 61/208: BV/20170501-Heizmann-UltimateAutomizer/jain_2_true-unreach-call_true-no-overflow.i_461.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_2_true-unreach-call_true-no-overflow.i_461.smt2
+[DEBUG] Benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_2_true-unreach-call_true-no-overflow.i_461.smt2: solved=True, runtime=0.76s, PAR-2=0.76s
+[DEBUG] Processing 62/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node290877.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node290877.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node290877.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 63/208: BV/2017-Preiner-UltimateAutomizer/Primes_true-unreach-call.c_597.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2017-Preiner-UltimateAutomizer/Primes_true-unreach-call.c_597.smt2
+[DEBUG] Benchmark BV/2017-Preiner-UltimateAutomizer/Primes_true-unreach-call.c_597.smt2: solved=True, runtime=0.54s, PAR-2=0.54s
+[DEBUG] Processing 64/208: BV/2017-Preiner-keymaera/dynamic_reaction_to_static_bounds.proof-node849.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2017-Preiner-keymaera/dynamic_reaction_to_static_bounds.proof-node849.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/dynamic_reaction_to_static_bounds.proof-node849.smt2: solved=True, runtime=0.52s, PAR-2=0.52s
+[DEBUG] Processing 65/208: BV/2018-Preiner-cav18/check_bvugt_bvconcat0_64_64bit.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2018-Preiner-cav18/check_bvugt_bvconcat0_64_64bit.smt2
+[DEBUG] Benchmark BV/2018-Preiner-cav18/check_bvugt_bvconcat0_64_64bit.smt2: solved=True, runtime=0.46s, PAR-2=0.46s
+[DEBUG] Processing 66/208: BV/2017-Preiner-keymaera/bouncing-ball-inv-node6249.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-keymaera/bouncing-ball-inv-node6249.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/bouncing-ball-inv-node6249.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 67/208: BV/2017-Preiner-scholl-smt08/model/model_5_11.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2017-Preiner-scholl-smt08/model/model_5_11.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/model/model_5_11.smt2: solved=True, runtime=0.60s, PAR-2=0.60s
+[DEBUG] Processing 68/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node271565.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node271565.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node271565.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 69/208: BV/2017-Preiner-keymaera/train_goal6-node8607.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-keymaera/train_goal6-node8607.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/train_goal6-node8607.smt2: solved=True, runtime=0.92s, PAR-2=0.92s
+[DEBUG] Processing 70/208: BV/2017-Preiner-keymaera/vsl.proof-node2228.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-keymaera/vsl.proof-node2228.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/vsl.proof-node2228.smt2: solved=True, runtime=0.69s, PAR-2=0.69s
+[DEBUG] Processing 71/208: BV/wintersteiger/fmsd13/ranking/AVStream_image.cpp.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/wintersteiger/fmsd13/ranking/AVStream_image.cpp.smt2
+[DEBUG] Benchmark BV/wintersteiger/fmsd13/ranking/AVStream_image.cpp.smt2: solved=True, runtime=0.55s, PAR-2=0.55s
+[DEBUG] Processing 72/208: BV/20230321-UltimateAutomizerSvcomp2023/btor2c-eagerMod.cambridge.1.prop2-func-interl.c_2.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark BV/20230321-UltimateAutomizerSvcomp2023/btor2c-eagerMod.cambridge.1.prop2-func-interl.c_2.smt2
+[DEBUG] Benchmark BV/20230321-UltimateAutomizerSvcomp2023/btor2c-eagerMod.cambridge.1.prop2-func-interl.c_2.smt2: solved=True, runtime=12.38s, PAR-2=12.38s
+[DEBUG] Processing 73/208: BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node43329.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node43329.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node43329.smt2: solved=True, runtime=0.38s, PAR-2=0.38s
+[DEBUG] Processing 74/208: BV/2017-Preiner-keymaera/ETCS-essentials-live-range2.proof-node577.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2017-Preiner-keymaera/ETCS-essentials-live-range2.proof-node577.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/ETCS-essentials-live-range2.proof-node577.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 75/208: BV/2020-Preiner-fmcad20/inv/check_ic_sext_4_64.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark BV/2020-Preiner-fmcad20/inv/check_ic_sext_4_64.smt2
+[DEBUG] Benchmark BV/2020-Preiner-fmcad20/inv/check_ic_sext_4_64.smt2: solved=True, runtime=0.33s, PAR-2=0.33s
+[DEBUG] Processing 76/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node550289.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node550289.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node550289.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 77/208: BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node21162.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node21162.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node21162.smt2: solved=True, runtime=0.37s, PAR-2=0.37s
+[DEBUG] Processing 78/208: BV/2017-Preiner-scholl-smt08/RND/RND_3_7.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/RND/RND_3_7.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/RND/RND_3_7.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 79/208: BV/2017-Preiner-scholl-smt08/model/model_6_9.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark BV/2017-Preiner-scholl-smt08/model/model_6_9.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/model/model_6_9.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 80/208: BV/20230321-UltimateAutomizerSvcomp2023/soft_float_1-1.c.cil.c_0.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20230321-UltimateAutomizerSvcomp2023/soft_float_1-1.c.cil.c_0.smt2
+[DEBUG] Benchmark BV/20230321-UltimateAutomizerSvcomp2023/soft_float_1-1.c.cil.c_0.smt2: solved=True, runtime=0.81s, PAR-2=0.81s
+[DEBUG] Processing 81/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node606132.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node606132.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node606132.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 82/208: BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node5581.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node5581.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node5581.smt2: solved=True, runtime=0.59s, PAR-2=0.59s
+[DEBUG] Processing 83/208: BV/2018-Preiner-cav18/check_bvuge_bvurem1_64bit.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2018-Preiner-cav18/check_bvuge_bvurem1_64bit.smt2
+[DEBUG] Benchmark BV/2018-Preiner-cav18/check_bvuge_bvurem1_64bit.smt2: solved=True, runtime=5.07s, PAR-2=5.07s
+[DEBUG] Processing 84/208: BV/2017-Preiner-scholl-smt08/model/model_5_50.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark BV/2017-Preiner-scholl-smt08/model/model_5_50.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/model/model_5_50.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 85/208: BV/wintersteiger/fmsd13/ranking/network_ndis_e100bex_5x_kd_mp_dbg.c.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/wintersteiger/fmsd13/ranking/network_ndis_e100bex_5x_kd_mp_dbg.c.smt2
+[DEBUG] Benchmark BV/wintersteiger/fmsd13/ranking/network_ndis_e100bex_5x_kd_mp_dbg.c.smt2: solved=True, runtime=0.56s, PAR-2=0.56s
+[DEBUG] Processing 86/208: BV/20210330-PEak/no-extern-loop_sat_subset/easy4.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark BV/20210330-PEak/no-extern-loop_sat_subset/easy4.smt2
+[DEBUG] Benchmark BV/20210330-PEak/no-extern-loop_sat_subset/easy4.smt2: solved=True, runtime=5.73s, PAR-2=5.73s
+[DEBUG] Processing 87/208: BV/2017-Preiner-scholl-smt08/model/model_5_37.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/model/model_5_37.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/model/model_5_37.smt2: solved=True, runtime=0.45s, PAR-2=0.45s
+[DEBUG] Processing 88/208: BV/wintersteiger/fmsd13/fixpoint/sdlx-fixpoint-6.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark BV/wintersteiger/fmsd13/fixpoint/sdlx-fixpoint-6.smt2
+[DEBUG] Benchmark BV/wintersteiger/fmsd13/fixpoint/sdlx-fixpoint-6.smt2: solved=True, runtime=6.39s, PAR-2=6.39s
+[DEBUG] Processing 89/208: BV/2017-Preiner-psyco/086.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-psyco/086.smt2
+[DEBUG] Benchmark BV/2017-Preiner-psyco/086.smt2: solved=True, runtime=0.42s, PAR-2=0.42s
+[DEBUG] Processing 90/208: BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node13832.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node13832.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node13832.smt2: solved=True, runtime=0.32s, PAR-2=0.32s
+[DEBUG] Processing 91/208: BV/2018-Preiner-cav18/check_bvsle_bvshl1_64bit.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2018-Preiner-cav18/check_bvsle_bvshl1_64bit.smt2
+[DEBUG] Benchmark BV/2018-Preiner-cav18/check_bvsle_bvshl1_64bit.smt2: solved=True, runtime=2.08s, PAR-2=2.08s
+[DEBUG] Processing 92/208: BV/2017-Preiner-scholl-smt08/RND/RND_4_1.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/RND/RND_4_1.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/RND/RND_4_1.smt2: solved=True, runtime=0.38s, PAR-2=0.38s
+[DEBUG] Processing 93/208: BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node39725.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node39725.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node39725.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 94/208: BV/20230321-UltimateAutomizerSvcomp2023/linear-inequality-inv-a.c_5.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20230321-UltimateAutomizerSvcomp2023/linear-inequality-inv-a.c_5.smt2
+[DEBUG] Benchmark BV/20230321-UltimateAutomizerSvcomp2023/linear-inequality-inv-a.c_5.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 95/208: BV/20170501-Heizmann-UltimateAutomizer/jain_6_true-unreach-call_true-no-overflow.i_200.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_6_true-unreach-call_true-no-overflow.i_200.smt2
+[DEBUG] Benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_6_true-unreach-call_true-no-overflow.i_200.smt2: solved=True, runtime=0.55s, PAR-2=0.55s
+[DEBUG] Processing 96/208: BV/20170501-Heizmann-UltimateAutomizer/jain_4_true-unreach-call_true-no-overflow.i_461.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_4_true-unreach-call_true-no-overflow.i_461.smt2
+[DEBUG] Benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_4_true-unreach-call_true-no-overflow.i_461.smt2: solved=True, runtime=0.82s, PAR-2=0.82s
+[DEBUG] Processing 97/208: BV/2020-Preiner-fmcad20/inv/check_ic_sext_2_32.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark BV/2020-Preiner-fmcad20/inv/check_ic_sext_2_32.smt2
+[DEBUG] Benchmark BV/2020-Preiner-fmcad20/inv/check_ic_sext_2_32.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 98/208: BV/2017-Preiner-scholl-smt08/RND/RND_3_13.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/RND/RND_3_13.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/RND/RND_3_13.smt2: solved=True, runtime=0.42s, PAR-2=0.42s
+[DEBUG] Processing 99/208: BV/wintersteiger/fmsd13/ranking/1394diag_ioctl.c.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/wintersteiger/fmsd13/ranking/1394diag_ioctl.c.smt2
+[DEBUG] Benchmark BV/wintersteiger/fmsd13/ranking/1394diag_ioctl.c.smt2: solved=True, runtime=0.59s, PAR-2=0.59s
+[DEBUG] Processing 100/208: BV/2017-Preiner-scholl-smt08/RNDPRE/RNDPRE_4_35.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/RNDPRE/RNDPRE_4_35.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/RNDPRE/RNDPRE_4_35.smt2: solved=True, runtime=701.21s, PAR-2=701.21s
+[DEBUG] Processing 101/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node601999.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node601999.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node601999.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 102/208: BV/2017-Preiner-psyco/026.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-psyco/026.smt2
+[DEBUG] Benchmark BV/2017-Preiner-psyco/026.smt2: solved=True, runtime=0.34s, PAR-2=0.34s
+[DEBUG] Processing 103/208: BV/wintersteiger/fmsd13/fixpoint/AR-fixpoint-8.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/wintersteiger/fmsd13/fixpoint/AR-fixpoint-8.smt2
+[DEBUG] Benchmark BV/wintersteiger/fmsd13/fixpoint/AR-fixpoint-8.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 104/208: BV/2020-Preiner-fmcad20/cons/check_cc_bvlshr_x_s_4.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2020-Preiner-fmcad20/cons/check_cc_bvlshr_x_s_4.smt2
+[DEBUG] Benchmark BV/2020-Preiner-fmcad20/cons/check_cc_bvlshr_x_s_4.smt2: solved=True, runtime=2.53s, PAR-2=2.53s
+[DEBUG] Processing 105/208: BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node30209.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node30209.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node30209.smt2: solved=True, runtime=0.95s, PAR-2=0.95s
+[DEBUG] Processing 106/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node632728.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node632728.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node632728.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 107/208: BV/2017-Preiner-scholl-smt08/RND/RND_4_27.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/RND/RND_4_27.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/RND/RND_4_27.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 108/208: BV/20170501-Heizmann-UltimateAutomizer/sum02_false-unreach-call_true-no-overflow.i_336.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20170501-Heizmann-UltimateAutomizer/sum02_false-unreach-call_true-no-overflow.i_336.smt2
+[DEBUG] Benchmark BV/20170501-Heizmann-UltimateAutomizer/sum02_false-unreach-call_true-no-overflow.i_336.smt2: solved=True, runtime=0.61s, PAR-2=0.61s
+[DEBUG] Processing 109/208: BV/2017-Preiner-scholl-smt08/RND/RND_6_26.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/RND/RND_6_26.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/RND/RND_6_26.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 110/208: BV/2017-Preiner-scholl-smt08/RNDPRE/RNDPRE_3_29.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/RNDPRE/RNDPRE_3_29.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/RNDPRE/RNDPRE_3_29.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 111/208: BV/2017-Preiner-keymaera/vsl.proof-node1722.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2017-Preiner-keymaera/vsl.proof-node1722.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/vsl.proof-node1722.smt2: solved=True, runtime=0.89s, PAR-2=0.89s
+[DEBUG] Processing 112/208: BV/20230321-UltimateAutomizerSvcomp2023/heapsort.i_0.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20230321-UltimateAutomizerSvcomp2023/heapsort.i_0.smt2
+[DEBUG] Benchmark BV/20230321-UltimateAutomizerSvcomp2023/heapsort.i_0.smt2: solved=True, runtime=0.75s, PAR-2=0.75s
+[DEBUG] Processing 113/208: BV/2017-Preiner-scholl-smt08/model/model_6_55.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/model/model_6_55.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/model/model_6_55.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 114/208: BV/2017-Preiner-scholl-smt08/RND/RND_3_8.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/RND/RND_3_8.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/RND/RND_3_8.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 115/208: BV/2017-Preiner-UltimateAutomizer/Primes_true-unreach-call.c_673.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2017-Preiner-UltimateAutomizer/Primes_true-unreach-call.c_673.smt2
+[DEBUG] Benchmark BV/2017-Preiner-UltimateAutomizer/Primes_true-unreach-call.c_673.smt2: solved=True, runtime=0.53s, PAR-2=0.53s
+[DEBUG] Processing 116/208: BV/2020-Preiner-fmcad20/inv/check_ic_bvshl_x_s_4.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2020-Preiner-fmcad20/inv/check_ic_bvshl_x_s_4.smt2
+[DEBUG] Benchmark BV/2020-Preiner-fmcad20/inv/check_ic_bvshl_x_s_4.smt2: solved=True, runtime=0.92s, PAR-2=0.92s
+[DEBUG] Processing 117/208: BV/2017-Preiner-scholl-smt08/RNDPRE/RNDPRE_4_38.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/RNDPRE/RNDPRE_4_38.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/RNDPRE/RNDPRE_4_38.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 118/208: BV/wintersteiger/fmsd13/ranking/audio_gfxswap.xp_filter.cpp.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/wintersteiger/fmsd13/ranking/audio_gfxswap.xp_filter.cpp.smt2
+[DEBUG] Benchmark BV/wintersteiger/fmsd13/ranking/audio_gfxswap.xp_filter.cpp.smt2: solved=True, runtime=0.51s, PAR-2=0.51s
+[DEBUG] Processing 119/208: BV/20230321-UltimateAutomizerSvcomp2023/soft_float_1-1.c.cil.c_9.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20230321-UltimateAutomizerSvcomp2023/soft_float_1-1.c.cil.c_9.smt2
+[DEBUG] Benchmark BV/20230321-UltimateAutomizerSvcomp2023/soft_float_1-1.c.cil.c_9.smt2: solved=True, runtime=0.87s, PAR-2=0.87s
+[DEBUG] Processing 120/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node367444.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node367444.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node367444.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 121/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node673526.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node673526.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node673526.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 122/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node171778.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node171778.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node171778.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 123/208: BV/20230321-UltimateAutomizerSvcomp2023/soft_float_4-2.c.cil.c_6.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20230321-UltimateAutomizerSvcomp2023/soft_float_4-2.c.cil.c_6.smt2
+[DEBUG] Benchmark BV/20230321-UltimateAutomizerSvcomp2023/soft_float_4-2.c.cil.c_6.smt2: solved=True, runtime=0.81s, PAR-2=0.81s
+[DEBUG] Processing 124/208: BV/wintersteiger/fmsd13/fixpoint/small-pipeline-fixpoint-5.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/wintersteiger/fmsd13/fixpoint/small-pipeline-fixpoint-5.smt2
+[DEBUG] Benchmark BV/wintersteiger/fmsd13/fixpoint/small-pipeline-fixpoint-5.smt2: solved=True, runtime=0.56s, PAR-2=0.56s
+[DEBUG] Processing 125/208: BV/2017-Preiner-scholl-smt08/RND/RND_6_16.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/RND/RND_6_16.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/RND/RND_6_16.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 126/208: BV/2017-Preiner-keymaera/controllability-lemma-disturbed.proof-node770.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2017-Preiner-keymaera/controllability-lemma-disturbed.proof-node770.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/controllability-lemma-disturbed.proof-node770.smt2: solved=True, runtime=0.56s, PAR-2=0.56s
+[DEBUG] Processing 127/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node618750.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node618750.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node618750.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 128/208: BV/llvm13-smtlib/05.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/llvm13-smtlib/05.smt2
+[DEBUG] Benchmark BV/llvm13-smtlib/05.smt2: solved=True, runtime=0.77s, PAR-2=0.77s
+[DEBUG] Processing 129/208: BV/2017-Preiner-scholl-smt08/model/model_5_33.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/model/model_5_33.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/model/model_5_33.smt2: solved=True, runtime=0.37s, PAR-2=0.37s
+[DEBUG] Processing 130/208: BV/2017-Preiner-psyco/119.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-psyco/119.smt2
+[DEBUG] Benchmark BV/2017-Preiner-psyco/119.smt2: solved=True, runtime=0.42s, PAR-2=0.42s
+[DEBUG] Processing 131/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node621704.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node621704.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node621704.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 132/208: BV/20190429-UltimateAutomizerSvcomp2019/float_req_bl_0730b_true-unreach-call.c_28.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20190429-UltimateAutomizerSvcomp2019/float_req_bl_0730b_true-unreach-call.c_28.smt2
+[DEBUG] Benchmark BV/20190429-UltimateAutomizerSvcomp2019/float_req_bl_0730b_true-unreach-call.c_28.smt2: solved=True, runtime=0.42s, PAR-2=0.42s
+[DEBUG] Processing 133/208: BV/20170501-Heizmann-UltimateAutomizer/jain_2_true-unreach-call_true-no-overflow.i_434.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_2_true-unreach-call_true-no-overflow.i_434.smt2
+[DEBUG] Benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_2_true-unreach-call_true-no-overflow.i_434.smt2: solved=True, runtime=0.53s, PAR-2=0.53s
+[DEBUG] Processing 134/208: BV/2018-Preiner-cav18/check_bvult_bvashr1_64bit.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2018-Preiner-cav18/check_bvult_bvashr1_64bit.smt2
+[DEBUG] Benchmark BV/2018-Preiner-cav18/check_bvult_bvashr1_64bit.smt2: solved=True, runtime=2.76s, PAR-2=2.76s
+[DEBUG] Processing 135/208: BV/2017-Preiner-scholl-smt08/RNDPRE/RNDPRE_3_51.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/RNDPRE/RNDPRE_3_51.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/RNDPRE/RNDPRE_3_51.smt2: solved=True, runtime=1.20s, PAR-2=1.20s
+[DEBUG] Processing 136/208: BV/2017-Preiner-psyco/079.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-psyco/079.smt2
+[DEBUG] Benchmark BV/2017-Preiner-psyco/079.smt2: solved=True, runtime=0.46s, PAR-2=0.46s
+[DEBUG] Processing 137/208: BV/2018-Preiner-cav18/check_bvule_bvashr1_32bit.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2018-Preiner-cav18/check_bvule_bvashr1_32bit.smt2
+[DEBUG] Benchmark BV/2018-Preiner-cav18/check_bvule_bvashr1_32bit.smt2: solved=True, runtime=2.39s, PAR-2=2.39s
+[DEBUG] Processing 138/208: BV/wintersteiger/fmsd13/ranking/filesys_cdfs_allocsup.c.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/wintersteiger/fmsd13/ranking/filesys_cdfs_allocsup.c.smt2
+[DEBUG] Benchmark BV/wintersteiger/fmsd13/ranking/filesys_cdfs_allocsup.c.smt2: solved=True, runtime=0.66s, PAR-2=0.66s
+[DEBUG] Processing 139/208: BV/2017-Preiner-keymaera/bouncing-ball-simple-node5587.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2017-Preiner-keymaera/bouncing-ball-simple-node5587.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/bouncing-ball-simple-node5587.smt2: solved=True, runtime=0.63s, PAR-2=0.63s
+[DEBUG] Processing 140/208: BV/20230321-UltimateAutomizerSvcomp2023/heapsort.i_6.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20230321-UltimateAutomizerSvcomp2023/heapsort.i_6.smt2
+[DEBUG] Benchmark BV/20230321-UltimateAutomizerSvcomp2023/heapsort.i_6.smt2: solved=True, runtime=0.60s, PAR-2=0.60s
+[DEBUG] Processing 141/208: BV/2020-Preiner-fmcad20/cons/check_cc_distinct_x_s_32.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2020-Preiner-fmcad20/cons/check_cc_distinct_x_s_32.smt2
+[DEBUG] Benchmark BV/2020-Preiner-fmcad20/cons/check_cc_distinct_x_s_32.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 142/208: BV/20190429-UltimateAutomizerSvcomp2019/jain_7_true-unreach-call_true-no-overflow_false-termination.i_5.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20190429-UltimateAutomizerSvcomp2019/jain_7_true-unreach-call_true-no-overflow_false-termination.i_5.smt2
+[DEBUG] Benchmark BV/20190429-UltimateAutomizerSvcomp2019/jain_7_true-unreach-call_true-no-overflow_false-termination.i_5.smt2: solved=True, runtime=0.53s, PAR-2=0.53s
+[DEBUG] Processing 143/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node631857.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node631857.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node631857.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 144/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node250605.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node250605.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node250605.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 145/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node674535.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node674535.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node674535.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 146/208: BV/2017-Preiner-psyco/113.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-psyco/113.smt2
+[DEBUG] Benchmark BV/2017-Preiner-psyco/113.smt2: solved=True, runtime=0.59s, PAR-2=0.59s
+[DEBUG] Processing 147/208: BV/20190429-UltimateAutomizerSvcomp2019/jain_6_true-unreach-call_true-no-overflow_false-termination.i_8.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20190429-UltimateAutomizerSvcomp2019/jain_6_true-unreach-call_true-no-overflow_false-termination.i_8.smt2
+[DEBUG] Benchmark BV/20190429-UltimateAutomizerSvcomp2019/jain_6_true-unreach-call_true-no-overflow_false-termination.i_8.smt2: solved=True, runtime=0.52s, PAR-2=0.52s
+[DEBUG] Processing 148/208: BV/2018-Preiner-cav18/check_bvugt_bvconcat0_2_64bit.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2018-Preiner-cav18/check_bvugt_bvconcat0_2_64bit.smt2
+[DEBUG] Benchmark BV/2018-Preiner-cav18/check_bvugt_bvconcat0_2_64bit.smt2: solved=True, runtime=0.45s, PAR-2=0.45s
+[DEBUG] Processing 149/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node171004.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node171004.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node171004.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 150/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node152942.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node152942.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node152942.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 151/208: BV/20190429-UltimateAutomizerSvcomp2019/jain_2_true-unreach-call_true-no-overflow_false-termination.i_9.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20190429-UltimateAutomizerSvcomp2019/jain_2_true-unreach-call_true-no-overflow_false-termination.i_9.smt2
+[DEBUG] Benchmark BV/20190429-UltimateAutomizerSvcomp2019/jain_2_true-unreach-call_true-no-overflow_false-termination.i_9.smt2: solved=True, runtime=0.53s, PAR-2=0.53s
+[DEBUG] Processing 152/208: BV/20170501-Heizmann-UltimateAutomizer/jain_1_true-unreach-call_true-no-overflow.i_408.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_1_true-unreach-call_true-no-overflow.i_408.smt2
+[DEBUG] Benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_1_true-unreach-call_true-no-overflow.i_408.smt2: solved=True, runtime=0.45s, PAR-2=0.45s
+[DEBUG] Processing 153/208: BV/2018-Preiner-cav18/check_bvsle_bvashr1_32bit.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2018-Preiner-cav18/check_bvsle_bvashr1_32bit.smt2
+[DEBUG] Benchmark BV/2018-Preiner-cav18/check_bvsle_bvashr1_32bit.smt2: solved=True, runtime=2.52s, PAR-2=2.52s
+[DEBUG] Processing 154/208: BV/2020-Preiner-fmcad20/inv/check_ic_bvsge_s_x_4.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2020-Preiner-fmcad20/inv/check_ic_bvsge_s_x_4.smt2
+[DEBUG] Benchmark BV/2020-Preiner-fmcad20/inv/check_ic_bvsge_s_x_4.smt2: solved=True, runtime=0.99s, PAR-2=0.99s
+[DEBUG] Processing 155/208: BV/20190429-UltimateAutomizerSvcomp2019/jain_6_true-unreach-call_true-no-overflow_false-termination.i_17.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20190429-UltimateAutomizerSvcomp2019/jain_6_true-unreach-call_true-no-overflow_false-termination.i_17.smt2
+[DEBUG] Benchmark BV/20190429-UltimateAutomizerSvcomp2019/jain_6_true-unreach-call_true-no-overflow_false-termination.i_17.smt2: solved=True, runtime=0.51s, PAR-2=0.51s
+[DEBUG] Processing 156/208: BV/2017-Preiner-scholl-smt08/model/model_6_33.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/model/model_6_33.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/model/model_6_33.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 157/208: BV/wintersteiger/fmsd13/ranking/network_usbnwifi_mp_util.c.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/wintersteiger/fmsd13/ranking/network_usbnwifi_mp_util.c.smt2
+[DEBUG] Benchmark BV/wintersteiger/fmsd13/ranking/network_usbnwifi_mp_util.c.smt2: solved=True, runtime=2.56s, PAR-2=2.56s
+[DEBUG] Processing 158/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node267578.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node267578.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node267578.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 159/208: BV/2020-Preiner-fmcad20/cons/check_cc_bvashr_x_s_64.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark BV/2020-Preiner-fmcad20/cons/check_cc_bvashr_x_s_64.smt2
+[DEBUG] Benchmark BV/2020-Preiner-fmcad20/cons/check_cc_bvashr_x_s_64.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 160/208: BV/20230321-UltimateAutomizerSvcomp2023/soft_float_4-2.c.cil.c_3.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20230321-UltimateAutomizerSvcomp2023/soft_float_4-2.c.cil.c_3.smt2
+[DEBUG] Benchmark BV/20230321-UltimateAutomizerSvcomp2023/soft_float_4-2.c.cil.c_3.smt2: solved=True, runtime=0.80s, PAR-2=0.80s
+[DEBUG] Processing 161/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node346919.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node346919.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node346919.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 162/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node719994.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node719994.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node719994.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 163/208: BV/2020-Preiner-fmcad20/inv/check_ic_sext_1_4.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark BV/2020-Preiner-fmcad20/inv/check_ic_sext_1_4.smt2
+[DEBUG] Benchmark BV/2020-Preiner-fmcad20/inv/check_ic_sext_1_4.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 164/208: BV/20230321-UltimateAutomizerSvcomp2023/jain_4-1.c_4.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20230321-UltimateAutomizerSvcomp2023/jain_4-1.c_4.smt2
+[DEBUG] Benchmark BV/20230321-UltimateAutomizerSvcomp2023/jain_4-1.c_4.smt2: solved=True, runtime=0.48s, PAR-2=0.48s
+[DEBUG] Processing 165/208: BV/wintersteiger/fmsd13/fixpoint/AR-fixpoint-7.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/wintersteiger/fmsd13/fixpoint/AR-fixpoint-7.smt2
+[DEBUG] Benchmark BV/wintersteiger/fmsd13/fixpoint/AR-fixpoint-7.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 166/208: BV/2018-Preiner-cav18/check_bvsle_bvlshr0_64bit.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2018-Preiner-cav18/check_bvsle_bvlshr0_64bit.smt2
+[DEBUG] Benchmark BV/2018-Preiner-cav18/check_bvsle_bvlshr0_64bit.smt2: solved=True, runtime=0.87s, PAR-2=0.87s
+[DEBUG] Processing 167/208: BV/20170501-Heizmann-UltimateAutomizer/jain_7_true-unreach-call_true-no-overflow.i_307.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_7_true-unreach-call_true-no-overflow.i_307.smt2
+[DEBUG] Benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_7_true-unreach-call_true-no-overflow.i_307.smt2: solved=True, runtime=0.53s, PAR-2=0.53s
+[DEBUG] Processing 168/208: BV/20190429-UltimateAutomizerSvcomp2019/float_req_bl_0730b_true-unreach-call.c_36.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20190429-UltimateAutomizerSvcomp2019/float_req_bl_0730b_true-unreach-call.c_36.smt2
+[DEBUG] Benchmark BV/20190429-UltimateAutomizerSvcomp2019/float_req_bl_0730b_true-unreach-call.c_36.smt2: solved=True, runtime=0.44s, PAR-2=0.44s
+[DEBUG] Processing 169/208: BV/20230321-UltimateAutomizerSvcomp2023/jain_6-1.c_10.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20230321-UltimateAutomizerSvcomp2023/jain_6-1.c_10.smt2
+[DEBUG] Benchmark BV/20230321-UltimateAutomizerSvcomp2023/jain_6-1.c_10.smt2: solved=True, runtime=0.50s, PAR-2=0.50s
+[DEBUG] Processing 170/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node732160.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node732160.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node732160.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 171/208: BV/20230321-UltimateAutomizerSvcomp2023/jain_7-1.c_3.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20230321-UltimateAutomizerSvcomp2023/jain_7-1.c_3.smt2
+[DEBUG] Benchmark BV/20230321-UltimateAutomizerSvcomp2023/jain_7-1.c_3.smt2: solved=True, runtime=0.54s, PAR-2=0.54s
+[DEBUG] Processing 172/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node173665.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node173665.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node173665.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 173/208: BV/2017-Preiner-psyco/045.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-psyco/045.smt2
+[DEBUG] Benchmark BV/2017-Preiner-psyco/045.smt2: solved=True, runtime=0.84s, PAR-2=0.84s
+[DEBUG] Processing 174/208: BV/2017-Preiner-keymaera/train_goal3-node5717.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-keymaera/train_goal3-node5717.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/train_goal3-node5717.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 175/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node560330.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node560330.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node560330.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 176/208: BV/2018-Preiner-cav18/check_bvsle_bvlshr0_4bit.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2018-Preiner-cav18/check_bvsle_bvlshr0_4bit.smt2
+[DEBUG] Benchmark BV/2018-Preiner-cav18/check_bvsle_bvlshr0_4bit.smt2: solved=True, runtime=0.52s, PAR-2=0.52s
+[DEBUG] Processing 177/208: BV/2017-Preiner-scholl-smt08/RND/RND_6_30.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/RND/RND_6_30.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/RND/RND_6_30.smt2: solved=True, runtime=411.64s, PAR-2=411.64s
+[DEBUG] Processing 178/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node288860.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node288860.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node288860.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 179/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node99874.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node99874.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node99874.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 180/208: BV/2017-Preiner-scholl-smt08/RND/RND_4_24.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/RND/RND_4_24.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/RND/RND_4_24.smt2: solved=True, runtime=1.29s, PAR-2=1.29s
+[DEBUG] Processing 181/208: BV/2018-Preiner-cav18/check_bvslt_bvudiv0_32bit.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2018-Preiner-cav18/check_bvslt_bvudiv0_32bit.smt2
+[DEBUG] Benchmark BV/2018-Preiner-cav18/check_bvslt_bvudiv0_32bit.smt2: solved=True, runtime=0.50s, PAR-2=0.50s
+[DEBUG] Processing 182/208: BV/2017-Preiner-scholl-smt08/model/model_5_3.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2017-Preiner-scholl-smt08/model/model_5_3.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/model/model_5_3.smt2: solved=True, runtime=0.62s, PAR-2=0.62s
+[DEBUG] Processing 183/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node703624.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node703624.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node703624.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 184/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node54865.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node54865.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node54865.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 185/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node619900.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node619900.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node619900.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 186/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node561425.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node561425.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node561425.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 187/208: BV/2018-Preiner-cav18/check_bvuge_bvshl1_32bit.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2018-Preiner-cav18/check_bvuge_bvshl1_32bit.smt2
+[DEBUG] Benchmark BV/2018-Preiner-cav18/check_bvuge_bvshl1_32bit.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 188/208: BV/2020-Preiner-fmcad20/inv/check_ic_distinct_x_s_32.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark BV/2020-Preiner-fmcad20/inv/check_ic_distinct_x_s_32.smt2
+[DEBUG] Benchmark BV/2020-Preiner-fmcad20/inv/check_ic_distinct_x_s_32.smt2: solved=True, runtime=0.38s, PAR-2=0.38s
+[DEBUG] Processing 189/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node633178.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node633178.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node633178.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 190/208: BV/2017-Preiner-scholl-smt08/model/model_5_34.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/model/model_5_34.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/model/model_5_34.smt2: solved=True, runtime=0.52s, PAR-2=0.52s
+[DEBUG] Processing 191/208: BV/2020-Preiner-fmcad20/inv/check_ic_bvult_x_s_64.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark BV/2020-Preiner-fmcad20/inv/check_ic_bvult_x_s_64.smt2
+[DEBUG] Benchmark BV/2020-Preiner-fmcad20/inv/check_ic_bvult_x_s_64.smt2: solved=True, runtime=0.98s, PAR-2=0.98s
+[DEBUG] Processing 192/208: BV/20170501-Heizmann-UltimateAutomizer/jain_7_true-unreach-call_true-no-overflow.i_476.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_7_true-unreach-call_true-no-overflow.i_476.smt2
+[DEBUG] Benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_7_true-unreach-call_true-no-overflow.i_476.smt2: solved=True, runtime=0.55s, PAR-2=0.55s
+[DEBUG] Processing 193/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node403505.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node403505.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node403505.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 194/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node171228.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node171228.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node171228.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 195/208: BV/2017-Preiner-scholl-smt08/model/model_5_36.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/model/model_5_36.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/model/model_5_36.smt2: solved=True, runtime=0.62s, PAR-2=0.62s
+[DEBUG] Processing 196/208: BV/2018-Preiner-cav18/check_bvsge_bvurem0_64bit.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2018-Preiner-cav18/check_bvsge_bvurem0_64bit.smt2
+[DEBUG] Benchmark BV/2018-Preiner-cav18/check_bvsge_bvurem0_64bit.smt2: solved=True, runtime=0.47s, PAR-2=0.47s
+[DEBUG] Processing 197/208: BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node34026.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node34026.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node34026.smt2: solved=True, runtime=0.39s, PAR-2=0.39s
+[DEBUG] Processing 198/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node295273.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node295273.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node295273.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 199/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node287501.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node287501.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node287501.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 200/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node389285.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node389285.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node389285.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 201/208: BV/2017-Preiner-keymaera/intersection-example-simple.proof-node479629.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node479629.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-simple.proof-node479629.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 202/208: BV/20170501-Heizmann-UltimateAutomizer/jain_4_true-unreach-call_true-no-overflow.i_198.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_4_true-unreach-call_true-no-overflow.i_198.smt2
+[DEBUG] Benchmark BV/20170501-Heizmann-UltimateAutomizer/jain_4_true-unreach-call_true-no-overflow.i_198.smt2: solved=True, runtime=0.56s, PAR-2=0.56s
+[DEBUG] Processing 203/208: BV/2017-Preiner-scholl-smt08/model/model_6_69.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-scholl-smt08/model/model_6_69.smt2
+[DEBUG] Benchmark BV/2017-Preiner-scholl-smt08/model/model_6_69.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 204/208: BV/20190429-UltimateAutomizerSvcomp2019/jain_7_true-unreach-call_true-no-overflow_false-termination.i_15.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20190429-UltimateAutomizerSvcomp2019/jain_7_true-unreach-call_true-no-overflow_false-termination.i_15.smt2
+[DEBUG] Benchmark BV/20190429-UltimateAutomizerSvcomp2019/jain_7_true-unreach-call_true-no-overflow_false-termination.i_15.smt2: solved=True, runtime=0.51s, PAR-2=0.51s
+[DEBUG] Processing 205/208: BV/20230321-UltimateAutomizerSvcomp2023/btor2c-eagerMod.unsafe_arbitrated_fifos_n2d8w8.c_1.smt2
+[DEBUG] Predicted solver: Bitwuzla for benchmark BV/20230321-UltimateAutomizerSvcomp2023/btor2c-eagerMod.unsafe_arbitrated_fifos_n2d8w8.c_1.smt2
+[DEBUG] Benchmark BV/20230321-UltimateAutomizerSvcomp2023/btor2c-eagerMod.unsafe_arbitrated_fifos_n2d8w8.c_1.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 206/208: BV/20190429-UltimateAutomizerSvcomp2019/soft_float_4_true-unreach-call_true-no-overflow_true-termination.c.cil.c_3.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/20190429-UltimateAutomizerSvcomp2019/soft_float_4_true-unreach-call_true-no-overflow_true-termination.c.cil.c_3.smt2
+[DEBUG] Benchmark BV/20190429-UltimateAutomizerSvcomp2019/soft_float_4_true-unreach-call_true-no-overflow_true-termination.c.cil.c_3.smt2: solved=True, runtime=0.88s, PAR-2=0.88s
+[DEBUG] Processing 207/208: BV/2018-Preiner-cav18/check_bvslt_bvurem0_32bit.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark BV/2018-Preiner-cav18/check_bvslt_bvurem0_32bit.smt2
+[DEBUG] Benchmark BV/2018-Preiner-cav18/check_bvslt_bvurem0_32bit.smt2: solved=True, runtime=0.64s, PAR-2=0.64s
+[DEBUG] Processing 208/208: BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node54870.smt2
+[DEBUG] Predicted solver: YicesQS for benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node54870.smt2
+[DEBUG] Benchmark BV/2017-Preiner-keymaera/intersection-example-onelane.proof-node54870.smt2: solved=True, runtime=4.86s, PAR-2=4.86s
+[DEBUG] Results written to CSV: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/results/bv_csv_based/test/run_20251215_225741_372092/results.csv
+[DEBUG] Solved 199/208 benchmarks (95.67%)
+[DEBUG] PAR-2 Score: 25328.50s total, 121.77s average
+
+================================================================================
+EXECUTION TIME SUMMARY
+================================================================================
+Model training time:        1757.10 seconds ( 29.29 minutes)
+Prediction time:             169.22 seconds (  2.82 minutes)
+  - Avg per benchmark:         0.81 seconds
+--------------------------------------------------------------------------------
+Total execution time:       1926.32 seconds ( 32.11 minutes)
+================================================================================
+
+================================================================================
+PAR-2 PERFORMANCE SUMMARY
+================================================================================
+Benchmarks solved:              199 / 208 ( 95.67%)
+Benchmarks unsolved:              9 / 208 (  4.33%)
+--------------------------------------------------------------------------------
+Total PAR-2 score:         25328.50 seconds
+Average PAR-2 score:         121.77 seconds
+Timeout value:              1200.00 seconds
+PAR-2 penalty factor:             2x timeout
+================================================================================
+
+[DEBUG] CSV results saved to: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/results/bv_csv_based/test/run_20251215_225741_372092/results.csv
+[DEBUG] Configuration saved to: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/results/bv_csv_based/test/run_20251215_225741_372092/config.json
+End time: Mon 15 Dec 2025 11:29:53 PM EST

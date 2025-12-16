@@ -1,0 +1,1010 @@
+Job ID: 53713459
+Node: nc10237
+Start time: Mon 15 Dec 2025 11:50:57 PM EST
+[DEBUG] Loading test results from /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/UFDT/ufdt_test_long.csv
+[DEBUG] Loaded results for 314 unique benchmarks
+[DEBUG] Found 314 unique benchmark paths in CSV
+[DEBUG] Found 314 benchmark files from CSV
+[DEBUG] Selected 314 benchmarks for processing
+
+================================================================================
+FEATURE CONFIGURATION
+================================================================================
+Using original MachSMT feature space (full grammatical construct list)
+Description features: DISABLED (prevents BERT model loading)
+Feature extraction timeout: 60 seconds
+Parallel cores: 16
+Feature dimensions will be printed after processing first benchmark
+================================================================================
+
+[DEBUG] Training MachSMT model...
+[DEBUG] Changed working directory to: /home/jchen688/scratch/non-incremental
+
+Initializing description feature model ('bert-base-uncased')...
+Using device: cpu
+✅ Model loaded successfully. Embedding dimension: 768
+Parsing Input File |████████████████████████████████████████| 3765/3765 [100%] in 1:08.2 (55.20/s) 
+Processing Benchmark Files |████████████████████████████████████████| 1255/1255 [100%] in 7:25.6 (2.82/s) 
+[DEBUG] Changed back to: /lustre06/project/6001884/jchen688/github/z3alpha
+[DEBUG] Model trained in 1160.45 seconds
+[DEBUG] Configuration saved to: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/results/ufdt_csv_based/test/run_20251215_235511_400630/config.json
+
+[DEBUG] Starting predictions on test benchmarks...
+[DEBUG] Processing 1/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2137901.nun.smt2
+
+================================================================================
+FEATURE SPACE DIMENSIONS
+================================================================================
+Total feature dimensions: 189
+================================================================================
+
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2137901.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2137901.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 2/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_11_10_764_2531723.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_11_10_764_2531723.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_11_10_764_2531723.smt_in.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 3/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_22_57_628_1118727.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_22_57_628_1118727.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_22_57_628_1118727.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 4/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_56_20_613_1078230.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_56_20_613_1078230.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_56_20_613_1078230.smt_in.smt2: solved=True, runtime=0.33s, PAR-2=0.33s
+[DEBUG] Processing 5/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_58_22_060_1202586.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_58_22_060_1202586.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_58_22_060_1202586.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 6/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2032300.nun.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2032300.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2032300.nun.smt2: solved=True, runtime=2.41s, PAR-2=2.41s
+[DEBUG] Processing 7/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_54_07_038_1457348.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_54_07_038_1457348.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_54_07_038_1457348.smt_in.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 8/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/koenigslemma/x2015_09_10_16_52_17_076_1080913.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/koenigslemma/x2015_09_10_16_52_17_076_1080913.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/koenigslemma/x2015_09_10_16_52_17_076_1080913.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 9/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_12_27_612_2630913.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_12_27_612_2630913.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_12_27_612_2630913.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 10/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_48_45_082_1135570.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_48_45_082_1135570.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_48_45_082_1135570.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 11/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/sorted_list_operations/x2015_09_10_16_47_21_859_1047027.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/sorted_list_operations/x2015_09_10_16_47_21_859_1047027.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/sorted_list_operations/x2015_09_10_16_47_21_859_1047027.smt_in.smt2: solved=True, runtime=976.75s, PAR-2=976.75s
+[DEBUG] Processing 12/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/koenigslemma/x2015_09_10_16_54_23_836_1166993.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/koenigslemma/x2015_09_10_16_54_23_836_1166993.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/koenigslemma/x2015_09_10_16_54_23_836_1166993.smt_in.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 13/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku3318575.nun.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku3318575.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku3318575.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 14/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/lmirror/x2015_09_10_16_47_27_202_1060941.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/lmirror/x2015_09_10_16_47_27_202_1060941.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/lmirror/x2015_09_10_16_47_27_202_1060941.smt_in.smt2: solved=True, runtime=0.39s, PAR-2=0.39s
+[DEBUG] Processing 15/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_00_15_960_1662762.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_00_15_960_1662762.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_00_15_960_1662762.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 16/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_54_20_543_1340656.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_54_20_543_1340656.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_54_20_543_1340656.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 17/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_49_09_883_1148060.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_49_09_883_1148060.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_49_09_883_1148060.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 18/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_55_48_602_1297758.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_55_48_602_1297758.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_55_48_602_1297758.smt_in.smt2: solved=True, runtime=3.04s, PAR-2=3.04s
+[DEBUG] Processing 19/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_24_14_221_1189957.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_24_14_221_1189957.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_24_14_221_1189957.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 20/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_51_30_303_1318748.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_51_30_303_1318748.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_51_30_303_1318748.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 21/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2706502.nun.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2706502.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2706502.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 22/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_57_57_360_1176617.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_57_57_360_1176617.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_57_57_360_1176617.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 23/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2164868.nun.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2164868.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2164868.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 24/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_24_25_853_1200030.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_24_25_853_1200030.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_24_25_853_1200030.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 25/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_46_24_342_985888.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_46_24_342_985888.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_46_24_342_985888.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 26/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1968824.nun.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1968824.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1968824.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 27/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_55_54_646_1569073.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_55_54_646_1569073.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_55_54_646_1569073.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 28/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_05_03_974_2039882.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_05_03_974_2039882.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_05_03_974_2039882.smt_in.smt2: solved=True, runtime=0.38s, PAR-2=0.38s
+[DEBUG] Processing 29/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2094296.nun.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2094296.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2094296.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 30/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_46_40_260_976700.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_46_40_260_976700.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_46_40_260_976700.smt_in.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 31/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_11_43_352_2575380.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_11_43_352_2575380.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_11_43_352_2575380.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 32/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1979314.nun.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1979314.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1979314.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 33/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2102638.nun.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2102638.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2102638.nun.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 34/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/bindag/x2015_09_10_16_53_55_382_1093531.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/bindag/x2015_09_10_16_53_55_382_1093531.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/bindag/x2015_09_10_16_53_55_382_1093531.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 35/314: UFDT/20170428-Barrett/cdt-cade2015/data/gandl/cotree/x2015_09_10_16_49_35_251_986146.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/cotree/x2015_09_10_16_49_35_251_986146.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/cotree/x2015_09_10_16_49_35_251_986146.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 36/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_07_32_819_2244643.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_07_32_819_2244643.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_07_32_819_2244643.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 37/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_59_19_313_1605507.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_59_19_313_1605507.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_59_19_313_1605507.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 38/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2513253.nun.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2513253.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2513253.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 39/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_19_42_360_2890068.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_19_42_360_2890068.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_19_42_360_2890068.smt_in.smt2: solved=True, runtime=0.35s, PAR-2=0.35s
+[DEBUG] Processing 40/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_07_59_177_2281818.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_07_59_177_2281818.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_07_59_177_2281818.smt_in.smt2: solved=True, runtime=0.35s, PAR-2=0.35s
+[DEBUG] Processing 41/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_59_00_277_1244855.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_59_00_277_1244855.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_59_00_277_1244855.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 42/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_52_54_508_1260346.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_52_54_508_1260346.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_52_54_508_1260346.smt_in.smt2: solved=True, runtime=0.38s, PAR-2=0.38s
+[DEBUG] Processing 43/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_57_32_357_1769888.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_57_32_357_1769888.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_57_32_357_1769888.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 44/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_23_54_435_1172788.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_23_54_435_1172788.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_23_54_435_1172788.smt_in.smt2: solved=True, runtime=0.72s, PAR-2=0.72s
+[DEBUG] Processing 45/314: UFDT/20170428-Barrett/cdt-cade2015/data/gandl/stern_brocot_tree/x2015_09_10_16_52_05_474_1091413.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/stern_brocot_tree/x2015_09_10_16_52_05_474_1091413.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/stern_brocot_tree/x2015_09_10_16_52_05_474_1091413.smt_in.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 46/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_02_33_609_1837431.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_02_33_609_1837431.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_02_33_609_1837431.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 47/314: UFDT/20201221-induction-by-reflection-schoisswohl/reflectiveAxioms/N+Leq+Add+Mul-ax1.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20201221-induction-by-reflection-schoisswohl/reflectiveAxioms/N+Leq+Add+Mul-ax1.smt2
+[DEBUG] Benchmark UFDT/20201221-induction-by-reflection-schoisswohl/reflectiveAxioms/N+Leq+Add+Mul-ax1.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 48/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2030384.nun.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2030384.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2030384.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 49/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_50_30_610_1134847.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_50_30_610_1134847.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_50_30_610_1134847.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 50/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_12_33_044_2637625.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_12_33_044_2637625.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_12_33_044_2637625.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 51/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku1853951.nun.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku1853951.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku1853951.nun.smt2: solved=True, runtime=0.89s, PAR-2=0.89s
+[DEBUG] Processing 52/314: UFDT/20170428-Barrett/cdt-cade2015/data/gandl/cotree/x2015_09_10_16_50_02_491_1022396.smt_in.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/cotree/x2015_09_10_16_50_02_491_1022396.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/cotree/x2015_09_10_16_50_02_491_1022396.smt_in.smt2: solved=True, runtime=791.09s, PAR-2=791.09s
+[DEBUG] Processing 53/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_03_21_587_1901497.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_03_21_587_1901497.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_03_21_587_1901497.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 54/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_59_01_451_1460595.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_59_01_451_1460595.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_59_01_451_1460595.smt_in.smt2: solved=True, runtime=0.32s, PAR-2=0.32s
+[DEBUG] Processing 55/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/koenig/x2015_09_10_16_44_56_380_995285.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/koenig/x2015_09_10_16_44_56_380_995285.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/koenig/x2015_09_10_16_44_56_380_995285.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 56/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_51_59_287_1139296.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_51_59_287_1139296.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_51_59_287_1139296.smt_in.smt2: solved=True, runtime=49.55s, PAR-2=49.55s
+[DEBUG] Processing 57/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2816264.nun.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2816264.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2816264.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 58/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2309657.nun.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2309657.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2309657.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 59/314: UFDT/20170428-Barrett/cdt-cade2015/data/gandl/cotree/x2015_09_10_16_49_54_469_1011706.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/cotree/x2015_09_10_16_49_54_469_1011706.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/cotree/x2015_09_10_16_49_54_469_1011706.smt_in.smt2: solved=True, runtime=67.67s, PAR-2=67.67s
+[DEBUG] Processing 60/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2030372.nun.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2030372.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2030372.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 61/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/abstract_completeness/x2015_09_10_17_01_14_404_1150262.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/abstract_completeness/x2015_09_10_17_01_14_404_1150262.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/abstract_completeness/x2015_09_10_17_01_14_404_1150262.smt_in.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 62/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_59_54_211_1946991.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_59_54_211_1946991.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_59_54_211_1946991.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 63/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1910205.nun.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1910205.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1910205.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 64/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_24_00_206_1177515.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_24_00_206_1177515.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_24_00_206_1177515.smt_in.smt2: solved=True, runtime=541.84s, PAR-2=541.84s
+[DEBUG] Processing 65/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_15_04_007_2724797.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_15_04_007_2724797.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_15_04_007_2724797.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 66/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_50_13_264_1018098.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_50_13_264_1018098.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_50_13_264_1018098.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 67/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_03_53_106_1942988.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_03_53_106_1942988.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_03_53_106_1942988.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 68/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_54_59_280_1506747.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_54_59_280_1506747.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_54_59_280_1506747.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 69/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_58_20_745_1200951.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_58_20_745_1200951.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_58_20_745_1200951.smt_in.smt2: solved=True, runtime=0.31s, PAR-2=0.31s
+[DEBUG] Processing 70/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_57_02_399_1739759.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_57_02_399_1739759.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_57_02_399_1739759.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 71/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_05_17_741_2058676.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_05_17_741_2058676.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_05_17_741_2058676.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 72/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_47_20_040_1044683.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_47_20_040_1044683.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_47_20_040_1044683.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 73/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_47_39_229_1045309.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_47_39_229_1045309.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_47_39_229_1045309.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 74/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_20_02_499_2906170.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_20_02_499_2906170.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_20_02_499_2906170.smt_in.smt2: solved=True, runtime=0.35s, PAR-2=0.35s
+[DEBUG] Processing 75/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_51_41_712_1331017.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_51_41_712_1331017.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_51_41_712_1331017.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 76/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1770767.nun.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1770767.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1770767.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 77/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_48_02_646_1102041.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_48_02_646_1102041.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_48_02_646_1102041.smt_in.smt2: solved=True, runtime=541.16s, PAR-2=541.16s
+[DEBUG] Processing 78/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_00_27_549_1675482.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_00_27_549_1675482.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_00_27_549_1675482.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 79/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_56_23_933_1668309.smt_in.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_56_23_933_1668309.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_56_23_933_1668309.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 80/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_59_29_206_1279860.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_59_29_206_1279860.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_59_29_206_1279860.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 81/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/hamming_stream/x2015_09_10_16_48_23_521_1106677.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/hamming_stream/x2015_09_10_16_48_23_521_1106677.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/hamming_stream/x2015_09_10_16_48_23_521_1106677.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 82/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_50_41_573_1266805.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_50_41_573_1266805.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_50_41_573_1266805.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 83/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/koenig/x2015_09_10_16_45_06_781_1013228.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/koenig/x2015_09_10_16_45_06_781_1013228.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/koenig/x2015_09_10_16_45_06_781_1013228.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 84/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_57_22_785_1368594.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_57_22_785_1368594.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_57_22_785_1368594.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 85/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_12_16_543_2617987.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_12_16_543_2617987.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_12_16_543_2617987.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 86/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_47_28_719_1066267.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_47_28_719_1066267.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_47_28_719_1066267.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 87/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_59_08_265_1253827.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_59_08_265_1253827.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_59_08_265_1253827.smt_in.smt2: solved=True, runtime=0.35s, PAR-2=0.35s
+[DEBUG] Processing 88/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_56_55_364_1112890.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_56_55_364_1112890.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_56_55_364_1112890.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 89/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_02_11_209_1807870.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_02_11_209_1807870.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_02_11_209_1807870.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 90/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_49_12_775_1070239.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_49_12_775_1070239.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_49_12_775_1070239.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 91/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_05_28_353_2071434.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_05_28_353_2071434.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_05_28_353_2071434.smt_in.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 92/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_54_33_620_1354342.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_54_33_620_1354342.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_54_33_620_1354342.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 93/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_51_09_217_1168709.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_51_09_217_1168709.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_51_09_217_1168709.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 94/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_51_06_942_1099776.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_51_06_942_1099776.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_51_06_942_1099776.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 95/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_06_34_218_2165376.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_06_34_218_2165376.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_06_34_218_2165376.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 96/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_51_08_620_1101176.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_51_08_620_1101176.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_51_08_620_1101176.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 97/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/hamming_stream/x2015_09_10_16_49_13_679_1140868.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/hamming_stream/x2015_09_10_16_49_13_679_1140868.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/hamming_stream/x2015_09_10_16_49_13_679_1140868.smt_in.smt2: solved=True, runtime=541.84s, PAR-2=541.84s
+[DEBUG] Processing 98/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_49_37_125_1207128.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_49_37_125_1207128.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_49_37_125_1207128.smt_in.smt2: solved=True, runtime=0.33s, PAR-2=0.33s
+[DEBUG] Processing 99/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1844730.nun.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1844730.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1844730.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 100/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_49_59_968_1227868.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_49_59_968_1227868.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_49_59_968_1227868.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 101/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_52_23_617_1197392.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_52_23_617_1197392.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_52_23_617_1197392.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 102/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_50_51_476_1152754.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_50_51_476_1152754.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_50_51_476_1152754.smt_in.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 103/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_12_10_047_2609648.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_12_10_047_2609648.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_12_10_047_2609648.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 104/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_51_46_777_1202989.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_51_46_777_1202989.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_51_46_777_1202989.smt_in.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 105/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/bindag/x2015_09_10_16_53_42_012_1077544.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/bindag/x2015_09_10_16_53_42_012_1077544.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/bindag/x2015_09_10_16_53_42_012_1077544.smt_in.smt2: solved=True, runtime=0.38s, PAR-2=0.38s
+[DEBUG] Processing 106/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_57_30_300_1767458.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_57_30_300_1767458.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_57_30_300_1767458.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 107/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_19_05_176_2860336.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_19_05_176_2860336.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_19_05_176_2860336.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 108/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_50_12_039_1120712.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_50_12_039_1120712.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_50_12_039_1120712.smt_in.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 109/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2148238.nun.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2148238.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2148238.nun.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 110/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_04_07_269_1963104.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_04_07_269_1963104.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_04_07_269_1963104.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 111/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_54_50_606_1466439.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_54_50_606_1466439.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_54_50_606_1466439.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 112/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_58_08_423_1187560.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_58_08_423_1187560.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_58_08_423_1187560.smt_in.smt2: solved=True, runtime=0.54s, PAR-2=0.54s
+[DEBUG] Processing 113/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2889174.nun.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2889174.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2889174.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 114/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2553399.nun.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2553399.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2553399.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 115/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku3040595.nun.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku3040595.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku3040595.nun.smt2: solved=True, runtime=0.49s, PAR-2=0.49s
+[DEBUG] Processing 116/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/sorted_list_operations/x2015_09_10_16_47_57_118_1082496.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/sorted_list_operations/x2015_09_10_16_47_57_118_1082496.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/sorted_list_operations/x2015_09_10_16_47_57_118_1082496.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 117/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_51_01_353_1161430.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_51_01_353_1161430.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_51_01_353_1161430.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 118/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2305584.nun.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2305584.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2305584.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 119/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_59_38_724_1930001.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_59_38_724_1930001.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_59_38_724_1930001.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 120/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_55_36_039_1410538.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_55_36_039_1410538.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_55_36_039_1410538.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 121/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_47_34_639_1059887.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_47_34_639_1059887.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_47_34_639_1059887.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 122/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_53_15_471_1278807.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_53_15_471_1278807.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_53_15_471_1278807.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 123/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_11_37_602_2567148.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_11_37_602_2567148.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_11_37_602_2567148.smt_in.smt2: solved=True, runtime=352.58s, PAR-2=352.58s
+[DEBUG] Processing 124/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_54_15_921_1411479.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_54_15_921_1411479.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_54_15_921_1411479.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 125/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_49_12_538_1168476.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_49_12_538_1168476.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_49_12_538_1168476.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 126/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2125055.nun.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2125055.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2125055.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 127/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_47_59_819_1065637.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_47_59_819_1065637.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_47_59_819_1065637.smt_in.smt2: solved=True, runtime=0.37s, PAR-2=0.37s
+[DEBUG] Processing 128/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2211138.nun.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2211138.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2211138.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 129/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_55_23_009_1532680.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_55_23_009_1532680.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_55_23_009_1532680.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 130/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_50_39_955_1142521.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_50_39_955_1142521.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_50_39_955_1142521.smt_in.smt2: solved=True, runtime=0.65s, PAR-2=0.65s
+[DEBUG] Processing 131/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku1861796.nun.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku1861796.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku1861796.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 132/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_56_36_182_1093209.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_56_36_182_1093209.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_56_36_182_1093209.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 133/314: UFDT/20170428-Barrett/cdt-cade2015/data/gandl/cotree/x2015_09_10_16_49_45_026_1000089.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/cotree/x2015_09_10_16_49_45_026_1000089.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/cotree/x2015_09_10_16_49_45_026_1000089.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 134/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_53_00_433_1185159.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_53_00_433_1185159.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_53_00_433_1185159.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 135/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_01_07_763_1725945.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_01_07_763_1725945.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_01_07_763_1725945.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 136/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_51_12_063_1291452.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_51_12_063_1291452.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_51_12_063_1291452.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 137/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_48_30_603_1118346.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_48_30_603_1118346.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_48_30_603_1118346.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 138/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/process/x2015_09_10_16_46_28_479_1049550.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/process/x2015_09_10_16_46_28_479_1049550.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/process/x2015_09_10_16_46_28_479_1049550.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 139/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_53_16_135_1414679.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_53_16_135_1414679.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_53_16_135_1414679.smt_in.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 140/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_17_01_05_835_1396290.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_17_01_05_835_1396290.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_17_01_05_835_1396290.smt_in.smt2: solved=True, runtime=0.48s, PAR-2=0.48s
+[DEBUG] Processing 141/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_59_11_365_1257713.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_59_11_365_1257713.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_59_11_365_1257713.smt_in.smt2: solved=True, runtime=557.16s, PAR-2=557.16s
+[DEBUG] Processing 142/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_55_01_993_1509434.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_55_01_993_1509434.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_55_01_993_1509434.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 143/314: UFDT/20201221-induction-by-reflection-schoisswohl/inductive/addAssoc.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFDT/20201221-induction-by-reflection-schoisswohl/inductive/addAssoc.smt2
+[DEBUG] Benchmark UFDT/20201221-induction-by-reflection-schoisswohl/inductive/addAssoc.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 144/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_00_59_459_1715125.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_00_59_459_1715125.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_00_59_459_1715125.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 145/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_09_06_224_2371347.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_09_06_224_2371347.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_09_06_224_2371347.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 146/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream_processor/x2015_09_10_16_45_51_269_994084.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream_processor/x2015_09_10_16_45_51_269_994084.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream_processor/x2015_09_10_16_45_51_269_994084.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 147/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_09_52_710_2431070.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_09_52_710_2431070.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_09_52_710_2431070.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 148/314: UFDT/20170428-Barrett/cdt-cade2015/data/gandl/cotree/x2015_09_10_16_50_32_377_1061137.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/cotree/x2015_09_10_16_50_32_377_1061137.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/cotree/x2015_09_10_16_50_32_377_1061137.smt_in.smt2: solved=True, runtime=546.90s, PAR-2=546.90s
+[DEBUG] Processing 149/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_55_07_437_1514944.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_55_07_437_1514944.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_55_07_437_1514944.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 150/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_51_40_571_1197401.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_51_40_571_1197401.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_51_40_571_1197401.smt_in.smt2: solved=True, runtime=147.87s, PAR-2=147.87s
+[DEBUG] Processing 151/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_51_13_804_1292964.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_51_13_804_1292964.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_51_13_804_1292964.smt_in.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 152/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_12_14_212_2615086.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_12_14_212_2615086.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_12_14_212_2615086.smt_in.smt2: solved=True, runtime=0.38s, PAR-2=0.38s
+[DEBUG] Processing 153/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_05_08_260_2045543.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_05_08_260_2045543.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_05_08_260_2045543.smt_in.smt2: solved=True, runtime=0.34s, PAR-2=0.34s
+[DEBUG] Processing 154/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_47_13_336_1019117.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_47_13_336_1019117.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_47_13_336_1019117.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 155/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_58_16_662_1550113.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_58_16_662_1550113.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_58_16_662_1550113.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 156/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_18_48_489_2850673.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_18_48_489_2850673.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_18_48_489_2850673.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 157/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_49_25_717_1182749.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_49_25_717_1182749.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_49_25_717_1182749.smt_in.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 158/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_08_50_746_2350536.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_08_50_746_2350536.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_08_50_746_2350536.smt_in.smt2: solved=True, runtime=0.31s, PAR-2=0.31s
+[DEBUG] Processing 159/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2889162.nun.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2889162.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2889162.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 160/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_53_14_637_1413228.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_53_14_637_1413228.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_53_14_637_1413228.smt_in.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 161/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/koenigslemma/x2015_09_10_16_52_51_175_1106692.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/koenigslemma/x2015_09_10_16_52_51_175_1106692.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/koenigslemma/x2015_09_10_16_52_51_175_1106692.smt_in.smt2: solved=True, runtime=0.33s, PAR-2=0.33s
+[DEBUG] Processing 162/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_49_53_454_1222137.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_49_53_454_1222137.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_49_53_454_1222137.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 163/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_53_47_165_1352942.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_53_47_165_1352942.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_53_47_165_1352942.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 164/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_06_06_616_2124803.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_06_06_616_2124803.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_06_06_616_2124803.smt_in.smt2: solved=True, runtime=35.72s, PAR-2=35.72s
+[DEBUG] Processing 165/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_57_12_462_1360355.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_57_12_462_1360355.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_57_12_462_1360355.smt_in.smt2: solved=True, runtime=0.88s, PAR-2=0.88s
+[DEBUG] Processing 166/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2463341.nun.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2463341.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2463341.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 167/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku1813986.nun.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku1813986.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku1813986.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 168/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_08_41_234_2336806.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_08_41_234_2336806.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_08_41_234_2336806.smt_in.smt2: solved=True, runtime=0.73s, PAR-2=0.73s
+[DEBUG] Processing 169/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_19_24_267_2874767.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_19_24_267_2874767.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_19_24_267_2874767.smt_in.smt2: solved=True, runtime=0.33s, PAR-2=0.33s
+[DEBUG] Processing 170/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/abstract_completeness/x2015_09_10_17_00_13_568_1081124.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/abstract_completeness/x2015_09_10_17_00_13_568_1081124.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/abstract_completeness/x2015_09_10_17_00_13_568_1081124.smt_in.smt2: solved=True, runtime=0.34s, PAR-2=0.34s
+[DEBUG] Processing 171/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_49_03_458_1158067.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_49_03_458_1158067.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_49_03_458_1158067.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 172/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_22_59_283_1120271.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_22_59_283_1120271.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_22_59_283_1120271.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 173/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_54_36_336_1484289.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_54_36_336_1484289.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_54_36_336_1484289.smt_in.smt2: solved=True, runtime=0.34s, PAR-2=0.34s
+[DEBUG] Processing 174/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_50_48_732_1269336.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_50_48_732_1269336.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_50_48_732_1269336.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 175/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/koenigslemma/x2015_09_10_16_52_15_492_1079442.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/koenigslemma/x2015_09_10_16_52_15_492_1079442.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/koenigslemma/x2015_09_10_16_52_15_492_1079442.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 176/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_19_52_110_2898470.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_19_52_110_2898470.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_19_52_110_2898470.smt_in.smt2: solved=True, runtime=0.32s, PAR-2=0.32s
+[DEBUG] Processing 177/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_07_04_399_2207674.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_07_04_399_2207674.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_07_04_399_2207674.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 178/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_49_09_327_1178307.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_49_09_327_1178307.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_49_09_327_1178307.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 179/314: UFDT/20170428-Barrett/cdt-cade2015/data/gandl/bird_tree/x2015_09_10_16_54_39_034_1019201.smt_in.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/bird_tree/x2015_09_10_16_54_39_034_1019201.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/bird_tree/x2015_09_10_16_54_39_034_1019201.smt_in.smt2: solved=True, runtime=3.42s, PAR-2=3.42s
+[DEBUG] Processing 180/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_50_22_859_1071462.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_50_22_859_1071462.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_50_22_859_1071462.smt_in.smt2: solved=True, runtime=0.35s, PAR-2=0.35s
+[DEBUG] Processing 181/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/hamming_stream/x2015_09_10_16_49_26_853_1148221.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/hamming_stream/x2015_09_10_16_49_26_853_1148221.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/hamming_stream/x2015_09_10_16_49_26_853_1148221.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 182/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_02_15_745_1814300.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_02_15_745_1814300.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_02_15_745_1814300.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 183/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_59_01_851_1869755.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_59_01_851_1869755.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_59_01_851_1869755.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 184/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_50_58_392_1071492.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_50_58_392_1071492.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_50_58_392_1071492.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 185/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2137907.nun.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2137907.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2137907.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 186/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku1801184.nun.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku1801184.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku1801184.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 187/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_52_11_545_1148508.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_52_11_545_1148508.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_52_11_545_1148508.smt_in.smt2: solved=True, runtime=1.00s, PAR-2=1.00s
+[DEBUG] Processing 188/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2709567.nun.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2709567.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2709567.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 189/314: UFDT/20170428-Barrett/cdt-cade2015/data/gandl/stern_brocot_tree/x2015_09_10_16_50_52_040_1031388.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/stern_brocot_tree/x2015_09_10_16_50_52_040_1031388.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/stern_brocot_tree/x2015_09_10_16_50_52_040_1031388.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 190/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/abstract_completeness/x2015_09_10_17_01_02_795_1135776.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/abstract_completeness/x2015_09_10_17_01_02_795_1135776.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/abstract_completeness/x2015_09_10_17_01_02_795_1135776.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 191/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_04_03_274_1958078.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_04_03_274_1958078.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_04_03_274_1958078.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 192/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2032300.nun.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2032300.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2032300.nun.smt2: solved=True, runtime=0.52s, PAR-2=0.52s
+[DEBUG] Processing 193/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_08_36_987_2331122.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_08_36_987_2331122.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_08_36_987_2331122.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 194/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_49_55_119_1223548.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_49_55_119_1223548.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_49_55_119_1223548.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 195/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_48_53_103_1051526.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_48_53_103_1051526.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_48_53_103_1051526.smt_in.smt2: solved=True, runtime=0.34s, PAR-2=0.34s
+[DEBUG] Processing 196/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_56_16_133_1649065.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_56_16_133_1649065.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_56_16_133_1649065.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 197/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_58_09_743_1410876.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_58_09_743_1410876.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_58_09_743_1410876.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 198/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_52_56_971_1182472.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_52_56_971_1182472.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_52_56_971_1182472.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 199/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_04_47_526_2019055.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_04_47_526_2019055.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_04_47_526_2019055.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 200/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_52_15_309_1355206.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_52_15_309_1355206.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_52_15_309_1355206.smt_in.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 201/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_47_35_761_1061201.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_47_35_761_1061201.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_47_35_761_1061201.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 202/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_59_58_521_1319825.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_59_58_521_1319825.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_59_58_521_1319825.smt_in.smt2: solved=True, runtime=2.58s, PAR-2=2.58s
+[DEBUG] Processing 203/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_54_34_841_1436021.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_54_34_841_1436021.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_54_34_841_1436021.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 204/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_49_19_449_1158624.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_49_19_449_1158624.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_49_19_449_1158624.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 205/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_49_26_879_1167465.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_49_26_879_1167465.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_49_26_879_1167465.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 206/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/process/x2015_09_10_16_46_03_089_1008113.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/process/x2015_09_10_16_46_03_089_1008113.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/process/x2015_09_10_16_46_03_089_1008113.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 207/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/hamming_stream/x2015_09_10_16_50_05_967_1169316.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/hamming_stream/x2015_09_10_16_50_05_967_1169316.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/hamming_stream/x2015_09_10_16_50_05_967_1169316.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 208/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_47_40_461_1046425.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_47_40_461_1046425.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_47_40_461_1046425.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 209/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_58_08_044_1542126.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_58_08_044_1542126.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_58_08_044_1542126.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 210/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_52_51_426_1257492.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_52_51_426_1257492.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_52_51_426_1257492.smt_in.smt2: solved=True, runtime=0.34s, PAR-2=0.34s
+[DEBUG] Processing 211/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_03_59_598_1952670.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_03_59_598_1952670.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_03_59_598_1952670.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 212/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list_prefix/x2015_09_10_16_47_39_816_1078251.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list_prefix/x2015_09_10_16_47_39_816_1078251.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list_prefix/x2015_09_10_16_47_39_816_1078251.smt_in.smt2: solved=True, runtime=0.37s, PAR-2=0.37s
+[DEBUG] Processing 213/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_02_09_425_1805222.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_02_09_425_1805222.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_02_09_425_1805222.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 214/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream_processor/x2015_09_10_16_45_57_987_1005697.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream_processor/x2015_09_10_16_45_57_987_1005697.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream_processor/x2015_09_10_16_45_57_987_1005697.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 215/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1853969.nun.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1853969.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1853969.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 216/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_54_51_919_1469620.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_54_51_919_1469620.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_54_51_919_1469620.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 217/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_11_25_786_2550367.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_11_25_786_2550367.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_11_25_786_2550367.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 218/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_59_56_550_1641358.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_59_56_550_1641358.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_59_56_550_1641358.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 219/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku3078244.nun.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku3078244.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku3078244.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 220/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_07_35_002_2247287.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_07_35_002_2247287.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_07_35_002_2247287.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 221/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_12_15_496_2616407.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_12_15_496_2616407.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_12_15_496_2616407.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 222/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_08_22_202_2312536.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_08_22_202_2312536.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_08_22_202_2312536.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 223/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_59_29_662_1912706.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_59_29_662_1912706.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_59_29_662_1912706.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 224/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_15_52_798_2750129.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_15_52_798_2750129.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_15_52_798_2750129.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 225/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_19_48_009_2895143.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_19_48_009_2895143.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_19_48_009_2895143.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 226/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_24_27_432_1201278.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_24_27_432_1201278.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_24_27_432_1201278.smt_in.smt2: solved=True, runtime=124.14s, PAR-2=124.14s
+[DEBUG] Processing 227/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/abstract_completeness/x2015_09_10_17_01_00_441_1132634.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/abstract_completeness/x2015_09_10_17_01_00_441_1132634.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/abstract_completeness/x2015_09_10_17_01_00_441_1132634.smt_in.smt2: solved=True, runtime=0.44s, PAR-2=0.44s
+[DEBUG] Processing 228/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_49_56_292_1107775.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_49_56_292_1107775.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_49_56_292_1107775.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 229/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/parallel/x2015_09_10_16_56_53_209_1021881.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/parallel/x2015_09_10_16_56_53_209_1021881.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/parallel/x2015_09_10_16_56_53_209_1021881.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 230/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_11_32_640_2559958.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_11_32_640_2559958.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_11_32_640_2559958.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 231/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_12_01_194_2598848.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_12_01_194_2598848.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_12_01_194_2598848.smt_in.smt2: solved=True, runtime=0.31s, PAR-2=0.31s
+[DEBUG] Processing 232/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_51_12_254_1089084.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_51_12_254_1089084.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_51_12_254_1089084.smt_in.smt2: solved=True, runtime=120.47s, PAR-2=120.47s
+[DEBUG] Processing 233/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku1850496.nun.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku1850496.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku1850496.nun.smt2: solved=True, runtime=0.45s, PAR-2=0.45s
+[DEBUG] Processing 234/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_52_01_041_1140589.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_52_01_041_1140589.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_52_01_041_1140589.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 235/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_47_53_742_1058817.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_47_53_742_1058817.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_47_53_742_1058817.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 236/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_03_14_573_1891867.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_03_14_573_1891867.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_03_14_573_1891867.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 237/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_57_05_666_1743239.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_57_05_666_1743239.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_57_05_666_1743239.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 238/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_56_49_801_1728132.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_56_49_801_1728132.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_56_49_801_1728132.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 239/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_07_27_020_2237738.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_07_27_020_2237738.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_07_27_020_2237738.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 240/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_23_15_283_1135882.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_23_15_283_1135882.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_23_15_283_1135882.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 241/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/hamming_stream/x2015_09_10_16_47_31_392_1064039.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/hamming_stream/x2015_09_10_16_47_31_392_1064039.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/hamming_stream/x2015_09_10_16_47_31_392_1064039.smt_in.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 242/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_05_40_254_2088252.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_05_40_254_2088252.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_05_40_254_2088252.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 243/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_23_52_583_1171142.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_23_52_583_1171142.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_23_52_583_1171142.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 244/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2348181.nun.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2348181.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2348181.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 245/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_49_59_678_1000136.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_49_59_678_1000136.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_49_59_678_1000136.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 246/314: UFDT/20170428-Barrett/cdt-cade2015/data/gandl/stern_brocot_basis/x2015_09_10_16_49_37_637_976585.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/stern_brocot_basis/x2015_09_10_16_49_37_637_976585.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/stern_brocot_basis/x2015_09_10_16_49_37_637_976585.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 247/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_09_48_820_2425441.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_09_48_820_2425441.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_09_48_820_2425441.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 248/314: UFDT/20170428-Barrett/cdt-cade2015/data/gandl/cotree/x2015_09_10_16_50_20_964_1047220.smt_in.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/cotree/x2015_09_10_16_50_20_964_1047220.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/cotree/x2015_09_10_16_50_20_964_1047220.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 249/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_10_21_657_2469163.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_10_21_657_2469163.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_10_21_657_2469163.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 250/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/lmirror/x2015_09_10_16_48_21_172_1100278.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/lmirror/x2015_09_10_16_48_21_172_1100278.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/lmirror/x2015_09_10_16_48_21_172_1100278.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 251/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_53_34_313_1430050.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_53_34_313_1430050.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_53_34_313_1430050.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 252/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_57_19_370_1495545.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_57_19_370_1495545.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_57_19_370_1495545.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 253/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2709567.nun.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2709567.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2709567.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 254/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_53_48_035_1441977.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_53_48_035_1441977.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_53_48_035_1441977.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 255/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2553417.nun.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2553417.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2553417.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 256/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1770761.nun.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1770761.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1770761.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 257/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_00_19_711_1666582.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_00_19_711_1666582.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_00_19_711_1666582.smt_in.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 258/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_56_13_928_1592320.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_56_13_928_1592320.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_56_13_928_1592320.smt_in.smt2: solved=True, runtime=542.24s, PAR-2=542.24s
+[DEBUG] Processing 259/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_49_55_753_994557.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_49_55_753_994557.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_49_55_753_994557.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 260/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_50_11_981_1234037.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_50_11_981_1234037.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_50_11_981_1234037.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 261/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_46_21_307_981769.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_46_21_307_981769.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_46_21_307_981769.smt_in.smt2: solved=True, runtime=0.38s, PAR-2=0.38s
+[DEBUG] Processing 262/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_09_49_744_2426780.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_09_49_744_2426780.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_09_49_744_2426780.smt_in.smt2: solved=True, runtime=9.54s, PAR-2=9.54s
+[DEBUG] Processing 263/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_02_48_529_1856118.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_02_48_529_1856118.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_02_48_529_1856118.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 264/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2161324.nun.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2161324.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2161324.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 265/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_08_06_264_2291968.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_08_06_264_2291968.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_08_06_264_2291968.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 266/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_51_30_657_1120717.smt_in.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_51_30_657_1120717.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_51_30_657_1120717.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 267/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2553405.nun.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2553405.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku2553405.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 268/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_56_50_815_1108647.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_56_50_815_1108647.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_56_50_815_1108647.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 269/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku3361638.nun.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku3361638.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku3361638.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 270/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_08_07_360_2293227.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_08_07_360_2293227.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_08_07_360_2293227.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 271/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_54_16_857_1337861.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_54_16_857_1337861.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_54_16_857_1337861.smt_in.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 272/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2074661.nun.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2074661.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2074661.nun.smt2: solved=True, runtime=0.40s, PAR-2=0.40s
+[DEBUG] Processing 273/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_50_30_475_1076434.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_50_30_475_1076434.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/llist2/x2015_09_10_16_50_30_475_1076434.smt_in.smt2: solved=True, runtime=545.17s, PAR-2=545.17s
+[DEBUG] Processing 274/314: UFDT/20201221-induction-by-reflection-schoisswohl/reflectiveConjecture/existsNil.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20201221-induction-by-reflection-schoisswohl/reflectiveConjecture/existsNil.smt2
+[DEBUG] Benchmark UFDT/20201221-induction-by-reflection-schoisswohl/reflectiveConjecture/existsNil.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 275/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_03_54_879_1945626.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_03_54_879_1945626.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_03_54_879_1945626.smt_in.smt2: solved=True, runtime=480.89s, PAR-2=480.89s
+[DEBUG] Processing 276/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream_processor/x2015_09_10_16_46_04_392_1017490.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream_processor/x2015_09_10_16_46_04_392_1017490.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream_processor/x2015_09_10_16_46_04_392_1017490.smt_in.smt2: solved=True, runtime=563.06s, PAR-2=563.06s
+[DEBUG] Processing 277/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/koenigslemma/x2015_09_10_16_52_00_935_1067258.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/koenigslemma/x2015_09_10_16_52_00_935_1067258.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/koenigslemma/x2015_09_10_16_52_00_935_1067258.smt_in.smt2: solved=True, runtime=0.50s, PAR-2=0.50s
+[DEBUG] Processing 278/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1801166.nun.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1801166.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1801166.nun.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 279/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/abstract_completeness/x2015_09_10_17_00_43_949_1113328.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/abstract_completeness/x2015_09_10_17_00_43_949_1113328.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/abstract_completeness/x2015_09_10_17_00_43_949_1113328.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 280/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_49_21_981_1161562.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_49_21_981_1161562.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream/x2015_09_10_16_49_21_981_1161562.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 281/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_53_40_566_1302633.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_53_40_566_1302633.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_53_40_566_1302633.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 282/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_57_25_250_1502478.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_57_25_250_1502478.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_57_25_250_1502478.smt_in.smt2: solved=True, runtime=398.59s, PAR-2=398.59s
+[DEBUG] Processing 283/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_01_41_732_1767695.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_01_41_732_1767695.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_01_41_732_1767695.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 284/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_55_53_540_1567688.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_55_53_540_1567688.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_55_53_540_1567688.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 285/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_24_34_887_1208020.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_24_34_887_1208020.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_stream/x2015_09_10_17_24_34_887_1208020.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 286/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/parallel/x2015_09_10_16_56_36_459_1001812.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/parallel/x2015_09_10_16_56_36_459_1001812.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/parallel/x2015_09_10_16_56_36_459_1001812.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 287/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_48_26_219_1112935.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_48_26_219_1112935.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_48_26_219_1112935.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 288/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_07_03_503_2206415.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_07_03_503_2206415.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_07_03_503_2206415.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 289/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2706520.nun.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2706520.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo/isa_nun_bench_v4_noenc/nunchaku2706520.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 290/314: UFDT/20201221-induction-by-reflection-schoisswohl/inductive/mulAssoc.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFDT/20201221-induction-by-reflection-schoisswohl/inductive/mulAssoc.smt2
+[DEBUG] Benchmark UFDT/20201221-induction-by-reflection-schoisswohl/inductive/mulAssoc.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 291/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream_processor/x2015_09_10_16_45_58_766_1007443.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream_processor/x2015_09_10_16_45_58_766_1007443.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/stream_processor/x2015_09_10_16_45_58_766_1007443.smt_in.smt2: solved=True, runtime=550.19s, PAR-2=550.19s
+[DEBUG] Processing 292/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_07_56_271_2277775.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_07_56_271_2277775.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_07_56_271_2277775.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 293/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_57_38_855_1515156.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_57_38_855_1515156.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_57_38_855_1515156.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 294/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_52_51_747_1248914.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_52_51_747_1248914.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_52_51_747_1248914.smt_in.smt2: solved=True, runtime=776.53s, PAR-2=776.53s
+[DEBUG] Processing 295/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_56_22_514_1079897.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_56_22_514_1079897.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_56_22_514_1079897.smt_in.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 296/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_51_14_432_1299856.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_51_14_432_1299856.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_51_14_432_1299856.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 297/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_02_16_806_1815507.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_02_16_806_1815507.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_02_16_806_1815507.smt_in.smt2: solved=True, runtime=0.38s, PAR-2=0.38s
+[DEBUG] Processing 298/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_48_29_540_1117078.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_48_29_540_1117078.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_48_29_540_1117078.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 299/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/hamming_stream/x2015_09_10_16_48_32_422_1112619.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/hamming_stream/x2015_09_10_16_48_32_422_1112619.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/hamming_stream/x2015_09_10_16_48_32_422_1112619.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 300/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_08_00_154_2283218.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_08_00_154_2283218.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_08_00_154_2283218.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 301/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_58_23_740_1204351.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_58_23_740_1204351.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/tllist/x2015_09_10_16_58_23_740_1204351.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 302/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_51_40_986_1317089.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_51_40_986_1317089.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/gram_lang/x2015_09_10_16_51_40_986_1317089.smt_in.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 303/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/koenigslemma/x2015_09_10_16_54_40_761_1177285.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/koenigslemma/x2015_09_10_16_54_40_761_1177285.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/koenigslemma/x2015_09_10_16_54_40_761_1177285.smt_in.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 304/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_57_46_075_1521432.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_57_46_075_1521432.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_57_46_075_1521432.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 305/314: UFDT/20170428-Barrett/cdt-cade2015/data/gandl/stern_brocot_tree/x2015_09_10_16_52_33_551_1120226.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/stern_brocot_tree/x2015_09_10_16_52_33_551_1120226.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/stern_brocot_tree/x2015_09_10_16_52_33_551_1120226.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 306/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_59_18_190_1604119.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_59_18_190_1604119.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_59_18_190_1604119.smt_in.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 307/314: UFDT/20201221-induction-by-reflection-schoisswohl/reflectiveConjecture/appendGround-1.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20201221-induction-by-reflection-schoisswohl/reflectiveConjecture/appendGround-1.smt2
+[DEBUG] Benchmark UFDT/20201221-induction-by-reflection-schoisswohl/reflectiveConjecture/appendGround-1.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 308/314: UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1770785.nun.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1770785.nun.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/rec-fun-ijcar2016/wo-wdf/isa_nun_bench_v4_enc/nunchaku1770785.nun.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 309/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_54_53_962_1372467.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_54_53_962_1372467.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_16_54_53_962_1372467.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 310/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_48_27_362_1114398.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_48_27_362_1114398.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/huffman/x2015_09_10_16_48_27_362_1114398.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 311/314: UFDT/20170428-Barrett/cdt-cade2015/data/gandl/stern_brocot_tree/x2015_09_10_16_52_06_786_1093152.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/stern_brocot_tree/x2015_09_10_16_52_06_786_1093152.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/stern_brocot_tree/x2015_09_10_16_52_06_786_1093152.smt_in.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 312/314: UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_56_29_815_1681451.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_56_29_815_1681451.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/distro/rbt_impl/x2015_09_10_16_56_29_815_1681451.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 313/314: UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_17_15_410_2793779.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_17_15_410_2793779.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/afp/coinductive_list/x2015_09_10_17_17_15_410_2793779.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 314/314: UFDT/20170428-Barrett/cdt-cade2015/data/gandl/cotree/x2015_09_10_16_50_55_374_1090958.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/cotree/x2015_09_10_16_50_55_374_1090958.smt_in.smt2
+[DEBUG] Benchmark UFDT/20170428-Barrett/cdt-cade2015/data/gandl/cotree/x2015_09_10_16_50_55_374_1090958.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Results written to CSV: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/results/ufdt_csv_based/test/run_20251215_235511_400630/results.csv
+[DEBUG] Solved 98/314 benchmarks (31.21%)
+[DEBUG] PAR-2 Score: 527699.89s total, 1680.57s average
+
+================================================================================
+EXECUTION TIME SUMMARY
+================================================================================
+Model training time:        1160.45 seconds ( 19.34 minutes)
+Prediction time:             188.02 seconds (  3.13 minutes)
+  - Avg per benchmark:         0.60 seconds
+--------------------------------------------------------------------------------
+Total execution time:       1348.47 seconds ( 22.47 minutes)
+================================================================================
+
+================================================================================
+PAR-2 PERFORMANCE SUMMARY
+================================================================================
+Benchmarks solved:               98 / 314 ( 31.21%)
+Benchmarks unsolved:            216 / 314 ( 68.79%)
+--------------------------------------------------------------------------------
+Total PAR-2 score:        527699.89 seconds
+Average PAR-2 score:        1680.57 seconds
+Timeout value:              1200.00 seconds
+PAR-2 penalty factor:             2x timeout
+================================================================================
+
+[DEBUG] CSV results saved to: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/results/ufdt_csv_based/test/run_20251215_235511_400630/results.csv
+[DEBUG] Configuration saved to: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/results/ufdt_csv_based/test/run_20251215_235511_400630/config.json
+End time: Tue 16 Dec 2025 12:17:44 AM EST

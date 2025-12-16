@@ -1,0 +1,1784 @@
+Job ID: 53715182
+Node: nc31035
+Start time: Tue 16 Dec 2025 12:25:46 AM EST
+[DEBUG] Loading test results from /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/UF/uf_test_long.csv
+[DEBUG] Loaded results for 572 unique benchmarks
+[DEBUG] Found 572 unique benchmark paths in CSV
+[DEBUG] Found 572 benchmark files from CSV
+[DEBUG] Selected 572 benchmarks for processing
+
+================================================================================
+FEATURE CONFIGURATION
+================================================================================
+Using original MachSMT feature space (full grammatical construct list)
+Description features: DISABLED (prevents BERT model loading)
+Feature extraction timeout: 60 seconds
+Parallel cores: 16
+Feature dimensions will be printed after processing first benchmark
+================================================================================
+
+[DEBUG] Training MachSMT model...
+[DEBUG] Changed working directory to: /home/jchen688/scratch/non-incremental
+
+Initializing description feature model ('bert-base-uncased')...
+Using device: cpu
+✅ Model loaded successfully. Embedding dimension: 768
+Parsing Input File |████████████████████████████████████████| 9140/9140 [100%] in 48.7s (187.87/s) 
+Processing Benchmark Files |████████████████████████████████████████| 2285/2285 [100%] in 10:50.3 (3.51/s) 
+[DEBUG] Changed back to: /lustre06/project/6001884/jchen688/github/z3alpha
+[DEBUG] Model trained in 1345.37 seconds
+[DEBUG] Configuration saved to: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/results/uf_csv_based/test/run_20251216_002642_955220/config.json
+
+[DEBUG] Starting predictions on test benchmarks...
+[DEBUG] Processing 1/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_58_20_454_1553864.smt_in.smt2
+
+================================================================================
+FEATURE SPACE DIMENSIONS
+================================================================================
+Total feature dimensions: 189
+================================================================================
+
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_58_20_454_1553864.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_58_20_454_1553864.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 2/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_00_54_209_1708557.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_00_54_209_1708557.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_00_54_209_1708557.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 3/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_54_41_389_1361543.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_54_41_389_1361543.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_54_41_389_1361543.smt_in.smt2: solved=True, runtime=96.68s, PAR-2=96.68s
+[DEBUG] Processing 4/572: UF/sledgehammer/QEpres/uf.703055.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.703055.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.703055.smt2: solved=True, runtime=0.83s, PAR-2=0.83s
+[DEBUG] Processing 5/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.756477.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.756477.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.756477.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 6/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_00_12_651_1658871.smt_in.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_00_12_651_1658871.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_00_12_651_1658871.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 7/572: UF/sledgehammer/TwoSquares/uf.704689.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.704689.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.704689.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 8/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.954360.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.954360.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.954360.smt2: solved=True, runtime=0.44s, PAR-2=0.44s
+[DEBUG] Processing 9/572: UF/sledgehammer/NS_Shared/smtlib.694671.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/NS_Shared/smtlib.694671.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/smtlib.694671.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 10/572: UF/sledgehammer/QEpres/uf.649636.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.649636.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.649636.smt2: solved=True, runtime=0.84s, PAR-2=0.84s
+[DEBUG] Processing 11/572: UF/sledgehammer/TwoSquares/uf.757333.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.757333.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.757333.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 12/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1141866.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1141866.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1141866.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 13/572: UF/sledgehammer/Fundamental_Theorem_Algebra/smtlib.695627.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/smtlib.695627.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/smtlib.695627.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 14/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/sorted_list_operations/x2015_09_10_16_47_42_525_1068549.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/sorted_list_operations/x2015_09_10_16_47_42_525_1068549.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/sorted_list_operations/x2015_09_10_16_47_42_525_1068549.smt_in.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 15/572: UF/sledgehammer/TypeSafe/smtlib.1147553.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/TypeSafe/smtlib.1147553.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/smtlib.1147553.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 16/572: UF/sledgehammer/Hoare/smtlib.689154.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UF/sledgehammer/Hoare/smtlib.689154.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/smtlib.689154.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 17/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.759325.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.759325.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.759325.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 18/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/llist2/x2015_09_10_16_54_10_176_1230065.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/llist2/x2015_09_10_16_54_10_176_1230065.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/llist2/x2015_09_10_16_54_10_176_1230065.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 19/572: UF/sledgehammer/StrongNorm/uf.585058.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/StrongNorm/uf.585058.smt2
+[DEBUG] Benchmark UF/sledgehammer/StrongNorm/uf.585058.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 20/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_55_31_478_1406738.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_55_31_478_1406738.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_55_31_478_1406738.smt_in.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 21/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_10_45_845_2498867.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_10_45_845_2498867.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_10_45_845_2498867.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 22/572: UF/sledgehammer/Arrow_Order/uf.795613.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/Arrow_Order/uf.795613.smt2
+[DEBUG] Benchmark UF/sledgehammer/Arrow_Order/uf.795613.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 23/572: UF/sledgehammer/Hoare/uf.762651.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Hoare/uf.762651.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.762651.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 24/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.899099.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.899099.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.899099.smt2: solved=True, runtime=0.85s, PAR-2=0.85s
+[DEBUG] Processing 25/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_47_35_761_1061201.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_47_35_761_1061201.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_47_35_761_1061201.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 26/572: UF/sledgehammer/TypeSafe/uf.1029517.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/TypeSafe/uf.1029517.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/uf.1029517.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 27/572: UF/sledgehammer/FFT/uf.757720.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.757720.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.757720.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 28/572: UF/sledgehammer/FFT/uf.737067.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.737067.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.737067.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 29/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.803156.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.803156.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.803156.smt2: solved=True, runtime=0.83s, PAR-2=0.83s
+[DEBUG] Processing 30/572: UF/sledgehammer/NS_Shared/smtlib.610884.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/NS_Shared/smtlib.610884.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/smtlib.610884.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 31/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_48_41_594_1131590.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_48_41_594_1131590.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_48_41_594_1131590.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 32/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_53_13_186_1287480.smt_in.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_53_13_186_1287480.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_53_13_186_1287480.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 33/572: UF/sledgehammer/TwoSquares/uf.737769.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.737769.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.737769.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 34/572: UF/sledgehammer/QEpres/uf.595470.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.595470.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.595470.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 35/572: UF/sledgehammer/StrongNorm/uf.771188.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/StrongNorm/uf.771188.smt2
+[DEBUG] Benchmark UF/sledgehammer/StrongNorm/uf.771188.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 36/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.936047.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.936047.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.936047.smt2: solved=True, runtime=16.92s, PAR-2=16.92s
+[DEBUG] Processing 37/572: UF/sledgehammer/TwoSquares/uf.649207.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.649207.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.649207.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 38/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_52_31_343_1209220.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_52_31_343_1209220.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_52_31_343_1209220.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 39/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_53_32_038_1322967.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_53_32_038_1322967.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_53_32_038_1322967.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 40/572: UF/sledgehammer/Hoare/uf.1172268.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/uf.1172268.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.1172268.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 41/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.762289.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.762289.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.762289.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 42/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_06_20_137_2143586.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_06_20_137_2143586.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_06_20_137_2143586.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 43/572: UF/sledgehammer/QEpres/uf.814052.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.814052.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.814052.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 44/572: UF/sledgehammer/NS_Shared/uf.602008.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/NS_Shared/uf.602008.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/uf.602008.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 45/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_48_21_478_1121729.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_48_21_478_1121729.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_48_21_478_1121729.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 46/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_47_18_857_1043347.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_47_18_857_1043347.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_47_18_857_1043347.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 47/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_05_25_016_2067778.smt_in.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_05_25_016_2067778.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_05_25_016_2067778.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 48/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.974621.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.974621.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.974621.smt2: solved=True, runtime=0.37s, PAR-2=0.37s
+[DEBUG] Processing 49/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_08_23_650_2313895.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_08_23_650_2313895.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_08_23_650_2313895.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 50/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/koenigslemma/x2015_09_10_16_54_04_111_1155385.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/koenigslemma/x2015_09_10_16_54_04_111_1155385.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/koenigslemma/x2015_09_10_16_54_04_111_1155385.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 51/572: UF/sledgehammer/TwoSquares/uf.638046.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.638046.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.638046.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 52/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1334026.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1334026.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1334026.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 53/572: UF/sledgehammer/TwoSquares/uf.644835.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.644835.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.644835.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 54/572: UF/sledgehammer/NS_Shared/uf.879720.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/NS_Shared/uf.879720.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/uf.879720.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 55/572: UF/sledgehammer/TwoSquares/uf.747333.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.747333.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.747333.smt2: solved=True, runtime=61.91s, PAR-2=61.91s
+[DEBUG] Processing 56/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1172890.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1172890.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1172890.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 57/572: UF/sledgehammer/TypeSafe/smtlib.1355352.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TypeSafe/smtlib.1355352.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/smtlib.1355352.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 58/572: UF/sledgehammer/StrongNorm/uf.644076.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/StrongNorm/uf.644076.smt2
+[DEBUG] Benchmark UF/sledgehammer/StrongNorm/uf.644076.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 59/572: UF/sledgehammer/TypeSafe/smtlib.1492364.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/TypeSafe/smtlib.1492364.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/smtlib.1492364.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 60/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1304400.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1304400.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1304400.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 61/572: UF/sledgehammer/NS_Shared/uf.646456.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/NS_Shared/uf.646456.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/uf.646456.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 62/572: UF/sledgehammer/Arrow_Order/uf.684805.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Arrow_Order/uf.684805.smt2
+[DEBUG] Benchmark UF/sledgehammer/Arrow_Order/uf.684805.smt2: solved=True, runtime=0.44s, PAR-2=0.44s
+[DEBUG] Processing 63/572: UF/sledgehammer/FFT/uf.888779.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.888779.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.888779.smt2: solved=True, runtime=1.36s, PAR-2=1.36s
+[DEBUG] Processing 64/572: UF/sledgehammer/Arrow_Order/smtlib.621618.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Arrow_Order/smtlib.621618.smt2
+[DEBUG] Benchmark UF/sledgehammer/Arrow_Order/smtlib.621618.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 65/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_48_33_877_1122311.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_48_33_877_1122311.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_48_33_877_1122311.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 66/572: UF/sledgehammer/Hoare/smtlib.1176759.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/smtlib.1176759.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/smtlib.1176759.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 67/572: UF/sledgehammer/QEpres/uf.672347.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/QEpres/uf.672347.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.672347.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 68/572: UF/sledgehammer/NS_Shared/uf.772723.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/NS_Shared/uf.772723.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/uf.772723.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 69/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_03_23_463_1904048.smt_in.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_03_23_463_1904048.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_03_23_463_1904048.smt_in.smt2: solved=True, runtime=30.93s, PAR-2=30.93s
+[DEBUG] Processing 70/572: UF/sledgehammer/QEpres/uf.827918.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.827918.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.827918.smt2: solved=True, runtime=0.85s, PAR-2=0.85s
+[DEBUG] Processing 71/572: UF/20170428-Barrett/cdt-cade2015/nada/gandl/cotree/x2015_09_10_16_50_44_112_1075536.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/gandl/cotree/x2015_09_10_16_50_44_112_1075536.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/gandl/cotree/x2015_09_10_16_50_44_112_1075536.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 72/572: UF/sledgehammer/QEpres/uf.857982.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/QEpres/uf.857982.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.857982.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 73/572: UF/sledgehammer/FFT/uf.599118.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.599118.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.599118.smt2: solved=True, runtime=0.87s, PAR-2=0.87s
+[DEBUG] Processing 74/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_51_17_871_1304138.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_51_17_871_1304138.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_51_17_871_1304138.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 75/572: UF/20170428-Barrett/cdt-cade2015/nada/gandl/stern_brocot_tree/x2015_09_10_16_50_54_775_1033877.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/gandl/stern_brocot_tree/x2015_09_10_16_50_54_775_1033877.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/gandl/stern_brocot_tree/x2015_09_10_16_50_54_775_1033877.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 76/572: UF/sledgehammer/FFT/uf.901821.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.901821.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.901821.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 77/572: UF/sledgehammer/FFT/uf.585395.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.585395.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.585395.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 78/572: UF/sledgehammer/QEpres/uf.801237.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/QEpres/uf.801237.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.801237.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 79/572: UF/sledgehammer/Hoare/uf.1193120.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/uf.1193120.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.1193120.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 80/572: UF/sledgehammer/QEpres/uf.961366.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/QEpres/uf.961366.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.961366.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 81/572: UF/sledgehammer/TwoSquares/uf.715856.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.715856.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.715856.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 82/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_47_13_685_1037711.smt_in.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_47_13_685_1037711.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_47_13_685_1037711.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 83/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_58_53_314_1857114.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_58_53_314_1857114.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_58_53_314_1857114.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 84/572: UF/sledgehammer/TypeSafe/smtlib.970298.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TypeSafe/smtlib.970298.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/smtlib.970298.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 85/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/tllist/x2015_09_10_16_58_18_090_1197715.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/tllist/x2015_09_10_16_58_18_090_1197715.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/tllist/x2015_09_10_16_58_18_090_1197715.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 86/572: UF/20190906-CLEARSY/0016/00770.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/20190906-CLEARSY/0016/00770.smt2
+[DEBUG] Benchmark UF/20190906-CLEARSY/0016/00770.smt2: solved=True, runtime=0.87s, PAR-2=0.87s
+[DEBUG] Processing 87/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/hamming_stream/x2015_09_10_16_49_39_163_1155297.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/hamming_stream/x2015_09_10_16_49_39_163_1155297.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/hamming_stream/x2015_09_10_16_49_39_163_1155297.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 88/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/tllist/x2015_09_10_16_59_12_993_1259261.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/tllist/x2015_09_10_16_59_12_993_1259261.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/tllist/x2015_09_10_16_59_12_993_1259261.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 89/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_54_56_744_1504125.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_54_56_744_1504125.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_54_56_744_1504125.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 90/572: UF/sledgehammer/Hoare/uf.918827.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/uf.918827.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.918827.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 91/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/tllist/x2015_09_10_16_57_45_684_1164560.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/tllist/x2015_09_10_16_57_45_684_1164560.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/tllist/x2015_09_10_16_57_45_684_1164560.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 92/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_04_44_730_2015165.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_04_44_730_2015165.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_04_44_730_2015165.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 93/572: UF/sledgehammer/NS_Shared/uf.705999.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/NS_Shared/uf.705999.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/uf.705999.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 94/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_51_26_271_1314294.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_51_26_271_1314294.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_51_26_271_1314294.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 95/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_01_19_215_1737741.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_01_19_215_1737741.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_01_19_215_1737741.smt_in.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 96/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1001455.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1001455.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1001455.smt2: solved=True, runtime=0.86s, PAR-2=0.86s
+[DEBUG] Processing 97/572: UF/sledgehammer/Hoare/uf.937881.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Hoare/uf.937881.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.937881.smt2: solved=True, runtime=19.28s, PAR-2=19.28s
+[DEBUG] Processing 98/572: UF/sledgehammer/TwoSquares/uf.706629.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.706629.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.706629.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 99/572: UF/sledgehammer/QEpres/uf.716503.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.716503.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.716503.smt2: solved=True, runtime=2.86s, PAR-2=2.86s
+[DEBUG] Processing 100/572: UF/sledgehammer/QEpres/uf.755737.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/QEpres/uf.755737.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.755737.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 101/572: UF/sledgehammer/NS_Shared/smtlib.614591.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/NS_Shared/smtlib.614591.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/smtlib.614591.smt2: solved=True, runtime=27.40s, PAR-2=27.40s
+[DEBUG] Processing 102/572: UF/sledgehammer/QEpres/uf.1023006.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/QEpres/uf.1023006.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.1023006.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 103/572: UF/sledgehammer/QEpres/uf.853381.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.853381.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.853381.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 104/572: UF/sledgehammer/FFT/uf.801678.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.801678.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.801678.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 105/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/parallel/x2015_09_10_16_57_08_326_1041289.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/parallel/x2015_09_10_16_57_08_326_1041289.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/parallel/x2015_09_10_16_57_08_326_1041289.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 106/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1035623.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1035623.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1035623.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 107/572: UF/sledgehammer/TypeSafe/smtlib.1205854.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/TypeSafe/smtlib.1205854.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/smtlib.1205854.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 108/572: UF/sledgehammer/FFT/uf.903593.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.903593.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.903593.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 109/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_53_31_084_1293224.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_53_31_084_1293224.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_53_31_084_1293224.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 110/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list_prefix/x2015_09_10_16_47_39_816_1078251.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list_prefix/x2015_09_10_16_47_39_816_1078251.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list_prefix/x2015_09_10_16_47_39_816_1078251.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 111/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1391725.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1391725.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1391725.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 112/572: UF/sledgehammer/Arrow_Order/uf.571070.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Arrow_Order/uf.571070.smt2
+[DEBUG] Benchmark UF/sledgehammer/Arrow_Order/uf.571070.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 113/572: UF/sledgehammer/TypeSafe/uf.1008626.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/TypeSafe/uf.1008626.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/uf.1008626.smt2: solved=True, runtime=0.48s, PAR-2=0.48s
+[DEBUG] Processing 114/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_51_30_303_1318748.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_51_30_303_1318748.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_51_30_303_1318748.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 115/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_15_26_048_2737200.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_15_26_048_2737200.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_15_26_048_2737200.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 116/572: UF/sledgehammer/StrongNorm/uf.560863.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/StrongNorm/uf.560863.smt2
+[DEBUG] Benchmark UF/sledgehammer/StrongNorm/uf.560863.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 117/572: UF/sledgehammer/FFT/uf.812397.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.812397.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.812397.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 118/572: UF/sledgehammer/FFT/uf.709704.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.709704.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.709704.smt2: solved=True, runtime=4.86s, PAR-2=4.86s
+[DEBUG] Processing 119/572: UF/sledgehammer/StrongNorm/uf.819495.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/StrongNorm/uf.819495.smt2
+[DEBUG] Benchmark UF/sledgehammer/StrongNorm/uf.819495.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 120/572: UF/sledgehammer/QEpres/uf.847784.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.847784.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.847784.smt2: solved=True, runtime=3.89s, PAR-2=3.89s
+[DEBUG] Processing 121/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/llist2/x2015_09_10_16_54_11_814_1231313.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/llist2/x2015_09_10_16_54_11_814_1231313.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/llist2/x2015_09_10_16_54_11_814_1231313.smt_in.smt2: solved=True, runtime=30.34s, PAR-2=30.34s
+[DEBUG] Processing 122/572: UF/sledgehammer/TypeSafe/uf.739032.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/TypeSafe/uf.739032.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/uf.739032.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 123/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/stream_processor/x2015_09_10_16_45_57_987_1005697.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/stream_processor/x2015_09_10_16_45_57_987_1005697.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/stream_processor/x2015_09_10_16_45_57_987_1005697.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 124/572: UF/sledgehammer/FFT/uf.778030.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/FFT/uf.778030.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.778030.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 125/572: UF/sledgehammer/Hoare/uf.956668.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Hoare/uf.956668.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.956668.smt2: solved=True, runtime=0.51s, PAR-2=0.51s
+[DEBUG] Processing 126/572: UF/sledgehammer/StrongNorm/uf.767866.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/StrongNorm/uf.767866.smt2
+[DEBUG] Benchmark UF/sledgehammer/StrongNorm/uf.767866.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 127/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1290072.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1290072.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1290072.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 128/572: UF/sledgehammer/TwoSquares/uf.738684.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.738684.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.738684.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 129/572: UF/sledgehammer/NS_Shared/uf.629978.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/NS_Shared/uf.629978.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/uf.629978.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 130/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_48_48_193_1139535.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_48_48_193_1139535.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_48_48_193_1139535.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 131/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_08_10_384_2297076.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_08_10_384_2297076.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_08_10_384_2297076.smt_in.smt2: solved=True, runtime=0.39s, PAR-2=0.39s
+[DEBUG] Processing 132/572: UF/sledgehammer/StrongNorm/uf.606501.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/StrongNorm/uf.606501.smt2
+[DEBUG] Benchmark UF/sledgehammer/StrongNorm/uf.606501.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 133/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_57_57_272_1531171.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_57_57_272_1531171.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_57_57_272_1531171.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 134/572: UF/sledgehammer/NS_Shared/smtlib.875175.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/NS_Shared/smtlib.875175.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/smtlib.875175.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 135/572: UF/sledgehammer/TypeSafe/smtlib.1448824.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/TypeSafe/smtlib.1448824.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/smtlib.1448824.smt2: solved=True, runtime=542.98s, PAR-2=542.98s
+[DEBUG] Processing 136/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_07_01_463_2203872.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_07_01_463_2203872.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_07_01_463_2203872.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 137/572: UF/sledgehammer/QEpres/uf.909519.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.909519.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.909519.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 138/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_53_32_753_1428683.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_53_32_753_1428683.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_53_32_753_1428683.smt_in.smt2: solved=True, runtime=4.29s, PAR-2=4.29s
+[DEBUG] Processing 139/572: UF/sledgehammer/FFT/uf.837087.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.837087.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.837087.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 140/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/sorted_list_operations/x2015_09_10_16_47_53_630_1079697.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/sorted_list_operations/x2015_09_10_16_47_53_630_1079697.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/sorted_list_operations/x2015_09_10_16_47_53_630_1079697.smt_in.smt2: solved=True, runtime=0.38s, PAR-2=0.38s
+[DEBUG] Processing 141/572: UF/sledgehammer/TwoSquares/uf.728141.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.728141.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.728141.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 142/572: UF/sledgehammer/TwoSquares/uf.728331.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.728331.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.728331.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 143/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_14_24_936_2702570.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_14_24_936_2702570.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_14_24_936_2702570.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 144/572: UF/sledgehammer/FFT/uf.890779.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.890779.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.890779.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 145/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/hamming_stream/x2015_09_10_16_47_49_891_1079121.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/hamming_stream/x2015_09_10_16_47_49_891_1079121.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/hamming_stream/x2015_09_10_16_47_49_891_1079121.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 146/572: UF/sledgehammer/FFT/uf.886318.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.886318.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.886318.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 147/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1440316.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1440316.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1440316.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 148/572: UF/20170428-Barrett/cdt-cade2015/nada/gandl/stern_brocot_tree/x2015_09_10_16_50_10_509_1004805.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/gandl/stern_brocot_tree/x2015_09_10_16_50_10_509_1004805.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/gandl/stern_brocot_tree/x2015_09_10_16_50_10_509_1004805.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 149/572: UF/sledgehammer/Arrow_Order/uf.562361.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Arrow_Order/uf.562361.smt2
+[DEBUG] Benchmark UF/sledgehammer/Arrow_Order/uf.562361.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 150/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_51_57_291_1344651.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_51_57_291_1344651.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_51_57_291_1344651.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 151/572: UF/sledgehammer/TwoSquares/uf.733760.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.733760.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.733760.smt2: solved=True, runtime=2.42s, PAR-2=2.42s
+[DEBUG] Processing 152/572: UF/sledgehammer/StrongNorm/uf.770110.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/StrongNorm/uf.770110.smt2
+[DEBUG] Benchmark UF/sledgehammer/StrongNorm/uf.770110.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 153/572: UF/sledgehammer/NS_Shared/smtlib.694363.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/NS_Shared/smtlib.694363.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/smtlib.694363.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 154/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/hamming_stream/x2015_09_10_16_47_53_600_1082171.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/hamming_stream/x2015_09_10_16_47_53_600_1082171.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/hamming_stream/x2015_09_10_16_47_53_600_1082171.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 155/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_50_55_152_1281233.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_50_55_152_1281233.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_50_55_152_1281233.smt_in.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 156/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1027014.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1027014.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1027014.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 157/572: UF/sledgehammer/TwoSquares/uf.780006.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.780006.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.780006.smt2: solved=True, runtime=1.37s, PAR-2=1.37s
+[DEBUG] Processing 158/572: UF/sledgehammer/FFT/uf.710948.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.710948.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.710948.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 159/572: UF/sledgehammer/Hoare/uf.1066755.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/uf.1066755.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.1066755.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 160/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/llist2/x2015_09_10_16_50_56_636_1092784.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/llist2/x2015_09_10_16_50_56_636_1092784.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/llist2/x2015_09_10_16_50_56_636_1092784.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 161/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/llist2/x2015_09_10_16_50_54_735_1091352.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/llist2/x2015_09_10_16_50_54_735_1091352.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/llist2/x2015_09_10_16_50_54_735_1091352.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 162/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_11_51_397_2586526.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_11_51_397_2586526.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_11_51_397_2586526.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 163/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_50_13_555_1235550.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_50_13_555_1235550.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_50_13_555_1235550.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 164/572: UF/sledgehammer/QEpres/uf.785353.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UF/sledgehammer/QEpres/uf.785353.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.785353.smt2: solved=True, runtime=0.45s, PAR-2=0.45s
+[DEBUG] Processing 165/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.560036.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.560036.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.560036.smt2: solved=True, runtime=0.85s, PAR-2=0.85s
+[DEBUG] Processing 166/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_06_52_198_2189947.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_06_52_198_2189947.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_06_52_198_2189947.smt_in.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 167/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1090213.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1090213.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1090213.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 168/572: UF/sledgehammer/TypeSafe/uf.1052614.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/TypeSafe/uf.1052614.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/uf.1052614.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 169/572: UF/sledgehammer/NS_Shared/smtlib.650230.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/NS_Shared/smtlib.650230.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/smtlib.650230.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 170/572: UF/20170428-Barrett/cdt-cade2015/nada/gandl/stern_brocot_tree/x2015_09_10_16_50_53_495_1032633.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/gandl/stern_brocot_tree/x2015_09_10_16_50_53_495_1032633.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/gandl/stern_brocot_tree/x2015_09_10_16_50_53_495_1032633.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 171/572: UF/sledgehammer/TwoSquares/uf.715087.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.715087.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.715087.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 172/572: UF/sledgehammer/QEpres/smtlib.1255382.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/smtlib.1255382.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/smtlib.1255382.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 173/572: UF/sledgehammer/QEpres/uf.623509.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.623509.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.623509.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 174/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1186097.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1186097.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1186097.smt2: solved=True, runtime=0.33s, PAR-2=0.33s
+[DEBUG] Processing 175/572: UF/sledgehammer/TwoSquares/uf.607512.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.607512.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.607512.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 176/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_05_57_297_2111977.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_05_57_297_2111977.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_05_57_297_2111977.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 177/572: UF/sledgehammer/QEpres/uf.817154.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.817154.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.817154.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 178/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_49_45_345_981098.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_49_45_345_981098.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_49_45_345_981098.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 179/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_00_10_505_1656152.smt_in.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_00_10_505_1656152.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_00_10_505_1656152.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 180/572: UF/sledgehammer/Hoare/uf.608797.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/uf.608797.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.608797.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 181/572: UF/sledgehammer/FFT/uf.784075.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.784075.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.784075.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 182/572: UF/sledgehammer/FFT/uf.654422.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.654422.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.654422.smt2: solved=True, runtime=0.85s, PAR-2=0.85s
+[DEBUG] Processing 183/572: UF/sledgehammer/FFT/uf.596546.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.596546.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.596546.smt2: solved=True, runtime=0.86s, PAR-2=0.86s
+[DEBUG] Processing 184/572: UF/sledgehammer/QEpres/uf.814223.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.814223.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.814223.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 185/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_59_27_952_1613239.smt_in.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_59_27_952_1613239.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_59_27_952_1613239.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 186/572: UF/sledgehammer/Arrow_Order/uf.595937.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Arrow_Order/uf.595937.smt2
+[DEBUG] Benchmark UF/sledgehammer/Arrow_Order/uf.595937.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 187/572: UF/sledgehammer/NS_Shared/smtlib.904089.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/NS_Shared/smtlib.904089.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/smtlib.904089.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 188/572: UF/sledgehammer/FFT/uf.888460.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.888460.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.888460.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 189/572: UF/sledgehammer/QEpres/uf.1111564.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.1111564.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.1111564.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 190/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1418084.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1418084.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1418084.smt2: solved=True, runtime=13.26s, PAR-2=13.26s
+[DEBUG] Processing 191/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/hamming_stream/x2015_09_10_16_48_09_274_1094097.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/hamming_stream/x2015_09_10_16_48_09_274_1094097.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/hamming_stream/x2015_09_10_16_48_09_274_1094097.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 192/572: UF/sledgehammer/Arrow_Order/smtlib.651469.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Arrow_Order/smtlib.651469.smt2
+[DEBUG] Benchmark UF/sledgehammer/Arrow_Order/smtlib.651469.smt2: solved=True, runtime=0.69s, PAR-2=0.69s
+[DEBUG] Processing 193/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.821067.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.821067.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.821067.smt2: solved=True, runtime=0.84s, PAR-2=0.84s
+[DEBUG] Processing 194/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_53_57_216_1449723.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_53_57_216_1449723.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_53_57_216_1449723.smt_in.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 195/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_48_45_082_1135570.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_48_45_082_1135570.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_48_45_082_1135570.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 196/572: UF/sledgehammer/NS_Shared/uf.856944.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/NS_Shared/uf.856944.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/uf.856944.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 197/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_56_23_933_1668309.smt_in.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_56_23_933_1668309.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_56_23_933_1668309.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 198/572: UF/sledgehammer/Hoare/uf.773075.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/uf.773075.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.773075.smt2: solved=True, runtime=0.83s, PAR-2=0.83s
+[DEBUG] Processing 199/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/hamming_stream/x2015_09_10_16_50_09_857_1171155.smt_in.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/hamming_stream/x2015_09_10_16_50_09_857_1171155.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/hamming_stream/x2015_09_10_16_50_09_857_1171155.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 200/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.785914.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.785914.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.785914.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 201/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_48_07_129_1093121.smt_in.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_48_07_129_1093121.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_48_07_129_1093121.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 202/572: UF/sledgehammer/FFT/uf.796471.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.796471.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.796471.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 203/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_50_10_583_1232628.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_50_10_583_1232628.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_50_10_583_1232628.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 204/572: UF/sledgehammer/TwoSquares/uf.600944.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.600944.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.600944.smt2: solved=True, runtime=0.87s, PAR-2=0.87s
+[DEBUG] Processing 205/572: UF/sledgehammer/FFT/uf.745291.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.745291.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.745291.smt2: solved=True, runtime=1.35s, PAR-2=1.35s
+[DEBUG] Processing 206/572: UF/sledgehammer/StrongNorm/uf.582034.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/StrongNorm/uf.582034.smt2
+[DEBUG] Benchmark UF/sledgehammer/StrongNorm/uf.582034.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 207/572: UF/sledgehammer/TwoSquares/uf.659666.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.659666.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.659666.smt2: solved=True, runtime=3.87s, PAR-2=3.87s
+[DEBUG] Processing 208/572: UF/sledgehammer/FFT/uf.815010.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.815010.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.815010.smt2: solved=True, runtime=20.88s, PAR-2=20.88s
+[DEBUG] Processing 209/572: UF/sledgehammer/Hoare/uf.736775.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/uf.736775.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.736775.smt2: solved=True, runtime=1.35s, PAR-2=1.35s
+[DEBUG] Processing 210/572: UF/sledgehammer/NS_Shared/uf.626670.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/NS_Shared/uf.626670.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/uf.626670.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 211/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1354076.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1354076.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1354076.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 212/572: UF/sledgehammer/FFT/uf.640262.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/FFT/uf.640262.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.640262.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 213/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/sorted_list_operations/x2015_09_10_16_47_21_859_1047027.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/sorted_list_operations/x2015_09_10_16_47_21_859_1047027.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/sorted_list_operations/x2015_09_10_16_47_21_859_1047027.smt_in.smt2: solved=True, runtime=170.40s, PAR-2=170.40s
+[DEBUG] Processing 214/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.624272.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.624272.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.624272.smt2: solved=True, runtime=0.84s, PAR-2=0.84s
+[DEBUG] Processing 215/572: UF/grasshopper/instantiated/remove_loop_invariant_25_5.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/grasshopper/instantiated/remove_loop_invariant_25_5.smt2
+[DEBUG] Benchmark UF/grasshopper/instantiated/remove_loop_invariant_25_5.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 216/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_02_59_086_1870251.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_02_59_086_1870251.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_02_59_086_1870251.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 217/572: UF/grasshopper/uninstantiated/dl_copy_postcondition_of_dl_copy_37_1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/grasshopper/uninstantiated/dl_copy_postcondition_of_dl_copy_37_1.smt2
+[DEBUG] Benchmark UF/grasshopper/uninstantiated/dl_copy_postcondition_of_dl_copy_37_1.smt2: solved=True, runtime=7.11s, PAR-2=7.11s
+[DEBUG] Processing 218/572: UF/sledgehammer/Hoare/uf.1129009.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/Hoare/uf.1129009.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.1129009.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 219/572: UF/sledgehammer/NS_Shared/uf.883800.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/NS_Shared/uf.883800.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/uf.883800.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 220/572: UF/sledgehammer/QEpres/uf.638776.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.638776.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.638776.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 221/572: UF/sledgehammer/QEpres/uf.881336.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.881336.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.881336.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 222/572: UF/sledgehammer/TypeSafe/uf.794756.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/TypeSafe/uf.794756.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/uf.794756.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 223/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_09_59_400_2440354.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_09_59_400_2440354.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_09_59_400_2440354.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 224/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1142524.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1142524.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1142524.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 225/572: UF/sledgehammer/FFT/uf.699428.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.699428.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.699428.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 226/572: UF/sledgehammer/FFT/uf.908344.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/FFT/uf.908344.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.908344.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 227/572: UF/sledgehammer/QEpres/uf.646471.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.646471.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.646471.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 228/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_14_46_811_2714538.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_14_46_811_2714538.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_14_46_811_2714538.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 229/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1322620.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1322620.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1322620.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 230/572: UF/sledgehammer/TypeSafe/uf.1020930.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TypeSafe/uf.1020930.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/uf.1020930.smt2: solved=True, runtime=396.58s, PAR-2=396.58s
+[DEBUG] Processing 231/572: UF/sledgehammer/TypeSafe/uf.933357.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TypeSafe/uf.933357.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/uf.933357.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 232/572: UF/sledgehammer/Hoare/smtlib.914447.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/smtlib.914447.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/smtlib.914447.smt2: solved=True, runtime=0.84s, PAR-2=0.84s
+[DEBUG] Processing 233/572: UF/sledgehammer/Arrow_Order/uf.759525.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Arrow_Order/uf.759525.smt2
+[DEBUG] Benchmark UF/sledgehammer/Arrow_Order/uf.759525.smt2: solved=True, runtime=2.20s, PAR-2=2.20s
+[DEBUG] Processing 234/572: UF/sledgehammer/NS_Shared/uf.685762.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/NS_Shared/uf.685762.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/uf.685762.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 235/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.729573.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.729573.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.729573.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 236/572: UF/sledgehammer/QEpres/uf.1096315.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.1096315.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.1096315.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 237/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/hamming_stream/x2015_09_10_16_48_07_433_1092477.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/hamming_stream/x2015_09_10_16_48_07_433_1092477.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/hamming_stream/x2015_09_10_16_48_07_433_1092477.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 238/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/lmirror/x2015_09_10_16_48_07_490_1090251.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/lmirror/x2015_09_10_16_48_07_490_1090251.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/lmirror/x2015_09_10_16_48_07_490_1090251.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 239/572: UF/sledgehammer/StrongNorm/uf.623007.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/StrongNorm/uf.623007.smt2
+[DEBUG] Benchmark UF/sledgehammer/StrongNorm/uf.623007.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 240/572: UF/sledgehammer/Arrow_Order/uf.704291.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/Arrow_Order/uf.704291.smt2
+[DEBUG] Benchmark UF/sledgehammer/Arrow_Order/uf.704291.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 241/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_06_42_708_2177060.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_06_42_708_2177060.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_06_42_708_2177060.smt_in.smt2: solved=True, runtime=0.32s, PAR-2=0.32s
+[DEBUG] Processing 242/572: UF/sledgehammer/QEpres/uf.651229.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/QEpres/uf.651229.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.651229.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 243/572: UF/sledgehammer/Hoare/uf.1016416.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Hoare/uf.1016416.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.1016416.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 244/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/tllist/x2015_09_10_17_00_19_086_1341407.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/tllist/x2015_09_10_17_00_19_086_1341407.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/tllist/x2015_09_10_17_00_19_086_1341407.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 245/572: UF/sledgehammer/FFT/uf.638311.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.638311.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.638311.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 246/572: UF/sledgehammer/FFT/uf.729437.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.729437.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.729437.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 247/572: UF/sledgehammer/Hoare/uf.925286.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Hoare/uf.925286.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.925286.smt2: solved=True, runtime=6.48s, PAR-2=6.48s
+[DEBUG] Processing 248/572: UF/sledgehammer/Hoare/uf.981279.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Hoare/uf.981279.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.981279.smt2: solved=True, runtime=123.60s, PAR-2=123.60s
+[DEBUG] Processing 249/572: UF/sledgehammer/Hoare/uf.998442.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Hoare/uf.998442.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.998442.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 250/572: UF/sledgehammer/TypeSafe/uf.705099.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/TypeSafe/uf.705099.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/uf.705099.smt2: solved=True, runtime=542.03s, PAR-2=542.03s
+[DEBUG] Processing 251/572: UF/sledgehammer/Arrow_Order/smtlib.562905.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Arrow_Order/smtlib.562905.smt2
+[DEBUG] Benchmark UF/sledgehammer/Arrow_Order/smtlib.562905.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 252/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.591432.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.591432.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.591432.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 253/572: UF/grasshopper/uninstantiated/split_loop_invariant_81_3.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/grasshopper/uninstantiated/split_loop_invariant_81_3.smt2
+[DEBUG] Benchmark UF/grasshopper/uninstantiated/split_loop_invariant_81_3.smt2: solved=True, runtime=4.39s, PAR-2=4.39s
+[DEBUG] Processing 254/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_52_24_567_1233369.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_52_24_567_1233369.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_52_24_567_1233369.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 255/572: UF/sledgehammer/FFT/uf.914314.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.914314.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.914314.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 256/572: UF/grasshopper/instantiated/split_loop_invariant_81_3.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/grasshopper/instantiated/split_loop_invariant_81_3.smt2
+[DEBUG] Benchmark UF/grasshopper/instantiated/split_loop_invariant_81_3.smt2: solved=True, runtime=14.91s, PAR-2=14.91s
+[DEBUG] Processing 257/572: UF/sledgehammer/TwoSquares/uf.645501.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.645501.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.645501.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 258/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_57_10_373_1747426.smt_in.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_57_10_373_1747426.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_57_10_373_1747426.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 259/572: UF/sledgehammer/TypeSafe/smtlib.1078940.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/TypeSafe/smtlib.1078940.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/smtlib.1078940.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 260/572: UF/sledgehammer/Arrow_Order/uf.569117.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/Arrow_Order/uf.569117.smt2
+[DEBUG] Benchmark UF/sledgehammer/Arrow_Order/uf.569117.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 261/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.980246.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.980246.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.980246.smt2: solved=True, runtime=579.79s, PAR-2=579.79s
+[DEBUG] Processing 262/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_15_57_942_2752235.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_15_57_942_2752235.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_15_57_942_2752235.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 263/572: UF/sledgehammer/QEpres/uf.676734.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.676734.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.676734.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 264/572: UF/sledgehammer/StrongNorm/uf.754480.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/StrongNorm/uf.754480.smt2
+[DEBUG] Benchmark UF/sledgehammer/StrongNorm/uf.754480.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 265/572: UF/sledgehammer/QEpres/uf.830317.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/QEpres/uf.830317.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.830317.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 266/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_08_02_969_2287043.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_08_02_969_2287043.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_08_02_969_2287043.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 267/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_51_20_344_1306923.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_51_20_344_1306923.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_51_20_344_1306923.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 268/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_52_59_144_1261721.smt_in.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_52_59_144_1261721.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_52_59_144_1261721.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 269/572: UF/sledgehammer/TypeSafe/uf.739562.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/TypeSafe/uf.739562.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/uf.739562.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 270/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list_prefix/x2015_09_10_16_47_25_842_1068770.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list_prefix/x2015_09_10_16_47_25_842_1068770.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list_prefix/x2015_09_10_16_47_25_842_1068770.smt_in.smt2: solved=True, runtime=0.35s, PAR-2=0.35s
+[DEBUG] Processing 271/572: UF/sledgehammer/TwoSquares/uf.601168.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.601168.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.601168.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 272/572: UF/sledgehammer/TypeSafe/uf.1018429.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/TypeSafe/uf.1018429.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/uf.1018429.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 273/572: UF/sledgehammer/NS_Shared/smtlib.820464.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/NS_Shared/smtlib.820464.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/smtlib.820464.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 274/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_58_55_461_1860600.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_58_55_461_1860600.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_58_55_461_1860600.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 275/572: UF/sledgehammer/Hoare/smtlib.902943.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/smtlib.902943.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/smtlib.902943.smt2: solved=True, runtime=0.83s, PAR-2=0.83s
+[DEBUG] Processing 276/572: UF/sledgehammer/FFT/uf.645117.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/FFT/uf.645117.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.645117.smt2: solved=True, runtime=0.31s, PAR-2=0.31s
+[DEBUG] Processing 277/572: UF/sledgehammer/QEpres/uf.657551.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.657551.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.657551.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 278/572: UF/sledgehammer/FFT/uf.837965.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.837965.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.837965.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 279/572: UF/sledgehammer/FFT/uf.681247.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.681247.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.681247.smt2: solved=True, runtime=1.38s, PAR-2=1.38s
+[DEBUG] Processing 280/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_56_26_426_1451213.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_56_26_426_1451213.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_56_26_426_1451213.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 281/572: UF/sledgehammer/Hoare/uf.1188498.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/uf.1188498.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.1188498.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 282/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_51_56_744_1334450.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_51_56_744_1334450.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_51_56_744_1334450.smt_in.smt2: solved=True, runtime=0.32s, PAR-2=0.32s
+[DEBUG] Processing 283/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_09_47_852_2424110.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_09_47_852_2424110.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_09_47_852_2424110.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 284/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_48_50_560_1154927.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_48_50_560_1154927.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_48_50_560_1154927.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 285/572: UF/sledgehammer/QEpres/uf.757150.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/QEpres/uf.757150.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.757150.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 286/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_49_48_147_1208818.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_49_48_147_1208818.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_49_48_147_1208818.smt_in.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 287/572: UF/grasshopper/uninstantiated/union_precondition_of_find_38_7.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/grasshopper/uninstantiated/union_precondition_of_find_38_7.smt2
+[DEBUG] Benchmark UF/grasshopper/uninstantiated/union_precondition_of_find_38_7.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 288/572: UF/sledgehammer/StrongNorm/uf.777075.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/StrongNorm/uf.777075.smt2
+[DEBUG] Benchmark UF/sledgehammer/StrongNorm/uf.777075.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 289/572: UF/sledgehammer/TypeSafe/uf.1371399.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/TypeSafe/uf.1371399.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/uf.1371399.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 290/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_02_19_858_1819422.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_02_19_858_1819422.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_02_19_858_1819422.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 291/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1155773.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1155773.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1155773.smt2: solved=True, runtime=0.38s, PAR-2=0.38s
+[DEBUG] Processing 292/572: UF/sledgehammer/Arrow_Order/uf.674009.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Arrow_Order/uf.674009.smt2
+[DEBUG] Benchmark UF/sledgehammer/Arrow_Order/uf.674009.smt2: solved=True, runtime=0.57s, PAR-2=0.57s
+[DEBUG] Processing 293/572: UF/sledgehammer/TwoSquares/uf.713861.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.713861.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.713861.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 294/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_02_44_169_1850576.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_02_44_169_1850576.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_02_44_169_1850576.smt_in.smt2: solved=True, runtime=554.36s, PAR-2=554.36s
+[DEBUG] Processing 295/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/sorted_list_operations/x2015_09_10_16_47_50_813_1076460.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/sorted_list_operations/x2015_09_10_16_47_50_813_1076460.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/sorted_list_operations/x2015_09_10_16_47_50_813_1076460.smt_in.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 296/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_59_13_755_1886211.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_59_13_755_1886211.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_59_13_755_1886211.smt_in.smt2: solved=True, runtime=0.95s, PAR-2=0.95s
+[DEBUG] Processing 297/572: UF/20190906-CLEARSY/0001/00256.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20190906-CLEARSY/0001/00256.smt2
+[DEBUG] Benchmark UF/20190906-CLEARSY/0001/00256.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 298/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_48_51_288_1143551.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_48_51_288_1143551.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_48_51_288_1143551.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 299/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_58_31_198_1562875.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_58_31_198_1562875.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_58_31_198_1562875.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 300/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/parallel/x2015_09_10_16_56_55_419_1024745.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/parallel/x2015_09_10_16_56_55_419_1024745.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/parallel/x2015_09_10_16_56_55_419_1024745.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 301/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.900694.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.900694.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.900694.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 302/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/stream_processor/x2015_09_10_16_45_49_874_992480.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/stream_processor/x2015_09_10_16_45_49_874_992480.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/stream_processor/x2015_09_10_16_45_49_874_992480.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 303/572: UF/sledgehammer/FFT/uf.822490.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.822490.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.822490.smt2: solved=True, runtime=2.40s, PAR-2=2.40s
+[DEBUG] Processing 304/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_58_33_432_1830228.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_58_33_432_1830228.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_58_33_432_1830228.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 305/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1109912.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1109912.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1109912.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 306/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_stream/x2015_09_10_17_24_49_045_1218186.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_stream/x2015_09_10_17_24_49_045_1218186.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_stream/x2015_09_10_17_24_49_045_1218186.smt_in.smt2: solved=True, runtime=0.90s, PAR-2=0.90s
+[DEBUG] Processing 307/572: UF/20190906-CLEARSY/0018/00092.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20190906-CLEARSY/0018/00092.smt2
+[DEBUG] Benchmark UF/20190906-CLEARSY/0018/00092.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 308/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_08_04_077_2289255.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_08_04_077_2289255.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_08_04_077_2289255.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 309/572: UF/sledgehammer/TypeSafe/uf.1392725.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/TypeSafe/uf.1392725.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/uf.1392725.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 310/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.607318.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.607318.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.607318.smt2: solved=True, runtime=0.87s, PAR-2=0.87s
+[DEBUG] Processing 311/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.980348.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.980348.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.980348.smt2: solved=True, runtime=0.85s, PAR-2=0.85s
+[DEBUG] Processing 312/572: UF/sledgehammer/TwoSquares/uf.667915.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.667915.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.667915.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 313/572: UF/20170428-Barrett/cdt-cade2015/nada/gandl/cotree/x2015_09_10_16_50_33_618_1062619.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/gandl/cotree/x2015_09_10_16_50_33_618_1062619.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/gandl/cotree/x2015_09_10_16_50_33_618_1062619.smt_in.smt2: solved=True, runtime=390.50s, PAR-2=390.50s
+[DEBUG] Processing 314/572: UF/sledgehammer/FFT/uf.591301.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.591301.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.591301.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 315/572: UF/sledgehammer/TwoSquares/uf.708856.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/TwoSquares/uf.708856.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.708856.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 316/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/koenigslemma/x2015_09_10_16_53_58_003_1151952.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/koenigslemma/x2015_09_10_16_53_58_003_1151952.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/koenigslemma/x2015_09_10_16_53_58_003_1151952.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 317/572: UF/sledgehammer/TypeSafe/smtlib.713939.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/TypeSafe/smtlib.713939.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/smtlib.713939.smt2: solved=True, runtime=541.49s, PAR-2=541.49s
+[DEBUG] Processing 318/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/stream_processor/x2015_09_10_16_46_05_815_1019291.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/stream_processor/x2015_09_10_16_46_05_815_1019291.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/stream_processor/x2015_09_10_16_46_05_815_1019291.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 319/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/llist2/x2015_09_10_16_54_32_701_1244996.smt_in.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/llist2/x2015_09_10_16_54_32_701_1244996.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/llist2/x2015_09_10_16_54_32_701_1244996.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 320/572: UF/sledgehammer/NS_Shared/uf.891048.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/NS_Shared/uf.891048.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/uf.891048.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 321/572: UF/sledgehammer/Hoare/uf.868249.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/uf.868249.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.868249.smt2: solved=True, runtime=10.89s, PAR-2=10.89s
+[DEBUG] Processing 322/572: UF/sledgehammer/NS_Shared/uf.599544.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/NS_Shared/uf.599544.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/uf.599544.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 323/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.905022.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.905022.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.905022.smt2: solved=True, runtime=8.13s, PAR-2=8.13s
+[DEBUG] Processing 324/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_18_42_558_2847385.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_18_42_558_2847385.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_18_42_558_2847385.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 325/572: UF/sledgehammer/Arrow_Order/smtlib.676656.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Arrow_Order/smtlib.676656.smt2
+[DEBUG] Benchmark UF/sledgehammer/Arrow_Order/smtlib.676656.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 326/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_55_52_570_1424587.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_55_52_570_1424587.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_55_52_570_1424587.smt_in.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 327/572: UF/sledgehammer/Arrow_Order/uf.624562.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/Arrow_Order/uf.624562.smt2
+[DEBUG] Benchmark UF/sledgehammer/Arrow_Order/uf.624562.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 328/572: UF/sledgehammer/TypeSafe/smtlib.678634.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/TypeSafe/smtlib.678634.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/smtlib.678634.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 329/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_07_05_353_2208923.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_07_05_353_2208923.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_07_05_353_2208923.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 330/572: UF/sledgehammer/Hoare/smtlib.1068690.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/smtlib.1068690.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/smtlib.1068690.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 331/572: UF/sledgehammer/TypeSafe/uf.862014.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/TypeSafe/uf.862014.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/uf.862014.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 332/572: UF/sledgehammer/StrongNorm/uf.662118.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/StrongNorm/uf.662118.smt2
+[DEBUG] Benchmark UF/sledgehammer/StrongNorm/uf.662118.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 333/572: UF/sledgehammer/QEpres/uf.649906.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.649906.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.649906.smt2: solved=True, runtime=0.87s, PAR-2=0.87s
+[DEBUG] Processing 334/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1052622.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1052622.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1052622.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 335/572: UF/sledgehammer/Fundamental_Theorem_Algebra/smtlib.731542.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/smtlib.731542.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/smtlib.731542.smt2: solved=True, runtime=0.89s, PAR-2=0.89s
+[DEBUG] Processing 336/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.597486.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.597486.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.597486.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 337/572: UF/sledgehammer/QEpres/uf.898985.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/QEpres/uf.898985.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.898985.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 338/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_57_05_839_1482532.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_57_05_839_1482532.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_57_05_839_1482532.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 339/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1322899.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1322899.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1322899.smt2: solved=True, runtime=1.84s, PAR-2=1.84s
+[DEBUG] Processing 340/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_13_10_188_2670744.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_13_10_188_2670744.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_13_10_188_2670744.smt_in.smt2: solved=True, runtime=1.85s, PAR-2=1.85s
+[DEBUG] Processing 341/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1369461.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1369461.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1369461.smt2: solved=True, runtime=1.39s, PAR-2=1.39s
+[DEBUG] Processing 342/572: UF/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1005437.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1005437.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1005437.smt2: solved=True, runtime=0.88s, PAR-2=0.88s
+[DEBUG] Processing 343/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/bindag/x2015_09_10_16_53_04_087_1031693.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/bindag/x2015_09_10_16_53_04_087_1031693.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/bindag/x2015_09_10_16_53_04_087_1031693.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 344/572: UF/sledgehammer/StrongNorm/uf.673102.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/StrongNorm/uf.673102.smt2
+[DEBUG] Benchmark UF/sledgehammer/StrongNorm/uf.673102.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 345/572: UF/20170428-Barrett/cdt-cade2015/nada/gandl/stern_brocot_tree/x2015_09_10_16_52_45_613_1132283.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/gandl/stern_brocot_tree/x2015_09_10_16_52_45_613_1132283.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/gandl/stern_brocot_tree/x2015_09_10_16_52_45_613_1132283.smt_in.smt2: solved=True, runtime=2.94s, PAR-2=2.94s
+[DEBUG] Processing 346/572: UF/sledgehammer/FFT/uf.752818.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.752818.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.752818.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 347/572: UF/sledgehammer/TypeSafe/smtlib.1419285.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TypeSafe/smtlib.1419285.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/smtlib.1419285.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 348/572: UF/sledgehammer/Arrow_Order/uf.726129.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/Arrow_Order/uf.726129.smt2
+[DEBUG] Benchmark UF/sledgehammer/Arrow_Order/uf.726129.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 349/572: UF/sledgehammer/FFT/uf.867386.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.867386.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.867386.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 350/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_52_05_367_1344363.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_52_05_367_1344363.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_52_05_367_1344363.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 351/572: UF/sledgehammer/FFT/uf.820293.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.820293.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.820293.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 352/572: UF/sledgehammer/FFT/uf.761010.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.761010.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.761010.smt2: solved=True, runtime=1.36s, PAR-2=1.36s
+[DEBUG] Processing 353/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_50_16_317_1242197.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_50_16_317_1242197.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_50_16_317_1242197.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 354/572: UF/wintersteiger/fmsd13/fixpoint/small-bug1-fixpoint-4.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/wintersteiger/fmsd13/fixpoint/small-bug1-fixpoint-4.smt2
+[DEBUG] Benchmark UF/wintersteiger/fmsd13/fixpoint/small-bug1-fixpoint-4.smt2: solved=True, runtime=0.84s, PAR-2=0.84s
+[DEBUG] Processing 355/572: UF/sledgehammer/QEpres/uf.1075923.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/QEpres/uf.1075923.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.1075923.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 356/572: UF/sledgehammer/TwoSquares/uf.659580.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.659580.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.659580.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 357/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_48_57_762_1151579.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_48_57_762_1151579.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_48_57_762_1151579.smt_in.smt2: solved=True, runtime=120.59s, PAR-2=120.59s
+[DEBUG] Processing 358/572: UF/sledgehammer/TwoSquares/uf.677209.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.677209.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.677209.smt2: solved=True, runtime=1.37s, PAR-2=1.37s
+[DEBUG] Processing 359/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_59_51_572_1942754.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_59_51_572_1942754.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_59_51_572_1942754.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 360/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_58_21_787_1554964.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_58_21_787_1554964.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_58_21_787_1554964.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 361/572: UF/sledgehammer/FFT/uf.707029.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.707029.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.707029.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 362/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_58_03_421_1536949.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_58_03_421_1536949.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_58_03_421_1536949.smt_in.smt2: solved=True, runtime=480.91s, PAR-2=480.91s
+[DEBUG] Processing 363/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.898786.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.898786.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.898786.smt2: solved=True, runtime=1.38s, PAR-2=1.38s
+[DEBUG] Processing 364/572: UF/sledgehammer/Hoare/uf.775854.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/uf.775854.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.775854.smt2: solved=True, runtime=0.93s, PAR-2=0.93s
+[DEBUG] Processing 365/572: UF/sledgehammer/NS_Shared/uf.637867.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/NS_Shared/uf.637867.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/uf.637867.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 366/572: UF/sledgehammer/NS_Shared/smtlib.857201.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/NS_Shared/smtlib.857201.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/smtlib.857201.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 367/572: UF/sledgehammer/TypeSafe/uf.850981.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/TypeSafe/uf.850981.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/uf.850981.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 368/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_stream/x2015_09_10_17_24_14_221_1189957.smt_in.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_stream/x2015_09_10_17_24_14_221_1189957.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_stream/x2015_09_10_17_24_14_221_1189957.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 369/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.969630.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.969630.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.969630.smt2: solved=True, runtime=0.90s, PAR-2=0.90s
+[DEBUG] Processing 370/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/hamming_stream/x2015_09_10_16_47_38_469_1070123.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/hamming_stream/x2015_09_10_16_47_38_469_1070123.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/hamming_stream/x2015_09_10_16_47_38_469_1070123.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 371/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/llist2/x2015_09_10_16_53_25_987_1205032.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/llist2/x2015_09_10_16_53_25_987_1205032.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/llist2/x2015_09_10_16_53_25_987_1205032.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 372/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_49_29_360_1186732.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_49_29_360_1186732.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_49_29_360_1186732.smt_in.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 373/572: UF/sledgehammer/FFT/uf.680575.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.680575.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.680575.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 374/572: UF/sledgehammer/TypeSafe/smtlib.598610.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TypeSafe/smtlib.598610.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/smtlib.598610.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 375/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_51_27_307_1116367.smt_in.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_51_27_307_1116367.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_51_27_307_1116367.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 376/572: UF/sledgehammer/Hoare/uf.864872.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/uf.864872.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.864872.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 377/572: UF/sledgehammer/TypeSafe/uf.797968.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/TypeSafe/uf.797968.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/uf.797968.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 378/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_05_19_848_2061247.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_05_19_848_2061247.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_05_19_848_2061247.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 379/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_05_16_753_2057200.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_05_16_753_2057200.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_05_16_753_2057200.smt_in.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 380/572: UF/grasshopper/instantiated/rec_remove_postcondition_of_rec_remove_26_4.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/grasshopper/instantiated/rec_remove_postcondition_of_rec_remove_26_4.smt2
+[DEBUG] Benchmark UF/grasshopper/instantiated/rec_remove_postcondition_of_rec_remove_26_4.smt2: solved=True, runtime=7.37s, PAR-2=7.37s
+[DEBUG] Processing 381/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1338516.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1338516.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1338516.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 382/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_00_26_457_1674083.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_00_26_457_1674083.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_00_26_457_1674083.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 383/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/bindag/x2015_09_10_16_53_41_035_1076166.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/bindag/x2015_09_10_16_53_41_035_1076166.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/bindag/x2015_09_10_16_53_41_035_1076166.smt_in.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 384/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/tllist/x2015_09_10_16_59_37_133_1291036.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/tllist/x2015_09_10_16_59_37_133_1291036.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/tllist/x2015_09_10_16_59_37_133_1291036.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 385/572: UF/grasshopper/instantiated/create_postcondition_of_create_50_4.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/grasshopper/instantiated/create_postcondition_of_create_50_4.smt2
+[DEBUG] Benchmark UF/grasshopper/instantiated/create_postcondition_of_create_50_4.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 386/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_04_38_312_2006529.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_04_38_312_2006529.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_04_38_312_2006529.smt_in.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 387/572: UF/sledgehammer/NS_Shared/smtlib.748081.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/NS_Shared/smtlib.748081.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/smtlib.748081.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 388/572: UF/sledgehammer/Arrow_Order/smtlib.709546.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Arrow_Order/smtlib.709546.smt2
+[DEBUG] Benchmark UF/sledgehammer/Arrow_Order/smtlib.709546.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 389/572: UF/sledgehammer/TwoSquares/uf.780807.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.780807.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.780807.smt2: solved=True, runtime=1.34s, PAR-2=1.34s
+[DEBUG] Processing 390/572: UF/sledgehammer/StrongNorm/uf.711834.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/StrongNorm/uf.711834.smt2
+[DEBUG] Benchmark UF/sledgehammer/StrongNorm/uf.711834.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 391/572: UF/sledgehammer/QEpres/uf.796327.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.796327.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.796327.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 392/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_47_12_449_1036569.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_47_12_449_1036569.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_47_12_449_1036569.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 393/572: UF/sledgehammer/FFT/uf.707294.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.707294.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.707294.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 394/572: UF/sledgehammer/TypeSafe/smtlib.636448.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/TypeSafe/smtlib.636448.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/smtlib.636448.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 395/572: UF/sledgehammer/Hoare/uf.1086644.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/uf.1086644.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.1086644.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 396/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_13_23_557_2677530.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_13_23_557_2677530.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_13_23_557_2677530.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 397/572: UF/sledgehammer/Fundamental_Theorem_Algebra/smtlib.696164.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/smtlib.696164.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/smtlib.696164.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 398/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_11_33_607_2561364.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_11_33_607_2561364.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_11_33_607_2561364.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 399/572: UF/sledgehammer/TwoSquares/uf.827912.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.827912.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.827912.smt2: solved=True, runtime=46.42s, PAR-2=46.42s
+[DEBUG] Processing 400/572: UF/sledgehammer/Arrow_Order/smtlib.612164.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Arrow_Order/smtlib.612164.smt2
+[DEBUG] Benchmark UF/sledgehammer/Arrow_Order/smtlib.612164.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 401/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_55_03_120_1380907.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_55_03_120_1380907.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_55_03_120_1380907.smt_in.smt2: solved=True, runtime=34.80s, PAR-2=34.80s
+[DEBUG] Processing 402/572: UF/sledgehammer/Hoare/uf.895717.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/uf.895717.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.895717.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 403/572: UF/sledgehammer/Hoare/uf.1153435.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/uf.1153435.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.1153435.smt2: solved=True, runtime=9.37s, PAR-2=9.37s
+[DEBUG] Processing 404/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_12_14_212_2615086.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_12_14_212_2615086.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_12_14_212_2615086.smt_in.smt2: solved=True, runtime=0.34s, PAR-2=0.34s
+[DEBUG] Processing 405/572: UF/sledgehammer/Hoare/uf.859653.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Hoare/uf.859653.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.859653.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 406/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/stream_processor/x2015_09_10_16_46_04_392_1017490.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/stream_processor/x2015_09_10_16_46_04_392_1017490.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/stream_processor/x2015_09_10_16_46_04_392_1017490.smt_in.smt2: solved=True, runtime=552.04s, PAR-2=552.04s
+[DEBUG] Processing 407/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1316932.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1316932.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1316932.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 408/572: UF/sledgehammer/TypeSafe/uf.757160.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/TypeSafe/uf.757160.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/uf.757160.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 409/572: UF/sledgehammer/FFT/uf.729619.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.729619.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.729619.smt2: solved=True, runtime=0.84s, PAR-2=0.84s
+[DEBUG] Processing 410/572: UF/sledgehammer/TypeSafe/smtlib.1260342.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/TypeSafe/smtlib.1260342.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/smtlib.1260342.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 411/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/parallel/x2015_09_10_16_57_00_116_1030715.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/parallel/x2015_09_10_16_57_00_116_1030715.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/parallel/x2015_09_10_16_57_00_116_1030715.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 412/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_stream/x2015_09_10_17_23_16_644_1137300.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_stream/x2015_09_10_17_23_16_644_1137300.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_stream/x2015_09_10_17_23_16_644_1137300.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 413/572: UF/20170428-Barrett/cdt-cade2015/nada/gandl/cotree/x2015_09_10_16_50_36_127_1065691.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/gandl/cotree/x2015_09_10_16_50_36_127_1065691.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/gandl/cotree/x2015_09_10_16_50_36_127_1065691.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 414/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_20_21_596_2920341.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_20_21_596_2920341.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_20_21_596_2920341.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 415/572: UF/sledgehammer/TypeSafe/smtlib.720767.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TypeSafe/smtlib.720767.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/smtlib.720767.smt2: solved=True, runtime=375.10s, PAR-2=375.10s
+[DEBUG] Processing 416/572: UF/sledgehammer/Hoare/smtlib.668095.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/smtlib.668095.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/smtlib.668095.smt2: solved=True, runtime=0.84s, PAR-2=0.84s
+[DEBUG] Processing 417/572: UF/sledgehammer/TypeSafe/smtlib.1217464.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/TypeSafe/smtlib.1217464.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/smtlib.1217464.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 418/572: UF/sledgehammer/Hoare/uf.1046209.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/uf.1046209.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.1046209.smt2: solved=True, runtime=0.84s, PAR-2=0.84s
+[DEBUG] Processing 419/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_51_02_332_1076040.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_51_02_332_1076040.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_51_02_332_1076040.smt_in.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 420/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/stream/x2015_09_10_16_47_13_336_1019117.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/stream/x2015_09_10_16_47_13_336_1019117.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/stream/x2015_09_10_16_47_13_336_1019117.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 421/572: UF/sledgehammer/QEpres/uf.1081952.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.1081952.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.1081952.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 422/572: UF/sledgehammer/TypeSafe/uf.830433.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/TypeSafe/uf.830433.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/uf.830433.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 423/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.669789.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.669789.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.669789.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 424/572: UF/sledgehammer/Hoare/uf.1095696.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Hoare/uf.1095696.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.1095696.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 425/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_06_03_210_2120129.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_06_03_210_2120129.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_06_03_210_2120129.smt_in.smt2: solved=True, runtime=536.12s, PAR-2=536.12s
+[DEBUG] Processing 426/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.749083.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.749083.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.749083.smt2: solved=True, runtime=155.97s, PAR-2=155.97s
+[DEBUG] Processing 427/572: UF/sledgehammer/TypeSafe/uf.1323826.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/TypeSafe/uf.1323826.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/uf.1323826.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 428/572: UF/sledgehammer/TypeSafe/smtlib.651604.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TypeSafe/smtlib.651604.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/smtlib.651604.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 429/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_52_26_065_1202283.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_52_26_065_1202283.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_52_26_065_1202283.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 430/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_19_05_176_2860336.smt_in.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_19_05_176_2860336.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_19_05_176_2860336.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 431/572: UF/sledgehammer/QEpres/uf.890192.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.890192.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.890192.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 432/572: UF/20170428-Barrett/cdt-cade2015/nada/gandl/stern_brocot_tree/x2015_09_10_16_53_43_544_1182267.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/gandl/stern_brocot_tree/x2015_09_10_16_53_43_544_1182267.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/gandl/stern_brocot_tree/x2015_09_10_16_53_43_544_1182267.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 433/572: UF/sledgehammer/TypeSafe/uf.713974.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/TypeSafe/uf.713974.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/uf.713974.smt2: solved=True, runtime=541.01s, PAR-2=541.01s
+[DEBUG] Processing 434/572: UF/sledgehammer/TypeSafe/uf.1453635.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/TypeSafe/uf.1453635.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/uf.1453635.smt2: solved=True, runtime=542.55s, PAR-2=542.55s
+[DEBUG] Processing 435/572: UF/sledgehammer/QEpres/uf.772010.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.772010.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.772010.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 436/572: UF/sledgehammer/Hoare/uf.879653.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/uf.879653.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.879653.smt2: solved=True, runtime=22.40s, PAR-2=22.40s
+[DEBUG] Processing 437/572: UF/sledgehammer/TwoSquares/uf.616970.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.616970.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.616970.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 438/572: UF/sledgehammer/FFT/uf.551517.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.551517.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.551517.smt2: solved=True, runtime=301.54s, PAR-2=301.54s
+[DEBUG] Processing 439/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1360556.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1360556.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1360556.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 440/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/stream/x2015_09_10_16_48_42_609_1115980.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/stream/x2015_09_10_16_48_42_609_1115980.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/stream/x2015_09_10_16_48_42_609_1115980.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 441/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/parallel/x2015_09_10_16_56_42_740_1008448.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/parallel/x2015_09_10_16_56_42_740_1008448.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/parallel/x2015_09_10_16_56_42_740_1008448.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 442/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1333758.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1333758.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1333758.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 443/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1265021.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1265021.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1265021.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 444/572: UF/sledgehammer/TwoSquares/uf.614372.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/TwoSquares/uf.614372.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.614372.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 445/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.631532.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.631532.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.631532.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 446/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1021109.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1021109.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1021109.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 447/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_12_42_984_2647208.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_12_42_984_2647208.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_12_42_984_2647208.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 448/572: UF/sledgehammer/FFT/uf.791813.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.791813.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.791813.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 449/572: UF/sledgehammer/TwoSquares/uf.814976.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.814976.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.814976.smt2: solved=True, runtime=254.09s, PAR-2=254.09s
+[DEBUG] Processing 450/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_51_04_604_1164302.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_51_04_604_1164302.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_51_04_604_1164302.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 451/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_51_10_698_1170171.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_51_10_698_1170171.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_51_10_698_1170171.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 452/572: UF/20170428-Barrett/cdt-cade2015/nada/gandl/cotree/x2015_09_10_16_50_56_622_1092544.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/gandl/cotree/x2015_09_10_16_50_56_622_1092544.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/gandl/cotree/x2015_09_10_16_50_56_622_1092544.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 453/572: UF/sledgehammer/Hoare/uf.578545.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/uf.578545.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.578545.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 454/572: UF/sledgehammer/Fundamental_Theorem_Algebra/smtlib.768401.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/smtlib.768401.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/smtlib.768401.smt2: solved=True, runtime=0.86s, PAR-2=0.86s
+[DEBUG] Processing 455/572: UF/sledgehammer/Hoare/smtlib.936401.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/smtlib.936401.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/smtlib.936401.smt2: solved=True, runtime=301.52s, PAR-2=301.52s
+[DEBUG] Processing 456/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/hamming_stream/x2015_09_10_16_47_42_374_1073043.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/hamming_stream/x2015_09_10_16_47_42_374_1073043.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/hamming_stream/x2015_09_10_16_47_42_374_1073043.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 457/572: UF/sledgehammer/QEpres/uf.989612.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/QEpres/uf.989612.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.989612.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 458/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_47_00_020_1023002.smt_in.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_47_00_020_1023002.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_47_00_020_1023002.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 459/572: UF/sledgehammer/NS_Shared/uf.627547.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/NS_Shared/uf.627547.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/uf.627547.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 460/572: UF/sledgehammer/Arrow_Order/uf.826435.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/Arrow_Order/uf.826435.smt2
+[DEBUG] Benchmark UF/sledgehammer/Arrow_Order/uf.826435.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 461/572: UF/20201221-induction-by-reflection-schoisswohl/reflectiveInductive/mulAssoc.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/20201221-induction-by-reflection-schoisswohl/reflectiveInductive/mulAssoc.smt2
+[DEBUG] Benchmark UF/20201221-induction-by-reflection-schoisswohl/reflectiveInductive/mulAssoc.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 462/572: UF/sledgehammer/Hoare/uf.565227.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/uf.565227.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.565227.smt2: solved=True, runtime=2.88s, PAR-2=2.88s
+[DEBUG] Processing 463/572: UF/sledgehammer/StrongNorm/uf.558163.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/StrongNorm/uf.558163.smt2
+[DEBUG] Benchmark UF/sledgehammer/StrongNorm/uf.558163.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 464/572: UF/sledgehammer/FFT/uf.719651.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.719651.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.719651.smt2: solved=True, runtime=2.85s, PAR-2=2.85s
+[DEBUG] Processing 465/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_49_49_184_1210232.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_49_49_184_1210232.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_49_49_184_1210232.smt_in.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 466/572: UF/sledgehammer/TypeSafe/smtlib.1375291.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TypeSafe/smtlib.1375291.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/smtlib.1375291.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 467/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_51_42_375_1318540.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_51_42_375_1318540.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_51_42_375_1318540.smt_in.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 468/572: UF/sledgehammer/Hoare/uf.909687.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/uf.909687.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.909687.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 469/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1022560.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1022560.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1022560.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 470/572: UF/sledgehammer/QEpres/uf.851413.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.851413.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.851413.smt2: solved=True, runtime=0.88s, PAR-2=0.88s
+[DEBUG] Processing 471/572: UF/sledgehammer/StrongNorm/uf.682694.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/StrongNorm/uf.682694.smt2
+[DEBUG] Benchmark UF/sledgehammer/StrongNorm/uf.682694.smt2: solved=True, runtime=0.48s, PAR-2=0.48s
+[DEBUG] Processing 472/572: UF/sledgehammer/Hoare/uf.997948.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Hoare/uf.997948.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.997948.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 473/572: UF/sledgehammer/TypeSafe/smtlib.1297405.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TypeSafe/smtlib.1297405.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/smtlib.1297405.smt2: solved=True, runtime=1.88s, PAR-2=1.88s
+[DEBUG] Processing 474/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_08_47_874_2346483.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_08_47_874_2346483.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_08_47_874_2346483.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 475/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_51_51_841_1328720.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_51_51_841_1328720.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_51_51_841_1328720.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 476/572: UF/sledgehammer/FFT/uf.585689.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.585689.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.585689.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 477/572: UF/grasshopper/instantiated/rec_reverse_loop_postcondition_of_rec_reverse_loop_21_4.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/grasshopper/instantiated/rec_reverse_loop_postcondition_of_rec_reverse_loop_21_4.smt2
+[DEBUG] Benchmark UF/grasshopper/instantiated/rec_reverse_loop_postcondition_of_rec_reverse_loop_21_4.smt2: solved=True, runtime=1.84s, PAR-2=1.84s
+[DEBUG] Processing 478/572: UF/sledgehammer/StrongNorm/uf.842675.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/StrongNorm/uf.842675.smt2
+[DEBUG] Benchmark UF/sledgehammer/StrongNorm/uf.842675.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 479/572: UF/sledgehammer/Arrow_Order/uf.615681.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Arrow_Order/uf.615681.smt2
+[DEBUG] Benchmark UF/sledgehammer/Arrow_Order/uf.615681.smt2: solved=True, runtime=0.31s, PAR-2=0.31s
+[DEBUG] Processing 480/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_47_43_884_1070058.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_47_43_884_1070058.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_47_43_884_1070058.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 481/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_stream/x2015_09_10_17_25_32_278_1255169.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_stream/x2015_09_10_17_25_32_278_1255169.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_stream/x2015_09_10_17_25_32_278_1255169.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 482/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_50_14_621_1020734.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_50_14_621_1020734.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_50_14_621_1020734.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 483/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/koenig/x2015_09_10_16_44_50_667_984761.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/koenig/x2015_09_10_16_44_50_667_984761.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/koenig/x2015_09_10_16_44_50_667_984761.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 484/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1443498.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1443498.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1443498.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 485/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_52_47_811_1240923.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_52_47_811_1240923.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_52_47_811_1240923.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 486/572: UF/sledgehammer/TwoSquares/uf.619982.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.619982.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.619982.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 487/572: UF/sledgehammer/FFT/uf.633263.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.633263.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.633263.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 488/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_02_06_507_1801100.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_02_06_507_1801100.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_02_06_507_1801100.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 489/572: UF/sledgehammer/TypeSafe/smtlib.720397.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TypeSafe/smtlib.720397.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/smtlib.720397.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 490/572: UF/sledgehammer/TwoSquares/uf.693806.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.693806.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.693806.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 491/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_07_54_422_2274937.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_07_54_422_2274937.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_07_54_422_2274937.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 492/572: UF/sledgehammer/NS_Shared/uf.863825.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/NS_Shared/uf.863825.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/uf.863825.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 493/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_54_38_805_1444976.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_54_38_805_1444976.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_54_38_805_1444976.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 494/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/stream/x2015_09_10_16_49_16_370_1154961.smt_in.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/stream/x2015_09_10_16_49_16_370_1154961.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/stream/x2015_09_10_16_49_16_370_1154961.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 495/572: UF/sledgehammer/Arrow_Order/uf.585219.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Arrow_Order/uf.585219.smt2
+[DEBUG] Benchmark UF/sledgehammer/Arrow_Order/uf.585219.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 496/572: UF/sledgehammer/QEpres/uf.656721.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/QEpres/uf.656721.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.656721.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 497/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_56_12_424_1642838.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_56_12_424_1642838.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_56_12_424_1642838.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 498/572: UF/sledgehammer/Hoare/uf.759170.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/uf.759170.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.759170.smt2: solved=True, runtime=1.91s, PAR-2=1.91s
+[DEBUG] Processing 499/572: UF/sledgehammer/Hoare/smtlib.1002393.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Hoare/smtlib.1002393.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/smtlib.1002393.smt2: solved=True, runtime=0.37s, PAR-2=0.37s
+[DEBUG] Processing 500/572: UF/grasshopper/uninstantiated/dl_dispose_loop_invariant_23_3.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/grasshopper/uninstantiated/dl_dispose_loop_invariant_23_3.smt2
+[DEBUG] Benchmark UF/grasshopper/uninstantiated/dl_dispose_loop_invariant_23_3.smt2: solved=True, runtime=1.15s, PAR-2=1.15s
+[DEBUG] Processing 501/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.922811.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.922811.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.922811.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 502/572: UF/sledgehammer/TwoSquares/uf.616674.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.616674.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.616674.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 503/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.802748.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.802748.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.802748.smt2: solved=True, runtime=0.87s, PAR-2=0.87s
+[DEBUG] Processing 504/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_49_18_960_1189222.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_49_18_960_1189222.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_49_18_960_1189222.smt_in.smt2: solved=True, runtime=336.11s, PAR-2=336.11s
+[DEBUG] Processing 505/572: UF/sledgehammer/TypeSafe/smtlib.664748.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TypeSafe/smtlib.664748.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/smtlib.664748.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 506/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_04_22_990_1985053.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_04_22_990_1985053.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_04_22_990_1985053.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 507/572: UF/sledgehammer/Arrow_Order/uf.599950.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Arrow_Order/uf.599950.smt2
+[DEBUG] Benchmark UF/sledgehammer/Arrow_Order/uf.599950.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 508/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/bindag/x2015_09_10_16_54_00_148_1099230.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/bindag/x2015_09_10_16_54_00_148_1099230.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/bindag/x2015_09_10_16_54_00_148_1099230.smt_in.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 509/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_57_23_844_1500987.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_57_23_844_1500987.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_57_23_844_1500987.smt_in.smt2: solved=True, runtime=541.02s, PAR-2=541.02s
+[DEBUG] Processing 510/572: UF/sledgehammer/TypeSafe/uf.719655.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/TypeSafe/uf.719655.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/uf.719655.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 511/572: UF/sledgehammer/FFT/uf.841086.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.841086.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.841086.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 512/572: UF/grasshopper/instantiated/dl_reverse_loop_invariant_28_3.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/grasshopper/instantiated/dl_reverse_loop_invariant_28_3.smt2
+[DEBUG] Benchmark UF/grasshopper/instantiated/dl_reverse_loop_invariant_28_3.smt2: solved=True, runtime=1.33s, PAR-2=1.33s
+[DEBUG] Processing 513/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_16_05_939_2756241.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_16_05_939_2756241.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_16_05_939_2756241.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 514/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_53_03_911_1403335.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_53_03_911_1403335.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_53_03_911_1403335.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 515/572: UF/20201221-induction-by-reflection-schoisswohl/reflectiveInductive/addNeutral-0.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/20201221-induction-by-reflection-schoisswohl/reflectiveInductive/addNeutral-0.smt2
+[DEBUG] Benchmark UF/20201221-induction-by-reflection-schoisswohl/reflectiveInductive/addNeutral-0.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 516/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_57_19_370_1495545.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_57_19_370_1495545.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_57_19_370_1495545.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 517/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_52_21_813_1361774.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_52_21_813_1361774.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_52_21_813_1361774.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 518/572: UF/sledgehammer/FFT/uf.700066.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.700066.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.700066.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 519/572: UF/sledgehammer/Hoare/uf.685844.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/uf.685844.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.685844.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 520/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.759449.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.759449.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.759449.smt2: solved=True, runtime=1.37s, PAR-2=1.37s
+[DEBUG] Processing 521/572: UF/sledgehammer/FFT/uf.726930.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.726930.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.726930.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 522/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_54_24_298_1429064.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_54_24_298_1429064.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_54_24_298_1429064.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 523/572: UF/sledgehammer/FFT/uf.603538.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.603538.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.603538.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 524/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_49_00_867_1155527.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_49_00_867_1155527.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_49_00_867_1155527.smt_in.smt2: solved=True, runtime=497.33s, PAR-2=497.33s
+[DEBUG] Processing 525/572: UF/sledgehammer/TwoSquares/uf.759421.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.759421.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.759421.smt2: solved=True, runtime=0.85s, PAR-2=0.85s
+[DEBUG] Processing 526/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_50_58_392_1071492.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_50_58_392_1071492.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_50_58_392_1071492.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 527/572: UF/sledgehammer/FFT/uf.872947.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.872947.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.872947.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 528/572: UF/sledgehammer/Arrow_Order/uf.688932.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Arrow_Order/uf.688932.smt2
+[DEBUG] Benchmark UF/sledgehammer/Arrow_Order/uf.688932.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 529/572: UF/sledgehammer/TwoSquares/uf.730058.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.730058.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.730058.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 530/572: UF/sledgehammer/TwoSquares/uf.809093.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/TwoSquares/uf.809093.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.809093.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 531/572: UF/sledgehammer/FFT/uf.869937.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.869937.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.869937.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 532/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/splay_tree_analysis/x2015_09_10_16_57_00_280_1102945.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/splay_tree_analysis/x2015_09_10_16_57_00_280_1102945.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/splay_tree_analysis/x2015_09_10_16_57_00_280_1102945.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 533/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_14_00_443_2690933.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_14_00_443_2690933.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_14_00_443_2690933.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 534/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.808023.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.808023.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.808023.smt2: solved=True, runtime=0.93s, PAR-2=0.93s
+[DEBUG] Processing 535/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1241999.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1241999.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1241999.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 536/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/tllist/x2015_09_10_16_58_32_500_1214543.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/tllist/x2015_09_10_16_58_32_500_1214543.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/tllist/x2015_09_10_16_58_32_500_1214543.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 537/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/tllist/x2015_09_10_16_58_11_815_1191075.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/tllist/x2015_09_10_16_58_11_815_1191075.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/tllist/x2015_09_10_16_58_11_815_1191075.smt_in.smt2: solved=True, runtime=0.35s, PAR-2=0.35s
+[DEBUG] Processing 538/572: UF/sledgehammer/StrongNorm/uf.572858.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/StrongNorm/uf.572858.smt2
+[DEBUG] Benchmark UF/sledgehammer/StrongNorm/uf.572858.smt2: solved=True, runtime=541.36s, PAR-2=541.36s
+[DEBUG] Processing 539/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_12_11_174_2611062.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_12_11_174_2611062.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_12_11_174_2611062.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 540/572: UF/sledgehammer/TypeSafe/smtlib.1189806.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TypeSafe/smtlib.1189806.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/smtlib.1189806.smt2: solved=True, runtime=239.58s, PAR-2=239.58s
+[DEBUG] Processing 541/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_53_17_708_1416162.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_53_17_708_1416162.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_53_17_708_1416162.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 542/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/koenigslemma/x2015_09_10_16_53_11_287_1121488.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/koenigslemma/x2015_09_10_16_53_11_287_1121488.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/koenigslemma/x2015_09_10_16_53_11_287_1121488.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 543/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_48_16_393_1116135.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_48_16_393_1116135.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_48_16_393_1116135.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 544/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/sorted_list_operations/x2015_09_10_16_48_14_243_1100480.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/sorted_list_operations/x2015_09_10_16_48_14_243_1100480.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/sorted_list_operations/x2015_09_10_16_48_14_243_1100480.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 545/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.937758.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.937758.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.937758.smt2: solved=True, runtime=2.42s, PAR-2=2.42s
+[DEBUG] Processing 546/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_54_40_247_1488206.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_54_40_247_1488206.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/gram_lang/x2015_09_10_16_54_40_247_1488206.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 547/572: UF/sledgehammer/QEpres/uf.1053819.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/QEpres/uf.1053819.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.1053819.smt2: solved=True, runtime=0.52s, PAR-2=0.52s
+[DEBUG] Processing 548/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/stream/x2015_09_10_16_48_19_087_1086853.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/stream/x2015_09_10_16_48_19_087_1086853.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/stream/x2015_09_10_16_48_19_087_1086853.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 549/572: UF/sledgehammer/FFT/uf.582890.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.582890.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.582890.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 550/572: UF/sledgehammer/QEpres/uf.987466.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.987466.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.987466.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 551/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_02_53_029_1862352.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_02_53_029_1862352.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_02_53_029_1862352.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 552/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.968343.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.968343.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.968343.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 553/572: UF/sledgehammer/FFT/uf.790741.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.790741.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.790741.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 554/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/sorted_list_operations/x2015_09_10_16_47_43_878_1069886.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/sorted_list_operations/x2015_09_10_16_47_43_878_1069886.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/sorted_list_operations/x2015_09_10_16_47_43_878_1069886.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 555/572: UF/sledgehammer/TypeSafe/uf.861832.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/sledgehammer/TypeSafe/uf.861832.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/uf.861832.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 556/572: UF/sledgehammer/TwoSquares/uf.651233.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.651233.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.651233.smt2: solved=True, runtime=88.03s, PAR-2=88.03s
+[DEBUG] Processing 557/572: UF/sledgehammer/StrongNorm/uf.694212.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/StrongNorm/uf.694212.smt2
+[DEBUG] Benchmark UF/sledgehammer/StrongNorm/uf.694212.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 558/572: UF/sledgehammer/TypeSafe/smtlib.1246629.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/sledgehammer/TypeSafe/smtlib.1246629.smt2
+[DEBUG] Benchmark UF/sledgehammer/TypeSafe/smtlib.1246629.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 559/572: UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_52_43_723_1232893.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_52_43_723_1232893.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/distro/rbt_impl/x2015_09_10_16_52_43_723_1232893.smt_in.smt2: solved=True, runtime=5.03s, PAR-2=5.03s
+[DEBUG] Processing 560/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1058129.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1058129.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1058129.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 561/572: UF/sledgehammer/Fundamental_Theorem_Algebra/smtlib.954680.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/smtlib.954680.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/smtlib.954680.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 562/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_50_37_949_1262506.smt_in.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_50_37_949_1262506.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/huffman/x2015_09_10_16_50_37_949_1262506.smt_in.smt2: solved=True, runtime=0.32s, PAR-2=0.32s
+[DEBUG] Processing 563/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.567026.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.567026.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.567026.smt2: solved=True, runtime=0.90s, PAR-2=0.90s
+[DEBUG] Processing 564/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_02_29_008_1830591.smt_in.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_02_29_008_1830591.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_17_02_29_008_1830591.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 565/572: UF/sledgehammer/QEpres/uf.658321.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/QEpres/uf.658321.smt2
+[DEBUG] Benchmark UF/sledgehammer/QEpres/uf.658321.smt2: solved=True, runtime=0.85s, PAR-2=0.85s
+[DEBUG] Processing 566/572: UF/sledgehammer/FFT/uf.722128.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.722128.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.722128.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 567/572: UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1101167.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1101167.smt2
+[DEBUG] Benchmark UF/sledgehammer/Fundamental_Theorem_Algebra/uf.1101167.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 568/572: UF/sledgehammer/Hoare/uf.789443.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/Hoare/uf.789443.smt2
+[DEBUG] Benchmark UF/sledgehammer/Hoare/uf.789443.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 569/572: UF/sledgehammer/TwoSquares/uf.641498.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/TwoSquares/uf.641498.smt2
+[DEBUG] Benchmark UF/sledgehammer/TwoSquares/uf.641498.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 570/572: UF/sledgehammer/FFT/uf.636121.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/FFT/uf.636121.smt2
+[DEBUG] Benchmark UF/sledgehammer/FFT/uf.636121.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 571/572: UF/sledgehammer/NS_Shared/smtlib.689389.smt2
+[DEBUG] Predicted solver: iProver for benchmark UF/sledgehammer/NS_Shared/smtlib.689389.smt2
+[DEBUG] Benchmark UF/sledgehammer/NS_Shared/smtlib.689389.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 572/572: UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_51_09_217_1168709.smt_in.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_51_09_217_1168709.smt_in.smt2
+[DEBUG] Benchmark UF/20170428-Barrett/cdt-cade2015/nada/afp/coinductive_list/x2015_09_10_16_51_09_217_1168709.smt_in.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Results written to CSV: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/results/uf_csv_based/test/run_20251216_002642_955220/results.csv
+[DEBUG] Solved 165/572 benchmarks (28.85%)
+[DEBUG] PAR-2 Score: 987655.13s total, 1726.67s average
+
+================================================================================
+EXECUTION TIME SUMMARY
+================================================================================
+Model training time:        1345.37 seconds ( 22.42 minutes)
+Prediction time:             281.57 seconds (  4.69 minutes)
+  - Avg per benchmark:         0.49 seconds
+--------------------------------------------------------------------------------
+Total execution time:       1626.94 seconds ( 27.12 minutes)
+================================================================================
+
+================================================================================
+PAR-2 PERFORMANCE SUMMARY
+================================================================================
+Benchmarks solved:              165 / 572 ( 28.85%)
+Benchmarks unsolved:            407 / 572 ( 71.15%)
+--------------------------------------------------------------------------------
+Total PAR-2 score:        987655.13 seconds
+Average PAR-2 score:        1726.67 seconds
+Timeout value:              1200.00 seconds
+PAR-2 penalty factor:             2x timeout
+================================================================================
+
+[DEBUG] CSV results saved to: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/results/uf_csv_based/test/run_20251216_002642_955220/results.csv
+[DEBUG] Configuration saved to: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/results/uf_csv_based/test/run_20251216_002642_955220/config.json
+End time: Tue 16 Dec 2025 12:53:52 AM EST

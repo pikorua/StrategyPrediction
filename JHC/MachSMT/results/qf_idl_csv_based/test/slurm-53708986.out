@@ -1,0 +1,794 @@
+Job ID: 53708986
+Node: nc30334
+Start time: Mon 15 Dec 2025 10:03:24 PM EST
+[DEBUG] Loading test results from /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/QF_IDL/qf_idl_test_long.csv
+[DEBUG] Loaded results for 242 unique benchmarks
+[DEBUG] Found 242 unique benchmark paths in CSV
+[DEBUG] Found 242 benchmark files from CSV
+[DEBUG] Selected 242 benchmarks for processing
+
+================================================================================
+FEATURE CONFIGURATION
+================================================================================
+Using original MachSMT feature space (full grammatical construct list)
+Description features: DISABLED (prevents BERT model loading)
+Feature extraction timeout: 60 seconds
+Parallel cores: 16
+Feature dimensions will be printed after processing first benchmark
+================================================================================
+
+[DEBUG] Training MachSMT model...
+[DEBUG] Changed working directory to: /home/jchen688/scratch/non-incremental
+
+Initializing description feature model ('bert-base-uncased')...
+Using device: cpu
+✅ Model loaded successfully. Embedding dimension: 768
+Parsing Input File |████████████████████████████████████████| 4830/4830 [100%] in 1:27.0 (55.52/s) 
+Processing Benchmark Files |████████████████████████████████████████| 966/966 [100%] in 11:03.0 (1.46/s) 
+[DEBUG] Changed back to: /lustre06/project/6001884/jchen688/github/z3alpha
+[DEBUG] Model trained in 1404.34 seconds
+[DEBUG] Configuration saved to: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/results/qf_idl_csv_based/test/run_20251215_220636_463548/config.json
+
+[DEBUG] Starting predictions on test benchmarks...
+[DEBUG] Processing 1/242: QF_IDL/schedulingIDL/tai_20x20_10_mkspan1243.smt2
+
+================================================================================
+FEATURE SPACE DIMENSIONS
+================================================================================
+Total feature dimensions: 189
+================================================================================
+
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/schedulingIDL/tai_20x20_10_mkspan1243.smt2
+[DEBUG] Benchmark QF_IDL/schedulingIDL/tai_20x20_10_mkspan1243.smt2: solved=True, runtime=1.64s, PAR-2=1.64s
+[DEBUG] Processing 2/242: QF_IDL/asp/WireRouting/wire.15.x.15.b.10.a.30_sat.data.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_IDL/asp/WireRouting/wire.15.x.15.b.10.a.30_sat.data.smt2
+[DEBUG] Benchmark QF_IDL/asp/WireRouting/wire.15.x.15.b.10.a.30_sat.data.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 3/242: QF_IDL/parity/01.100.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/01.100.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/01.100.graph.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 4/242: QF_IDL/job_shop/jobshop12-2-6-6-2-4-12.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/job_shop/jobshop12-2-6-6-2-4-12.smt2
+[DEBUG] Benchmark QF_IDL/job_shop/jobshop12-2-6-6-2-4-12.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 5/242: QF_IDL/mathsat/fischer/FISCHER14-11-ninc.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/mathsat/fischer/FISCHER14-11-ninc.smt2
+[DEBUG] Benchmark QF_IDL/mathsat/fischer/FISCHER14-11-ninc.smt2: solved=True, runtime=50.91s, PAR-2=50.91s
+[DEBUG] Processing 6/242: QF_IDL/queens_bench/n_queen/queen89-1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/queens_bench/n_queen/queen89-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/n_queen/queen89-1.smt2: solved=True, runtime=0.62s, PAR-2=0.62s
+[DEBUG] Processing 7/242: QF_IDL/RTCL/b13_tf_13_PROP40/ckt_PROP40_tf_13.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/RTCL/b13_tf_13_PROP40/ckt_PROP40_tf_13.smt2
+[DEBUG] Benchmark QF_IDL/RTCL/b13_tf_13_PROP40/ckt_PROP40_tf_13.smt2: solved=True, runtime=0.21s, PAR-2=0.21s
+[DEBUG] Processing 8/242: QF_IDL/queens_bench/n_queen/queen56-1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/queens_bench/n_queen/queen56-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/n_queen/queen56-1.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 9/242: QF_IDL/mathsat/fischer/FISCHER12-2-ninc.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/mathsat/fischer/FISCHER12-2-ninc.smt2
+[DEBUG] Benchmark QF_IDL/mathsat/fischer/FISCHER12-2-ninc.smt2: solved=True, runtime=0.21s, PAR-2=0.21s
+[DEBUG] Processing 10/242: QF_IDL/asp/ConnectedDominatingSet/rand_50_250_1235842610_0_k=7_sat.gph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/ConnectedDominatingSet/rand_50_250_1235842610_0_k=7_sat.gph.smt2
+[DEBUG] Benchmark QF_IDL/asp/ConnectedDominatingSet/rand_50_250_1235842610_0_k=7_sat.gph.smt2: solved=True, runtime=1.53s, PAR-2=1.53s
+[DEBUG] Processing 11/242: QF_IDL/queens_bench/toroidal_bench/toroidal_queen8-1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/queens_bench/toroidal_bench/toroidal_queen8-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/toroidal_bench/toroidal_queen8-1.smt2: solved=True, runtime=0.21s, PAR-2=0.21s
+[DEBUG] Processing 12/242: QF_IDL/20210312-Bouvier/vlsat3_i99.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark QF_IDL/20210312-Bouvier/vlsat3_i99.smt2
+[DEBUG] Benchmark QF_IDL/20210312-Bouvier/vlsat3_i99.smt2: solved=True, runtime=20.69s, PAR-2=20.69s
+[DEBUG] Processing 13/242: QF_IDL/asp/GeneralizedSlitherlink/altair1.9.asp.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/asp/GeneralizedSlitherlink/altair1.9.asp.smt2
+[DEBUG] Benchmark QF_IDL/asp/GeneralizedSlitherlink/altair1.9.asp.smt2: solved=True, runtime=5.13s, PAR-2=5.13s
+[DEBUG] Processing 14/242: QF_IDL/Averest/sorting_network/SortingNetwork8_live_bgmc005.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/Averest/sorting_network/SortingNetwork8_live_bgmc005.smt2
+[DEBUG] Benchmark QF_IDL/Averest/sorting_network/SortingNetwork8_live_bgmc005.smt2: solved=True, runtime=0.31s, PAR-2=0.31s
+[DEBUG] Processing 15/242: QF_IDL/asp/Sokoban/dimitri_yorick.54.steps.12.asp.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/Sokoban/dimitri_yorick.54.steps.12.asp.smt2
+[DEBUG] Benchmark QF_IDL/asp/Sokoban/dimitri_yorick.54.steps.12.asp.smt2: solved=True, runtime=0.55s, PAR-2=0.55s
+[DEBUG] Processing 16/242: QF_IDL/20210312-Bouvier/vlsat3_i16.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark QF_IDL/20210312-Bouvier/vlsat3_i16.smt2
+[DEBUG] Benchmark QF_IDL/20210312-Bouvier/vlsat3_i16.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 17/242: QF_IDL/Averest/insertion_sort/InsertionSort_live_bgmc007.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/Averest/insertion_sort/InsertionSort_live_bgmc007.smt2
+[DEBUG] Benchmark QF_IDL/Averest/insertion_sort/InsertionSort_live_bgmc007.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 18/242: QF_IDL/queens_bench/super_queen/super_queen44-1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/queens_bench/super_queen/super_queen44-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/super_queen/super_queen44-1.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 19/242: QF_IDL/asp/ConnectedDominatingSet/rand_55_250_1235855873_0_k=8_sat.gph.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/asp/ConnectedDominatingSet/rand_55_250_1235855873_0_k=8_sat.gph.smt2
+[DEBUG] Benchmark QF_IDL/asp/ConnectedDominatingSet/rand_55_250_1235855873_0_k=8_sat.gph.smt2: solved=True, runtime=91.67s, PAR-2=91.67s
+[DEBUG] Processing 20/242: QF_IDL/asp/ConnectedDominatingSet/rand_40_200_1235844018_0_k=4_unsat.gph.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_IDL/asp/ConnectedDominatingSet/rand_40_200_1235844018_0_k=4_unsat.gph.smt2
+[DEBUG] Benchmark QF_IDL/asp/ConnectedDominatingSet/rand_40_200_1235844018_0_k=4_unsat.gph.smt2: solved=True, runtime=1.08s, PAR-2=1.08s
+[DEBUG] Processing 21/242: QF_IDL/schedulingIDL/tai_15x15_9_mkspan899.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/schedulingIDL/tai_15x15_9_mkspan899.smt2
+[DEBUG] Benchmark QF_IDL/schedulingIDL/tai_15x15_9_mkspan899.smt2: solved=True, runtime=0.94s, PAR-2=0.94s
+[DEBUG] Processing 22/242: QF_IDL/parity/03.500.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/03.500.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/03.500.graph.smt2: solved=True, runtime=0.63s, PAR-2=0.63s
+[DEBUG] Processing 23/242: QF_IDL/job_shop/jobshop40-2-20-20-4-4-12.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/job_shop/jobshop40-2-20-20-4-4-12.smt2
+[DEBUG] Benchmark QF_IDL/job_shop/jobshop40-2-20-20-4-4-12.smt2: solved=True, runtime=0.96s, PAR-2=0.96s
+[DEBUG] Processing 24/242: QF_IDL/schedulingIDL/tai_15x15_2_mkspan925.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/schedulingIDL/tai_15x15_2_mkspan925.smt2
+[DEBUG] Benchmark QF_IDL/schedulingIDL/tai_15x15_2_mkspan925.smt2: solved=True, runtime=0.65s, PAR-2=0.65s
+[DEBUG] Processing 25/242: QF_IDL/asp/Fastfood/a7.3.4.tweaked.4.asp.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/Fastfood/a7.3.4.tweaked.4.asp.smt2
+[DEBUG] Benchmark QF_IDL/asp/Fastfood/a7.3.4.tweaked.4.asp.smt2: solved=True, runtime=1.95s, PAR-2=1.95s
+[DEBUG] Processing 26/242: QF_IDL/Averest/sorting_network/SortingNetwork8_live_bgmc004.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/Averest/sorting_network/SortingNetwork8_live_bgmc004.smt2
+[DEBUG] Benchmark QF_IDL/Averest/sorting_network/SortingNetwork8_live_bgmc004.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 27/242: QF_IDL/20220214-jobshop-BohanLi/jobshop18-4-9-9-4-4-32.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/20220214-jobshop-BohanLi/jobshop18-4-9-9-4-4-32.smt2
+[DEBUG] Benchmark QF_IDL/20220214-jobshop-BohanLi/jobshop18-4-9-9-4-4-32.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 28/242: QF_IDL/20220214-jobshop-BohanLi/jobshop48-2-24-24-4-4-16.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/20220214-jobshop-BohanLi/jobshop48-2-24-24-4-4-16.smt2
+[DEBUG] Benchmark QF_IDL/20220214-jobshop-BohanLi/jobshop48-2-24-24-4-4-16.smt2: solved=True, runtime=44.93s, PAR-2=44.93s
+[DEBUG] Processing 29/242: QF_IDL/qlock/qlock-4-10-9.base.cvc.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/qlock/qlock-4-10-9.base.cvc.smt2
+[DEBUG] Benchmark QF_IDL/qlock/qlock-4-10-9.base.cvc.smt2: solved=True, runtime=0.49s, PAR-2=0.49s
+[DEBUG] Processing 30/242: QF_IDL/asp/15Puzzle/15-puzzle.init5.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/asp/15Puzzle/15-puzzle.init5.smt2
+[DEBUG] Benchmark QF_IDL/asp/15Puzzle/15-puzzle.init5.smt2: solved=True, runtime=18.45s, PAR-2=18.45s
+[DEBUG] Processing 31/242: QF_IDL/20210312-Bouvier/vlsat3_i13.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark QF_IDL/20210312-Bouvier/vlsat3_i13.smt2
+[DEBUG] Benchmark QF_IDL/20210312-Bouvier/vlsat3_i13.smt2: solved=True, runtime=15.52s, PAR-2=15.52s
+[DEBUG] Processing 32/242: QF_IDL/parity/06.600.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/06.600.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/06.600.graph.smt2: solved=True, runtime=1.07s, PAR-2=1.07s
+[DEBUG] Processing 33/242: QF_IDL/asp/EdgeMatching/edge-matching-width=9-height=9-colours=8.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/EdgeMatching/edge-matching-width=9-height=9-colours=8.smt2
+[DEBUG] Benchmark QF_IDL/asp/EdgeMatching/edge-matching-width=9-height=9-colours=8.smt2: solved=True, runtime=27.81s, PAR-2=27.81s
+[DEBUG] Processing 34/242: QF_IDL/queens_bench/n_queen/queen53-1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/queens_bench/n_queen/queen53-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/n_queen/queen53-1.smt2: solved=True, runtime=0.32s, PAR-2=0.32s
+[DEBUG] Processing 35/242: QF_IDL/asp/GeneralizedSlitherlink/penrose.45.asp.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/GeneralizedSlitherlink/penrose.45.asp.smt2
+[DEBUG] Benchmark QF_IDL/asp/GeneralizedSlitherlink/penrose.45.asp.smt2: solved=True, runtime=0.46s, PAR-2=0.46s
+[DEBUG] Processing 36/242: QF_IDL/queens_bench/n_queen/queen32-1.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/queens_bench/n_queen/queen32-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/n_queen/queen32-1.smt2: solved=True, runtime=0.32s, PAR-2=0.32s
+[DEBUG] Processing 37/242: QF_IDL/schedulingIDL/tai_15x15_4_mkspan935.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/schedulingIDL/tai_15x15_4_mkspan935.smt2
+[DEBUG] Benchmark QF_IDL/schedulingIDL/tai_15x15_4_mkspan935.smt2: solved=True, runtime=0.60s, PAR-2=0.60s
+[DEBUG] Processing 38/242: QF_IDL/queens_bench/super_queen/super_queen89-1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/queens_bench/super_queen/super_queen89-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/super_queen/super_queen89-1.smt2: solved=True, runtime=0.86s, PAR-2=0.86s
+[DEBUG] Processing 39/242: QF_IDL/job_shop/jobshop10-2-5-5-2-4-12.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/job_shop/jobshop10-2-5-5-2-4-12.smt2
+[DEBUG] Benchmark QF_IDL/job_shop/jobshop10-2-5-5-2-4-12.smt2: solved=True, runtime=0.21s, PAR-2=0.21s
+[DEBUG] Processing 40/242: QF_IDL/fuzzy-matrix/Zantema_z058.srs_slice-8_constraint-227540.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/fuzzy-matrix/Zantema_z058.srs_slice-8_constraint-227540.smt2
+[DEBUG] Benchmark QF_IDL/fuzzy-matrix/Zantema_z058.srs_slice-8_constraint-227540.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 41/242: QF_IDL/asp/ConnectedDominatingSet/rand_55_250_1235855873_0_k=7_unsat.gph.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/asp/ConnectedDominatingSet/rand_55_250_1235855873_0_k=7_unsat.gph.smt2
+[DEBUG] Benchmark QF_IDL/asp/ConnectedDominatingSet/rand_55_250_1235855873_0_k=7_unsat.gph.smt2: solved=True, runtime=69.12s, PAR-2=69.12s
+[DEBUG] Processing 42/242: QF_IDL/20220214-RVpredict-BohanLi/RVpredict_7.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/20220214-RVpredict-BohanLi/RVpredict_7.smt2
+[DEBUG] Benchmark QF_IDL/20220214-RVpredict-BohanLi/RVpredict_7.smt2: solved=True, runtime=2.26s, PAR-2=2.26s
+[DEBUG] Processing 43/242: QF_IDL/qlock/qlock-4-10-28.induction.cvc.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/qlock/qlock-4-10-28.induction.cvc.smt2
+[DEBUG] Benchmark QF_IDL/qlock/qlock-4-10-28.induction.cvc.smt2: solved=True, runtime=0.75s, PAR-2=0.75s
+[DEBUG] Processing 44/242: QF_IDL/20210312-Bouvier/vlsat3_c61.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark QF_IDL/20210312-Bouvier/vlsat3_c61.smt2
+[DEBUG] Benchmark QF_IDL/20210312-Bouvier/vlsat3_c61.smt2: solved=True, runtime=219.10s, PAR-2=219.10s
+[DEBUG] Processing 45/242: QF_IDL/asp/Sokoban/duthen-990602.76.steps.13.asp.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/Sokoban/duthen-990602.76.steps.13.asp.smt2
+[DEBUG] Benchmark QF_IDL/asp/Sokoban/duthen-990602.76.steps.13.asp.smt2: solved=True, runtime=3.31s, PAR-2=3.31s
+[DEBUG] Processing 46/242: QF_IDL/parity/11.100.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/11.100.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/11.100.graph.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 47/242: QF_IDL/20210312-Bouvier/vlsat3_i64.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark QF_IDL/20210312-Bouvier/vlsat3_i64.smt2
+[DEBUG] Benchmark QF_IDL/20210312-Bouvier/vlsat3_i64.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 48/242: QF_IDL/Averest/partition/Partition_safe_blmc001.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/Averest/partition/Partition_safe_blmc001.smt2
+[DEBUG] Benchmark QF_IDL/Averest/partition/Partition_safe_blmc001.smt2: solved=True, runtime=0.21s, PAR-2=0.21s
+[DEBUG] Processing 49/242: QF_IDL/20210312-Bouvier/vlsat3_c43.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark QF_IDL/20210312-Bouvier/vlsat3_c43.smt2
+[DEBUG] Benchmark QF_IDL/20210312-Bouvier/vlsat3_c43.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 50/242: QF_IDL/schedulingIDL/tai_20x20_7_mkspan1294.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/schedulingIDL/tai_20x20_7_mkspan1294.smt2
+[DEBUG] Benchmark QF_IDL/schedulingIDL/tai_20x20_7_mkspan1294.smt2: solved=True, runtime=3.20s, PAR-2=3.20s
+[DEBUG] Processing 51/242: QF_IDL/queens_bench/n_queen/queen96-1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/queens_bench/n_queen/queen96-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/n_queen/queen96-1.smt2: solved=True, runtime=0.59s, PAR-2=0.59s
+[DEBUG] Processing 52/242: QF_IDL/parity/25.100.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/25.100.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/25.100.graph.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 53/242: QF_IDL/asp/HamiltonianPath/gryzzles.32.lp.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/HamiltonianPath/gryzzles.32.lp.smt2
+[DEBUG] Benchmark QF_IDL/asp/HamiltonianPath/gryzzles.32.lp.smt2: solved=True, runtime=0.58s, PAR-2=0.58s
+[DEBUG] Processing 54/242: QF_IDL/asp/MazeGeneration/maze-generation-width=21-height=21-density=0.01-run=2.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/MazeGeneration/maze-generation-width=21-height=21-density=0.01-run=2.smt2
+[DEBUG] Benchmark QF_IDL/asp/MazeGeneration/maze-generation-width=21-height=21-density=0.01-run=2.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 55/242: QF_IDL/mathsat/fischer/FISCHER13-14-ninc.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/mathsat/fischer/FISCHER13-14-ninc.smt2
+[DEBUG] Benchmark QF_IDL/mathsat/fischer/FISCHER13-14-ninc.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 56/242: QF_IDL/schedulingIDL/tai_10x10_5_mkspan644.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/schedulingIDL/tai_10x10_5_mkspan644.smt2
+[DEBUG] Benchmark QF_IDL/schedulingIDL/tai_10x10_5_mkspan644.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 57/242: QF_IDL/schedulingIDL/j7_per0_2_mkspan1056.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/schedulingIDL/j7_per0_2_mkspan1056.smt2
+[DEBUG] Benchmark QF_IDL/schedulingIDL/j7_per0_2_mkspan1056.smt2: solved=True, runtime=1.18s, PAR-2=1.18s
+[DEBUG] Processing 58/242: QF_IDL/job_shop/jobshop44-2-22-22-2-4-12.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/job_shop/jobshop44-2-22-22-2-4-12.smt2
+[DEBUG] Benchmark QF_IDL/job_shop/jobshop44-2-22-22-2-4-12.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 59/242: QF_IDL/asp/HamiltonianPath/gryzzles.30.lp.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/HamiltonianPath/gryzzles.30.lp.smt2
+[DEBUG] Benchmark QF_IDL/asp/HamiltonianPath/gryzzles.30.lp.smt2: solved=True, runtime=0.76s, PAR-2=0.76s
+[DEBUG] Processing 60/242: QF_IDL/queens_bench/n_queen/queen100-1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/queens_bench/n_queen/queen100-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/n_queen/queen100-1.smt2: solved=True, runtime=0.70s, PAR-2=0.70s
+[DEBUG] Processing 61/242: QF_IDL/mathsat/fischer/FISCHER14-6-ninc.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/mathsat/fischer/FISCHER14-6-ninc.smt2
+[DEBUG] Benchmark QF_IDL/mathsat/fischer/FISCHER14-6-ninc.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 62/242: QF_IDL/queens_bench/super_queen/super_queen51-1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/queens_bench/super_queen/super_queen51-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/super_queen/super_queen51-1.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 63/242: QF_IDL/asp/HierarchicalClustering/xy.12.x.12.r.3.274440616.806497.data_k=3_l=4_sat.gph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/HierarchicalClustering/xy.12.x.12.r.3.274440616.806497.data_k=3_l=4_sat.gph.smt2
+[DEBUG] Benchmark QF_IDL/asp/HierarchicalClustering/xy.12.x.12.r.3.274440616.806497.data_k=3_l=4_sat.gph.smt2: solved=True, runtime=0.62s, PAR-2=0.62s
+[DEBUG] Processing 64/242: QF_IDL/diamonds/diamonds.18.3.i.a.u.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_IDL/diamonds/diamonds.18.3.i.a.u.smt2
+[DEBUG] Benchmark QF_IDL/diamonds/diamonds.18.3.i.a.u.smt2: solved=True, runtime=4.49s, PAR-2=4.49s
+[DEBUG] Processing 65/242: QF_IDL/mathsat/fischer/FISCHER9-7-ninc.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/mathsat/fischer/FISCHER9-7-ninc.smt2
+[DEBUG] Benchmark QF_IDL/mathsat/fischer/FISCHER9-7-ninc.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 66/242: QF_IDL/planning/plan-16.cvc.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/planning/plan-16.cvc.smt2
+[DEBUG] Benchmark QF_IDL/planning/plan-16.cvc.smt2: solved=True, runtime=0.34s, PAR-2=0.34s
+[DEBUG] Processing 67/242: QF_IDL/planning/plan-8.cvc.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/planning/plan-8.cvc.smt2
+[DEBUG] Benchmark QF_IDL/planning/plan-8.cvc.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 68/242: QF_IDL/parity/16.400.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/16.400.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/16.400.graph.smt2: solved=True, runtime=1.39s, PAR-2=1.39s
+[DEBUG] Processing 69/242: QF_IDL/Averest/partition/Partition_live_blmc004.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/Averest/partition/Partition_live_blmc004.smt2
+[DEBUG] Benchmark QF_IDL/Averest/partition/Partition_live_blmc004.smt2: solved=True, runtime=0.31s, PAR-2=0.31s
+[DEBUG] Processing 70/242: QF_IDL/20220214-jobshop-BohanLi/jobshop34-4-17-17-2-4-24.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/20220214-jobshop-BohanLi/jobshop34-4-17-17-2-4-24.smt2
+[DEBUG] Benchmark QF_IDL/20220214-jobshop-BohanLi/jobshop34-4-17-17-2-4-24.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 71/242: QF_IDL/Averest/buble_sort/BubbleSort_safe_bgmc011.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/Averest/buble_sort/BubbleSort_safe_bgmc011.smt2
+[DEBUG] Benchmark QF_IDL/Averest/buble_sort/BubbleSort_safe_bgmc011.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 72/242: QF_IDL/asp/GeneralizedSlitherlink/altair1.10.asp.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/asp/GeneralizedSlitherlink/altair1.10.asp.smt2
+[DEBUG] Benchmark QF_IDL/asp/GeneralizedSlitherlink/altair1.10.asp.smt2: solved=True, runtime=3.97s, PAR-2=3.97s
+[DEBUG] Processing 73/242: QF_IDL/parity/26.300.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/26.300.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/26.300.graph.smt2: solved=True, runtime=0.34s, PAR-2=0.34s
+[DEBUG] Processing 74/242: QF_IDL/Averest/selection_sort/SelectionSort_safe_blmc005.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/Averest/selection_sort/SelectionSort_safe_blmc005.smt2
+[DEBUG] Benchmark QF_IDL/Averest/selection_sort/SelectionSort_safe_blmc005.smt2: solved=True, runtime=0.98s, PAR-2=0.98s
+[DEBUG] Processing 75/242: QF_IDL/qlock/qlock-4-10-35.base.cvc.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/qlock/qlock-4-10-35.base.cvc.smt2
+[DEBUG] Benchmark QF_IDL/qlock/qlock-4-10-35.base.cvc.smt2: solved=True, runtime=574.41s, PAR-2=574.41s
+[DEBUG] Processing 76/242: QF_IDL/asp/EdgeMatching/edge-matching-width=10-height=10-colours=5.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/EdgeMatching/edge-matching-width=10-height=10-colours=5.smt2
+[DEBUG] Benchmark QF_IDL/asp/EdgeMatching/edge-matching-width=10-height=10-colours=5.smt2: solved=True, runtime=49.33s, PAR-2=49.33s
+[DEBUG] Processing 77/242: QF_IDL/bcnscheduling/bcnscheduling139.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/bcnscheduling/bcnscheduling139.smt2
+[DEBUG] Benchmark QF_IDL/bcnscheduling/bcnscheduling139.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 78/242: QF_IDL/schedulingIDL/j7_per10_2_mkspan1012.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/schedulingIDL/j7_per10_2_mkspan1012.smt2
+[DEBUG] Benchmark QF_IDL/schedulingIDL/j7_per10_2_mkspan1012.smt2: solved=True, runtime=2.99s, PAR-2=2.99s
+[DEBUG] Processing 79/242: QF_IDL/mathsat/fischer/FISCHER12-7-ninc.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/mathsat/fischer/FISCHER12-7-ninc.smt2
+[DEBUG] Benchmark QF_IDL/mathsat/fischer/FISCHER12-7-ninc.smt2: solved=True, runtime=0.37s, PAR-2=0.37s
+[DEBUG] Processing 80/242: QF_IDL/parity/02.600.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/02.600.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/02.600.graph.smt2: solved=True, runtime=1.09s, PAR-2=1.09s
+[DEBUG] Processing 81/242: QF_IDL/asp/GraphColouring/graph-colouring-nodes=150-density=0.1-instance=5.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/asp/GraphColouring/graph-colouring-nodes=150-density=0.1-instance=5.smt2
+[DEBUG] Benchmark QF_IDL/asp/GraphColouring/graph-colouring-nodes=150-density=0.1-instance=5.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 82/242: QF_IDL/diamonds/diamonds.15.3.i.a.u.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_IDL/diamonds/diamonds.15.3.i.a.u.smt2
+[DEBUG] Benchmark QF_IDL/diamonds/diamonds.15.3.i.a.u.smt2: solved=True, runtime=0.61s, PAR-2=0.61s
+[DEBUG] Processing 83/242: QF_IDL/parity/17.500.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/17.500.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/17.500.graph.smt2: solved=True, runtime=0.72s, PAR-2=0.72s
+[DEBUG] Processing 84/242: QF_IDL/asp/MazeGeneration/maze-generation-width=10-height=10-density=0.01-run=4.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_IDL/asp/MazeGeneration/maze-generation-width=10-height=10-density=0.01-run=4.smt2
+[DEBUG] Benchmark QF_IDL/asp/MazeGeneration/maze-generation-width=10-height=10-density=0.01-run=4.smt2: solved=True, runtime=0.31s, PAR-2=0.31s
+[DEBUG] Processing 85/242: QF_IDL/parity/13.600.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/13.600.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/13.600.graph.smt2: solved=True, runtime=1.00s, PAR-2=1.00s
+[DEBUG] Processing 86/242: QF_IDL/queens_bench/toroidal_bench/toroidal_queen27-1.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/queens_bench/toroidal_bench/toroidal_queen27-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/toroidal_bench/toroidal_queen27-1.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 87/242: QF_IDL/mathsat/fischer/FISCHER12-13-ninc.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/mathsat/fischer/FISCHER12-13-ninc.smt2
+[DEBUG] Benchmark QF_IDL/mathsat/fischer/FISCHER12-13-ninc.smt2: solved=True, runtime=0.90s, PAR-2=0.90s
+[DEBUG] Processing 88/242: QF_IDL/asp/WeightBoundedDominatingSet/rand_100_400_1159666138_13.lp.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/asp/WeightBoundedDominatingSet/rand_100_400_1159666138_13.lp.smt2
+[DEBUG] Benchmark QF_IDL/asp/WeightBoundedDominatingSet/rand_100_400_1159666138_13.lp.smt2: solved=True, runtime=17.83s, PAR-2=17.83s
+[DEBUG] Processing 89/242: QF_IDL/DTP/DTP_k2_n35_c175_s17.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/DTP/DTP_k2_n35_c175_s17.smt2
+[DEBUG] Benchmark QF_IDL/DTP/DTP_k2_n35_c175_s17.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 90/242: QF_IDL/asp/MazeGeneration/maze-generation-width=10-height=10-density=0.01-run=1.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_IDL/asp/MazeGeneration/maze-generation-width=10-height=10-density=0.01-run=1.smt2
+[DEBUG] Benchmark QF_IDL/asp/MazeGeneration/maze-generation-width=10-height=10-density=0.01-run=1.smt2: solved=True, runtime=0.31s, PAR-2=0.31s
+[DEBUG] Processing 91/242: QF_IDL/parity/22.700.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/22.700.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/22.700.graph.smt2: solved=True, runtime=1.08s, PAR-2=1.08s
+[DEBUG] Processing 92/242: QF_IDL/parity/03.300.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/03.300.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/03.300.graph.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 93/242: QF_IDL/asp/Labyrinth/laby_21_21_12.lp.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/Labyrinth/laby_21_21_12.lp.smt2
+[DEBUG] Benchmark QF_IDL/asp/Labyrinth/laby_21_21_12.lp.smt2: solved=True, runtime=655.69s, PAR-2=655.69s
+[DEBUG] Processing 94/242: QF_IDL/20220214-jobshop-BohanLi/jobshop42-2-21-21-2-4-12.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/20220214-jobshop-BohanLi/jobshop42-2-21-21-2-4-12.smt2
+[DEBUG] Benchmark QF_IDL/20220214-jobshop-BohanLi/jobshop42-2-21-21-2-4-12.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 95/242: QF_IDL/queens_bench/toroidal_bench/toroidal_queen96-1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/queens_bench/toroidal_bench/toroidal_queen96-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/toroidal_bench/toroidal_queen96-1.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 96/242: QF_IDL/DTP/DTP_k2_n35_c175_s8.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/DTP/DTP_k2_n35_c175_s8.smt2
+[DEBUG] Benchmark QF_IDL/DTP/DTP_k2_n35_c175_s8.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 97/242: QF_IDL/20210312-Bouvier/vlsat3_c20.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_IDL/20210312-Bouvier/vlsat3_c20.smt2
+[DEBUG] Benchmark QF_IDL/20210312-Bouvier/vlsat3_c20.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 98/242: QF_IDL/asp/Sokoban/duthen-990602.51.steps.12.asp.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/Sokoban/duthen-990602.51.steps.12.asp.smt2
+[DEBUG] Benchmark QF_IDL/asp/Sokoban/duthen-990602.51.steps.12.asp.smt2: solved=True, runtime=0.81s, PAR-2=0.81s
+[DEBUG] Processing 99/242: QF_IDL/mathsat/post_office/PO3-6-PO3.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/mathsat/post_office/PO3-6-PO3.smt2
+[DEBUG] Benchmark QF_IDL/mathsat/post_office/PO3-6-PO3.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 100/242: QF_IDL/asp/Hanoi/mgs_towers-hanoi.30_7.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/Hanoi/mgs_towers-hanoi.30_7.smt2
+[DEBUG] Benchmark QF_IDL/asp/Hanoi/mgs_towers-hanoi.30_7.smt2: solved=True, runtime=1.08s, PAR-2=1.08s
+[DEBUG] Processing 101/242: QF_IDL/asp/MazeGeneration/maze-generation-width=19-height=19-density=0.01-run=3.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/MazeGeneration/maze-generation-width=19-height=19-density=0.01-run=3.smt2
+[DEBUG] Benchmark QF_IDL/asp/MazeGeneration/maze-generation-width=19-height=19-density=0.01-run=3.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 102/242: QF_IDL/parity/01.300.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/01.300.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/01.300.graph.smt2: solved=True, runtime=0.38s, PAR-2=0.38s
+[DEBUG] Processing 103/242: QF_IDL/parity/04.300.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/04.300.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/04.300.graph.smt2: solved=True, runtime=0.39s, PAR-2=0.39s
+[DEBUG] Processing 104/242: QF_IDL/queens_bench/super_queen/super_queen91-1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/queens_bench/super_queen/super_queen91-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/super_queen/super_queen91-1.smt2: solved=True, runtime=0.46s, PAR-2=0.46s
+[DEBUG] Processing 105/242: QF_IDL/DTP/DTP_k2_n35_c210_s15.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/DTP/DTP_k2_n35_c210_s15.smt2
+[DEBUG] Benchmark QF_IDL/DTP/DTP_k2_n35_c210_s15.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 106/242: QF_IDL/20220214-jobshop-BohanLi/jobshop22-4-11-11-2-4-24.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/20220214-jobshop-BohanLi/jobshop22-4-11-11-2-4-24.smt2
+[DEBUG] Benchmark QF_IDL/20220214-jobshop-BohanLi/jobshop22-4-11-11-2-4-24.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 107/242: QF_IDL/queens_bench/super_queen/super_queen74-1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/queens_bench/super_queen/super_queen74-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/super_queen/super_queen74-1.smt2: solved=True, runtime=6.26s, PAR-2=6.26s
+[DEBUG] Processing 108/242: QF_IDL/RTCL/b13_tf_10/ckt_PROP2_tf_10.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/RTCL/b13_tf_10/ckt_PROP2_tf_10.smt2
+[DEBUG] Benchmark QF_IDL/RTCL/b13_tf_10/ckt_PROP2_tf_10.smt2: solved=True, runtime=0.21s, PAR-2=0.21s
+[DEBUG] Processing 109/242: QF_IDL/20210312-Bouvier/vlsat3_c87.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark QF_IDL/20210312-Bouvier/vlsat3_c87.smt2
+[DEBUG] Benchmark QF_IDL/20210312-Bouvier/vlsat3_c87.smt2: solved=True, runtime=60.60s, PAR-2=60.60s
+[DEBUG] Processing 110/242: QF_IDL/asp/Hanoi/mgs_towers-hanoi.97_7.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/Hanoi/mgs_towers-hanoi.97_7.smt2
+[DEBUG] Benchmark QF_IDL/asp/Hanoi/mgs_towers-hanoi.97_7.smt2: solved=True, runtime=49.93s, PAR-2=49.93s
+[DEBUG] Processing 111/242: QF_IDL/asp/Sokoban/duthen-990602.50.steps.10.asp.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/Sokoban/duthen-990602.50.steps.10.asp.smt2
+[DEBUG] Benchmark QF_IDL/asp/Sokoban/duthen-990602.50.steps.10.asp.smt2: solved=True, runtime=0.72s, PAR-2=0.72s
+[DEBUG] Processing 112/242: QF_IDL/qlock/qlock-4-10-17.induction.cvc.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/qlock/qlock-4-10-17.induction.cvc.smt2
+[DEBUG] Benchmark QF_IDL/qlock/qlock-4-10-17.induction.cvc.smt2: solved=True, runtime=0.46s, PAR-2=0.46s
+[DEBUG] Processing 113/242: QF_IDL/DTP/DTP_k2_n35_c175_s7.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/DTP/DTP_k2_n35_c175_s7.smt2
+[DEBUG] Benchmark QF_IDL/DTP/DTP_k2_n35_c175_s7.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 114/242: QF_IDL/asp/Hanoi/mgs_towers-hanoi.80_7.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/Hanoi/mgs_towers-hanoi.80_7.smt2
+[DEBUG] Benchmark QF_IDL/asp/Hanoi/mgs_towers-hanoi.80_7.smt2: solved=True, runtime=26.25s, PAR-2=26.25s
+[DEBUG] Processing 115/242: QF_IDL/DTP/DTP_k2_n35_c210_s2.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/DTP/DTP_k2_n35_c210_s2.smt2
+[DEBUG] Benchmark QF_IDL/DTP/DTP_k2_n35_c210_s2.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 116/242: QF_IDL/20210312-Bouvier/vlsat3_i59.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark QF_IDL/20210312-Bouvier/vlsat3_i59.smt2
+[DEBUG] Benchmark QF_IDL/20210312-Bouvier/vlsat3_i59.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 117/242: QF_IDL/asp/TravellingSalesperson/tsp_rand_70_300_1155482584_0.lp.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/asp/TravellingSalesperson/tsp_rand_70_300_1155482584_0.lp.smt2
+[DEBUG] Benchmark QF_IDL/asp/TravellingSalesperson/tsp_rand_70_300_1155482584_0.lp.smt2: solved=True, runtime=29.09s, PAR-2=29.09s
+[DEBUG] Processing 118/242: QF_IDL/queens_bench/n_queen/queen19-1.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/queens_bench/n_queen/queen19-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/n_queen/queen19-1.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 119/242: QF_IDL/Averest/buble_sort/BubbleSort_safe_blmc017.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark QF_IDL/Averest/buble_sort/BubbleSort_safe_blmc017.smt2
+[DEBUG] Benchmark QF_IDL/Averest/buble_sort/BubbleSort_safe_blmc017.smt2: solved=True, runtime=2.66s, PAR-2=2.66s
+[DEBUG] Processing 120/242: QF_IDL/schedulingIDL/tai_15x15_6_mkspan948.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/schedulingIDL/tai_15x15_6_mkspan948.smt2
+[DEBUG] Benchmark QF_IDL/schedulingIDL/tai_15x15_6_mkspan948.smt2: solved=True, runtime=0.45s, PAR-2=0.45s
+[DEBUG] Processing 121/242: QF_IDL/RTCL/b13_tf_10/ckt_PROP5_tf_10.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/RTCL/b13_tf_10/ckt_PROP5_tf_10.smt2
+[DEBUG] Benchmark QF_IDL/RTCL/b13_tf_10/ckt_PROP5_tf_10.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 122/242: QF_IDL/schedulingIDL/tai_20x20_3_mkspan1257.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/schedulingIDL/tai_20x20_3_mkspan1257.smt2
+[DEBUG] Benchmark QF_IDL/schedulingIDL/tai_20x20_3_mkspan1257.smt2: solved=True, runtime=1.86s, PAR-2=1.86s
+[DEBUG] Processing 123/242: QF_IDL/asp/EdgeMatching/edge-matching-width=10-height=10-colours=9.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/EdgeMatching/edge-matching-width=10-height=10-colours=9.smt2
+[DEBUG] Benchmark QF_IDL/asp/EdgeMatching/edge-matching-width=10-height=10-colours=9.smt2: solved=True, runtime=128.77s, PAR-2=128.77s
+[DEBUG] Processing 124/242: QF_IDL/queens_bench/super_queen/super_queen78-1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/queens_bench/super_queen/super_queen78-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/super_queen/super_queen78-1.smt2: solved=True, runtime=0.52s, PAR-2=0.52s
+[DEBUG] Processing 125/242: QF_IDL/schedulingIDL/tai_15x15_9_mkspan914.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/schedulingIDL/tai_15x15_9_mkspan914.smt2
+[DEBUG] Benchmark QF_IDL/schedulingIDL/tai_15x15_9_mkspan914.smt2: solved=True, runtime=0.63s, PAR-2=0.63s
+[DEBUG] Processing 126/242: QF_IDL/queens_bench/super_queen/super_queen32-1.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/queens_bench/super_queen/super_queen32-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/super_queen/super_queen32-1.smt2: solved=True, runtime=0.38s, PAR-2=0.38s
+[DEBUG] Processing 127/242: QF_IDL/Averest/buble_sort/BubbleSort_safe_bgmc005.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/Averest/buble_sort/BubbleSort_safe_bgmc005.smt2
+[DEBUG] Benchmark QF_IDL/Averest/buble_sort/BubbleSort_safe_bgmc005.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 128/242: QF_IDL/mathsat/fischer/FISCHER7-3-ninc.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/mathsat/fischer/FISCHER7-3-ninc.smt2
+[DEBUG] Benchmark QF_IDL/mathsat/fischer/FISCHER7-3-ninc.smt2: solved=True, runtime=0.21s, PAR-2=0.21s
+[DEBUG] Processing 129/242: QF_IDL/schedulingIDL/j8_per0_2_mkspan1048.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/schedulingIDL/j8_per0_2_mkspan1048.smt2
+[DEBUG] Benchmark QF_IDL/schedulingIDL/j8_per0_2_mkspan1048.smt2: solved=True, runtime=10.84s, PAR-2=10.84s
+[DEBUG] Processing 130/242: QF_IDL/asp/EdgeMatching/edge-matching-width=9-height=9-colours=12.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/EdgeMatching/edge-matching-width=9-height=9-colours=12.smt2
+[DEBUG] Benchmark QF_IDL/asp/EdgeMatching/edge-matching-width=9-height=9-colours=12.smt2: solved=True, runtime=18.62s, PAR-2=18.62s
+[DEBUG] Processing 131/242: QF_IDL/queens_bench/toroidal_bench/toroidal_queen21-1.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/queens_bench/toroidal_bench/toroidal_queen21-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/toroidal_bench/toroidal_queen21-1.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 132/242: QF_IDL/queens_bench/toroidal_bench/toroidal_queen39-1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/queens_bench/toroidal_bench/toroidal_queen39-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/toroidal_bench/toroidal_queen39-1.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 133/242: QF_IDL/RTCL/b01_tf_20/ckt_PROP0_tf_20.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/RTCL/b01_tf_20/ckt_PROP0_tf_20.smt2
+[DEBUG] Benchmark QF_IDL/RTCL/b01_tf_20/ckt_PROP0_tf_20.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 134/242: QF_IDL/asp/KnightTour/knightTour.in05.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/KnightTour/knightTour.in05.smt2
+[DEBUG] Benchmark QF_IDL/asp/KnightTour/knightTour.in05.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 135/242: QF_IDL/schedulingIDL/tai_20x20_1_mkspan1340.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/schedulingIDL/tai_20x20_1_mkspan1340.smt2
+[DEBUG] Benchmark QF_IDL/schedulingIDL/tai_20x20_1_mkspan1340.smt2: solved=True, runtime=1.48s, PAR-2=1.48s
+[DEBUG] Processing 136/242: QF_IDL/asp/HamiltonianPath/gryzzles.40.lp.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/HamiltonianPath/gryzzles.40.lp.smt2
+[DEBUG] Benchmark QF_IDL/asp/HamiltonianPath/gryzzles.40.lp.smt2: solved=True, runtime=0.94s, PAR-2=0.94s
+[DEBUG] Processing 137/242: QF_IDL/qlock/qlock-4-10-10.base.cvc.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/qlock/qlock-4-10-10.base.cvc.smt2
+[DEBUG] Benchmark QF_IDL/qlock/qlock-4-10-10.base.cvc.smt2: solved=True, runtime=0.63s, PAR-2=0.63s
+[DEBUG] Processing 138/242: QF_IDL/parity/31.200.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/31.200.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/31.200.graph.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 139/242: QF_IDL/20210312-Bouvier/vlsat3_i36.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark QF_IDL/20210312-Bouvier/vlsat3_i36.smt2
+[DEBUG] Benchmark QF_IDL/20210312-Bouvier/vlsat3_i36.smt2: solved=True, runtime=33.85s, PAR-2=33.85s
+[DEBUG] Processing 140/242: QF_IDL/asp/WeightBoundedDominatingSet/rand_200_800_1159728969_14.lp.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/asp/WeightBoundedDominatingSet/rand_200_800_1159728969_14.lp.smt2
+[DEBUG] Benchmark QF_IDL/asp/WeightBoundedDominatingSet/rand_200_800_1159728969_14.lp.smt2: solved=True, runtime=369.05s, PAR-2=369.05s
+[DEBUG] Processing 141/242: QF_IDL/queens_bench/toroidal_bench/toroidal_queen94-1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/queens_bench/toroidal_bench/toroidal_queen94-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/toroidal_bench/toroidal_queen94-1.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 142/242: QF_IDL/parity/28.300.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/28.300.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/28.300.graph.smt2: solved=True, runtime=0.38s, PAR-2=0.38s
+[DEBUG] Processing 143/242: QF_IDL/queens_bench/n_queen/queen87-1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/queens_bench/n_queen/queen87-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/n_queen/queen87-1.smt2: solved=True, runtime=1.14s, PAR-2=1.14s
+[DEBUG] Processing 144/242: QF_IDL/queens_bench/toroidal_bench/toroidal_queen45-1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/queens_bench/toroidal_bench/toroidal_queen45-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/toroidal_bench/toroidal_queen45-1.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 145/242: QF_IDL/Averest/insertion_sort/InsertionSort_safe_blmc004.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark QF_IDL/Averest/insertion_sort/InsertionSort_safe_blmc004.smt2
+[DEBUG] Benchmark QF_IDL/Averest/insertion_sort/InsertionSort_safe_blmc004.smt2: solved=True, runtime=0.55s, PAR-2=0.55s
+[DEBUG] Processing 146/242: QF_IDL/20210312-Bouvier/vlsat3_i78.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark QF_IDL/20210312-Bouvier/vlsat3_i78.smt2
+[DEBUG] Benchmark QF_IDL/20210312-Bouvier/vlsat3_i78.smt2: solved=True, runtime=185.76s, PAR-2=185.76s
+[DEBUG] Processing 147/242: QF_IDL/mathsat/fischer/FISCHER13-3-ninc.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/mathsat/fischer/FISCHER13-3-ninc.smt2
+[DEBUG] Benchmark QF_IDL/mathsat/fischer/FISCHER13-3-ninc.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 148/242: QF_IDL/20220214-jobshop-BohanLi/jobshop60-4-30-30-4-4-32.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/20220214-jobshop-BohanLi/jobshop60-4-30-30-4-4-32.smt2
+[DEBUG] Benchmark QF_IDL/20220214-jobshop-BohanLi/jobshop60-4-30-30-4-4-32.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 149/242: QF_IDL/parity/12.300.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/12.300.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/12.300.graph.smt2: solved=True, runtime=0.31s, PAR-2=0.31s
+[DEBUG] Processing 150/242: QF_IDL/asp/WeightBoundedDominatingSet/rand_100_400_1159666138_8.lp.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/asp/WeightBoundedDominatingSet/rand_100_400_1159666138_8.lp.smt2
+[DEBUG] Benchmark QF_IDL/asp/WeightBoundedDominatingSet/rand_100_400_1159666138_8.lp.smt2: solved=True, runtime=4.51s, PAR-2=4.51s
+[DEBUG] Processing 151/242: QF_IDL/Averest/selection_sort/SelectionSort_live_bgmc008.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/Averest/selection_sort/SelectionSort_live_bgmc008.smt2
+[DEBUG] Benchmark QF_IDL/Averest/selection_sort/SelectionSort_live_bgmc008.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 152/242: QF_IDL/20210312-Bouvier/vlsat3_i00.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/20210312-Bouvier/vlsat3_i00.smt2
+[DEBUG] Benchmark QF_IDL/20210312-Bouvier/vlsat3_i00.smt2: solved=True, runtime=7.17s, PAR-2=7.17s
+[DEBUG] Processing 153/242: QF_IDL/Averest/linear_search/LinearSearch_live_bgmc004.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/Averest/linear_search/LinearSearch_live_bgmc004.smt2
+[DEBUG] Benchmark QF_IDL/Averest/linear_search/LinearSearch_live_bgmc004.smt2: solved=True, runtime=0.21s, PAR-2=0.21s
+[DEBUG] Processing 154/242: QF_IDL/Averest/selection_sort/SelectionSort_safe_blmc008.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark QF_IDL/Averest/selection_sort/SelectionSort_safe_blmc008.smt2
+[DEBUG] Benchmark QF_IDL/Averest/selection_sort/SelectionSort_safe_blmc008.smt2: solved=True, runtime=0.92s, PAR-2=0.92s
+[DEBUG] Processing 155/242: QF_IDL/schedulingIDL/j8_per0_1_mkspan1055.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/schedulingIDL/j8_per0_1_mkspan1055.smt2
+[DEBUG] Benchmark QF_IDL/schedulingIDL/j8_per0_1_mkspan1055.smt2: solved=True, runtime=4.01s, PAR-2=4.01s
+[DEBUG] Processing 156/242: QF_IDL/planning/plan-15.cvc.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/planning/plan-15.cvc.smt2
+[DEBUG] Benchmark QF_IDL/planning/plan-15.cvc.smt2: solved=True, runtime=0.33s, PAR-2=0.33s
+[DEBUG] Processing 157/242: QF_IDL/queens_bench/n_queen/queen64-1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/queens_bench/n_queen/queen64-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/n_queen/queen64-1.smt2: solved=True, runtime=0.35s, PAR-2=0.35s
+[DEBUG] Processing 158/242: QF_IDL/Averest/insertion_sort/InsertionSort_live_blmc006.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/Averest/insertion_sort/InsertionSort_live_blmc006.smt2
+[DEBUG] Benchmark QF_IDL/Averest/insertion_sort/InsertionSort_live_blmc006.smt2: solved=True, runtime=0.58s, PAR-2=0.58s
+[DEBUG] Processing 159/242: QF_IDL/mathsat/fischer/FISCHER9-4-ninc.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/mathsat/fischer/FISCHER9-4-ninc.smt2
+[DEBUG] Benchmark QF_IDL/mathsat/fischer/FISCHER9-4-ninc.smt2: solved=True, runtime=0.31s, PAR-2=0.31s
+[DEBUG] Processing 160/242: QF_IDL/DTP/DTP_k2_n35_c245_s10.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/DTP/DTP_k2_n35_c245_s10.smt2
+[DEBUG] Benchmark QF_IDL/DTP/DTP_k2_n35_c245_s10.smt2: solved=True, runtime=0.35s, PAR-2=0.35s
+[DEBUG] Processing 161/242: QF_IDL/asp/ChannelRouting/channelRoute.in2.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_IDL/asp/ChannelRouting/channelRoute.in2.smt2
+[DEBUG] Benchmark QF_IDL/asp/ChannelRouting/channelRoute.in2.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 162/242: QF_IDL/qlock/qlock-4-10-5.induction.cvc.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/qlock/qlock-4-10-5.induction.cvc.smt2
+[DEBUG] Benchmark QF_IDL/qlock/qlock-4-10-5.induction.cvc.smt2: solved=True, runtime=0.32s, PAR-2=0.32s
+[DEBUG] Processing 163/242: QF_IDL/parity/15.300.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/15.300.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/15.300.graph.smt2: solved=True, runtime=0.39s, PAR-2=0.39s
+[DEBUG] Processing 164/242: QF_IDL/job_shop/jobshop26-2-13-13-2-4-9.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/job_shop/jobshop26-2-13-13-2-4-9.smt2
+[DEBUG] Benchmark QF_IDL/job_shop/jobshop26-2-13-13-2-4-9.smt2: solved=True, runtime=4.64s, PAR-2=4.64s
+[DEBUG] Processing 165/242: QF_IDL/asp/TravellingSalesperson/rand_80_340_1159656267_10.lp.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/TravellingSalesperson/rand_80_340_1159656267_10.lp.smt2
+[DEBUG] Benchmark QF_IDL/asp/TravellingSalesperson/rand_80_340_1159656267_10.lp.smt2: solved=True, runtime=250.11s, PAR-2=250.11s
+[DEBUG] Processing 166/242: QF_IDL/asp/HierarchicalClustering/xy.12.x.12.r.4.274529373.784913.data_k=4_l=4_sat.gph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/HierarchicalClustering/xy.12.x.12.r.4.274529373.784913.data_k=4_l=4_sat.gph.smt2
+[DEBUG] Benchmark QF_IDL/asp/HierarchicalClustering/xy.12.x.12.r.4.274529373.784913.data_k=4_l=4_sat.gph.smt2: solved=True, runtime=0.95s, PAR-2=0.95s
+[DEBUG] Processing 167/242: QF_IDL/queens_bench/toroidal_bench/toroidal_queen79-1.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/queens_bench/toroidal_bench/toroidal_queen79-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/toroidal_bench/toroidal_queen79-1.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 168/242: QF_IDL/asp/Fastfood/a8.7.5.asp.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/Fastfood/a8.7.5.asp.smt2
+[DEBUG] Benchmark QF_IDL/asp/Fastfood/a8.7.5.asp.smt2: solved=True, runtime=0.99s, PAR-2=0.99s
+[DEBUG] Processing 169/242: QF_IDL/Averest/buble_sort/BubbleSort_live_bgmc002.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/Averest/buble_sort/BubbleSort_live_bgmc002.smt2
+[DEBUG] Benchmark QF_IDL/Averest/buble_sort/BubbleSort_live_bgmc002.smt2: solved=True, runtime=0.21s, PAR-2=0.21s
+[DEBUG] Processing 170/242: QF_IDL/queens_bench/n_queen/queen36-1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/queens_bench/n_queen/queen36-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/n_queen/queen36-1.smt2: solved=True, runtime=0.33s, PAR-2=0.33s
+[DEBUG] Processing 171/242: QF_IDL/DTP/DTP_k2_n35_c210_s3.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/DTP/DTP_k2_n35_c210_s3.smt2
+[DEBUG] Benchmark QF_IDL/DTP/DTP_k2_n35_c210_s3.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 172/242: QF_IDL/asp/GraphColouring/graph-colouring-nodes=145-density=0.1-instance=4.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/asp/GraphColouring/graph-colouring-nodes=145-density=0.1-instance=4.smt2
+[DEBUG] Benchmark QF_IDL/asp/GraphColouring/graph-colouring-nodes=145-density=0.1-instance=4.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 173/242: QF_IDL/RTCL/b13_tf_10/ckt_PROP1_tf_10.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/RTCL/b13_tf_10/ckt_PROP1_tf_10.smt2
+[DEBUG] Benchmark QF_IDL/RTCL/b13_tf_10/ckt_PROP1_tf_10.smt2: solved=True, runtime=0.21s, PAR-2=0.21s
+[DEBUG] Processing 174/242: QF_IDL/parity/30.300.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/30.300.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/30.300.graph.smt2: solved=True, runtime=0.47s, PAR-2=0.47s
+[DEBUG] Processing 175/242: QF_IDL/Averest/partition/Partition_safe_bgmc003.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/Averest/partition/Partition_safe_bgmc003.smt2
+[DEBUG] Benchmark QF_IDL/Averest/partition/Partition_safe_bgmc003.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 176/242: QF_IDL/20210312-Bouvier/vlsat3_i11.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark QF_IDL/20210312-Bouvier/vlsat3_i11.smt2
+[DEBUG] Benchmark QF_IDL/20210312-Bouvier/vlsat3_i11.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 177/242: QF_IDL/asp/MazeGeneration/maze-generation-width=18-height=18-density=0.01-run=4.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/MazeGeneration/maze-generation-width=18-height=18-density=0.01-run=4.smt2
+[DEBUG] Benchmark QF_IDL/asp/MazeGeneration/maze-generation-width=18-height=18-density=0.01-run=4.smt2: solved=True, runtime=430.53s, PAR-2=430.53s
+[DEBUG] Processing 178/242: QF_IDL/20210312-Bouvier/vlsat3_i54.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark QF_IDL/20210312-Bouvier/vlsat3_i54.smt2
+[DEBUG] Benchmark QF_IDL/20210312-Bouvier/vlsat3_i54.smt2: solved=True, runtime=348.81s, PAR-2=348.81s
+[DEBUG] Processing 179/242: QF_IDL/asp/WeightBoundedDominatingSet/rand_200_800_1159728969_4.lp.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/asp/WeightBoundedDominatingSet/rand_200_800_1159728969_4.lp.smt2
+[DEBUG] Benchmark QF_IDL/asp/WeightBoundedDominatingSet/rand_200_800_1159728969_4.lp.smt2: solved=True, runtime=114.72s, PAR-2=114.72s
+[DEBUG] Processing 180/242: QF_IDL/20210312-Bouvier/vlsat3_i25.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark QF_IDL/20210312-Bouvier/vlsat3_i25.smt2
+[DEBUG] Benchmark QF_IDL/20210312-Bouvier/vlsat3_i25.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 181/242: QF_IDL/queens_bench/n_queen/queen52-1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/queens_bench/n_queen/queen52-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/n_queen/queen52-1.smt2: solved=True, runtime=0.93s, PAR-2=0.93s
+[DEBUG] Processing 182/242: QF_IDL/schedulingIDL/tai_20x20_2_mkspan1243.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/schedulingIDL/tai_20x20_2_mkspan1243.smt2
+[DEBUG] Benchmark QF_IDL/schedulingIDL/tai_20x20_2_mkspan1243.smt2: solved=True, runtime=3.39s, PAR-2=3.39s
+[DEBUG] Processing 183/242: QF_IDL/parity/28.700.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/28.700.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/28.700.graph.smt2: solved=True, runtime=1.50s, PAR-2=1.50s
+[DEBUG] Processing 184/242: QF_IDL/Averest/selection_sort/SelectionSort_live_blmc002.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/Averest/selection_sort/SelectionSort_live_blmc002.smt2
+[DEBUG] Benchmark QF_IDL/Averest/selection_sort/SelectionSort_live_blmc002.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 185/242: QF_IDL/sal/bakery/inf-bakery-mutex-14.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/sal/bakery/inf-bakery-mutex-14.smt2
+[DEBUG] Benchmark QF_IDL/sal/bakery/inf-bakery-mutex-14.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 186/242: QF_IDL/mathsat/post_office/PO4-8-PO4.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/mathsat/post_office/PO4-8-PO4.smt2
+[DEBUG] Benchmark QF_IDL/mathsat/post_office/PO4-8-PO4.smt2: solved=True, runtime=0.31s, PAR-2=0.31s
+[DEBUG] Processing 187/242: QF_IDL/fuzzy-matrix/Zantema_z047.srs_slice-7_constraint-251639.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/fuzzy-matrix/Zantema_z047.srs_slice-7_constraint-251639.smt2
+[DEBUG] Benchmark QF_IDL/fuzzy-matrix/Zantema_z047.srs_slice-7_constraint-251639.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 188/242: QF_IDL/parity/06.700.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/06.700.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/06.700.graph.smt2: solved=True, runtime=2.53s, PAR-2=2.53s
+[DEBUG] Processing 189/242: QF_IDL/queens_bench/n_queen/queen80-1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/queens_bench/n_queen/queen80-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/n_queen/queen80-1.smt2: solved=True, runtime=0.49s, PAR-2=0.49s
+[DEBUG] Processing 190/242: QF_IDL/asp/BlockedNQueens/156.48.1960.36.1721301641.dat.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/BlockedNQueens/156.48.1960.36.1721301641.dat.smt2
+[DEBUG] Benchmark QF_IDL/asp/BlockedNQueens/156.48.1960.36.1721301641.dat.smt2: solved=True, runtime=51.18s, PAR-2=51.18s
+[DEBUG] Processing 191/242: QF_IDL/planning/plan-12.cvc.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/planning/plan-12.cvc.smt2
+[DEBUG] Benchmark QF_IDL/planning/plan-12.cvc.smt2: solved=True, runtime=0.35s, PAR-2=0.35s
+[DEBUG] Processing 192/242: QF_IDL/Averest/buble_sort/BubbleSort_live_blmc002.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/Averest/buble_sort/BubbleSort_live_blmc002.smt2
+[DEBUG] Benchmark QF_IDL/Averest/buble_sort/BubbleSort_live_blmc002.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 193/242: QF_IDL/20210312-Bouvier/vlsat3_i03.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark QF_IDL/20210312-Bouvier/vlsat3_i03.smt2
+[DEBUG] Benchmark QF_IDL/20210312-Bouvier/vlsat3_i03.smt2: solved=True, runtime=11.78s, PAR-2=11.78s
+[DEBUG] Processing 194/242: QF_IDL/bcnscheduling/bcnscheduling130.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/bcnscheduling/bcnscheduling130.smt2
+[DEBUG] Benchmark QF_IDL/bcnscheduling/bcnscheduling130.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 195/242: QF_IDL/fuzzy-matrix/secret06_torpa_secr5.srs_slice-8_constraint-389123.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/fuzzy-matrix/secret06_torpa_secr5.srs_slice-8_constraint-389123.smt2
+[DEBUG] Benchmark QF_IDL/fuzzy-matrix/secret06_torpa_secr5.srs_slice-8_constraint-389123.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 196/242: QF_IDL/asp/Sokoban/duthen-990602.29.steps.11.asp.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/Sokoban/duthen-990602.29.steps.11.asp.smt2
+[DEBUG] Benchmark QF_IDL/asp/Sokoban/duthen-990602.29.steps.11.asp.smt2: solved=True, runtime=0.96s, PAR-2=0.96s
+[DEBUG] Processing 197/242: QF_IDL/schedulingIDL/j7_per0_1_mkspan1037.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/schedulingIDL/j7_per0_1_mkspan1037.smt2
+[DEBUG] Benchmark QF_IDL/schedulingIDL/j7_per0_1_mkspan1037.smt2: solved=True, runtime=0.81s, PAR-2=0.81s
+[DEBUG] Processing 198/242: QF_IDL/planning/plan-31.cvc.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/planning/plan-31.cvc.smt2
+[DEBUG] Benchmark QF_IDL/planning/plan-31.cvc.smt2: solved=True, runtime=0.54s, PAR-2=0.54s
+[DEBUG] Processing 199/242: QF_IDL/qlock/qlock-4-10-30.induction.cvc.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/qlock/qlock-4-10-30.induction.cvc.smt2
+[DEBUG] Benchmark QF_IDL/qlock/qlock-4-10-30.induction.cvc.smt2: solved=True, runtime=0.80s, PAR-2=0.80s
+[DEBUG] Processing 200/242: QF_IDL/20210312-Bouvier/vlsat3_c90.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark QF_IDL/20210312-Bouvier/vlsat3_c90.smt2
+[DEBUG] Benchmark QF_IDL/20210312-Bouvier/vlsat3_c90.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 201/242: QF_IDL/parity/11.200.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/11.200.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/11.200.graph.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 202/242: QF_IDL/schedulingIDL/j7_per0_0_mkspan1045.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/schedulingIDL/j7_per0_0_mkspan1045.smt2
+[DEBUG] Benchmark QF_IDL/schedulingIDL/j7_per0_0_mkspan1045.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 203/242: QF_IDL/asp/GraphColouring/graph-colouring-nodes=125-density=0.1-instance=4.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/asp/GraphColouring/graph-colouring-nodes=125-density=0.1-instance=4.smt2
+[DEBUG] Benchmark QF_IDL/asp/GraphColouring/graph-colouring-nodes=125-density=0.1-instance=4.smt2: solved=True, runtime=5.14s, PAR-2=5.14s
+[DEBUG] Processing 204/242: QF_IDL/mathsat/post_office/PO4-3-PO4.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/mathsat/post_office/PO4-3-PO4.smt2
+[DEBUG] Benchmark QF_IDL/mathsat/post_office/PO4-3-PO4.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 205/242: QF_IDL/schedulingIDL/tai_20x20_8_mkspan1170.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/schedulingIDL/tai_20x20_8_mkspan1170.smt2
+[DEBUG] Benchmark QF_IDL/schedulingIDL/tai_20x20_8_mkspan1170.smt2: solved=True, runtime=3.78s, PAR-2=3.78s
+[DEBUG] Processing 206/242: QF_IDL/asp/SchurNumbers/20.6.schur.lp.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/SchurNumbers/20.6.schur.lp.smt2
+[DEBUG] Benchmark QF_IDL/asp/SchurNumbers/20.6.schur.lp.smt2: solved=True, runtime=1.33s, PAR-2=1.33s
+[DEBUG] Processing 207/242: QF_IDL/Averest/min_max/MinMax_safe_bgmc002.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/Averest/min_max/MinMax_safe_bgmc002.smt2
+[DEBUG] Benchmark QF_IDL/Averest/min_max/MinMax_safe_bgmc002.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 208/242: QF_IDL/asp/HamiltonianPath/gryzzles.18.lp.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/HamiltonianPath/gryzzles.18.lp.smt2
+[DEBUG] Benchmark QF_IDL/asp/HamiltonianPath/gryzzles.18.lp.smt2: solved=True, runtime=0.93s, PAR-2=0.93s
+[DEBUG] Processing 209/242: QF_IDL/asp/TravellingSalesperson/dom_rand_70_300_1155482584_3.lp.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/asp/TravellingSalesperson/dom_rand_70_300_1155482584_3.lp.smt2
+[DEBUG] Benchmark QF_IDL/asp/TravellingSalesperson/dom_rand_70_300_1155482584_3.lp.smt2: solved=True, runtime=75.15s, PAR-2=75.15s
+[DEBUG] Processing 210/242: QF_IDL/parity/06.400.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/06.400.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/06.400.graph.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 211/242: QF_IDL/job_shop/jobshop52-2-26-26-4-4-12.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/job_shop/jobshop52-2-26-26-4-4-12.smt2
+[DEBUG] Benchmark QF_IDL/job_shop/jobshop52-2-26-26-4-4-12.smt2: solved=True, runtime=2.49s, PAR-2=2.49s
+[DEBUG] Processing 212/242: QF_IDL/schedulingIDL/tai_20x20_8_mkspan1169.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/schedulingIDL/tai_20x20_8_mkspan1169.smt2
+[DEBUG] Benchmark QF_IDL/schedulingIDL/tai_20x20_8_mkspan1169.smt2: solved=True, runtime=2.30s, PAR-2=2.30s
+[DEBUG] Processing 213/242: QF_IDL/20210312-Bouvier/vlsat3_i15.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark QF_IDL/20210312-Bouvier/vlsat3_i15.smt2
+[DEBUG] Benchmark QF_IDL/20210312-Bouvier/vlsat3_i15.smt2: solved=True, runtime=4.75s, PAR-2=4.75s
+[DEBUG] Processing 214/242: QF_IDL/parity/08.600.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/08.600.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/08.600.graph.smt2: solved=True, runtime=1.10s, PAR-2=1.10s
+[DEBUG] Processing 215/242: QF_IDL/asp/GraphColouring/graph-colouring-nodes=140-density=0.1-instance=2.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/asp/GraphColouring/graph-colouring-nodes=140-density=0.1-instance=2.smt2
+[DEBUG] Benchmark QF_IDL/asp/GraphColouring/graph-colouring-nodes=140-density=0.1-instance=2.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 216/242: QF_IDL/20220214-jobshop-BohanLi/jobshop16-4-8-8-4-4-32.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/20220214-jobshop-BohanLi/jobshop16-4-8-8-4-4-32.smt2
+[DEBUG] Benchmark QF_IDL/20220214-jobshop-BohanLi/jobshop16-4-8-8-4-4-32.smt2: solved=True, runtime=218.54s, PAR-2=218.54s
+[DEBUG] Processing 217/242: QF_IDL/Averest/buble_sort/BubbleSort_safe_blmc004.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/Averest/buble_sort/BubbleSort_safe_blmc004.smt2
+[DEBUG] Benchmark QF_IDL/Averest/buble_sort/BubbleSort_safe_blmc004.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 218/242: QF_IDL/qlock/qlock-4-10-12.base.cvc.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/qlock/qlock-4-10-12.base.cvc.smt2
+[DEBUG] Benchmark QF_IDL/qlock/qlock-4-10-12.base.cvc.smt2: solved=True, runtime=1.30s, PAR-2=1.30s
+[DEBUG] Processing 219/242: QF_IDL/queens_bench/toroidal_bench/toroidal_queen16-1.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/queens_bench/toroidal_bench/toroidal_queen16-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/toroidal_bench/toroidal_queen16-1.smt2: solved=True, runtime=27.42s, PAR-2=27.42s
+[DEBUG] Processing 220/242: QF_IDL/asp/WeightBoundedDominatingSet/rand_200_800_1159728969_2.lp.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/asp/WeightBoundedDominatingSet/rand_200_800_1159728969_2.lp.smt2
+[DEBUG] Benchmark QF_IDL/asp/WeightBoundedDominatingSet/rand_200_800_1159728969_2.lp.smt2: solved=True, runtime=725.42s, PAR-2=725.42s
+[DEBUG] Processing 221/242: QF_IDL/schedulingIDL/tai_20x20_4_mkspan1258.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/schedulingIDL/tai_20x20_4_mkspan1258.smt2
+[DEBUG] Benchmark QF_IDL/schedulingIDL/tai_20x20_4_mkspan1258.smt2: solved=True, runtime=1.77s, PAR-2=1.77s
+[DEBUG] Processing 222/242: QF_IDL/Averest/min_max/MinMax_live_bgmc002.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/Averest/min_max/MinMax_live_bgmc002.smt2
+[DEBUG] Benchmark QF_IDL/Averest/min_max/MinMax_live_bgmc002.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 223/242: QF_IDL/parity/10.500.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/10.500.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/10.500.graph.smt2: solved=True, runtime=0.60s, PAR-2=0.60s
+[DEBUG] Processing 224/242: QF_IDL/20210312-Bouvier/vlsat3_i81.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark QF_IDL/20210312-Bouvier/vlsat3_i81.smt2
+[DEBUG] Benchmark QF_IDL/20210312-Bouvier/vlsat3_i81.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 225/242: QF_IDL/asp/BlockedNQueens/156.48.1960.36.1721349794.dat.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/asp/BlockedNQueens/156.48.1960.36.1721349794.dat.smt2
+[DEBUG] Benchmark QF_IDL/asp/BlockedNQueens/156.48.1960.36.1721349794.dat.smt2: solved=True, runtime=12.82s, PAR-2=12.82s
+[DEBUG] Processing 226/242: QF_IDL/queens_bench/n_queen/queen10-1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/queens_bench/n_queen/queen10-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/n_queen/queen10-1.smt2: solved=True, runtime=0.21s, PAR-2=0.21s
+[DEBUG] Processing 227/242: QF_IDL/mathsat/post_office/PO2-7-PO2.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/mathsat/post_office/PO2-7-PO2.smt2
+[DEBUG] Benchmark QF_IDL/mathsat/post_office/PO2-7-PO2.smt2: solved=True, runtime=0.21s, PAR-2=0.21s
+[DEBUG] Processing 228/242: QF_IDL/20220214-jobshop-BohanLi/jobshop56-4-28-28-4-4-32.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/20220214-jobshop-BohanLi/jobshop56-4-28-28-4-4-32.smt2
+[DEBUG] Benchmark QF_IDL/20220214-jobshop-BohanLi/jobshop56-4-28-28-4-4-32.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 229/242: QF_IDL/queens_bench/n_queen/queen79-1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/queens_bench/n_queen/queen79-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/n_queen/queen79-1.smt2: solved=True, runtime=0.62s, PAR-2=0.62s
+[DEBUG] Processing 230/242: QF_IDL/schedulingIDL/tai_20x20_8_mkspan1536.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/schedulingIDL/tai_20x20_8_mkspan1536.smt2
+[DEBUG] Benchmark QF_IDL/schedulingIDL/tai_20x20_8_mkspan1536.smt2: solved=True, runtime=1.33s, PAR-2=1.33s
+[DEBUG] Processing 231/242: QF_IDL/Averest/sorting_network/SortingNetwork8_live_blmc000.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/Averest/sorting_network/SortingNetwork8_live_blmc000.smt2
+[DEBUG] Benchmark QF_IDL/Averest/sorting_network/SortingNetwork8_live_blmc000.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 232/242: QF_IDL/asp/15Puzzle/15puzzle_ins.lp.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/asp/15Puzzle/15puzzle_ins.lp.smt2
+[DEBUG] Benchmark QF_IDL/asp/15Puzzle/15puzzle_ins.lp.smt2: solved=True, runtime=5.48s, PAR-2=5.48s
+[DEBUG] Processing 233/242: QF_IDL/schedulingIDL/tai_15x15_7_mkspan906.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/schedulingIDL/tai_15x15_7_mkspan906.smt2
+[DEBUG] Benchmark QF_IDL/schedulingIDL/tai_15x15_7_mkspan906.smt2: solved=True, runtime=0.58s, PAR-2=0.58s
+[DEBUG] Processing 234/242: QF_IDL/queens_bench/super_queen/super_queen31-1.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/queens_bench/super_queen/super_queen31-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/super_queen/super_queen31-1.smt2: solved=True, runtime=0.34s, PAR-2=0.34s
+[DEBUG] Processing 235/242: QF_IDL/asp/WireRouting/wire.16.x.16.b.5.a.30_sat.data.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/WireRouting/wire.16.x.16.b.5.a.30_sat.data.smt2
+[DEBUG] Benchmark QF_IDL/asp/WireRouting/wire.16.x.16.b.5.a.30_sat.data.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 236/242: QF_IDL/Averest/buble_sort/BubbleSort_live_bgmc006.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/Averest/buble_sort/BubbleSort_live_bgmc006.smt2
+[DEBUG] Benchmark QF_IDL/Averest/buble_sort/BubbleSort_live_bgmc006.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 237/242: QF_IDL/Averest/sorting_network/SortingNetwork4_safe_blmc003.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/Averest/sorting_network/SortingNetwork4_safe_blmc003.smt2
+[DEBUG] Benchmark QF_IDL/Averest/sorting_network/SortingNetwork4_safe_blmc003.smt2: solved=True, runtime=0.32s, PAR-2=0.32s
+[DEBUG] Processing 238/242: QF_IDL/mathsat/post_office/PO3-2-PO3.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/mathsat/post_office/PO3-2-PO3.smt2
+[DEBUG] Benchmark QF_IDL/mathsat/post_office/PO3-2-PO3.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 239/242: QF_IDL/asp/MazeGeneration/maze-generation-width=16-height=16-density=0.01-run=4.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_IDL/asp/MazeGeneration/maze-generation-width=16-height=16-density=0.01-run=4.smt2
+[DEBUG] Benchmark QF_IDL/asp/MazeGeneration/maze-generation-width=16-height=16-density=0.01-run=4.smt2: solved=True, runtime=10.61s, PAR-2=10.61s
+[DEBUG] Processing 240/242: QF_IDL/asp/HierarchicalClustering/xy.13.x.13.r.3.541669225.993881.data_k=2_l=6_sat.gph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/asp/HierarchicalClustering/xy.13.x.13.r.3.541669225.993881.data_k=2_l=6_sat.gph.smt2
+[DEBUG] Benchmark QF_IDL/asp/HierarchicalClustering/xy.13.x.13.r.3.541669225.993881.data_k=2_l=6_sat.gph.smt2: solved=True, runtime=4.20s, PAR-2=4.20s
+[DEBUG] Processing 241/242: QF_IDL/queens_bench/n_queen/queen69-1.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/queens_bench/n_queen/queen69-1.smt2
+[DEBUG] Benchmark QF_IDL/queens_bench/n_queen/queen69-1.smt2: solved=True, runtime=0.35s, PAR-2=0.35s
+[DEBUG] Processing 242/242: QF_IDL/parity/11.500.graph.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_IDL/parity/11.500.graph.smt2
+[DEBUG] Benchmark QF_IDL/parity/11.500.graph.smt2: solved=True, runtime=0.75s, PAR-2=0.75s
+[DEBUG] Results written to CSV: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/results/qf_idl_csv_based/test/run_20251215_220636_463548/results.csv
+[DEBUG] Solved 208/242 benchmarks (85.95%)
+[DEBUG] PAR-2 Score: 86816.65s total, 358.75s average
+
+================================================================================
+EXECUTION TIME SUMMARY
+================================================================================
+Model training time:        1404.34 seconds ( 23.41 minutes)
+Prediction time:             745.55 seconds ( 12.43 minutes)
+  - Avg per benchmark:         3.08 seconds
+--------------------------------------------------------------------------------
+Total execution time:       2149.89 seconds ( 35.83 minutes)
+================================================================================
+
+================================================================================
+PAR-2 PERFORMANCE SUMMARY
+================================================================================
+Benchmarks solved:              208 / 242 ( 85.95%)
+Benchmarks unsolved:             34 / 242 ( 14.05%)
+--------------------------------------------------------------------------------
+Total PAR-2 score:         86816.65 seconds
+Average PAR-2 score:         358.75 seconds
+Timeout value:              1200.00 seconds
+PAR-2 penalty factor:             2x timeout
+================================================================================
+
+[DEBUG] CSV results saved to: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/results/qf_idl_csv_based/test/run_20251215_220636_463548/results.csv
+[DEBUG] Configuration saved to: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/results/qf_idl_csv_based/test/run_20251215_220636_463548/config.json
+End time: Mon 15 Dec 2025 10:42:28 PM EST

@@ -1,0 +1,992 @@
+Job ID: 53708722
+Node: nc10352
+Start time: Mon 15 Dec 2025 09:57:18 PM EST
+[DEBUG] Loading test results from /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/ALIA/alia_test_long.csv
+[DEBUG] Loaded results for 308 unique benchmarks
+[DEBUG] Found 308 unique benchmark paths in CSV
+[DEBUG] Found 308 benchmark files from CSV
+[DEBUG] Selected 308 benchmarks for processing
+
+================================================================================
+FEATURE CONFIGURATION
+================================================================================
+Using original MachSMT feature space (full grammatical construct list)
+Description features: DISABLED (prevents BERT model loading)
+Feature extraction timeout: 60 seconds
+Parallel cores: 16
+Feature dimensions will be printed after processing first benchmark
+================================================================================
+
+[DEBUG] Training MachSMT model...
+[DEBUG] Changed working directory to: /home/jchen688/scratch/non-incremental
+
+Initializing description feature model ('bert-base-uncased')...
+Using device: cpu
+✅ Model loaded successfully. Embedding dimension: 768
+Parsing Input File |████████████████████████████████████████| 3687/3687 [100%] in 15.5s (237.18/s) 
+Processing Benchmark Files |████████████████████████████████████████| 1229/1229 [100%] in 6:16.8 (3.26/s) 
+[DEBUG] Changed back to: /lustre06/project/6001884/jchen688/github/z3alpha
+[DEBUG] Model trained in 1056.53 seconds
+[DEBUG] Configuration saved to: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/results/alia_csv_based/test/run_20251215_215754_828818/config.json
+
+[DEBUG] Starting predictions on test benchmarks...
+[DEBUG] Processing 1/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list-1.i_16.smt2
+
+================================================================================
+FEATURE SPACE DIMENSIONS
+================================================================================
+Total feature dimensions: 189
+================================================================================
+
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-1.i_16.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-1.i_16.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 2/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_5.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_5.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_5.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 3/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll-queue-1.i_2.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll-queue-1.i_2.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll-queue-1.i_2.smt2: solved=True, runtime=0.78s, PAR-2=0.78s
+[DEBUG] Processing 4/308: ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_150.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_150.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_150.smt2: solved=True, runtime=1.18s, PAR-2=1.18s
+[DEBUG] Processing 5/308: ALIA/20230321-UltimateAutomizerSvcomp2023/test_add-2.i_16.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/test_add-2.i_16.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/test_add-2.i_16.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 6/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_77.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_77.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_77.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 7/308: ALIA/20230321-UltimateAutomizerSvcomp2023/test-0234-1.i_6.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/test-0234-1.i_6.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/test-0234-1.i_6.smt2: solved=True, runtime=0.48s, PAR-2=0.48s
+[DEBUG] Processing 8/308: ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_205.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_205.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_205.smt2: solved=True, runtime=71.63s, PAR-2=71.63s
+[DEBUG] Processing 9/308: ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_90.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_90.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_90.smt2: solved=True, runtime=534.91s, PAR-2=534.91s
+[DEBUG] Processing 10/308: ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_29.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_29.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_29.smt2: solved=True, runtime=0.64s, PAR-2=0.64s
+[DEBUG] Processing 11/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_70.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_70.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_70.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 12/308: ALIA/20230321-UltimateAutomizerSvcomp2023/splice-2.i_127.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/splice-2.i_127.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/splice-2.i_127.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 13/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all.i_0.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all.i_0.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all.i_0.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 14/308: ALIA/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_32.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_32.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_32.smt2: solved=True, runtime=0.67s, PAR-2=0.67s
+[DEBUG] Processing 15/308: ALIA/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_55.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_55.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_55.smt2: solved=True, runtime=0.64s, PAR-2=0.64s
+[DEBUG] Processing 16/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_46.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_46.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_46.smt2: solved=True, runtime=0.49s, PAR-2=0.49s
+[DEBUG] Processing 17/308: ALIA/20230321-UltimateAutomizerSvcomp2023/tree_cnstr.i_23.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/tree_cnstr.i_23.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/tree_cnstr.i_23.smt2: solved=True, runtime=3.35s, PAR-2=3.35s
+[DEBUG] Processing 18/308: ALIA/piVC/piVC_b5f37c.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/piVC/piVC_b5f37c.smt2
+[DEBUG] Benchmark ALIA/piVC/piVC_b5f37c.smt2: solved=True, runtime=0.86s, PAR-2=0.86s
+[DEBUG] Processing 19/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_insert_unequal.i_1.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_insert_unequal.i_1.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_insert_unequal.i_1.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 20/308: ALIA/20230321-UltimateAutomizerSvcomp2023/simple_built_from_end.i_10.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple_built_from_end.i_10.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple_built_from_end.i_10.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 21/308: ALIA/20230321-UltimateAutomizerSvcomp2023/splice-2.i_51.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/splice-2.i_51.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/splice-2.i_51.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 22/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_prepend_equal.i_1.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_prepend_equal.i_1.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_prepend_equal.i_1.smt2: solved=True, runtime=0.45s, PAR-2=0.45s
+[DEBUG] Processing 23/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_5.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_5.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_5.smt2: solved=True, runtime=11.94s, PAR-2=11.94s
+[DEBUG] Processing 24/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll-queue-1.i_17.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll-queue-1.i_17.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll-queue-1.i_17.smt2: solved=True, runtime=0.51s, PAR-2=0.51s
+[DEBUG] Processing 25/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_remove_all.i_13.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_remove_all.i_13.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_remove_all.i_13.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 26/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_28.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_28.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_28.smt2: solved=True, runtime=0.45s, PAR-2=0.45s
+[DEBUG] Processing 27/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_31.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_31.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_31.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 28/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_70.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_70.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_70.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 29/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_insert_unequal.i_4.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_insert_unequal.i_4.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_insert_unequal.i_4.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 30/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_19.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_19.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-1.i_19.smt2: solved=True, runtime=0.48s, PAR-2=0.48s
+[DEBUG] Processing 31/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_21.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_21.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_21.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 32/308: ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_71.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_71.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_71.smt2: solved=True, runtime=0.88s, PAR-2=0.88s
+[DEBUG] Processing 33/308: ALIA/20230321-UltimateAutomizerSvcomp2023/test_mutex_unlock_at_exit.i_16.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/test_mutex_unlock_at_exit.i_16.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/test_mutex_unlock_at_exit.i_16.smt2: solved=True, runtime=58.53s, PAR-2=58.53s
+[DEBUG] Processing 34/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_33.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_33.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_33.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 35/308: ALIA/20230321-UltimateAutomizerSvcomp2023/hash_fun.i_1.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/hash_fun.i_1.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/hash_fun.i_1.smt2: solved=True, runtime=1.00s, PAR-2=1.00s
+[DEBUG] Processing 36/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_42.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_42.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_42.smt2: solved=True, runtime=0.47s, PAR-2=0.47s
+[DEBUG] Processing 37/308: ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_27.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_27.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_27.smt2: solved=True, runtime=0.49s, PAR-2=0.49s
+[DEBUG] Processing 38/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_108.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_108.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_108.smt2: solved=True, runtime=248.99s, PAR-2=248.99s
+[DEBUG] Processing 39/308: ALIA/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_62.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_62.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_62.smt2: solved=True, runtime=0.54s, PAR-2=0.54s
+[DEBUG] Processing 40/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_3.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_3.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_3.smt2: solved=True, runtime=0.47s, PAR-2=0.47s
+[DEBUG] Processing 41/308: ALIA/20230321-UltimateAutomizerSvcomp2023/running_example.i_10.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/running_example.i_10.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/running_example.i_10.smt2: solved=True, runtime=0.56s, PAR-2=0.56s
+[DEBUG] Processing 42/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll-queue-1.i_12.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll-queue-1.i_12.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll-queue-1.i_12.smt2: solved=True, runtime=2.32s, PAR-2=2.32s
+[DEBUG] Processing 43/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_5.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_5.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_5.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 44/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_90.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_90.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_90.smt2: solved=True, runtime=0.50s, PAR-2=0.50s
+[DEBUG] Processing 45/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_17.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_17.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_17.smt2: solved=True, runtime=11.87s, PAR-2=11.87s
+[DEBUG] Processing 46/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_32.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_32.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_32.smt2: solved=True, runtime=0.61s, PAR-2=0.61s
+[DEBUG] Processing 47/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll-optional-1.i_0.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-optional-1.i_0.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-optional-1.i_0.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 48/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_222.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_222.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_222.smt2: solved=True, runtime=0.51s, PAR-2=0.51s
+[DEBUG] Processing 49/308: ALIA/piVC/piVC_bd0142.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/piVC/piVC_bd0142.smt2
+[DEBUG] Benchmark ALIA/piVC/piVC_bd0142.smt2: solved=True, runtime=6.47s, PAR-2=6.47s
+[DEBUG] Processing 50/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_77.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_77.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_77.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 51/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_53.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_53.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_53.smt2: solved=True, runtime=480.37s, PAR-2=480.37s
+[DEBUG] Processing 52/308: ALIA/piVC/piVC_2186b5.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/piVC/piVC_2186b5.smt2
+[DEBUG] Benchmark ALIA/piVC/piVC_2186b5.smt2: solved=True, runtime=3.98s, PAR-2=3.98s
+[DEBUG] Processing 53/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_21.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_21.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_21.smt2: solved=True, runtime=3.54s, PAR-2=3.54s
+[DEBUG] Processing 54/308: ALIA/20230321-UltimateAutomizerSvcomp2023/simple_built_from_end.i_51.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple_built_from_end.i_51.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple_built_from_end.i_51.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 55/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_insert_unequal.i_21.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_insert_unequal.i_21.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_insert_unequal.i_21.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 56/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_24.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_24.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_24.smt2: solved=True, runtime=0.57s, PAR-2=0.57s
+[DEBUG] Processing 57/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_71.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_71.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_71.smt2: solved=True, runtime=0.74s, PAR-2=0.74s
+[DEBUG] Processing 58/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_prepend_equal.i_58.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_prepend_equal.i_58.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_prepend_equal.i_58.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 59/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_75.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_75.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_75.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 60/308: ALIA/20230321-UltimateAutomizerSvcomp2023/simple_built_from_end.i_55.smt2
+[DEBUG] Predicted solver: iProver for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple_built_from_end.i_55.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple_built_from_end.i_55.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 61/308: ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_196.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_196.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_196.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 62/308: ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_193.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_193.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_193.smt2: solved=True, runtime=32.69s, PAR-2=32.69s
+[DEBUG] Processing 63/308: ALIA/20230321-UltimateAutomizerSvcomp2023/test_add-2.i_57.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/test_add-2.i_57.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/test_add-2.i_57.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 64/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_unequal.i_8.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_unequal.i_8.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_unequal.i_8.smt2: solved=True, runtime=0.45s, PAR-2=0.45s
+[DEBUG] Processing 65/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-1.i_18.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-1.i_18.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-1.i_18.smt2: solved=True, runtime=28.34s, PAR-2=28.34s
+[DEBUG] Processing 66/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll-token-1.i_7.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll-token-1.i_7.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll-token-1.i_7.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 67/308: ALIA/20230321-UltimateAutomizerSvcomp2023/tree_of_cslls.i_39.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/tree_of_cslls.i_39.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/tree_of_cslls.i_39.smt2: solved=True, runtime=0.57s, PAR-2=0.57s
+[DEBUG] Processing 68/308: ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_24.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_24.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_24.smt2: solved=True, runtime=0.61s, PAR-2=0.61s
+[DEBUG] Processing 69/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_10.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_10.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_10.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 70/308: ALIA/20230321-UltimateAutomizerSvcomp2023/test-0234-1.i_29.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/test-0234-1.i_29.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/test-0234-1.i_29.smt2: solved=True, runtime=0.45s, PAR-2=0.45s
+[DEBUG] Processing 71/308: ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_18.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_18.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_18.smt2: solved=True, runtime=22.89s, PAR-2=22.89s
+[DEBUG] Processing 72/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_41.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_41.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_41.smt2: solved=True, runtime=83.62s, PAR-2=83.62s
+[DEBUG] Processing 73/308: ALIA/20230321-UltimateAutomizerSvcomp2023/simple-2.i_52.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple-2.i_52.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple-2.i_52.smt2: solved=True, runtime=0.77s, PAR-2=0.77s
+[DEBUG] Processing 74/308: ALIA/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_116.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_116.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_116.smt2: solved=True, runtime=40.64s, PAR-2=40.64s
+[DEBUG] Processing 75/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dancing.i_0.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dancing.i_0.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dancing.i_0.smt2: solved=True, runtime=0.47s, PAR-2=0.47s
+[DEBUG] Processing 76/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_76.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_76.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_76.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 77/308: ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_59.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_59.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_59.smt2: solved=True, runtime=0.60s, PAR-2=0.60s
+[DEBUG] Processing 78/308: ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_21.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_21.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_21.smt2: solved=True, runtime=0.44s, PAR-2=0.44s
+[DEBUG] Processing 79/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_4.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_4.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_4.smt2: solved=True, runtime=0.44s, PAR-2=0.44s
+[DEBUG] Processing 80/308: ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_148.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_148.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_148.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 81/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_35.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_35.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_35.smt2: solved=True, runtime=0.66s, PAR-2=0.66s
+[DEBUG] Processing 82/308: ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_185.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_185.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_185.smt2: solved=True, runtime=0.49s, PAR-2=0.49s
+[DEBUG] Processing 83/308: ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_31.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_31.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_31.smt2: solved=True, runtime=2.81s, PAR-2=2.81s
+[DEBUG] Processing 84/308: ALIA/20230321-UltimateAutomizerSvcomp2023/test_mutex_unlock_at_exit.i_4.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/test_mutex_unlock_at_exit.i_4.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/test_mutex_unlock_at_exit.i_4.smt2: solved=True, runtime=870.06s, PAR-2=870.06s
+[DEBUG] Processing 85/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_62.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_62.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_62.smt2: solved=True, runtime=138.63s, PAR-2=138.63s
+[DEBUG] Processing 86/308: ALIA/20230321-UltimateAutomizerSvcomp2023/simple-2.i_62.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple-2.i_62.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple-2.i_62.smt2: solved=True, runtime=1.46s, PAR-2=1.46s
+[DEBUG] Processing 87/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_37.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_37.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_37.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 88/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_190.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_190.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_190.smt2: solved=True, runtime=0.62s, PAR-2=0.62s
+[DEBUG] Processing 89/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_219.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_219.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_219.smt2: solved=True, runtime=0.61s, PAR-2=0.61s
+[DEBUG] Processing 90/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_4.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_4.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_4.smt2: solved=True, runtime=0.41s, PAR-2=0.41s
+[DEBUG] Processing 91/308: ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_72.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_72.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_72.smt2: solved=True, runtime=0.61s, PAR-2=0.61s
+[DEBUG] Processing 92/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_123.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_123.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_123.smt2: solved=True, runtime=4.71s, PAR-2=4.71s
+[DEBUG] Processing 93/308: ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_16.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_16.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_16.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 94/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_58.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_58.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_58.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 95/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_1.i_21.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_1.i_21.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_1.i_21.smt2: solved=True, runtime=0.56s, PAR-2=0.56s
+[DEBUG] Processing 96/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_38.smt2
+[DEBUG] Predicted solver: iProver for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_38.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_38.smt2: solved=True, runtime=25.46s, PAR-2=25.46s
+[DEBUG] Processing 97/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll-optional-1.i_7.smt2
+[DEBUG] Predicted solver: iProver for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-optional-1.i_7.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-optional-1.i_7.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 98/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_11.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_11.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_11.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 99/308: ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_183.smt2
+[DEBUG] Predicted solver: iProver for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_183.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_183.smt2: solved=True, runtime=3.90s, PAR-2=3.90s
+[DEBUG] Processing 100/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll-optional-1.i_13.smt2
+[DEBUG] Predicted solver: iProver for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll-optional-1.i_13.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll-optional-1.i_13.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 101/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-2.i_72.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-2.i_72.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-2.i_72.smt2: solved=True, runtime=99.47s, PAR-2=99.47s
+[DEBUG] Processing 102/308: ALIA/20230321-UltimateAutomizerSvcomp2023/splice-2.i_98.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/splice-2.i_98.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/splice-2.i_98.smt2: solved=True, runtime=2.52s, PAR-2=2.52s
+[DEBUG] Processing 103/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-2.i_48.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-2.i_48.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-2.i_48.smt2: solved=True, runtime=5.00s, PAR-2=5.00s
+[DEBUG] Processing 104/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_61.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_61.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_61.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 105/308: ALIA/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_1.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_1.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_1.smt2: solved=True, runtime=0.48s, PAR-2=0.48s
+[DEBUG] Processing 106/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_4.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_4.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_4.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 107/308: ALIA/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_214.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_214.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_214.smt2: solved=True, runtime=0.47s, PAR-2=0.47s
+[DEBUG] Processing 108/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_remove_all.i_9.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_remove_all.i_9.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_remove_all.i_9.smt2: solved=True, runtime=8.15s, PAR-2=8.15s
+[DEBUG] Processing 109/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_87.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_87.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_87.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 110/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_31.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_31.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_31.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 111/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_unequal.i_15.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_unequal.i_15.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_unequal.i_15.smt2: solved=True, runtime=0.45s, PAR-2=0.45s
+[DEBUG] Processing 112/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_84.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_84.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_84.smt2: solved=True, runtime=0.49s, PAR-2=0.49s
+[DEBUG] Processing 113/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_prepend_equal.i_49.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_prepend_equal.i_49.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_prepend_equal.i_49.smt2: solved=True, runtime=0.44s, PAR-2=0.44s
+[DEBUG] Processing 114/308: ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_43.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_43.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_43.smt2: solved=True, runtime=0.89s, PAR-2=0.89s
+[DEBUG] Processing 115/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_prepend_equal.i_40.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_prepend_equal.i_40.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_prepend_equal.i_40.smt2: solved=True, runtime=0.44s, PAR-2=0.44s
+[DEBUG] Processing 116/308: ALIA/20230321-UltimateAutomizerSvcomp2023/simple_and_skiplist_2lvl-2.i_60.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple_and_skiplist_2lvl-2.i_60.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple_and_skiplist_2lvl-2.i_60.smt2: solved=True, runtime=0.44s, PAR-2=0.44s
+[DEBUG] Processing 117/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_29.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_29.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_29.smt2: solved=True, runtime=12.99s, PAR-2=12.99s
+[DEBUG] Processing 118/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_42.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_42.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_42.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 119/308: ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_60.smt2
+[DEBUG] Predicted solver: iProver for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_60.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_60.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 120/308: ALIA/20230321-UltimateAutomizerSvcomp2023/tree_of_cslls.i_44.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/tree_of_cslls.i_44.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/tree_of_cslls.i_44.smt2: solved=True, runtime=0.48s, PAR-2=0.48s
+[DEBUG] Processing 121/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_append_unequal.i_20.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_append_unequal.i_20.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_append_unequal.i_20.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 122/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_59.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_59.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_59.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 123/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_32.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_32.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_32.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 124/308: ALIA/piVC/piVC_c7166c.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/piVC/piVC_c7166c.smt2
+[DEBUG] Benchmark ALIA/piVC/piVC_c7166c.smt2: solved=True, runtime=0.68s, PAR-2=0.68s
+[DEBUG] Processing 125/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_100.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_100.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_100.smt2: solved=True, runtime=0.48s, PAR-2=0.48s
+[DEBUG] Processing 126/308: ALIA/20230321-UltimateAutomizerSvcomp2023/prefixsum_rec.c_32.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/prefixsum_rec.c_32.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/prefixsum_rec.c_32.smt2: solved=True, runtime=0.44s, PAR-2=0.44s
+[DEBUG] Processing 127/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_18.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_18.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_18.smt2: solved=True, runtime=0.59s, PAR-2=0.59s
+[DEBUG] Processing 128/308: ALIA/20230321-UltimateAutomizerSvcomp2023/tree_stack.i_21.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/tree_stack.i_21.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/tree_stack.i_21.smt2: solved=True, runtime=0.51s, PAR-2=0.51s
+[DEBUG] Processing 129/308: ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_172.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_172.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_172.smt2: solved=True, runtime=0.50s, PAR-2=0.50s
+[DEBUG] Processing 130/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_56.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_56.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_56.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 131/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_13.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_13.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_13.smt2: solved=True, runtime=0.55s, PAR-2=0.55s
+[DEBUG] Processing 132/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_33.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_33.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_33.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 133/308: ALIA/20230321-UltimateAutomizerSvcomp2023/calendar.i_4.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/calendar.i_4.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/calendar.i_4.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 134/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_6.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_6.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_6.smt2: solved=True, runtime=0.45s, PAR-2=0.45s
+[DEBUG] Processing 135/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_12.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_12.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_12.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 136/308: ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_79.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_79.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_79.smt2: solved=True, runtime=0.58s, PAR-2=0.58s
+[DEBUG] Processing 137/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_remove_all.i_16.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_remove_all.i_16.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_remove_all.i_16.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 138/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_update_all_reverse.i_70.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_update_all_reverse.i_70.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_update_all_reverse.i_70.smt2: solved=True, runtime=0.55s, PAR-2=0.55s
+[DEBUG] Processing 139/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll-buckets-2.i_1.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-buckets-2.i_1.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-buckets-2.i_1.smt2: solved=True, runtime=0.45s, PAR-2=0.45s
+[DEBUG] Processing 140/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_76.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_76.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_76.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 141/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_22.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_22.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_22.smt2: solved=True, runtime=232.05s, PAR-2=232.05s
+[DEBUG] Processing 142/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_42.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_42.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_42.smt2: solved=True, runtime=12.79s, PAR-2=12.79s
+[DEBUG] Processing 143/308: ALIA/20230321-UltimateAutomizerSvcomp2023/test_mutex_unlock_at_exit.i_33.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/test_mutex_unlock_at_exit.i_33.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/test_mutex_unlock_at_exit.i_33.smt2: solved=True, runtime=2.03s, PAR-2=2.03s
+[DEBUG] Processing 144/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_3.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_3.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_3.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 145/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_103.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_103.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_103.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 146/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_63.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_63.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_63.smt2: solved=True, runtime=0.66s, PAR-2=0.66s
+[DEBUG] Processing 147/308: ALIA/20230321-UltimateAutomizerSvcomp2023/packet_filter.i_13.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/packet_filter.i_13.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/packet_filter.i_13.smt2: solved=True, runtime=31.39s, PAR-2=31.39s
+[DEBUG] Processing 148/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-2.i_47.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-2.i_47.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-2.i_47.smt2: solved=True, runtime=0.82s, PAR-2=0.82s
+[DEBUG] Processing 149/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_82.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_82.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_82.smt2: solved=True, runtime=0.44s, PAR-2=0.44s
+[DEBUG] Processing 150/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_1.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_1.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_1.smt2: solved=True, runtime=0.42s, PAR-2=0.42s
+[DEBUG] Processing 151/308: ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_126.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_126.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_126.smt2: solved=True, runtime=0.47s, PAR-2=0.47s
+[DEBUG] Processing 152/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_58.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_58.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_58.smt2: solved=True, runtime=0.92s, PAR-2=0.92s
+[DEBUG] Processing 153/308: ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_161.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_161.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_161.smt2: solved=True, runtime=1.10s, PAR-2=1.10s
+[DEBUG] Processing 154/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_127.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_127.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_127.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 155/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-2.i_4.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-2.i_4.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-2.i_4.smt2: solved=True, runtime=0.52s, PAR-2=0.52s
+[DEBUG] Processing 156/308: ALIA/20230321-UltimateAutomizerSvcomp2023/tree-2.i_1.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/tree-2.i_1.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/tree-2.i_1.smt2: solved=True, runtime=1.94s, PAR-2=1.94s
+[DEBUG] Processing 157/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-2.i_69.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-2.i_69.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-2.i_69.smt2: solved=True, runtime=0.88s, PAR-2=0.88s
+[DEBUG] Processing 158/308: ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_167.smt2
+[DEBUG] Predicted solver: iProver for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_167.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_167.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 159/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_57.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_57.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_57.smt2: solved=True, runtime=0.51s, PAR-2=0.51s
+[DEBUG] Processing 160/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list-1.i_18.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-1.i_18.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-1.i_18.smt2: solved=True, runtime=0.50s, PAR-2=0.50s
+[DEBUG] Processing 161/308: ALIA/20230321-UltimateAutomizerSvcomp2023/prefixsum_rec.c_15.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/prefixsum_rec.c_15.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/prefixsum_rec.c_15.smt2: solved=True, runtime=0.44s, PAR-2=0.44s
+[DEBUG] Processing 162/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_98.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_98.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_98.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 163/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list-1.i_11.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-1.i_11.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-1.i_11.smt2: solved=True, runtime=0.47s, PAR-2=0.47s
+[DEBUG] Processing 164/308: ALIA/20230321-UltimateAutomizerSvcomp2023/test_mutex_unlock_at_exit.i_35.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/test_mutex_unlock_at_exit.i_35.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/test_mutex_unlock_at_exit.i_35.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 165/308: ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_130.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_130.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_130.smt2: solved=True, runtime=0.49s, PAR-2=0.49s
+[DEBUG] Processing 166/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_remove_all.i_14.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_remove_all.i_14.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_remove_all.i_14.smt2: solved=True, runtime=0.60s, PAR-2=0.60s
+[DEBUG] Processing 167/308: ALIA/20230321-UltimateAutomizerSvcomp2023/splice-2.i_94.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/splice-2.i_94.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/splice-2.i_94.smt2: solved=True, runtime=4.51s, PAR-2=4.51s
+[DEBUG] Processing 168/308: ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_192.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_192.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_192.smt2: solved=True, runtime=119.08s, PAR-2=119.08s
+[DEBUG] Processing 169/308: ALIA/20230321-UltimateAutomizerSvcomp2023/test_mutex_unlock_at_exit.i_0.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/test_mutex_unlock_at_exit.i_0.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/test_mutex_unlock_at_exit.i_0.smt2: solved=True, runtime=0.42s, PAR-2=0.42s
+[DEBUG] Processing 170/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll-optional-1.i_1.smt2
+[DEBUG] Predicted solver: iProver for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll-optional-1.i_1.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll-optional-1.i_1.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 171/308: ALIA/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-1.i_43.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-1.i_43.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-1.i_43.smt2: solved=True, runtime=1.45s, PAR-2=1.45s
+[DEBUG] Processing 172/308: ALIA/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_27.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_27.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_27.smt2: solved=True, runtime=0.57s, PAR-2=0.57s
+[DEBUG] Processing 173/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_45.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_45.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_45.smt2: solved=True, runtime=0.47s, PAR-2=0.47s
+[DEBUG] Processing 174/308: ALIA/20230321-UltimateAutomizerSvcomp2023/split_list_test05-2.i_1.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/split_list_test05-2.i_1.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/split_list_test05-2.i_1.smt2: solved=True, runtime=0.58s, PAR-2=0.58s
+[DEBUG] Processing 175/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll_circular_traversal-1.i_45.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_circular_traversal-1.i_45.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_circular_traversal-1.i_45.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 176/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_155.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_155.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_155.smt2: solved=True, runtime=698.26s, PAR-2=698.26s
+[DEBUG] Processing 177/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_35.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_35.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_35.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 178/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-1.i_56.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-1.i_56.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list_and_tree_cnstr-1.i_56.smt2: solved=True, runtime=0.65s, PAR-2=0.65s
+[DEBUG] Processing 179/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_112.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_112.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_112.smt2: solved=True, runtime=0.56s, PAR-2=0.56s
+[DEBUG] Processing 180/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_77.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_77.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_77.smt2: solved=True, runtime=0.47s, PAR-2=0.47s
+[DEBUG] Processing 181/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_79.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_79.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_79.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 182/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_66.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_66.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_66.smt2: solved=True, runtime=0.66s, PAR-2=0.66s
+[DEBUG] Processing 183/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll-rb-cnstr_1-2.i_1.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll-rb-cnstr_1-2.i_1.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll-rb-cnstr_1-2.i_1.smt2: solved=True, runtime=0.74s, PAR-2=0.74s
+[DEBUG] Processing 184/308: ALIA/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_0.smt2
+[DEBUG] Predicted solver: iProver for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_0.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/test_mutex_unbounded-1.i_0.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 185/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_30.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_30.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_30.smt2: solved=True, runtime=0.46s, PAR-2=0.46s
+[DEBUG] Processing 186/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_14.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_14.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_14.smt2: solved=True, runtime=5.73s, PAR-2=5.73s
+[DEBUG] Processing 187/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_27.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_27.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_27.smt2: solved=True, runtime=13.28s, PAR-2=13.28s
+[DEBUG] Processing 188/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_1.i_50.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_1.i_50.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_1.i_50.smt2: solved=True, runtime=0.90s, PAR-2=0.90s
+[DEBUG] Processing 189/308: ALIA/20230321-UltimateAutomizerSvcomp2023/simple_and_skiplist_2lvl-2.i_53.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple_and_skiplist_2lvl-2.i_53.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple_and_skiplist_2lvl-2.i_53.smt2: solved=True, runtime=0.53s, PAR-2=0.53s
+[DEBUG] Processing 190/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list-1.i_83.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-1.i_83.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-1.i_83.smt2: solved=True, runtime=16.90s, PAR-2=16.90s
+[DEBUG] Processing 191/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_166.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_166.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_166.smt2: solved=True, runtime=533.70s, PAR-2=533.70s
+[DEBUG] Processing 192/308: ALIA/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-1.i_65.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-1.i_65.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-1.i_65.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 193/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_132.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_132.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_132.smt2: solved=True, runtime=0.75s, PAR-2=0.75s
+[DEBUG] Processing 194/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_52.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_52.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_52.smt2: solved=True, runtime=0.44s, PAR-2=0.44s
+[DEBUG] Processing 195/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_15.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_15.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_15.smt2: solved=True, runtime=5.83s, PAR-2=5.83s
+[DEBUG] Processing 196/308: ALIA/20230321-UltimateAutomizerSvcomp2023/simple-2.i_51.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple-2.i_51.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple-2.i_51.smt2: solved=True, runtime=0.67s, PAR-2=0.67s
+[DEBUG] Processing 197/308: ALIA/20230321-UltimateAutomizerSvcomp2023/simple_built_from_end.i_49.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple_built_from_end.i_49.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple_built_from_end.i_49.smt2: solved=True, runtime=0.56s, PAR-2=0.56s
+[DEBUG] Processing 198/308: ALIA/20230321-UltimateAutomizerSvcomp2023/simple_and_skiplist_2lvl-2.i_31.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple_and_skiplist_2lvl-2.i_31.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple_and_skiplist_2lvl-2.i_31.smt2: solved=True, runtime=0.49s, PAR-2=0.49s
+[DEBUG] Processing 199/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_94.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_94.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_94.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 200/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll-01-2.i_1.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll-01-2.i_1.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll-01-2.i_1.smt2: solved=True, runtime=30.30s, PAR-2=30.30s
+[DEBUG] Processing 201/308: ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_186.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_186.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_186.smt2: solved=True, runtime=0.49s, PAR-2=0.49s
+[DEBUG] Processing 202/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_147.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_147.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_147.smt2: solved=True, runtime=0.82s, PAR-2=0.82s
+[DEBUG] Processing 203/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_27.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_27.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_27.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 204/308: ALIA/20230321-UltimateAutomizerSvcomp2023/tree_of_cslls.i_42.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/tree_of_cslls.i_42.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/tree_of_cslls.i_42.smt2: solved=True, runtime=0.45s, PAR-2=0.45s
+[DEBUG] Processing 205/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_52.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_52.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_52.smt2: solved=True, runtime=0.92s, PAR-2=0.92s
+[DEBUG] Processing 206/308: ALIA/piVC/piVC_13de35.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/piVC/piVC_13de35.smt2
+[DEBUG] Benchmark ALIA/piVC/piVC_13de35.smt2: solved=True, runtime=2.26s, PAR-2=2.26s
+[DEBUG] Processing 207/308: ALIA/20230321-UltimateAutomizerSvcomp2023/simple_search_value-1.i_36.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple_search_value-1.i_36.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple_search_value-1.i_36.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 208/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_92.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_92.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_92.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 209/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll-rb-cnstr_1-2.i_4.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll-rb-cnstr_1-2.i_4.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll-rb-cnstr_1-2.i_4.smt2: solved=True, runtime=101.08s, PAR-2=101.08s
+[DEBUG] Processing 210/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_28.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_28.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_28.smt2: solved=True, runtime=0.65s, PAR-2=0.65s
+[DEBUG] Processing 211/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_85.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_85.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_85.smt2: solved=True, runtime=0.51s, PAR-2=0.51s
+[DEBUG] Processing 212/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_remove_all.i_8.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_remove_all.i_8.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_remove_all.i_8.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 213/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_76.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_76.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_76.smt2: solved=True, runtime=305.44s, PAR-2=305.44s
+[DEBUG] Processing 214/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dancing.i_8.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dancing.i_8.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dancing.i_8.smt2: solved=True, runtime=0.55s, PAR-2=0.55s
+[DEBUG] Processing 215/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll-circular-1.i_3.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-circular-1.i_3.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-circular-1.i_3.smt2: solved=True, runtime=0.48s, PAR-2=0.48s
+[DEBUG] Processing 216/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_98.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_98.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_98.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 217/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_36.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_36.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_36.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 218/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_89.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_89.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_89.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 219/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_140.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_140.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_140.smt2: solved=True, runtime=0.62s, PAR-2=0.62s
+[DEBUG] Processing 220/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_105.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_105.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag.i_105.smt2: solved=True, runtime=1.92s, PAR-2=1.92s
+[DEBUG] Processing 221/308: ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_67.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_67.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_67.smt2: solved=True, runtime=0.61s, PAR-2=0.61s
+[DEBUG] Processing 222/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_update_all_reverse.i_74.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_update_all_reverse.i_74.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_update_all_reverse.i_74.smt2: solved=True, runtime=0.52s, PAR-2=0.52s
+[DEBUG] Processing 223/308: ALIA/20230321-UltimateAutomizerSvcomp2023/simple_search_value-1.i_59.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple_search_value-1.i_59.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple_search_value-1.i_59.smt2: solved=True, runtime=358.09s, PAR-2=358.09s
+[DEBUG] Processing 224/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_63.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_63.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_unequal.i_63.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 225/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_72.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_72.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_72.smt2: solved=True, runtime=0.64s, PAR-2=0.64s
+[DEBUG] Processing 226/308: ALIA/20230321-UltimateAutomizerSvcomp2023/splice-2.i_27.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/splice-2.i_27.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/splice-2.i_27.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 227/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_prepend_equal.i_56.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_prepend_equal.i_56.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_prepend_equal.i_56.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 228/308: ALIA/20230321-UltimateAutomizerSvcomp2023/simple-2.i_43.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple-2.i_43.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple-2.i_43.smt2: solved=True, runtime=0.50s, PAR-2=0.50s
+[DEBUG] Processing 229/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_3.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_3.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_3.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 230/308: ALIA/20230321-UltimateAutomizerSvcomp2023/simple_built_from_end.i_77.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple_built_from_end.i_77.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple_built_from_end.i_77.smt2: solved=True, runtime=0.61s, PAR-2=0.61s
+[DEBUG] Processing 231/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_25.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_25.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_25.smt2: solved=True, runtime=0.61s, PAR-2=0.61s
+[DEBUG] Processing 232/308: ALIA/20230321-UltimateAutomizerSvcomp2023/simple_built_from_end.i_30.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple_built_from_end.i_30.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple_built_from_end.i_30.smt2: solved=True, runtime=72.45s, PAR-2=72.45s
+[DEBUG] Processing 233/308: ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_94.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_94.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_94.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 234/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list-1.i_81.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-1.i_81.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-1.i_81.smt2: solved=True, runtime=2.41s, PAR-2=2.41s
+[DEBUG] Processing 235/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll_circular_traversal-1.i_1.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_circular_traversal-1.i_1.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_circular_traversal-1.i_1.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 236/308: ALIA/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_104.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_104.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_104.smt2: solved=True, runtime=0.64s, PAR-2=0.64s
+[DEBUG] Processing 237/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_36.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_36.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_36.smt2: solved=True, runtime=0.90s, PAR-2=0.90s
+[DEBUG] Processing 238/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list_search-2.i_22.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list_search-2.i_22.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list_search-2.i_22.smt2: solved=True, runtime=0.47s, PAR-2=0.47s
+[DEBUG] Processing 239/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_6.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_6.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_6.smt2: solved=True, runtime=11.95s, PAR-2=11.95s
+[DEBUG] Processing 240/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_14.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_14.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_14.smt2: solved=True, runtime=0.46s, PAR-2=0.46s
+[DEBUG] Processing 241/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_3.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_3.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_3.smt2: solved=True, runtime=0.55s, PAR-2=0.55s
+[DEBUG] Processing 242/308: ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_19.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_19.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_19.smt2: solved=True, runtime=23.16s, PAR-2=23.16s
+[DEBUG] Processing 243/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_57.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_57.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_insert_unequal.i_57.smt2: solved=True, runtime=82.37s, PAR-2=82.37s
+[DEBUG] Processing 244/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_33.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_33.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_33.smt2: solved=True, runtime=11.45s, PAR-2=11.45s
+[DEBUG] Processing 245/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_5.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_5.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_of_dll-2.i_5.smt2: solved=True, runtime=0.46s, PAR-2=0.46s
+[DEBUG] Processing 246/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list-1.i_61.smt2
+[DEBUG] Predicted solver: iProver for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-1.i_61.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-1.i_61.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 247/308: ALIA/20230321-UltimateAutomizerSvcomp2023/tree_of_cslls.i_48.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/tree_of_cslls.i_48.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/tree_of_cslls.i_48.smt2: solved=True, runtime=0.47s, PAR-2=0.47s
+[DEBUG] Processing 248/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_8.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_8.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_8.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 249/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_20.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_20.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_20.smt2: solved=True, runtime=0.50s, PAR-2=0.50s
+[DEBUG] Processing 250/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_70.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_70.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_70.smt2: solved=True, runtime=0.47s, PAR-2=0.47s
+[DEBUG] Processing 251/308: ALIA/20230321-UltimateAutomizerSvcomp2023/splice-2.i_104.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/splice-2.i_104.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/splice-2.i_104.smt2: solved=True, runtime=2.24s, PAR-2=2.24s
+[DEBUG] Processing 252/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_74.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_74.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_74.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 253/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_unequal.i_43.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_unequal.i_43.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_unequal.i_43.smt2: solved=True, runtime=6.81s, PAR-2=6.81s
+[DEBUG] Processing 254/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_10.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_10.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_append_unequal.i_10.smt2: solved=True, runtime=0.44s, PAR-2=0.44s
+[DEBUG] Processing 255/308: ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_35.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_35.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_35.smt2: solved=True, runtime=0.59s, PAR-2=0.59s
+[DEBUG] Processing 256/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll-optional-1.i_6.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll-optional-1.i_6.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll-optional-1.i_6.smt2: solved=True, runtime=571.77s, PAR-2=571.77s
+[DEBUG] Processing 257/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_65.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_65.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_65.smt2: solved=True, runtime=0.51s, PAR-2=0.51s
+[DEBUG] Processing 258/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_2.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_2.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_prepend_equal.i_2.smt2: solved=True, runtime=0.42s, PAR-2=0.42s
+[DEBUG] Processing 259/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_34.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_34.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_34.smt2: solved=True, runtime=11.05s, PAR-2=11.05s
+[DEBUG] Processing 260/308: ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_196.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_196.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_196.smt2: solved=True, runtime=0.56s, PAR-2=0.56s
+[DEBUG] Processing 261/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_1.i_42.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_1.i_42.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_1.i_42.smt2: solved=True, runtime=0.49s, PAR-2=0.49s
+[DEBUG] Processing 262/308: ALIA/20230321-UltimateAutomizerSvcomp2023/test_add-2.i_50.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/test_add-2.i_50.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/test_add-2.i_50.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 263/308: ALIA/20230321-UltimateAutomizerSvcomp2023/test_mutex_unlock_at_exit.i_11.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/test_mutex_unlock_at_exit.i_11.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/test_mutex_unlock_at_exit.i_11.smt2: solved=True, runtime=58.79s, PAR-2=58.79s
+[DEBUG] Processing 264/308: ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_197.smt2
+[DEBUG] Predicted solver: iProver for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_197.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_197.smt2: solved=True, runtime=3.95s, PAR-2=3.95s
+[DEBUG] Processing 265/308: ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_3.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_3.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_3.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 266/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_28.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_28.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_28.smt2: solved=True, runtime=0.45s, PAR-2=0.45s
+[DEBUG] Processing 267/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_105.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_105.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_105.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 268/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_44.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_44.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_44.smt2: solved=True, runtime=0.54s, PAR-2=0.54s
+[DEBUG] Processing 269/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_78.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_78.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_prepend_unequal.i_78.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 270/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_43.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_43.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_43.smt2: solved=True, runtime=0.89s, PAR-2=0.89s
+[DEBUG] Processing 271/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_107.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_107.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_107.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 272/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list_search-1.i_24.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list_search-1.i_24.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list_search-1.i_24.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 273/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_80.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_80.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-1.i_80.smt2: solved=True, runtime=30.79s, PAR-2=30.79s
+[DEBUG] Processing 274/308: ALIA/20230321-UltimateAutomizerSvcomp2023/simple-2.i_25.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple-2.i_25.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/simple-2.i_25.smt2: solved=True, runtime=0.47s, PAR-2=0.47s
+[DEBUG] Processing 275/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_prepend_equal.i_6.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_prepend_equal.i_6.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_prepend_equal.i_6.smt2: solved=True, runtime=0.42s, PAR-2=0.42s
+[DEBUG] Processing 276/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_107.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_107.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_107.smt2: solved=True, runtime=0.42s, PAR-2=0.42s
+[DEBUG] Processing 277/308: ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_60.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_60.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_60.smt2: solved=True, runtime=2.81s, PAR-2=2.81s
+[DEBUG] Processing 278/308: ALIA/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_37.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_37.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_37.smt2: solved=True, runtime=0.65s, PAR-2=0.65s
+[DEBUG] Processing 279/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_unequal.i_65.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_unequal.i_65.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_unequal.i_65.smt2: solved=True, runtime=0.41s, PAR-2=0.41s
+[DEBUG] Processing 280/308: ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_189.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_189.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_189.smt2: solved=True, runtime=0.48s, PAR-2=0.48s
+[DEBUG] Processing 281/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_14.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_14.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_14.smt2: solved=True, runtime=0.47s, PAR-2=0.47s
+[DEBUG] Processing 282/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_60.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_60.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-ext_flag_1.i_60.smt2: solved=True, runtime=0.51s, PAR-2=0.51s
+[DEBUG] Processing 283/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_13.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_13.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_equal.i_13.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 284/308: ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_91.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_91.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_91.smt2: solved=True, runtime=0.62s, PAR-2=0.62s
+[DEBUG] Processing 285/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_42.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_42.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_append_equal.i_42.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 286/308: ALIA/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_15.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_15.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/bubble_sort_linux-2.i_15.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 287/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_30.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_30.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll_circular_traversal-2.i_30.smt2: solved=True, runtime=514.93s, PAR-2=514.93s
+[DEBUG] Processing 288/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_update_all.i_4.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_update_all.i_4.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2n_update_all.i_4.smt2: solved=True, runtime=0.42s, PAR-2=0.42s
+[DEBUG] Processing 289/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_33.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_33.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_33.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 290/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_216.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_216.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_216.smt2: solved=True, runtime=0.55s, PAR-2=0.55s
+[DEBUG] Processing 291/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_66.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_66.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2c_insert_unequal.i_66.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 292/308: ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_180.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_180.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/ex3_forlist.i_180.smt2: solved=True, runtime=0.49s, PAR-2=0.49s
+[DEBUG] Processing 293/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_update_all.i_21.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_update_all.i_21.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_update_all.i_21.smt2: solved=True, runtime=0.51s, PAR-2=0.51s
+[DEBUG] Processing 294/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_9.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_9.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_9.smt2: solved=True, runtime=0.47s, PAR-2=0.47s
+[DEBUG] Processing 295/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_107.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_107.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll_to_dll_rev-2.i_107.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 296/308: ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_66.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_66.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/skiplist_3lvl.i_66.smt2: solved=True, runtime=0.88s, PAR-2=0.88s
+[DEBUG] Processing 297/308: ALIA/20230321-UltimateAutomizerSvcomp2023/list-1.i_87.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-1.i_87.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/list-1.i_87.smt2: solved=True, runtime=2.18s, PAR-2=2.18s
+[DEBUG] Processing 298/308: ALIA/20230321-UltimateAutomizerSvcomp2023/prefixsum_rec.c_19.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/prefixsum_rec.c_19.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/prefixsum_rec.c_19.smt2: solved=True, runtime=0.46s, PAR-2=0.46s
+[DEBUG] Processing 299/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll-optional-1.i_14.smt2
+[DEBUG] Predicted solver: iProver for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll-optional-1.i_14.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll-optional-1.i_14.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 300/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_90.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_90.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_90.smt2: solved=True, runtime=0.53s, PAR-2=0.53s
+[DEBUG] Processing 301/308: ALIA/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_18.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_18.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/shared_mem1.i_18.smt2: solved=True, runtime=0.60s, PAR-2=0.60s
+[DEBUG] Processing 302/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_70.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_70.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_insert_equal.i_70.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 303/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll-token-1.i_4.smt2
+[DEBUG] Predicted solver: iProver for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll-token-1.i_4.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll-token-1.i_4.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 304/308: ALIA/20230321-UltimateAutomizerSvcomp2023/tree_cnstr.i_10.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/tree_cnstr.i_10.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/tree_cnstr.i_10.smt2: solved=True, runtime=0.62s, PAR-2=0.62s
+[DEBUG] Processing 305/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_72.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_72.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll-sorted-2.i_72.smt2: solved=True, runtime=0.48s, PAR-2=0.48s
+[DEBUG] Processing 306/308: ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_228.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_228.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/dll2c_update_all_reverse.i_228.smt2: solved=True, runtime=0.67s, PAR-2=0.67s
+[DEBUG] Processing 307/308: ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_218.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_218.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/length_test03-1.i_218.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 308/308: ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_5.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_5.smt2
+[DEBUG] Benchmark ALIA/20230321-UltimateAutomizerSvcomp2023/sll2n_append_equal.i_5.smt2: solved=True, runtime=0.44s, PAR-2=0.44s
+[DEBUG] Results written to CSV: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/results/alia_csv_based/test/run_20251215_215754_828818/results.csv
+[DEBUG] Solved 236/308 benchmarks (76.62%)
+[DEBUG] PAR-2 Score: 179600.25s total, 583.12s average
+
+================================================================================
+EXECUTION TIME SUMMARY
+================================================================================
+Model training time:        1056.53 seconds ( 17.61 minutes)
+Prediction time:             105.37 seconds (  1.76 minutes)
+  - Avg per benchmark:         0.34 seconds
+--------------------------------------------------------------------------------
+Total execution time:       1161.90 seconds ( 19.37 minutes)
+================================================================================
+
+================================================================================
+PAR-2 PERFORMANCE SUMMARY
+================================================================================
+Benchmarks solved:              236 / 308 ( 76.62%)
+Benchmarks unsolved:             72 / 308 ( 23.38%)
+--------------------------------------------------------------------------------
+Total PAR-2 score:        179600.25 seconds
+Average PAR-2 score:         583.12 seconds
+Timeout value:              1200.00 seconds
+PAR-2 penalty factor:             2x timeout
+================================================================================
+
+[DEBUG] CSV results saved to: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/results/alia_csv_based/test/run_20251215_215754_828818/results.csv
+[DEBUG] Configuration saved to: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/results/alia_csv_based/test/run_20251215_215754_828818/config.json
+End time: Mon 15 Dec 2025 10:17:18 PM EST

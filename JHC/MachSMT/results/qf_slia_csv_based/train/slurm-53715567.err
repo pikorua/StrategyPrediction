@@ -1,0 +1,35 @@
+/lustre06/project/6001884/jchen688/z3_env/lib/python3.11/site-packages/torch/__init__.py:1240: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at /tmp/build_wheels_tmp.6999/python-3.11/torch/torch/csrc/tensor/python_tensor.cpp:434.)
+  _C._set_default_tensor_type(t)
+Traceback (most recent call last):
+  File "/lustre06/project/6001884/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/scripts/run_MachSMT_from_csv.py", line 322, in <module>
+    main()
+  File "/lustre06/project/6001884/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/scripts/run_MachSMT_from_csv.py", line 185, in main
+    machsmt = MachSMT([training_file])
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lustre06/project/6001884/jchen688/github/z3alpha/JHC/AlgoSelect/MachSMT/machsmt/machsmt.py", line 30, in __init__
+    self.db = DataBase(data)
+              ^^^^^^^^^^^^^^
+  File "/lustre06/project/6001884/jchen688/github/z3alpha/JHC/AlgoSelect/MachSMT/machsmt/database/db.py", line 24, in __init__
+    if build_on_init: self.build(files)
+                      ^^^^^^^^^^^^^^^^^
+  File "/lustre06/project/6001884/jchen688/github/z3alpha/JHC/AlgoSelect/MachSMT/machsmt/database/db.py", line 98, in build
+    for _, parsed_benchmark in enumerate(
+  File "/cvmfs/soft.computecanada.ca/gentoo/2023/x86-64-v3/usr/lib/python3.11/multiprocessing/pool.py", line 873, in next
+    raise value
+  File "/cvmfs/soft.computecanada.ca/gentoo/2023/x86-64-v3/usr/lib/python3.11/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/lustre06/project/6001884/jchen688/github/z3alpha/JHC/AlgoSelect/MachSMT/machsmt/database/db.py", line 16, in process_benchmark
+    benchmark.parse()
+  File "/lustre06/project/6001884/jchen688/github/z3alpha/JHC/AlgoSelect/MachSMT/machsmt/benchmark/benchmark.py", line 200, in parse
+    self.tokens = [sexpr for sexpr in SExprTokenizer(self.path)]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lustre06/project/6001884/jchen688/github/z3alpha/JHC/AlgoSelect/MachSMT/machsmt/benchmark/benchmark.py", line 200, in <listcomp>
+    self.tokens = [sexpr for sexpr in SExprTokenizer(self.path)]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lustre06/project/6001884/jchen688/github/z3alpha/JHC/AlgoSelect/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15, in __next__
+    token = self.tokenize()
+            ^^^^^^^^^^^^^^^
+  File "/lustre06/project/6001884/jchen688/github/z3alpha/JHC/AlgoSelect/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 117, in tokenize
+    assert not exprs
+AssertionError

@@ -1,0 +1,28 @@
+Job ID: 53715560
+Node: nc10232
+Start time: Tue 16 Dec 2025 12:35:16 AM EST
+[DEBUG] Loading test results from /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/QF_SLIA/qf_slia_test_long.csv
+[DEBUG] Loaded results for 4745 unique benchmarks
+[DEBUG] Found 4745 unique benchmark paths in CSV
+[DEBUG] Found 4745 benchmark files from CSV
+[DEBUG] Selected 4745 benchmarks for processing
+
+================================================================================
+FEATURE CONFIGURATION
+================================================================================
+Using original MachSMT feature space (full grammatical construct list)
+Description features: DISABLED (prevents BERT model loading)
+Feature extraction timeout: 60 seconds
+Parallel cores: 16
+Feature dimensions will be printed after processing first benchmark
+================================================================================
+
+[DEBUG] Training MachSMT model...
+[DEBUG] Changed working directory to: /home/jchen688/scratch/non-incremental
+
+Initializing description feature model ('bert-base-uncased')...
+Using device: cpu
+✅ Model loaded successfully. Embedding dimension: 768
+Parsing Input File |████████████████████████████████████████| 75908/75908 [100%] in 4:30.0 (281.14/s) 
+Processing Benchmark Files |⚠︎                                       | (!) 0/18977 [0%] in 4.2s (0.00/s) 
+End time: Tue 16 Dec 2025 12:51:31 AM EST

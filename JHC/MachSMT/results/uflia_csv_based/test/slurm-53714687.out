@@ -1,0 +1,1778 @@
+Job ID: 53714687
+Node: nc31408
+Start time: Tue 16 Dec 2025 12:05:49 AM EST
+[DEBUG] Loading test results from /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/UFLIA/uflia_test_long.csv
+[DEBUG] Loaded results for 570 unique benchmarks
+[DEBUG] Found 570 unique benchmark paths in CSV
+[DEBUG] Found 570 benchmark files from CSV
+[DEBUG] Selected 570 benchmarks for processing
+
+================================================================================
+FEATURE CONFIGURATION
+================================================================================
+Using original MachSMT feature space (full grammatical construct list)
+Description features: DISABLED (prevents BERT model loading)
+Feature extraction timeout: 60 seconds
+Parallel cores: 16
+Feature dimensions will be printed after processing first benchmark
+================================================================================
+
+[DEBUG] Training MachSMT model...
+[DEBUG] Changed working directory to: /home/jchen688/scratch/non-incremental
+
+Initializing description feature model ('bert-base-uncased')...
+Using device: cpu
+✅ Model loaded successfully. Embedding dimension: 768
+Parsing Input File |████████████████████████████████████████| 6837/6837 [100%] in 7.2s (945.19/s) 
+Processing Benchmark Files |████████████████████████████████████████| 2279/2279 [100%] in 5:24.5 (7.02/s) 
+[DEBUG] Changed back to: /lustre06/project/6001884/jchen688/github/z3alpha
+[DEBUG] Model trained in 992.52 seconds
+[DEBUG] Configuration saved to: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/results/uflia_csv_based/test/run_20251216_000911_015954/config.json
+
+[DEBUG] Starting predictions on test benchmarks...
+[DEBUG] Processing 1/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1217527.smt2
+
+================================================================================
+FEATURE SPACE DIMENSIONS
+================================================================================
+Total feature dimensions: 189
+================================================================================
+
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1217527.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1217527.smt2: solved=True, runtime=7.92s, PAR-2=7.92s
+[DEBUG] Processing 2/570: UFLIA/simplify2/front_end_suite/javafe.ast.ArrayInit.004.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ArrayInit.004.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ArrayInit.004.smt2: solved=True, runtime=0.55s, PAR-2=0.55s
+[DEBUG] Processing 3/570: UFLIA/boogie/Branching_T.N_System.Boolean.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Branching_T.N_System.Boolean.smt2
+[DEBUG] Benchmark UFLIA/boogie/Branching_T.N_System.Boolean.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 4/570: UFLIA/sledgehammer/TwoSquares/smtlib.911880.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.911880.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.911880.smt2: solved=True, runtime=0.84s, PAR-2=0.84s
+[DEBUG] Processing 5/570: UFLIA/sledgehammer/StrongNorm/smtlib.589743.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/StrongNorm/smtlib.589743.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/StrongNorm/smtlib.589743.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 6/570: UFLIA/sledgehammer/QEpres/smtlib.669312.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.669312.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.669312.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 7/570: UFLIA/simplify/javafe.ast.StandardPrettyPrint.318.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.ast.StandardPrettyPrint.318.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.ast.StandardPrettyPrint.318.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 8/570: UFLIA/sledgehammer/StrongNorm/smtlib.807104.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/StrongNorm/smtlib.807104.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/StrongNorm/smtlib.807104.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 9/570: UFLIA/sledgehammer/TwoSquares/smtlib.775141.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.775141.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.775141.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 10/570: UFLIA/sledgehammer/TypeSafe/smtlib.1141090.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TypeSafe/smtlib.1141090.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TypeSafe/smtlib.1141090.smt2: solved=True, runtime=0.48s, PAR-2=0.48s
+[DEBUG] Processing 11/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1280603.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1280603.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1280603.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 12/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1318290.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1318290.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1318290.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 13/570: UFLIA/boogie/Immutable_test3.XY..ctor.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Immutable_test3.XY..ctor.smt2
+[DEBUG] Benchmark UFLIA/boogie/Immutable_test3.XY..ctor.smt2: solved=True, runtime=0.39s, PAR-2=0.39s
+[DEBUG] Processing 14/570: UFLIA/sledgehammer/QEpres/smtlib.708354.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.708354.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.708354.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 15/570: UFLIA/sledgehammer/NS_Shared/smtlib.747482.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/NS_Shared/smtlib.747482.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/NS_Shared/smtlib.747482.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 16/570: UFLIA/boogie/ModifyOther_Test.Modify.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/ModifyOther_Test.Modify.smt2
+[DEBUG] Benchmark UFLIA/boogie/ModifyOther_Test.Modify.smt2: solved=True, runtime=0.34s, PAR-2=0.34s
+[DEBUG] Processing 17/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1419033.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1419033.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1419033.smt2: solved=True, runtime=31.39s, PAR-2=31.39s
+[DEBUG] Processing 18/570: UFLIA/tokeneer/auditlog/addelementtologfilewithtruncatechecks-8.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/tokeneer/auditlog/addelementtologfilewithtruncatechecks-8.smt2
+[DEBUG] Benchmark UFLIA/tokeneer/auditlog/addelementtologfilewithtruncatechecks-8.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 19/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.988616.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.988616.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.988616.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 20/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1283300.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1283300.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1283300.smt2: solved=True, runtime=0.58s, PAR-2=0.58s
+[DEBUG] Processing 21/570: UFLIA/simplify/javafe.ast.ThrowStmt.356.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.ast.ThrowStmt.356.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.ast.ThrowStmt.356.smt2: solved=True, runtime=0.67s, PAR-2=0.67s
+[DEBUG] Processing 22/570: UFLIA/sledgehammer/Hoare/smtlib.586475.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Hoare/smtlib.586475.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.586475.smt2: solved=True, runtime=0.35s, PAR-2=0.35s
+[DEBUG] Processing 23/570: UFLIA/sledgehammer/Hoare/smtlib.1016320.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Hoare/smtlib.1016320.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.1016320.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 24/570: UFLIA/tokeneer/auditlog/clearlogentries-2.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/tokeneer/auditlog/clearlogentries-2.smt2
+[DEBUG] Benchmark UFLIA/tokeneer/auditlog/clearlogentries-2.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 25/570: UFLIA/sledgehammer/NS_Shared/smtlib.768405.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/NS_Shared/smtlib.768405.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/NS_Shared/smtlib.768405.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 26/570: UFLIA/simplify2/front_end_suite/javafe.ast.MethodInvocation.008.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.MethodInvocation.008.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.MethodInvocation.008.smt2: solved=True, runtime=0.46s, PAR-2=0.46s
+[DEBUG] Processing 27/570: UFLIA/sexpr/SES.Sx.get_False.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sexpr/SES.Sx.get_False.smt2
+[DEBUG] Benchmark UFLIA/sexpr/SES.Sx.get_False.smt2: solved=True, runtime=3.51s, PAR-2=3.51s
+[DEBUG] Processing 28/570: UFLIA/sledgehammer/NS_Shared/smtlib.771959.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/NS_Shared/smtlib.771959.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/NS_Shared/smtlib.771959.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 29/570: UFLIA/sledgehammer/QEpres/smtlib.727263.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.727263.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.727263.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 30/570: UFLIA/simplify2/front_end_suite/javafe.tc.FlowInsensitiveChecks.010.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.tc.FlowInsensitiveChecks.010.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.tc.FlowInsensitiveChecks.010.smt2: solved=True, runtime=8.41s, PAR-2=8.41s
+[DEBUG] Processing 31/570: UFLIA/simplify2/front_end_suite/javafe.ast.LabelStmt.008.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.LabelStmt.008.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.LabelStmt.008.smt2: solved=True, runtime=19.80s, PAR-2=19.80s
+[DEBUG] Processing 32/570: UFLIA/sledgehammer/TwoSquares/smtlib.681583.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.681583.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.681583.smt2: solved=True, runtime=120.71s, PAR-2=120.71s
+[DEBUG] Processing 33/570: UFLIA/sledgehammer/StrongNorm/smtlib.681699.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/StrongNorm/smtlib.681699.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/StrongNorm/smtlib.681699.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 34/570: UFLIA/sledgehammer/NS_Shared/smtlib.701307.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/NS_Shared/smtlib.701307.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/NS_Shared/smtlib.701307.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 35/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.793664.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.793664.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.793664.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 36/570: UFLIA/simplify2/front_end_suite/javafe.ast.TypeDeclElemVec.018.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.TypeDeclElemVec.018.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.TypeDeclElemVec.018.smt2: solved=True, runtime=0.41s, PAR-2=0.41s
+[DEBUG] Processing 37/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.681124.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.681124.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.681124.smt2: solved=True, runtime=0.40s, PAR-2=0.40s
+[DEBUG] Processing 38/570: UFLIA/sledgehammer/Hoare/smtlib.730842.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Hoare/smtlib.730842.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.730842.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 39/570: UFLIA/simplify2/front_end_suite/javafe.tc.MethodDeclVec.021.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.tc.MethodDeclVec.021.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.tc.MethodDeclVec.021.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 40/570: UFLIA/simplify/javafe.tc.FieldDeclVec.674.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.tc.FieldDeclVec.674.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.tc.FieldDeclVec.674.smt2: solved=True, runtime=5.50s, PAR-2=5.50s
+[DEBUG] Processing 41/570: UFLIA/sledgehammer/QEpres/smtlib.1124616.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.1124616.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.1124616.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 42/570: UFLIA/simplify2/front_end_suite/javafe.util.LocationManagerCorrelatedReader.006.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.util.LocationManagerCorrelatedReader.006.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.util.LocationManagerCorrelatedReader.006.smt2: solved=True, runtime=0.34s, PAR-2=0.34s
+[DEBUG] Processing 43/570: UFLIA/boogie/AssignToRepField_T..ctor.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/AssignToRepField_T..ctor.smt2
+[DEBUG] Benchmark UFLIA/boogie/AssignToRepField_T..ctor.smt2: solved=True, runtime=0.34s, PAR-2=0.34s
+[DEBUG] Processing 44/570: UFLIA/boogie/Array_test3.MyClass.M1_test3.MyClass.array.array_notnull.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Array_test3.MyClass.M1_test3.MyClass.array.array_notnull.smt2
+[DEBUG] Benchmark UFLIA/boogie/Array_test3.MyClass.M1_test3.MyClass.array.array_notnull.smt2: solved=True, runtime=0.32s, PAR-2=0.32s
+[DEBUG] Processing 45/570: UFLIA/boogie/Factory_Test.R.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Factory_Test.R.smt2
+[DEBUG] Benchmark UFLIA/boogie/Factory_Test.R.smt2: solved=True, runtime=1.16s, PAR-2=1.16s
+[DEBUG] Processing 46/570: UFLIA/sledgehammer/TwoSquares/smtlib.764567.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.764567.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.764567.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 47/570: UFLIA/simplify2/front_end_suite/javafe.util.StackVector.015.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.util.StackVector.015.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.util.StackVector.015.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 48/570: UFLIA/sledgehammer/Hoare/smtlib.641790.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Hoare/smtlib.641790.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.641790.smt2: solved=True, runtime=0.35s, PAR-2=0.35s
+[DEBUG] Processing 49/570: UFLIA/boogie/LocalExpose_S.V1.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/LocalExpose_S.V1.smt2
+[DEBUG] Benchmark UFLIA/boogie/LocalExpose_S.V1.smt2: solved=True, runtime=0.84s, PAR-2=0.84s
+[DEBUG] Processing 50/570: UFLIA/boogie/SimpleAssignments4_SimpleAssignment4.Rigoletto_System.Int32-infer_i-vc_local-level_0.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/SimpleAssignments4_SimpleAssignment4.Rigoletto_System.Int32-infer_i-vc_local-level_0.smt2
+[DEBUG] Benchmark UFLIA/boogie/SimpleAssignments4_SimpleAssignment4.Rigoletto_System.Int32-infer_i-vc_local-level_0.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 51/570: UFLIA/simplify2/front_end_suite/javafe.ast.CondExpr.002.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.CondExpr.002.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.CondExpr.002.smt2: solved=True, runtime=5.81s, PAR-2=5.81s
+[DEBUG] Processing 52/570: UFLIA/boogie/PureReceiverMightBeCommitted_C.M.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/PureReceiverMightBeCommitted_C.M.smt2
+[DEBUG] Benchmark UFLIA/boogie/PureReceiverMightBeCommitted_C.M.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 53/570: UFLIA/sledgehammer/TwoSquares/smtlib.780490.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.780490.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.780490.smt2: solved=True, runtime=255.33s, PAR-2=255.33s
+[DEBUG] Processing 54/570: UFLIA/sledgehammer/TwoSquares/smtlib.829943.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.829943.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.829943.smt2: solved=True, runtime=1.20s, PAR-2=1.20s
+[DEBUG] Processing 55/570: UFLIA/tokeneer/auditlog/init-1.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/tokeneer/auditlog/init-1.smt2
+[DEBUG] Benchmark UFLIA/tokeneer/auditlog/init-1.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 56/570: UFLIA/sledgehammer/StrongNorm/smtlib.565805.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/StrongNorm/smtlib.565805.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/StrongNorm/smtlib.565805.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 57/570: UFLIA/simplify2/front_end_suite/javafe.test.SuperlinksTest.004.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.test.SuperlinksTest.004.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.test.SuperlinksTest.004.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 58/570: UFLIA/boogie/StaticField_Test.Foo.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/StaticField_Test.Foo.smt2
+[DEBUG] Benchmark UFLIA/boogie/StaticField_Test.Foo.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 59/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.957350.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.957350.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.957350.smt2: solved=True, runtime=0.51s, PAR-2=0.51s
+[DEBUG] Processing 60/570: UFLIA/simplify/javafe.tc.EnvForLocals.661.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.tc.EnvForLocals.661.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.tc.EnvForLocals.661.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 61/570: UFLIA/sledgehammer/FFT/smtlib.566570.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/FFT/smtlib.566570.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.566570.smt2: solved=True, runtime=8.41s, PAR-2=8.41s
+[DEBUG] Processing 62/570: UFLIA/sledgehammer/FFT/smtlib.894258.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFLIA/sledgehammer/FFT/smtlib.894258.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.894258.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 63/570: UFLIA/sledgehammer/QEpres/smtlib.602931.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/QEpres/smtlib.602931.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.602931.smt2: solved=True, runtime=785.80s, PAR-2=785.80s
+[DEBUG] Processing 64/570: UFLIA/simplify2/front_end_suite/javafe.ast.TypeDeclVec.007.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.TypeDeclVec.007.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.TypeDeclVec.007.smt2: solved=True, runtime=0.55s, PAR-2=0.55s
+[DEBUG] Processing 65/570: UFLIA/sledgehammer/NS_Shared/smtlib.601926.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/NS_Shared/smtlib.601926.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/NS_Shared/smtlib.601926.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 66/570: UFLIA/simplify2/front_end_suite/javafe.ast.CatchClause.002.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.CatchClause.002.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.CatchClause.002.smt2: solved=True, runtime=3.81s, PAR-2=3.81s
+[DEBUG] Processing 67/570: UFLIA/sledgehammer/Hoare/smtlib.993724.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFLIA/sledgehammer/Hoare/smtlib.993724.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.993724.smt2: solved=True, runtime=0.54s, PAR-2=0.54s
+[DEBUG] Processing 68/570: UFLIA/sledgehammer/Hoare/smtlib.702833.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Hoare/smtlib.702833.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.702833.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 69/570: UFLIA/simplify2/front_end_suite/javafe.ast.TypeDeclVec.011.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.TypeDeclVec.011.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.TypeDeclVec.011.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 70/570: UFLIA/sledgehammer/QEpres/smtlib.1020724.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.1020724.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.1020724.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 71/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.804487.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.804487.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.804487.smt2: solved=True, runtime=5.16s, PAR-2=5.16s
+[DEBUG] Processing 72/570: UFLIA/simplify2/front_end_suite/javafe.ast.MethodInvocation.004.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.MethodInvocation.004.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.MethodInvocation.004.smt2: solved=True, runtime=0.90s, PAR-2=0.90s
+[DEBUG] Processing 73/570: UFLIA/simplify2/front_end_suite/javafe.SrcTool.005.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.SrcTool.005.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.SrcTool.005.smt2: solved=True, runtime=0.37s, PAR-2=0.37s
+[DEBUG] Processing 74/570: UFLIA/sledgehammer/QEpres/smtlib.1006761.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.1006761.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.1006761.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 75/570: UFLIA/sledgehammer/Arrow_Order/smtlib.749030.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.749030.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.749030.smt2: solved=True, runtime=120.41s, PAR-2=120.41s
+[DEBUG] Processing 76/570: UFLIA/boogie/Bag2_Bag.RemoveMin.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Bag2_Bag.RemoveMin.smt2
+[DEBUG] Benchmark UFLIA/boogie/Bag2_Bag.RemoveMin.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 77/570: UFLIA/sledgehammer/NS_Shared/smtlib.644096.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/NS_Shared/smtlib.644096.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/NS_Shared/smtlib.644096.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 78/570: UFLIA/sledgehammer/QEpres/smtlib.734760.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/QEpres/smtlib.734760.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.734760.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 79/570: UFLIA/boogie/Chunker11-AdditiveExpose_Chunker.NextChunk_Virtual.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Chunker11-AdditiveExpose_Chunker.NextChunk_Virtual.smt2
+[DEBUG] Benchmark UFLIA/boogie/Chunker11-AdditiveExpose_Chunker.NextChunk_Virtual.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 80/570: UFLIA/simplify2/front_end_suite/javafe.ast.NewInstanceExpr.005.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.NewInstanceExpr.005.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.NewInstanceExpr.005.smt2: solved=True, runtime=0.55s, PAR-2=0.55s
+[DEBUG] Processing 81/570: UFLIA/sledgehammer/Hoare/smtlib.824089.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Hoare/smtlib.824089.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.824089.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 82/570: UFLIA/simplify2/front_end_suite/tohtml.Java2Html.006.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/tohtml.Java2Html.006.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/tohtml.Java2Html.006.smt2: solved=True, runtime=27.02s, PAR-2=27.02s
+[DEBUG] Processing 83/570: UFLIA/sledgehammer/StrongNorm/smtlib.728662.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFLIA/sledgehammer/StrongNorm/smtlib.728662.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/StrongNorm/smtlib.728662.smt2: solved=True, runtime=0.62s, PAR-2=0.62s
+[DEBUG] Processing 84/570: UFLIA/simplify/javafe.filespace.SlowQuery.499.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.filespace.SlowQuery.499.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.filespace.SlowQuery.499.smt2: solved=True, runtime=0.34s, PAR-2=0.34s
+[DEBUG] Processing 85/570: UFLIA/boogie/Modifies_Arraytests.M0_System.Int32.array_notnull-level_2.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Modifies_Arraytests.M0_System.Int32.array_notnull-level_2.smt2
+[DEBUG] Benchmark UFLIA/boogie/Modifies_Arraytests.M0_System.Int32.array_notnull-level_2.smt2: solved=True, runtime=0.53s, PAR-2=0.53s
+[DEBUG] Processing 86/570: UFLIA/simplify/javafe.ast.CompoundName.89.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.ast.CompoundName.89.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.ast.CompoundName.89.smt2: solved=True, runtime=0.71s, PAR-2=0.71s
+[DEBUG] Processing 87/570: UFLIA/simplify2/front_end_suite/javafe.tc.PrepTypeDeclaration.001.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.tc.PrepTypeDeclaration.001.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.tc.PrepTypeDeclaration.001.smt2: solved=True, runtime=285.68s, PAR-2=285.68s
+[DEBUG] Processing 88/570: UFLIA/sledgehammer/Arrow_Order/smtlib.856561.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.856561.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.856561.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 89/570: UFLIA/sledgehammer/Hoare/smtlib.880133.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Hoare/smtlib.880133.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.880133.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 90/570: UFLIA/simplify2/front_end_suite/javafe.ast.ImportDeclVec.013.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ImportDeclVec.013.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ImportDeclVec.013.smt2: solved=True, runtime=0.49s, PAR-2=0.49s
+[DEBUG] Processing 91/570: UFLIA/simplify2/front_end_suite/javafe.tc.FlowInsensitiveChecks.014.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.tc.FlowInsensitiveChecks.014.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.tc.FlowInsensitiveChecks.014.smt2: solved=True, runtime=14.31s, PAR-2=14.31s
+[DEBUG] Processing 92/570: UFLIA/sledgehammer/TypeSafe/smtlib.1006872.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TypeSafe/smtlib.1006872.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TypeSafe/smtlib.1006872.smt2: solved=True, runtime=0.53s, PAR-2=0.53s
+[DEBUG] Processing 93/570: UFLIA/simplify/javafe.tc.EnvForLocalType.655.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.tc.EnvForLocalType.655.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.tc.EnvForLocalType.655.smt2: solved=True, runtime=0.62s, PAR-2=0.62s
+[DEBUG] Processing 94/570: UFLIA/sledgehammer/Arrow_Order/smtlib.796312.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.796312.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.796312.smt2: solved=True, runtime=0.38s, PAR-2=0.38s
+[DEBUG] Processing 95/570: UFLIA/simplify/javafe.reader.StandardTypeReader.623.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.reader.StandardTypeReader.623.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.reader.StandardTypeReader.623.smt2: solved=True, runtime=0.41s, PAR-2=0.41s
+[DEBUG] Processing 96/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1145603.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1145603.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1145603.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 97/570: UFLIA/sledgehammer/TypeSafe/smtlib.1075164.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TypeSafe/smtlib.1075164.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TypeSafe/smtlib.1075164.smt2: solved=True, runtime=0.40s, PAR-2=0.40s
+[DEBUG] Processing 98/570: UFLIA/simplify/javafe.util.Set.813.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.util.Set.813.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.util.Set.813.smt2: solved=True, runtime=0.31s, PAR-2=0.31s
+[DEBUG] Processing 99/570: UFLIA/simplify2/front_end_suite/javafe.parser.test.TestLex.017.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.parser.test.TestLex.017.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.parser.test.TestLex.017.smt2: solved=True, runtime=19.19s, PAR-2=19.19s
+[DEBUG] Processing 100/570: UFLIA/sledgehammer/Hoare/smtlib.589950.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Hoare/smtlib.589950.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.589950.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 101/570: UFLIA/sledgehammer/NS_Shared/smtlib.777207.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/NS_Shared/smtlib.777207.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/NS_Shared/smtlib.777207.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 102/570: UFLIA/boogie/Change769_Test4..ctor.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Change769_Test4..ctor.smt2
+[DEBUG] Benchmark UFLIA/boogie/Change769_Test4..ctor.smt2: solved=True, runtime=0.35s, PAR-2=0.35s
+[DEBUG] Processing 103/570: UFLIA/sledgehammer/QEpres/smtlib.737188.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFLIA/sledgehammer/QEpres/smtlib.737188.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.737188.smt2: solved=True, runtime=0.63s, PAR-2=0.63s
+[DEBUG] Processing 104/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1249789.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1249789.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1249789.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 105/570: UFLIA/boogie/ExposeVersion_T.m-level_2.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/ExposeVersion_T.m-level_2.smt2
+[DEBUG] Benchmark UFLIA/boogie/ExposeVersion_T.m-level_2.smt2: solved=True, runtime=1.00s, PAR-2=1.00s
+[DEBUG] Processing 106/570: UFLIA/boogie/SimpleWhile4_SimpleWhile4.AMethod-infer_i.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/SimpleWhile4_SimpleWhile4.AMethod-infer_i.smt2
+[DEBUG] Benchmark UFLIA/boogie/SimpleWhile4_SimpleWhile4.AMethod-infer_i.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 107/570: UFLIA/sledgehammer/QEpres/smtlib.674367.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.674367.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.674367.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 108/570: UFLIA/boogie/DefaultLoopInv0_A.M-modifiesOnLoop-noinfer.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/DefaultLoopInv0_A.M-modifiesOnLoop-noinfer.smt2
+[DEBUG] Benchmark UFLIA/boogie/DefaultLoopInv0_A.M-modifiesOnLoop-noinfer.smt2: solved=True, runtime=1.04s, PAR-2=1.04s
+[DEBUG] Processing 109/570: UFLIA/sledgehammer/TwoSquares/smtlib.691280.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.691280.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.691280.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 110/570: UFLIA/sledgehammer/Hoare/smtlib.801233.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Hoare/smtlib.801233.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.801233.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 111/570: UFLIA/boogie/Search_Search..ctor-noinfer.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Search_Search..ctor-noinfer.smt2
+[DEBUG] Benchmark UFLIA/boogie/Search_Search..ctor-noinfer.smt2: solved=True, runtime=0.37s, PAR-2=0.37s
+[DEBUG] Processing 112/570: UFLIA/sledgehammer/Arrow_Order/smtlib.585561.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.585561.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.585561.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 113/570: UFLIA/simplify2/front_end_suite/javafe.tc.MethodDeclVec.002.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.tc.MethodDeclVec.002.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.tc.MethodDeclVec.002.smt2: solved=True, runtime=0.50s, PAR-2=0.50s
+[DEBUG] Processing 114/570: UFLIA/simplify2/front_end_suite/javafe.reader.MethodSignature.006.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.reader.MethodSignature.006.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.reader.MethodSignature.006.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 115/570: UFLIA/simplify2/front_end_suite/javafe.ast.TryCatchStmt.003.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.TryCatchStmt.003.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.TryCatchStmt.003.smt2: solved=True, runtime=2.27s, PAR-2=2.27s
+[DEBUG] Processing 116/570: UFLIA/simplify2/front_end_suite/javafe.ast.LexicalPragmaVec.012.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.LexicalPragmaVec.012.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.LexicalPragmaVec.012.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 117/570: UFLIA/sledgehammer/TypeSafe/smtlib.804753.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TypeSafe/smtlib.804753.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TypeSafe/smtlib.804753.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 118/570: UFLIA/simplify2/front_end_suite/javafe.tc.Types.033.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.tc.Types.033.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.tc.Types.033.smt2: solved=True, runtime=146.57s, PAR-2=146.57s
+[DEBUG] Processing 119/570: UFLIA/boogie/StrictReadOnly_C1.Y0.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/StrictReadOnly_C1.Y0.smt2
+[DEBUG] Benchmark UFLIA/boogie/StrictReadOnly_C1.Y0.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 120/570: UFLIA/boogie/StrictReadOnly_C1.W1.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/StrictReadOnly_C1.W1.smt2
+[DEBUG] Benchmark UFLIA/boogie/StrictReadOnly_C1.W1.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 121/570: UFLIA/sledgehammer/FFT/smtlib.650773.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/FFT/smtlib.650773.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.650773.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 122/570: UFLIA/sledgehammer/NS_Shared/smtlib.815960.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/NS_Shared/smtlib.815960.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/NS_Shared/smtlib.815960.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 123/570: UFLIA/sledgehammer/QEpres/smtlib.899445.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/QEpres/smtlib.899445.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.899445.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 124/570: UFLIA/sledgehammer/Hoare/smtlib.688150.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Hoare/smtlib.688150.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.688150.smt2: solved=True, runtime=1.16s, PAR-2=1.16s
+[DEBUG] Processing 125/570: UFLIA/simplify2/front_end_suite/javafe.parser.Lex.011.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.parser.Lex.011.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.parser.Lex.011.smt2: solved=True, runtime=11.75s, PAR-2=11.75s
+[DEBUG] Processing 126/570: UFLIA/sledgehammer/FFT/smtlib.721451.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFLIA/sledgehammer/FFT/smtlib.721451.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.721451.smt2: solved=True, runtime=0.47s, PAR-2=0.47s
+[DEBUG] Processing 127/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1253418.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1253418.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1253418.smt2: solved=True, runtime=0.32s, PAR-2=0.32s
+[DEBUG] Processing 128/570: UFLIA/sledgehammer/QEpres/smtlib.964551.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.964551.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.964551.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 129/570: UFLIA/sledgehammer/QEpres/smtlib.916378.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.916378.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.916378.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 130/570: UFLIA/sledgehammer/Arrow_Order/smtlib.775208.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.775208.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.775208.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 131/570: UFLIA/boogie/Capture_Capture.Caller0.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Capture_Capture.Caller0.smt2
+[DEBUG] Benchmark UFLIA/boogie/Capture_Capture.Caller0.smt2: solved=True, runtime=0.47s, PAR-2=0.47s
+[DEBUG] Processing 132/570: UFLIA/simplify2/small_suite/frd-seek.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/small_suite/frd-seek.smt2
+[DEBUG] Benchmark UFLIA/simplify2/small_suite/frd-seek.smt2: solved=True, runtime=3.16s, PAR-2=3.16s
+[DEBUG] Processing 133/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1211308.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1211308.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1211308.smt2: solved=True, runtime=31.45s, PAR-2=31.45s
+[DEBUG] Processing 134/570: UFLIA/sledgehammer/Hoare/smtlib.1223689.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Hoare/smtlib.1223689.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.1223689.smt2: solved=True, runtime=338.05s, PAR-2=338.05s
+[DEBUG] Processing 135/570: UFLIA/grasshopper/uninstantiated/strand_sort_loop_invariant_118_3.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/grasshopper/uninstantiated/strand_sort_loop_invariant_118_3.smt2
+[DEBUG] Benchmark UFLIA/grasshopper/uninstantiated/strand_sort_loop_invariant_118_3.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 136/570: UFLIA/simplify2/front_end_suite/javafe.ast.LabelStmt.002.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.LabelStmt.002.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.LabelStmt.002.smt2: solved=True, runtime=0.46s, PAR-2=0.46s
+[DEBUG] Processing 137/570: UFLIA/simplify/javafe.reader.ASTClassFileParser.589.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.reader.ASTClassFileParser.589.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.reader.ASTClassFileParser.589.smt2: solved=True, runtime=0.39s, PAR-2=0.39s
+[DEBUG] Processing 138/570: UFLIA/sledgehammer/StrongNorm/smtlib.731578.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/StrongNorm/smtlib.731578.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/StrongNorm/smtlib.731578.smt2: solved=True, runtime=1.55s, PAR-2=1.55s
+[DEBUG] Processing 139/570: UFLIA/sledgehammer/NS_Shared/smtlib.598943.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/NS_Shared/smtlib.598943.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/NS_Shared/smtlib.598943.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 140/570: UFLIA/sledgehammer/QEpres/smtlib.713208.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.713208.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.713208.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 141/570: UFLIA/sledgehammer/Arrow_Order/smtlib.581652.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.581652.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.581652.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 142/570: UFLIA/sledgehammer/NS_Shared/smtlib.566763.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/NS_Shared/smtlib.566763.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/NS_Shared/smtlib.566763.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 143/570: UFLIA/sledgehammer/TypeSafe/smtlib.709731.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TypeSafe/smtlib.709731.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TypeSafe/smtlib.709731.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 144/570: UFLIA/grasshopper/uninstantiated/strand_sort_loop_precondition_of_merge_117_14.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/grasshopper/uninstantiated/strand_sort_loop_precondition_of_merge_117_14.smt2
+[DEBUG] Benchmark UFLIA/grasshopper/uninstantiated/strand_sort_loop_precondition_of_merge_117_14.smt2: solved=True, runtime=602.60s, PAR-2=602.60s
+[DEBUG] Processing 145/570: UFLIA/simplify2/front_end_suite/javafe.ast.OperatorTags.001.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.OperatorTags.001.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.OperatorTags.001.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 146/570: UFLIA/simplify/javafe.ast.TypeDeclElemVec.379.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.ast.TypeDeclElemVec.379.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.ast.TypeDeclElemVec.379.smt2: solved=True, runtime=5.00s, PAR-2=5.00s
+[DEBUG] Processing 147/570: UFLIA/tptp/NUM859=1.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFLIA/tptp/NUM859=1.smt2
+[DEBUG] Benchmark UFLIA/tptp/NUM859=1.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 148/570: UFLIA/boogie/PeerFields_PeerFields.S_System.Int32.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/PeerFields_PeerFields.S_System.Int32.smt2
+[DEBUG] Benchmark UFLIA/boogie/PeerFields_PeerFields.S_System.Int32.smt2: solved=True, runtime=485.27s, PAR-2=485.27s
+[DEBUG] Processing 149/570: UFLIA/sledgehammer/QEpres/smtlib.1096569.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.1096569.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.1096569.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 150/570: UFLIA/sledgehammer/FFT/smtlib.570447.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/FFT/smtlib.570447.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.570447.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 151/570: UFLIA/sledgehammer/TwoSquares/smtlib.754022.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.754022.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.754022.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 152/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.643243.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.643243.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.643243.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 153/570: UFLIA/simplify/javafe.tc.FlowInsensitiveChecks.684.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.tc.FlowInsensitiveChecks.684.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.tc.FlowInsensitiveChecks.684.smt2: solved=True, runtime=0.97s, PAR-2=0.97s
+[DEBUG] Processing 154/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1208403.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1208403.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1208403.smt2: solved=True, runtime=0.37s, PAR-2=0.37s
+[DEBUG] Processing 155/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1023346.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1023346.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1023346.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 156/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.622140.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.622140.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.622140.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 157/570: UFLIA/grasshopper/uninstantiated/insertion_sort_loop_check_heap_access_42_4.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/grasshopper/uninstantiated/insertion_sort_loop_check_heap_access_42_4.smt2
+[DEBUG] Benchmark UFLIA/grasshopper/uninstantiated/insertion_sort_loop_check_heap_access_42_4.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 158/570: UFLIA/simplify2/front_end_suite/javafe.util.FilterCorrelatedReader.004.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.util.FilterCorrelatedReader.004.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.util.FilterCorrelatedReader.004.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 159/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/z3.867850.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/z3.867850.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/z3.867850.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 160/570: UFLIA/sledgehammer/QEpres/smtlib.774509.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.774509.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.774509.smt2: solved=True, runtime=0.33s, PAR-2=0.33s
+[DEBUG] Processing 161/570: UFLIA/boogie/DoWhileGood_Test.Copy_System.Int32.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/DoWhileGood_Test.Copy_System.Int32.smt2
+[DEBUG] Benchmark UFLIA/boogie/DoWhileGood_Test.Copy_System.Int32.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 162/570: UFLIA/simplify2/front_end_suite/javafe.ast.TypeModifierPragmaVec.001.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.TypeModifierPragmaVec.001.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.TypeModifierPragmaVec.001.smt2: solved=True, runtime=0.87s, PAR-2=0.87s
+[DEBUG] Processing 163/570: UFLIA/sledgehammer/FFT/smtlib.1009700.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/FFT/smtlib.1009700.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.1009700.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 164/570: UFLIA/boogie/AssignToNonInvariantField_ClientClass..ctor.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/AssignToNonInvariantField_ClientClass..ctor.smt2
+[DEBUG] Benchmark UFLIA/boogie/AssignToNonInvariantField_ClientClass..ctor.smt2: solved=True, runtime=0.88s, PAR-2=0.88s
+[DEBUG] Processing 165/570: UFLIA/grasshopper/instantiated/insert_postcondition_of_insert_56_4.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/grasshopper/instantiated/insert_postcondition_of_insert_56_4.smt2
+[DEBUG] Benchmark UFLIA/grasshopper/instantiated/insert_postcondition_of_insert_56_4.smt2: solved=True, runtime=780.31s, PAR-2=780.31s
+[DEBUG] Processing 166/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.988241.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.988241.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.988241.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 167/570: UFLIA/tokeneer/userentry/unlockdoor-8.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFLIA/tokeneer/userentry/unlockdoor-8.smt2
+[DEBUG] Benchmark UFLIA/tokeneer/userentry/unlockdoor-8.smt2: solved=True, runtime=1.82s, PAR-2=1.82s
+[DEBUG] Processing 168/570: UFLIA/sledgehammer/Hoare/smtlib.1019713.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Hoare/smtlib.1019713.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.1019713.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 169/570: UFLIA/sledgehammer/Hoare/smtlib.840895.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Hoare/smtlib.840895.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.840895.smt2: solved=True, runtime=0.88s, PAR-2=0.88s
+[DEBUG] Processing 170/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.568611.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.568611.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.568611.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 171/570: UFLIA/simplify2/front_end_suite/javafe.ast.FieldAccess.003.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.FieldAccess.003.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.FieldAccess.003.smt2: solved=True, runtime=0.46s, PAR-2=0.46s
+[DEBUG] Processing 172/570: UFLIA/grasshopper/instantiated/strand_sort_loop_precondition_of_merge_117_14.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/grasshopper/instantiated/strand_sort_loop_precondition_of_merge_117_14.smt2
+[DEBUG] Benchmark UFLIA/grasshopper/instantiated/strand_sort_loop_precondition_of_merge_117_14.smt2: solved=True, runtime=1.23s, PAR-2=1.23s
+[DEBUG] Processing 173/570: UFLIA/boogie/LocalExpose_C.M1.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/LocalExpose_C.M1.smt2
+[DEBUG] Benchmark UFLIA/boogie/LocalExpose_C.M1.smt2: solved=True, runtime=0.69s, PAR-2=0.69s
+[DEBUG] Processing 174/570: UFLIA/simplify/javafe.ast.ClassDecl.71.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.ast.ClassDecl.71.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.ast.ClassDecl.71.smt2: solved=True, runtime=25.08s, PAR-2=25.08s
+[DEBUG] Processing 175/570: UFLIA/simplify/javafe.ast.ImportDeclVec.189.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.ast.ImportDeclVec.189.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.ast.ImportDeclVec.189.smt2: solved=True, runtime=0.88s, PAR-2=0.88s
+[DEBUG] Processing 176/570: UFLIA/grasshopper/instantiated/copy_loop_invariant_50_5.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/grasshopper/instantiated/copy_loop_invariant_50_5.smt2
+[DEBUG] Benchmark UFLIA/grasshopper/instantiated/copy_loop_invariant_50_5.smt2: solved=True, runtime=20.24s, PAR-2=20.24s
+[DEBUG] Processing 177/570: UFLIA/sledgehammer/Hoare/smtlib.598856.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFLIA/sledgehammer/Hoare/smtlib.598856.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.598856.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 178/570: UFLIA/sledgehammer/Hoare/smtlib.843132.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Hoare/smtlib.843132.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.843132.smt2: solved=True, runtime=0.33s, PAR-2=0.33s
+[DEBUG] Processing 179/570: UFLIA/sledgehammer/Arrow_Order/smtlib.631241.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.631241.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.631241.smt2: solved=True, runtime=0.45s, PAR-2=0.45s
+[DEBUG] Processing 180/570: UFLIA/boogie/PeerConsistentLoop_C.M1_System.Int32.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/PeerConsistentLoop_C.M1_System.Int32.smt2
+[DEBUG] Benchmark UFLIA/boogie/PeerConsistentLoop_C.M1_System.Int32.smt2: solved=True, runtime=0.97s, PAR-2=0.97s
+[DEBUG] Processing 181/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.923420.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.923420.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.923420.smt2: solved=True, runtime=30.45s, PAR-2=30.45s
+[DEBUG] Processing 182/570: UFLIA/sledgehammer/QEpres/smtlib.1125201.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.1125201.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.1125201.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 183/570: UFLIA/boogie/VisibilityBasedInvariants_Thing.U.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/VisibilityBasedInvariants_Thing.U.smt2
+[DEBUG] Benchmark UFLIA/boogie/VisibilityBasedInvariants_Thing.U.smt2: solved=True, runtime=1.26s, PAR-2=1.26s
+[DEBUG] Processing 184/570: UFLIA/boogie/Modifies_C.Incorrect_T_notnull-level_2.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Modifies_C.Incorrect_T_notnull-level_2.smt2
+[DEBUG] Benchmark UFLIA/boogie/Modifies_C.Incorrect_T_notnull-level_2.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 185/570: UFLIA/grasshopper/instantiated/split_invariant_27_2.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/grasshopper/instantiated/split_invariant_27_2.smt2
+[DEBUG] Benchmark UFLIA/grasshopper/instantiated/split_invariant_27_2.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 186/570: UFLIA/boogie/Types_Types.M0_B_notnull_System.Boolean-orderStrength_1.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Types_Types.M0_B_notnull_System.Boolean-orderStrength_1.smt2
+[DEBUG] Benchmark UFLIA/boogie/Types_Types.M0_B_notnull_System.Boolean-orderStrength_1.smt2: solved=True, runtime=0.51s, PAR-2=0.51s
+[DEBUG] Processing 187/570: UFLIA/sledgehammer/TwoSquares/smtlib.812502.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.812502.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.812502.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 188/570: UFLIA/simplify2/front_end_suite/javafe.tc.TypeSig.028.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.tc.TypeSig.028.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.tc.TypeSig.028.smt2: solved=True, runtime=0.79s, PAR-2=0.79s
+[DEBUG] Processing 189/570: UFLIA/sledgehammer/QEpres/smtlib.776714.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.776714.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.776714.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 190/570: UFLIA/simplify2/front_end_suite/javafe.ast.TypeModifierPragmaVec.009.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.TypeModifierPragmaVec.009.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.TypeModifierPragmaVec.009.smt2: solved=True, runtime=0.31s, PAR-2=0.31s
+[DEBUG] Processing 191/570: UFLIA/sledgehammer/QEpres/smtlib.990563.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/QEpres/smtlib.990563.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.990563.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 192/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1151351.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1151351.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1151351.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 193/570: UFLIA/grasshopper/uninstantiated/sls_insert_postcondition_of_sls_insert_28_4.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/grasshopper/uninstantiated/sls_insert_postcondition_of_sls_insert_28_4.smt2
+[DEBUG] Benchmark UFLIA/grasshopper/uninstantiated/sls_insert_postcondition_of_sls_insert_28_4.smt2: solved=True, runtime=1.46s, PAR-2=1.46s
+[DEBUG] Processing 194/570: UFLIA/sledgehammer/TwoSquares/smtlib.810665.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.810665.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.810665.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 195/570: UFLIA/sledgehammer/StrongNorm/smtlib.881382.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/StrongNorm/smtlib.881382.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/StrongNorm/smtlib.881382.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 196/570: UFLIA/boogie/ExactTypes_F.Assign_X.array_X_System.Int32.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/ExactTypes_F.Assign_X.array_X_System.Int32.smt2
+[DEBUG] Benchmark UFLIA/boogie/ExactTypes_F.Assign_X.array_X_System.Int32.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 197/570: UFLIA/simplify2/front_end_suite/javafe.ast.ThrowStmt.001.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ThrowStmt.001.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ThrowStmt.001.smt2: solved=True, runtime=0.47s, PAR-2=0.47s
+[DEBUG] Processing 198/570: UFLIA/sledgehammer/NS_Shared/smtlib.855503.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/NS_Shared/smtlib.855503.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/NS_Shared/smtlib.855503.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 199/570: UFLIA/sledgehammer/QEpres/smtlib.609438.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/QEpres/smtlib.609438.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.609438.smt2: solved=True, runtime=53.98s, PAR-2=53.98s
+[DEBUG] Processing 200/570: UFLIA/sledgehammer/QEpres/smtlib.1095460.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.1095460.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.1095460.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 201/570: UFLIA/simplify2/front_end_suite/javafe.ast.ClassLiteral.006.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ClassLiteral.006.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ClassLiteral.006.smt2: solved=True, runtime=0.44s, PAR-2=0.44s
+[DEBUG] Processing 202/570: UFLIA/sledgehammer/TypeSafe/smtlib.754823.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TypeSafe/smtlib.754823.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TypeSafe/smtlib.754823.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 203/570: UFLIA/simplify/javafe.reader.ASTClassFileParser.593.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.reader.ASTClassFileParser.593.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.reader.ASTClassFileParser.593.smt2: solved=True, runtime=111.00s, PAR-2=111.00s
+[DEBUG] Processing 204/570: UFLIA/simplify2/front_end_suite/javafe.tc.TypeSig.043.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.tc.TypeSig.043.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.tc.TypeSig.043.smt2: solved=True, runtime=2.18s, PAR-2=2.18s
+[DEBUG] Processing 205/570: UFLIA/sledgehammer/TwoSquares/smtlib.894593.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.894593.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.894593.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 206/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/z3.1476427.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/z3.1476427.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/z3.1476427.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 207/570: UFLIA/simplify2/front_end_suite/javafe.parser.TokenQueue.002.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.parser.TokenQueue.002.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.parser.TokenQueue.002.smt2: solved=True, runtime=0.31s, PAR-2=0.31s
+[DEBUG] Processing 208/570: UFLIA/sledgehammer/FFT/smtlib.586283.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/FFT/smtlib.586283.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.586283.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 209/570: UFLIA/sledgehammer/TypeSafe/smtlib.749329.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TypeSafe/smtlib.749329.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TypeSafe/smtlib.749329.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 210/570: UFLIA/boogie/AssignToNonInvariantField_ClientClass.M.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/AssignToNonInvariantField_ClientClass.M.smt2
+[DEBUG] Benchmark UFLIA/boogie/AssignToNonInvariantField_ClientClass.M.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 211/570: UFLIA/sledgehammer/QEpres/smtlib.1160414.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.1160414.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.1160414.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 212/570: UFLIA/simplify/javafe.ast.InterfaceDecl.206.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.ast.InterfaceDecl.206.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.ast.InterfaceDecl.206.smt2: solved=True, runtime=8.34s, PAR-2=8.34s
+[DEBUG] Processing 213/570: UFLIA/simplify2/front_end_suite/javafe.ast.SingleTypeImportDecl.009.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.SingleTypeImportDecl.009.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.SingleTypeImportDecl.009.smt2: solved=True, runtime=0.51s, PAR-2=0.51s
+[DEBUG] Processing 214/570: UFLIA/grasshopper/uninstantiated/insertion_sort_loop_check_heap_access_58_4.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/grasshopper/uninstantiated/insertion_sort_loop_check_heap_access_58_4.smt2
+[DEBUG] Benchmark UFLIA/grasshopper/uninstantiated/insertion_sort_loop_check_heap_access_58_4.smt2: solved=True, runtime=0.34s, PAR-2=0.34s
+[DEBUG] Processing 215/570: UFLIA/boogie/Immutable_test3.E.M.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Immutable_test3.E.M.smt2
+[DEBUG] Benchmark UFLIA/boogie/Immutable_test3.E.M.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 216/570: UFLIA/simplify2/front_end_suite/javafe.parser.Parse.006.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.parser.Parse.006.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.parser.Parse.006.smt2: solved=True, runtime=2.93s, PAR-2=2.93s
+[DEBUG] Processing 217/570: UFLIA/sledgehammer/Arrow_Order/smtlib.724248.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.724248.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.724248.smt2: solved=True, runtime=14.99s, PAR-2=14.99s
+[DEBUG] Processing 218/570: UFLIA/sledgehammer/QEpres/smtlib.1121139.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.1121139.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.1121139.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 219/570: UFLIA/sledgehammer/Hoare/smtlib.728827.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Hoare/smtlib.728827.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.728827.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 220/570: UFLIA/sledgehammer/FFT/smtlib.931246.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/FFT/smtlib.931246.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.931246.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 221/570: UFLIA/simplify2/front_end_suite/javafe.util.LocationManagerCorrelatedReader.005.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.util.LocationManagerCorrelatedReader.005.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.util.LocationManagerCorrelatedReader.005.smt2: solved=True, runtime=0.32s, PAR-2=0.32s
+[DEBUG] Processing 222/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.649956.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.649956.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.649956.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 223/570: UFLIA/sledgehammer/QEpres/smtlib.800130.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.800130.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.800130.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 224/570: UFLIA/sledgehammer/TwoSquares/smtlib.774188.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.774188.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.774188.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 225/570: UFLIA/boogie/Arrays_P0-noinfer.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFLIA/boogie/Arrays_P0-noinfer.smt2
+[DEBUG] Benchmark UFLIA/boogie/Arrays_P0-noinfer.smt2: solved=True, runtime=1.46s, PAR-2=1.46s
+[DEBUG] Processing 226/570: UFLIA/sledgehammer/QEpres/smtlib.1211302.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.1211302.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.1211302.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 227/570: UFLIA/simplify2/front_end_suite/javafe.reader.MethodSignature.001.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.reader.MethodSignature.001.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.reader.MethodSignature.001.smt2: solved=True, runtime=0.57s, PAR-2=0.57s
+[DEBUG] Processing 228/570: UFLIA/sledgehammer/QEpres/smtlib.1077213.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.1077213.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.1077213.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 229/570: UFLIA/sledgehammer/FFT/smtlib.1000674.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/FFT/smtlib.1000674.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.1000674.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 230/570: UFLIA/sledgehammer/QEpres/smtlib.1092350.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.1092350.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.1092350.smt2: solved=True, runtime=0.41s, PAR-2=0.41s
+[DEBUG] Processing 231/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1362020.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1362020.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1362020.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 232/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1433458.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1433458.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1433458.smt2: solved=True, runtime=0.34s, PAR-2=0.34s
+[DEBUG] Processing 233/570: UFLIA/simplify2/front_end_suite/javafe.SrcTool.007.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.SrcTool.007.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.SrcTool.007.smt2: solved=True, runtime=0.52s, PAR-2=0.52s
+[DEBUG] Processing 234/570: UFLIA/sledgehammer/StrongNorm/smtlib.881980.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/StrongNorm/smtlib.881980.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/StrongNorm/smtlib.881980.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 235/570: UFLIA/simplify2/front_end_suite/javafe.ast.CatchClauseVec.020.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.CatchClauseVec.020.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.CatchClauseVec.020.smt2: solved=True, runtime=1.04s, PAR-2=1.04s
+[DEBUG] Processing 236/570: UFLIA/sledgehammer/Hoare/smtlib.1072279.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Hoare/smtlib.1072279.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.1072279.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 237/570: UFLIA/simplify2/front_end_suite/javafe.util.LocationManagerCorrelatedReader.013.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.util.LocationManagerCorrelatedReader.013.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.util.LocationManagerCorrelatedReader.013.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 238/570: UFLIA/simplify/javafe.filespace.ClassPath.453.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.filespace.ClassPath.453.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.filespace.ClassPath.453.smt2: solved=True, runtime=0.49s, PAR-2=0.49s
+[DEBUG] Processing 239/570: UFLIA/sledgehammer/Arrow_Order/smtlib.840711.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.840711.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.840711.smt2: solved=True, runtime=2.55s, PAR-2=2.55s
+[DEBUG] Processing 240/570: UFLIA/sledgehammer/TwoSquares/z3.700192.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFLIA/sledgehammer/TwoSquares/z3.700192.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/z3.700192.smt2: solved=True, runtime=0.53s, PAR-2=0.53s
+[DEBUG] Processing 241/570: UFLIA/simplify2/front_end_suite/javafe.util.FileCorrelatedReader.006.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.util.FileCorrelatedReader.006.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.util.FileCorrelatedReader.006.smt2: solved=True, runtime=3.66s, PAR-2=3.66s
+[DEBUG] Processing 242/570: UFLIA/simplify2/front_end_suite/javafe.ast.ExprVec.009.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ExprVec.009.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ExprVec.009.smt2: solved=True, runtime=0.37s, PAR-2=0.37s
+[DEBUG] Processing 243/570: UFLIA/grasshopper/instantiated/delete_postcondition_of_delete_54_12.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/grasshopper/instantiated/delete_postcondition_of_delete_54_12.smt2
+[DEBUG] Benchmark UFLIA/grasshopper/instantiated/delete_postcondition_of_delete_54_12.smt2: solved=True, runtime=561.25s, PAR-2=561.25s
+[DEBUG] Processing 244/570: UFLIA/simplify2/front_end_suite/javafe.filespace.SlowQuery.005.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.filespace.SlowQuery.005.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.filespace.SlowQuery.005.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 245/570: UFLIA/boogie/StrictReadOnly_C1.Z1.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/StrictReadOnly_C1.Z1.smt2
+[DEBUG] Benchmark UFLIA/boogie/StrictReadOnly_C1.Z1.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 246/570: UFLIA/sledgehammer/FFT/smtlib.991706.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/FFT/smtlib.991706.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.991706.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 247/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.734913.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.734913.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.734913.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 248/570: UFLIA/sledgehammer/Hoare/smtlib.1209846.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Hoare/smtlib.1209846.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.1209846.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 249/570: UFLIA/sledgehammer/TwoSquares/smtlib.632933.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.632933.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.632933.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 250/570: UFLIA/sledgehammer/QEpres/smtlib.846873.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/QEpres/smtlib.846873.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.846873.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 251/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.781204.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.781204.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.781204.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 252/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.824330.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.824330.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.824330.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 253/570: UFLIA/sexpr/SES.PrettySx.SkipWhiteSpace_System.IO.TextReader_notnull_System.IO.TextWriter.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sexpr/SES.PrettySx.SkipWhiteSpace_System.IO.TextReader_notnull_System.IO.TextWriter.smt2
+[DEBUG] Benchmark UFLIA/sexpr/SES.PrettySx.SkipWhiteSpace_System.IO.TextReader_notnull_System.IO.TextWriter.smt2: solved=True, runtime=31.84s, PAR-2=31.84s
+[DEBUG] Processing 254/570: UFLIA/sledgehammer/Arrow_Order/smtlib.810726.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.810726.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.810726.smt2: solved=True, runtime=1.43s, PAR-2=1.43s
+[DEBUG] Processing 255/570: UFLIA/boogie/Strengthen_MainClass..ctor.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Strengthen_MainClass..ctor.smt2
+[DEBUG] Benchmark UFLIA/boogie/Strengthen_MainClass..ctor.smt2: solved=True, runtime=0.35s, PAR-2=0.35s
+[DEBUG] Processing 256/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.681465.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.681465.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.681465.smt2: solved=True, runtime=23.51s, PAR-2=23.51s
+[DEBUG] Processing 257/570: UFLIA/sledgehammer/FFT/smtlib.598147.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/FFT/smtlib.598147.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.598147.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 258/570: UFLIA/sledgehammer/FFT/smtlib.843105.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/FFT/smtlib.843105.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.843105.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 259/570: UFLIA/simplify/javafe.ast.CatchClauseVec.66.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.ast.CatchClauseVec.66.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.ast.CatchClauseVec.66.smt2: solved=True, runtime=7.84s, PAR-2=7.84s
+[DEBUG] Processing 260/570: UFLIA/sledgehammer/Hoare/smtlib.894255.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Hoare/smtlib.894255.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.894255.smt2: solved=True, runtime=40.24s, PAR-2=40.24s
+[DEBUG] Processing 261/570: UFLIA/simplify2/front_end_suite/javafe.ast.ASTNode.002.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ASTNode.002.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ASTNode.002.smt2: solved=True, runtime=0.56s, PAR-2=0.56s
+[DEBUG] Processing 262/570: UFLIA/sledgehammer/FFT/smtlib.739766.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/FFT/smtlib.739766.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.739766.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 263/570: UFLIA/sledgehammer/TypeSafe/smtlib.823189.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TypeSafe/smtlib.823189.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TypeSafe/smtlib.823189.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 264/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.839164.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.839164.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.839164.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 265/570: UFLIA/sledgehammer/QEpres/smtlib.842199.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.842199.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.842199.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 266/570: UFLIA/simplify2/front_end_suite/javafe.ast.BreakStmt.005.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.BreakStmt.005.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.BreakStmt.005.smt2: solved=True, runtime=16.22s, PAR-2=16.22s
+[DEBUG] Processing 267/570: UFLIA/simplify2/front_end_suite/javafe.tc.TypeSig.004.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.tc.TypeSig.004.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.tc.TypeSig.004.smt2: solved=True, runtime=17.76s, PAR-2=17.76s
+[DEBUG] Processing 268/570: UFLIA/sledgehammer/QEpres/smtlib.1186791.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.1186791.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.1186791.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 269/570: UFLIA/simplify/javafe.reader.ASTClassFileParser.588.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.reader.ASTClassFileParser.588.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.reader.ASTClassFileParser.588.smt2: solved=True, runtime=0.34s, PAR-2=0.34s
+[DEBUG] Processing 270/570: UFLIA/boogie/PeerFields_PeerFields.Assign1_PeerFields.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/PeerFields_PeerFields.Assign1_PeerFields.smt2
+[DEBUG] Benchmark UFLIA/boogie/PeerFields_PeerFields.Assign1_PeerFields.smt2: solved=True, runtime=1.13s, PAR-2=1.13s
+[DEBUG] Processing 271/570: UFLIA/simplify2/front_end_suite/javafe.ast.ContinueStmt.005.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ContinueStmt.005.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ContinueStmt.005.smt2: solved=True, runtime=14.95s, PAR-2=14.95s
+[DEBUG] Processing 272/570: UFLIA/sledgehammer/FFT/smtlib.569998.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/FFT/smtlib.569998.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.569998.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 273/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1418216.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1418216.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1418216.smt2: solved=True, runtime=30.35s, PAR-2=30.35s
+[DEBUG] Processing 274/570: UFLIA/simplify2/front_end_suite/javafe.tc.TypeSig.046.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.tc.TypeSig.046.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.tc.TypeSig.046.smt2: solved=True, runtime=0.73s, PAR-2=0.73s
+[DEBUG] Processing 275/570: UFLIA/sledgehammer/QEpres/smtlib.1039006.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.1039006.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.1039006.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 276/570: UFLIA/sledgehammer/TwoSquares/smtlib.879227.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.879227.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.879227.smt2: solved=True, runtime=0.39s, PAR-2=0.39s
+[DEBUG] Processing 277/570: UFLIA/sledgehammer/StrongNorm/smtlib.709643.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/StrongNorm/smtlib.709643.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/StrongNorm/smtlib.709643.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 278/570: UFLIA/boogie/PeerFields_PeerFields..ctor_System.Int32.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/PeerFields_PeerFields..ctor_System.Int32.smt2
+[DEBUG] Benchmark UFLIA/boogie/PeerFields_PeerFields..ctor_System.Int32.smt2: solved=True, runtime=2.47s, PAR-2=2.47s
+[DEBUG] Processing 279/570: UFLIA/boogie/Assumptions_Sub.Q.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Assumptions_Sub.Q.smt2
+[DEBUG] Benchmark UFLIA/boogie/Assumptions_Sub.Q.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 280/570: UFLIA/sledgehammer/QEpres/smtlib.664592.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.664592.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.664592.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 281/570: UFLIA/sledgehammer/QEpres/smtlib.614051.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.614051.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.614051.smt2: solved=True, runtime=210.72s, PAR-2=210.72s
+[DEBUG] Processing 282/570: UFLIA/boogie/LocalExpose_D..ctor.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/LocalExpose_D..ctor.smt2
+[DEBUG] Benchmark UFLIA/boogie/LocalExpose_D..ctor.smt2: solved=True, runtime=0.98s, PAR-2=0.98s
+[DEBUG] Processing 283/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1421476.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1421476.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1421476.smt2: solved=True, runtime=1.16s, PAR-2=1.16s
+[DEBUG] Processing 284/570: UFLIA/boogie/PureCall_Test.TestGood.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/PureCall_Test.TestGood.smt2
+[DEBUG] Benchmark UFLIA/boogie/PureCall_Test.TestGood.smt2: solved=True, runtime=0.50s, PAR-2=0.50s
+[DEBUG] Processing 285/570: UFLIA/boogie/PeerModifiesClauses_Homeboy.D-level_2.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/PeerModifiesClauses_Homeboy.D-level_2.smt2
+[DEBUG] Benchmark UFLIA/boogie/PeerModifiesClauses_Homeboy.D-level_2.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 286/570: UFLIA/simplify/javafe.ast.InterfaceDecl.207.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.ast.InterfaceDecl.207.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.ast.InterfaceDecl.207.smt2: solved=True, runtime=0.76s, PAR-2=0.76s
+[DEBUG] Processing 287/570: UFLIA/sledgehammer/FFT/smtlib.702786.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/FFT/smtlib.702786.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.702786.smt2: solved=True, runtime=0.31s, PAR-2=0.31s
+[DEBUG] Processing 288/570: UFLIA/boogie/Array_test3.MyClass.Allocate1_System.Int32.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Array_test3.MyClass.Allocate1_System.Int32.smt2
+[DEBUG] Benchmark UFLIA/boogie/Array_test3.MyClass.Allocate1_System.Int32.smt2: solved=True, runtime=0.31s, PAR-2=0.31s
+[DEBUG] Processing 289/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.586162.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.586162.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.586162.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 290/570: UFLIA/sledgehammer/FFT/smtlib.585482.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/FFT/smtlib.585482.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.585482.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 291/570: UFLIA/simplify2/front_end_suite/javafe.util.StackVector.009.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.util.StackVector.009.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.util.StackVector.009.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 292/570: UFLIA/sledgehammer/QEpres/smtlib.595406.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/QEpres/smtlib.595406.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.595406.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 293/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.662175.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.662175.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.662175.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 294/570: UFLIA/tokeneer/auditlog/addelementtologfile/addelementtocurrentfile-4.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/tokeneer/auditlog/addelementtologfile/addelementtocurrentfile-4.smt2
+[DEBUG] Benchmark UFLIA/tokeneer/auditlog/addelementtologfile/addelementtocurrentfile-4.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 295/570: UFLIA/sledgehammer/NS_Shared/smtlib.711976.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/NS_Shared/smtlib.711976.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/NS_Shared/smtlib.711976.smt2: solved=True, runtime=0.84s, PAR-2=0.84s
+[DEBUG] Processing 296/570: UFLIA/boogie/ExposeVersion_A.FieldUpdateOnOtherFieldWithMethodQuery-level_2.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/ExposeVersion_A.FieldUpdateOnOtherFieldWithMethodQuery-level_2.smt2
+[DEBUG] Benchmark UFLIA/boogie/ExposeVersion_A.FieldUpdateOnOtherFieldWithMethodQuery-level_2.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 297/570: UFLIA/sledgehammer/Arrow_Order/smtlib.815663.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.815663.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.815663.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 298/570: UFLIA/simplify2/front_end_suite/javafe.ast.BreakStmt.004.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.BreakStmt.004.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.BreakStmt.004.smt2: solved=True, runtime=0.45s, PAR-2=0.45s
+[DEBUG] Processing 299/570: UFLIA/simplify2/front_end_suite/javafe.ast.StmtVec.011.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.StmtVec.011.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.StmtVec.011.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 300/570: UFLIA/simplify/javafe.tc.TypeSigVec.735.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.tc.TypeSigVec.735.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.tc.TypeSigVec.735.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 301/570: UFLIA/simplify/javafe.ast.TypeDeclElemPragma.373.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.ast.TypeDeclElemPragma.373.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.ast.TypeDeclElemPragma.373.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 302/570: UFLIA/sledgehammer/TypeSafe/smtlib.919344.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/TypeSafe/smtlib.919344.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TypeSafe/smtlib.919344.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 303/570: UFLIA/sledgehammer/QEpres/smtlib.840134.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.840134.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.840134.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 304/570: UFLIA/boogie/Chunker10_Chunker.SpecSharp.CheckInvariant_System.Boolean.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Chunker10_Chunker.SpecSharp.CheckInvariant_System.Boolean.smt2
+[DEBUG] Benchmark UFLIA/boogie/Chunker10_Chunker.SpecSharp.CheckInvariant_System.Boolean.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 305/570: UFLIA/sledgehammer/TwoSquares/smtlib.664071.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.664071.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.664071.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 306/570: UFLIA/simplify2/front_end_suite/javafe.filespace.PathComponent.002.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.filespace.PathComponent.002.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.filespace.PathComponent.002.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 307/570: UFLIA/simplify2/front_end_suite/javafe.ast.ConstructorInvocation.009.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ConstructorInvocation.009.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ConstructorInvocation.009.smt2: solved=True, runtime=10.51s, PAR-2=10.51s
+[DEBUG] Processing 308/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.836831.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.836831.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.836831.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 309/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.678317.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.678317.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.678317.smt2: solved=True, runtime=0.41s, PAR-2=0.41s
+[DEBUG] Processing 310/570: UFLIA/sledgehammer/TwoSquares/smtlib.795870.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.795870.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.795870.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 311/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.960482.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.960482.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.960482.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 312/570: UFLIA/boogie/strings-no-where_Microsoft.Singularity.Applications.ThreadTest.SecondThreadMethod-noinfer.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/strings-no-where_Microsoft.Singularity.Applications.ThreadTest.SecondThreadMethod-noinfer.smt2
+[DEBUG] Benchmark UFLIA/boogie/strings-no-where_Microsoft.Singularity.Applications.ThreadTest.SecondThreadMethod-noinfer.smt2: solved=True, runtime=66.91s, PAR-2=66.91s
+[DEBUG] Processing 313/570: UFLIA/boogie/Factory_C.Create.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Factory_C.Create.smt2
+[DEBUG] Benchmark UFLIA/boogie/Factory_C.Create.smt2: solved=True, runtime=0.34s, PAR-2=0.34s
+[DEBUG] Processing 314/570: UFLIA/simplify/javafe.filespace.ExtTree.460.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.filespace.ExtTree.460.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.filespace.ExtTree.460.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 315/570: UFLIA/sledgehammer/TypeSafe/smtlib.871636.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TypeSafe/smtlib.871636.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TypeSafe/smtlib.871636.smt2: solved=True, runtime=0.37s, PAR-2=0.37s
+[DEBUG] Processing 316/570: UFLIA/sledgehammer/StrongNorm/smtlib.737958.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/StrongNorm/smtlib.737958.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/StrongNorm/smtlib.737958.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 317/570: UFLIA/boogie/StrictReadOnly_C2.W0.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/StrictReadOnly_C2.W0.smt2
+[DEBUG] Benchmark UFLIA/boogie/StrictReadOnly_C2.W0.smt2: solved=True, runtime=0.42s, PAR-2=0.42s
+[DEBUG] Processing 318/570: UFLIA/simplify/javafe.ast.ArrayType.44.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.ast.ArrayType.44.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.ast.ArrayType.44.smt2: solved=True, runtime=1.48s, PAR-2=1.48s
+[DEBUG] Processing 319/570: UFLIA/boogie/Unsigned_test.KitchenSink2_System.SByte_System.Byte_System.Int16_System.UInt16_System.Int32_System.UInt32_System.Int64_System.UInt64_System.Char.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Unsigned_test.KitchenSink2_System.SByte_System.Byte_System.Int16_System.UInt16_System.Int32_System.UInt32_System.Int64_System.UInt64_System.Char.smt2
+[DEBUG] Benchmark UFLIA/boogie/Unsigned_test.KitchenSink2_System.SByte_System.Byte_System.Int16_System.UInt16_System.Int32_System.UInt32_System.Int64_System.UInt64_System.Char.smt2: solved=True, runtime=0.35s, PAR-2=0.35s
+[DEBUG] Processing 320/570: UFLIA/boogie/StrictReadOnly_D.foo4_D_notnull.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/StrictReadOnly_D.foo4_D_notnull.smt2
+[DEBUG] Benchmark UFLIA/boogie/StrictReadOnly_D.foo4_D_notnull.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 321/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1318706.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1318706.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1318706.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 322/570: UFLIA/sledgehammer/StrongNorm/smtlib.679387.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/StrongNorm/smtlib.679387.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/StrongNorm/smtlib.679387.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 323/570: UFLIA/sledgehammer/TwoSquares/smtlib.847225.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.847225.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.847225.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 324/570: UFLIA/simplify2/front_end_suite/javafe.ast.FormalParaDecl.002.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.FormalParaDecl.002.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.FormalParaDecl.002.smt2: solved=True, runtime=0.52s, PAR-2=0.52s
+[DEBUG] Processing 325/570: UFLIA/simplify/javafe.tc.FlowInsensitiveChecks.680.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.tc.FlowInsensitiveChecks.680.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.tc.FlowInsensitiveChecks.680.smt2: solved=True, runtime=1.16s, PAR-2=1.16s
+[DEBUG] Processing 326/570: UFLIA/simplify2/front_end_suite/javafe.ast.FormalParaDeclVec.007.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.FormalParaDeclVec.007.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.FormalParaDeclVec.007.smt2: solved=True, runtime=0.44s, PAR-2=0.44s
+[DEBUG] Processing 327/570: UFLIA/simplify2/front_end_suite/javafe.tc.TypeSig.007.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.tc.TypeSig.007.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.tc.TypeSig.007.smt2: solved=True, runtime=0.69s, PAR-2=0.69s
+[DEBUG] Processing 328/570: UFLIA/sledgehammer/FFT/smtlib.651286.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/FFT/smtlib.651286.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.651286.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 329/570: UFLIA/sledgehammer/Hoare/smtlib.887144.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Hoare/smtlib.887144.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.887144.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 330/570: UFLIA/sledgehammer/TypeSafe/smtlib.1312719.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TypeSafe/smtlib.1312719.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TypeSafe/smtlib.1312719.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 331/570: UFLIA/sledgehammer/QEpres/smtlib.1213444.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.1213444.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.1213444.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 332/570: UFLIA/sledgehammer/Arrow_Order/smtlib.711645.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.711645.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.711645.smt2: solved=True, runtime=27.57s, PAR-2=27.57s
+[DEBUG] Processing 333/570: UFLIA/boogie/AssignToNonInvariantField_T.Mb.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/AssignToNonInvariantField_T.Mb.smt2
+[DEBUG] Benchmark UFLIA/boogie/AssignToNonInvariantField_T.Mb.smt2: solved=True, runtime=0.35s, PAR-2=0.35s
+[DEBUG] Processing 334/570: UFLIA/tokeneer/clock/printduration-4.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/tokeneer/clock/printduration-4.smt2
+[DEBUG] Benchmark UFLIA/tokeneer/clock/printduration-4.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 335/570: UFLIA/simplify2/front_end_suite/javafe.tc.TypeSig.036.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.tc.TypeSig.036.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.tc.TypeSig.036.smt2: solved=True, runtime=0.77s, PAR-2=0.77s
+[DEBUG] Processing 336/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.591117.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.591117.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.591117.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 337/570: UFLIA/simplify2/front_end_suite/javafe.ast.FieldAccess.009.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.FieldAccess.009.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.FieldAccess.009.smt2: solved=True, runtime=18.95s, PAR-2=18.95s
+[DEBUG] Processing 338/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.650841.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.650841.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.650841.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 339/570: UFLIA/tokeneer/auditlog/addelementtologfilewithtruncatechecks-6.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/tokeneer/auditlog/addelementtologfilewithtruncatechecks-6.smt2
+[DEBUG] Benchmark UFLIA/tokeneer/auditlog/addelementtologfilewithtruncatechecks-6.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 340/570: UFLIA/sledgehammer/QEpres/smtlib.1062214.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.1062214.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.1062214.smt2: solved=True, runtime=0.46s, PAR-2=0.46s
+[DEBUG] Processing 341/570: UFLIA/sledgehammer/Hoare/smtlib.878205.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Hoare/smtlib.878205.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.878205.smt2: solved=True, runtime=0.78s, PAR-2=0.78s
+[DEBUG] Processing 342/570: UFLIA/simplify/javafe.ast.LexicalPragmaVec.217.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.ast.LexicalPragmaVec.217.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.ast.LexicalPragmaVec.217.smt2: solved=True, runtime=1.17s, PAR-2=1.17s
+[DEBUG] Processing 343/570: UFLIA/sledgehammer/FFT/smtlib.885323.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/FFT/smtlib.885323.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.885323.smt2: solved=True, runtime=14.73s, PAR-2=14.73s
+[DEBUG] Processing 344/570: UFLIA/boogie/MustOverride_Ex4.C..ctor.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/MustOverride_Ex4.C..ctor.smt2
+[DEBUG] Benchmark UFLIA/boogie/MustOverride_Ex4.C..ctor.smt2: solved=True, runtime=0.34s, PAR-2=0.34s
+[DEBUG] Processing 345/570: UFLIA/tokeneer/userentry/unlockdoor-6.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFLIA/tokeneer/userentry/unlockdoor-6.smt2
+[DEBUG] Benchmark UFLIA/tokeneer/userentry/unlockdoor-6.smt2: solved=True, runtime=1.66s, PAR-2=1.66s
+[DEBUG] Processing 346/570: UFLIA/simplify/javafe.ast.FieldDecl.148.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.ast.FieldDecl.148.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.ast.FieldDecl.148.smt2: solved=True, runtime=1.50s, PAR-2=1.50s
+[DEBUG] Processing 347/570: UFLIA/simplify2/front_end_suite/javafe.parser.ParseStmt.008.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.parser.ParseStmt.008.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.parser.ParseStmt.008.smt2: solved=True, runtime=7.75s, PAR-2=7.75s
+[DEBUG] Processing 348/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1337027.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1337027.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1337027.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 349/570: UFLIA/simplify2/front_end_suite/javafe.ast.ExprVec.018.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ExprVec.018.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ExprVec.018.smt2: solved=True, runtime=0.45s, PAR-2=0.45s
+[DEBUG] Processing 350/570: UFLIA/simplify/javafe.util.LocationManagerCorrelatedReader.799.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.util.LocationManagerCorrelatedReader.799.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.util.LocationManagerCorrelatedReader.799.smt2: solved=True, runtime=0.37s, PAR-2=0.37s
+[DEBUG] Processing 351/570: UFLIA/boogie/Immutable_test3.XY.M2_test3.Imtbl.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Immutable_test3.XY.M2_test3.Imtbl.smt2
+[DEBUG] Benchmark UFLIA/boogie/Immutable_test3.XY.M2_test3.Imtbl.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 352/570: UFLIA/simplify/javafe.ast.LexicalPragmaVec.224.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.ast.LexicalPragmaVec.224.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.ast.LexicalPragmaVec.224.smt2: solved=True, runtime=1.27s, PAR-2=1.27s
+[DEBUG] Processing 353/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1408783.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1408783.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1408783.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 354/570: UFLIA/tokeneer/admintoken/readandcheck-8.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFLIA/tokeneer/admintoken/readandcheck-8.smt2
+[DEBUG] Benchmark UFLIA/tokeneer/admintoken/readandcheck-8.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 355/570: UFLIA/simplify2/front_end_suite/javafe.ast.BreakStmt.009.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.BreakStmt.009.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.BreakStmt.009.smt2: solved=True, runtime=0.52s, PAR-2=0.52s
+[DEBUG] Processing 356/570: UFLIA/simplify/javafe.reader.BinReader.595.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.reader.BinReader.595.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.reader.BinReader.595.smt2: solved=True, runtime=0.63s, PAR-2=0.63s
+[DEBUG] Processing 357/570: UFLIA/simplify2/front_end_suite/javafe.parser.ParseExpr.007.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.parser.ParseExpr.007.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.parser.ParseExpr.007.smt2: solved=True, runtime=0.91s, PAR-2=0.91s
+[DEBUG] Processing 358/570: UFLIA/sledgehammer/FFT/smtlib.967563.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/FFT/smtlib.967563.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.967563.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 359/570: UFLIA/sledgehammer/Hoare/smtlib.783559.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Hoare/smtlib.783559.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.783559.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 360/570: UFLIA/sledgehammer/QEpres/smtlib.1184764.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.1184764.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.1184764.smt2: solved=True, runtime=0.50s, PAR-2=0.50s
+[DEBUG] Processing 361/570: UFLIA/tokeneer/auditlog/addelementtologfilewithtruncatechecks-2.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/tokeneer/auditlog/addelementtologfilewithtruncatechecks-2.smt2
+[DEBUG] Benchmark UFLIA/tokeneer/auditlog/addelementtologfilewithtruncatechecks-2.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 362/570: UFLIA/simplify2/front_end_suite/javafe.ast.MethodInvocation.003.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.MethodInvocation.003.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.MethodInvocation.003.smt2: solved=True, runtime=8.45s, PAR-2=8.45s
+[DEBUG] Processing 363/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.870359.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.870359.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.870359.smt2: solved=True, runtime=130.06s, PAR-2=130.06s
+[DEBUG] Processing 364/570: UFLIA/boogie/Chunker_Chunker.NextChunk.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Chunker_Chunker.NextChunk.smt2
+[DEBUG] Benchmark UFLIA/boogie/Chunker_Chunker.NextChunk.smt2: solved=True, runtime=5.77s, PAR-2=5.77s
+[DEBUG] Processing 365/570: UFLIA/sledgehammer/QEpres/smtlib.767171.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.767171.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.767171.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 366/570: UFLIA/simplify2/front_end_suite/javafe.ast.CondExpr.011.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.CondExpr.011.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.CondExpr.011.smt2: solved=True, runtime=0.63s, PAR-2=0.63s
+[DEBUG] Processing 367/570: UFLIA/sledgehammer/StrongNorm/smtlib.614164.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/StrongNorm/smtlib.614164.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/StrongNorm/smtlib.614164.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 368/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.793547.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.793547.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.793547.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 369/570: UFLIA/boogie/strings-no-where_Microsoft.Singularity.Applications.ThreadTest.FirstThreadMethod-noinfer.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/strings-no-where_Microsoft.Singularity.Applications.ThreadTest.FirstThreadMethod-noinfer.smt2
+[DEBUG] Benchmark UFLIA/boogie/strings-no-where_Microsoft.Singularity.Applications.ThreadTest.FirstThreadMethod-noinfer.smt2: solved=True, runtime=241.76s, PAR-2=241.76s
+[DEBUG] Processing 370/570: UFLIA/simplify2/front_end_suite/javafe.util.SubCorrelatedReader.003.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.util.SubCorrelatedReader.003.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.util.SubCorrelatedReader.003.smt2: solved=True, runtime=0.59s, PAR-2=0.59s
+[DEBUG] Processing 371/570: UFLIA/boogie/StrictReadOnly_C2.Y3.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/StrictReadOnly_C2.Y3.smt2
+[DEBUG] Benchmark UFLIA/boogie/StrictReadOnly_C2.Y3.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 372/570: UFLIA/sledgehammer/Hoare/smtlib.1175889.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Hoare/smtlib.1175889.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.1175889.smt2: solved=True, runtime=0.44s, PAR-2=0.44s
+[DEBUG] Processing 373/570: UFLIA/simplify2/front_end_suite/javafe.ast.ExprVec.021.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ExprVec.021.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ExprVec.021.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 374/570: UFLIA/sledgehammer/StrongNorm/smtlib.893567.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/StrongNorm/smtlib.893567.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/StrongNorm/smtlib.893567.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 375/570: UFLIA/sledgehammer/Hoare/z3.572953.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Hoare/z3.572953.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/z3.572953.smt2: solved=True, runtime=60.68s, PAR-2=60.68s
+[DEBUG] Processing 376/570: UFLIA/sledgehammer/FFT/smtlib.1031354.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/FFT/smtlib.1031354.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.1031354.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 377/570: UFLIA/sledgehammer/QEpres/smtlib.913936.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/QEpres/smtlib.913936.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.913936.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 378/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1300983.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1300983.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1300983.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 379/570: UFLIA/boogie/Ensures_Q-noinfer_3.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFLIA/boogie/Ensures_Q-noinfer_3.smt2
+[DEBUG] Benchmark UFLIA/boogie/Ensures_Q-noinfer_3.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 380/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/z3.1059391.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/z3.1059391.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/z3.1059391.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 381/570: UFLIA/boogie/SimpleWhile3_SimpleWhile3.AMethod-infer_i.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/SimpleWhile3_SimpleWhile3.AMethod-infer_i.smt2
+[DEBUG] Benchmark UFLIA/boogie/SimpleWhile3_SimpleWhile3.AMethod-infer_i.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 382/570: UFLIA/boogie/Change769_Test2..ctor.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Change769_Test2..ctor.smt2
+[DEBUG] Benchmark UFLIA/boogie/Change769_Test2..ctor.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 383/570: UFLIA/sledgehammer/FFT/smtlib.894291.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFLIA/sledgehammer/FFT/smtlib.894291.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.894291.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 384/570: UFLIA/simplify2/front_end_suite/javafe.parser.Parse.005.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.parser.Parse.005.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.parser.Parse.005.smt2: solved=True, runtime=3.69s, PAR-2=3.69s
+[DEBUG] Processing 385/570: UFLIA/sledgehammer/Hoare/smtlib.935736.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Hoare/smtlib.935736.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.935736.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 386/570: UFLIA/simplify/javafe.parser.ParseType.563.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.parser.ParseType.563.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.parser.ParseType.563.smt2: solved=True, runtime=0.68s, PAR-2=0.68s
+[DEBUG] Processing 387/570: UFLIA/sledgehammer/TypeSafe/smtlib.1397503.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/TypeSafe/smtlib.1397503.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TypeSafe/smtlib.1397503.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 388/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.953186.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.953186.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.953186.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 389/570: UFLIA/simplify2/front_end_suite/javafe.parser.ParseType.002.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.parser.ParseType.002.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.parser.ParseType.002.smt2: solved=True, runtime=0.40s, PAR-2=0.40s
+[DEBUG] Processing 390/570: UFLIA/simplify2/front_end_suite/javafe.util.FileCorrelatedReader.003.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.util.FileCorrelatedReader.003.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.util.FileCorrelatedReader.003.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 391/570: UFLIA/sledgehammer/TwoSquares/smtlib.662605.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.662605.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.662605.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 392/570: UFLIA/grasshopper/instantiated/insert_loop_invariant_46_3.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/grasshopper/instantiated/insert_loop_invariant_46_3.smt2
+[DEBUG] Benchmark UFLIA/grasshopper/instantiated/insert_loop_invariant_46_3.smt2: solved=True, runtime=29.36s, PAR-2=29.36s
+[DEBUG] Processing 393/570: UFLIA/simplify2/front_end_suite/javafe.tc.MethodDeclVec.012.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.tc.MethodDeclVec.012.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.tc.MethodDeclVec.012.smt2: solved=True, runtime=0.41s, PAR-2=0.41s
+[DEBUG] Processing 394/570: UFLIA/sledgehammer/Hoare/smtlib.1229402.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Hoare/smtlib.1229402.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.1229402.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 395/570: UFLIA/boogie/Unsigned_test.M.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Unsigned_test.M.smt2
+[DEBUG] Benchmark UFLIA/boogie/Unsigned_test.M.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 396/570: UFLIA/sledgehammer/TwoSquares/smtlib.633158.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.633158.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.633158.smt2: solved=True, runtime=2.21s, PAR-2=2.21s
+[DEBUG] Processing 397/570: UFLIA/sledgehammer/Arrow_Order/smtlib.731977.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.731977.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.731977.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 398/570: UFLIA/boogie/WhereMotivation_Types.MLoop1-modifiesOnLoop_1.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/WhereMotivation_Types.MLoop1-modifiesOnLoop_1.smt2
+[DEBUG] Benchmark UFLIA/boogie/WhereMotivation_Types.MLoop1-modifiesOnLoop_1.smt2: solved=True, runtime=1.96s, PAR-2=1.96s
+[DEBUG] Processing 399/570: UFLIA/simplify2/front_end_suite/javafe.ast.ExprObjectDesignator.006.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ExprObjectDesignator.006.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ExprObjectDesignator.006.smt2: solved=True, runtime=15.91s, PAR-2=15.91s
+[DEBUG] Processing 400/570: UFLIA/boogie/Bag3_Bag.RemoveMin.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Bag3_Bag.RemoveMin.smt2
+[DEBUG] Benchmark UFLIA/boogie/Bag3_Bag.RemoveMin.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 401/570: UFLIA/sledgehammer/Hoare/smtlib.610189.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Hoare/smtlib.610189.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.610189.smt2: solved=True, runtime=10.44s, PAR-2=10.44s
+[DEBUG] Processing 402/570: UFLIA/sledgehammer/QEpres/smtlib.796842.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/QEpres/smtlib.796842.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.796842.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 403/570: UFLIA/simplify2/front_end_suite/javafe.ast.IdentifierVec.015.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.IdentifierVec.015.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.IdentifierVec.015.smt2: solved=True, runtime=3.63s, PAR-2=3.63s
+[DEBUG] Processing 404/570: UFLIA/sledgehammer/Arrow_Order/smtlib.829409.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.829409.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.829409.smt2: solved=True, runtime=0.71s, PAR-2=0.71s
+[DEBUG] Processing 405/570: UFLIA/sledgehammer/Hoare/smtlib.1041000.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFLIA/sledgehammer/Hoare/smtlib.1041000.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.1041000.smt2: solved=True, runtime=0.65s, PAR-2=0.65s
+[DEBUG] Processing 406/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1135483.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1135483.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1135483.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 407/570: UFLIA/tokeneer/userentry/progress-9.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFLIA/tokeneer/userentry/progress-9.smt2
+[DEBUG] Benchmark UFLIA/tokeneer/userentry/progress-9.smt2: solved=True, runtime=1.31s, PAR-2=1.31s
+[DEBUG] Processing 408/570: UFLIA/boogie/Pack_Good1.Cell..ctor_System.Int32.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Pack_Good1.Cell..ctor_System.Int32.smt2
+[DEBUG] Benchmark UFLIA/boogie/Pack_Good1.Cell..ctor_System.Int32.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 409/570: UFLIA/tokeneer/tokenreader/poll-25.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/tokeneer/tokenreader/poll-25.smt2
+[DEBUG] Benchmark UFLIA/tokeneer/tokenreader/poll-25.smt2: solved=True, runtime=0.88s, PAR-2=0.88s
+[DEBUG] Processing 410/570: UFLIA/simplify2/front_end_suite/javafe.tc.Types.007.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.tc.Types.007.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.tc.Types.007.smt2: solved=True, runtime=0.72s, PAR-2=0.72s
+[DEBUG] Processing 411/570: UFLIA/simplify2/front_end_suite/javafe.tc.FieldDeclVec.013.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.tc.FieldDeclVec.013.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.tc.FieldDeclVec.013.smt2: solved=True, runtime=0.60s, PAR-2=0.60s
+[DEBUG] Processing 412/570: UFLIA/sledgehammer/TwoSquares/smtlib.827148.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.827148.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.827148.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 413/570: UFLIA/boogie/ModifiesClauses_C.Method1_System.Int32.array_notnull.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/ModifiesClauses_C.Method1_System.Int32.array_notnull.smt2
+[DEBUG] Benchmark UFLIA/boogie/ModifiesClauses_C.Method1_System.Int32.array_notnull.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 414/570: UFLIA/sledgehammer/QEpres/smtlib.1194549.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.1194549.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.1194549.smt2: solved=True, runtime=0.33s, PAR-2=0.33s
+[DEBUG] Processing 415/570: UFLIA/sledgehammer/TwoSquares/smtlib.744675.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.744675.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.744675.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 416/570: UFLIA/simplify/javafe.ast.LexicalPragmaVec.218.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.ast.LexicalPragmaVec.218.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.ast.LexicalPragmaVec.218.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 417/570: UFLIA/sledgehammer/QEpres/smtlib.867042.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.867042.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.867042.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 418/570: UFLIA/simplify2/front_end_suite/javafe.parser.TokenQueue.005.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.parser.TokenQueue.005.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.parser.TokenQueue.005.smt2: solved=True, runtime=0.42s, PAR-2=0.42s
+[DEBUG] Processing 419/570: UFLIA/simplify/javafe.ast.StmtVec.329.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.ast.StmtVec.329.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.ast.StmtVec.329.smt2: solved=True, runtime=4.06s, PAR-2=4.06s
+[DEBUG] Processing 420/570: UFLIA/simplify2/front_end_suite/javafe.filespace.LookAheadEnum.002.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.filespace.LookAheadEnum.002.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.filespace.LookAheadEnum.002.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 421/570: UFLIA/sledgehammer/QEpres/smtlib.730729.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/QEpres/smtlib.730729.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.730729.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 422/570: UFLIA/tokeneer/admin/opisavailable-5.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/tokeneer/admin/opisavailable-5.smt2
+[DEBUG] Benchmark UFLIA/tokeneer/admin/opisavailable-5.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 423/570: UFLIA/sledgehammer/FFT/smtlib.733438.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/FFT/smtlib.733438.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.733438.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 424/570: UFLIA/sledgehammer/Hoare/smtlib.577237.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Hoare/smtlib.577237.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.577237.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 425/570: UFLIA/simplify/javafe.ast.MethodInvocation.246.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.ast.MethodInvocation.246.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.ast.MethodInvocation.246.smt2: solved=True, runtime=0.90s, PAR-2=0.90s
+[DEBUG] Processing 426/570: UFLIA/simplify2/front_end_suite/javafe.ast.Util.002.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.Util.002.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.Util.002.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 427/570: UFLIA/sledgehammer/TwoSquares/smtlib.745039.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.745039.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.745039.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 428/570: UFLIA/sledgehammer/TwoSquares/smtlib.856312.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.856312.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.856312.smt2: solved=True, runtime=124.68s, PAR-2=124.68s
+[DEBUG] Processing 429/570: UFLIA/sledgehammer/QEpres/smtlib.944812.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/QEpres/smtlib.944812.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.944812.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 430/570: UFLIA/boogie/BasicMethodology_CS.test0.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/BasicMethodology_CS.test0.smt2
+[DEBUG] Benchmark UFLIA/boogie/BasicMethodology_CS.test0.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 431/570: UFLIA/simplify2/front_end_suite/javafe.CopyLoaded.019.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.CopyLoaded.019.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.CopyLoaded.019.smt2: solved=True, runtime=0.60s, PAR-2=0.60s
+[DEBUG] Processing 432/570: UFLIA/simplify2/front_end_suite/javafe.filespace.Tree.011.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.filespace.Tree.011.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.filespace.Tree.011.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 433/570: UFLIA/simplify/javafe.ast.ImportDeclVec.186.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.ast.ImportDeclVec.186.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.ast.ImportDeclVec.186.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 434/570: UFLIA/simplify/javafe.ast.CompilationUnit.85.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.ast.CompilationUnit.85.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.ast.CompilationUnit.85.smt2: solved=True, runtime=0.71s, PAR-2=0.71s
+[DEBUG] Processing 435/570: UFLIA/sledgehammer/FFT/smtlib.643005.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/FFT/smtlib.643005.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.643005.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 436/570: UFLIA/sledgehammer/QEpres/smtlib.918347.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/QEpres/smtlib.918347.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.918347.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 437/570: UFLIA/simplify2/front_end_suite/javafe.filespace.TreeWalker.004.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.filespace.TreeWalker.004.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.filespace.TreeWalker.004.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 438/570: UFLIA/check/bignum_quant.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFLIA/check/bignum_quant.smt2
+[DEBUG] Benchmark UFLIA/check/bignum_quant.smt2: solved=True, runtime=0.61s, PAR-2=0.61s
+[DEBUG] Processing 439/570: UFLIA/sledgehammer/QEpres/smtlib.1254045.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.1254045.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.1254045.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 440/570: UFLIA/simplify2/front_end_suite/javafe.ast.Identifier.008.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.Identifier.008.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.Identifier.008.smt2: solved=True, runtime=0.60s, PAR-2=0.60s
+[DEBUG] Processing 441/570: UFLIA/sledgehammer/TypeSafe/smtlib.1395719.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TypeSafe/smtlib.1395719.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TypeSafe/smtlib.1395719.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 442/570: UFLIA/boogie/Bag1_Bag..ctor_System.Int32.array.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Bag1_Bag..ctor_System.Int32.array.smt2
+[DEBUG] Benchmark UFLIA/boogie/Bag1_Bag..ctor_System.Int32.array.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 443/570: UFLIA/sledgehammer/TwoSquares/smtlib.627036.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.627036.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.627036.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 444/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.745373.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.745373.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.745373.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 445/570: UFLIA/simplify2/front_end_suite/javafe.ast.VarInitVec.019.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.VarInitVec.019.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.VarInitVec.019.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 446/570: UFLIA/simplify/javafe.ast.ASTDecoration.23.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.ast.ASTDecoration.23.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.ast.ASTDecoration.23.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 447/570: UFLIA/sledgehammer/TwoSquares/smtlib.920146.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.920146.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.920146.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 448/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1362602.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1362602.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1362602.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 449/570: UFLIA/sledgehammer/QEpres/smtlib.576718.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.576718.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.576718.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 450/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.877851.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.877851.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.877851.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 451/570: UFLIA/simplify2/front_end_suite/javafe.ast.SimpleName.005.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.SimpleName.005.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.SimpleName.005.smt2: solved=True, runtime=0.61s, PAR-2=0.61s
+[DEBUG] Processing 452/570: UFLIA/sledgehammer/FFT/smtlib.601167.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/FFT/smtlib.601167.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.601167.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 453/570: UFLIA/sledgehammer/Hoare/smtlib.858180.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Hoare/smtlib.858180.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.858180.smt2: solved=True, runtime=11.47s, PAR-2=11.47s
+[DEBUG] Processing 454/570: UFLIA/simplify2/front_end_suite/javafe.ast.ThrowStmt.006.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ThrowStmt.006.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ThrowStmt.006.smt2: solved=True, runtime=0.44s, PAR-2=0.44s
+[DEBUG] Processing 455/570: UFLIA/grasshopper/instantiated/traverse_loop_invariant_46_3.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/grasshopper/instantiated/traverse_loop_invariant_46_3.smt2
+[DEBUG] Benchmark UFLIA/grasshopper/instantiated/traverse_loop_invariant_46_3.smt2: solved=True, runtime=12.18s, PAR-2=12.18s
+[DEBUG] Processing 456/570: UFLIA/tokeneer/keystore/digest-18.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/tokeneer/keystore/digest-18.smt2
+[DEBUG] Benchmark UFLIA/tokeneer/keystore/digest-18.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 457/570: UFLIA/sledgehammer/Hoare/smtlib.1225564.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Hoare/smtlib.1225564.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.1225564.smt2: solved=True, runtime=0.90s, PAR-2=0.90s
+[DEBUG] Processing 458/570: UFLIA/boogie/loopinv0_Node..ctor-infer_eh.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/loopinv0_Node..ctor-infer_eh.smt2
+[DEBUG] Benchmark UFLIA/boogie/loopinv0_Node..ctor-infer_eh.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 459/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.967849.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.967849.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.967849.smt2: solved=True, runtime=1066.65s, PAR-2=1066.65s
+[DEBUG] Processing 460/570: UFLIA/simplify2/front_end_suite/javafe.ast.VarInitVec.001.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.VarInitVec.001.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.VarInitVec.001.smt2: solved=True, runtime=0.92s, PAR-2=0.92s
+[DEBUG] Processing 461/570: UFLIA/boogie/SimpleAssignments3_SimpleAssignments3..ctor-infer_i.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/SimpleAssignments3_SimpleAssignments3..ctor-infer_i.smt2
+[DEBUG] Benchmark UFLIA/boogie/SimpleAssignments3_SimpleAssignments3..ctor-infer_i.smt2: solved=True, runtime=0.31s, PAR-2=0.31s
+[DEBUG] Processing 462/570: UFLIA/simplify2/front_end_suite/javafe.ast.TypeModifierPragmaVec.014.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.TypeModifierPragmaVec.014.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.TypeModifierPragmaVec.014.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 463/570: UFLIA/sledgehammer/StrongNorm/smtlib.726152.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/StrongNorm/smtlib.726152.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/StrongNorm/smtlib.726152.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 464/570: UFLIA/sledgehammer/QEpres/smtlib.753267.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.753267.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.753267.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 465/570: UFLIA/simplify2/front_end_suite/javafe.parser.Lex.014.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.parser.Lex.014.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.parser.Lex.014.smt2: solved=True, runtime=9.01s, PAR-2=9.01s
+[DEBUG] Processing 466/570: UFLIA/boogie/Change773_Test2..ctor.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Change773_Test2..ctor.smt2
+[DEBUG] Benchmark UFLIA/boogie/Change773_Test2..ctor.smt2: solved=True, runtime=0.31s, PAR-2=0.31s
+[DEBUG] Processing 467/570: UFLIA/sledgehammer/Hoare/smtlib.924179.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Hoare/smtlib.924179.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.924179.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 468/570: UFLIA/sledgehammer/QEpres/smtlib.873676.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/QEpres/smtlib.873676.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.873676.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 469/570: UFLIA/grasshopper/instantiated/concat_postcondition_of_concat_27_4.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/grasshopper/instantiated/concat_postcondition_of_concat_27_4.smt2
+[DEBUG] Benchmark UFLIA/grasshopper/instantiated/concat_postcondition_of_concat_27_4.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 470/570: UFLIA/simplify2/front_end_suite/javafe.filespace.FileTree.004.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.filespace.FileTree.004.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.filespace.FileTree.004.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 471/570: UFLIA/boogie/PeerFields_PeerFields.M_System.Int32.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/PeerFields_PeerFields.M_System.Int32.smt2
+[DEBUG] Benchmark UFLIA/boogie/PeerFields_PeerFields.M_System.Int32.smt2: solved=True, runtime=0.89s, PAR-2=0.89s
+[DEBUG] Processing 472/570: UFLIA/simplify2/front_end_suite/javafe.tc.FieldDeclVec.008.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.tc.FieldDeclVec.008.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.tc.FieldDeclVec.008.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 473/570: UFLIA/sledgehammer/Hoare/smtlib.700591.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFLIA/sledgehammer/Hoare/smtlib.700591.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.700591.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 474/570: UFLIA/boogie/Types_Types.P2_K_notnull-orderStrength_1.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Types_Types.P2_K_notnull-orderStrength_1.smt2
+[DEBUG] Benchmark UFLIA/boogie/Types_Types.P2_K_notnull-orderStrength_1.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 475/570: UFLIA/tokeneer/enclave/progressadminactivity-5.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFLIA/tokeneer/enclave/progressadminactivity-5.smt2
+[DEBUG] Benchmark UFLIA/tokeneer/enclave/progressadminactivity-5.smt2: solved=True, runtime=1.71s, PAR-2=1.71s
+[DEBUG] Processing 476/570: UFLIA/grasshopper/uninstantiated/difference_postcondition_of_difference_33_8.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/grasshopper/uninstantiated/difference_postcondition_of_difference_33_8.smt2
+[DEBUG] Benchmark UFLIA/grasshopper/uninstantiated/difference_postcondition_of_difference_33_8.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 477/570: UFLIA/sledgehammer/Hoare/smtlib.928357.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Hoare/smtlib.928357.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.928357.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 478/570: UFLIA/simplify/javafe.ast.RoutineDecl.300.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.ast.RoutineDecl.300.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.ast.RoutineDecl.300.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 479/570: UFLIA/sledgehammer/NS_Shared/smtlib.567049.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/NS_Shared/smtlib.567049.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/NS_Shared/smtlib.567049.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 480/570: UFLIA/grasshopper/uninstantiated/insertion_sort_loop_check_heap_access_58_4_1.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/grasshopper/uninstantiated/insertion_sort_loop_check_heap_access_58_4_1.smt2
+[DEBUG] Benchmark UFLIA/grasshopper/uninstantiated/insertion_sort_loop_check_heap_access_58_4_1.smt2: solved=True, runtime=0.85s, PAR-2=0.85s
+[DEBUG] Processing 481/570: UFLIA/sledgehammer/QEpres/smtlib.797050.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.797050.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.797050.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 482/570: UFLIA/sledgehammer/TwoSquares/smtlib.754074.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.754074.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.754074.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 483/570: UFLIA/simplify2/small_suite/simplex.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/small_suite/simplex.smt2
+[DEBUG] Benchmark UFLIA/simplify2/small_suite/simplex.smt2: solved=True, runtime=5.85s, PAR-2=5.85s
+[DEBUG] Processing 484/570: UFLIA/grasshopper/uninstantiated/delete_check_heap_access_50_8.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/grasshopper/uninstantiated/delete_check_heap_access_50_8.smt2
+[DEBUG] Benchmark UFLIA/grasshopper/uninstantiated/delete_check_heap_access_50_8.smt2: solved=True, runtime=0.35s, PAR-2=0.35s
+[DEBUG] Processing 485/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.926493.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.926493.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.926493.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 486/570: UFLIA/sledgehammer/TwoSquares/smtlib.798835.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.798835.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.798835.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 487/570: UFLIA/boogie/Strengthen_MainClass.BoogieTest0_T_notnull.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Strengthen_MainClass.BoogieTest0_T_notnull.smt2
+[DEBUG] Benchmark UFLIA/boogie/Strengthen_MainClass.BoogieTest0_T_notnull.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 488/570: UFLIA/tokeneer/tokenreader/poll/checkcardstate-7.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/tokeneer/tokenreader/poll/checkcardstate-7.smt2
+[DEBUG] Benchmark UFLIA/tokeneer/tokenreader/poll/checkcardstate-7.smt2: solved=True, runtime=0.96s, PAR-2=0.96s
+[DEBUG] Processing 489/570: UFLIA/boogie/Bag5_Bag.Add_System.Int32.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Bag5_Bag.Add_System.Int32.smt2
+[DEBUG] Benchmark UFLIA/boogie/Bag5_Bag.Add_System.Int32.smt2: solved=True, runtime=487.37s, PAR-2=487.37s
+[DEBUG] Processing 490/570: UFLIA/sledgehammer/QEpres/smtlib.1084857.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.1084857.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.1084857.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 491/570: UFLIA/simplify2/front_end_suite/javafe.ast.BinaryExpr.009.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.BinaryExpr.009.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.BinaryExpr.009.smt2: solved=True, runtime=0.44s, PAR-2=0.44s
+[DEBUG] Processing 492/570: UFLIA/boogie/LocalExpose_U.N0.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/LocalExpose_U.N0.smt2
+[DEBUG] Benchmark UFLIA/boogie/LocalExpose_U.N0.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 493/570: UFLIA/sledgehammer/QEpres/smtlib.994187.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.994187.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.994187.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 494/570: UFLIA/simplify2/front_end_suite/javafe.ast.SuperObjectDesignator.006.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.SuperObjectDesignator.006.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.SuperObjectDesignator.006.smt2: solved=True, runtime=15.75s, PAR-2=15.75s
+[DEBUG] Processing 495/570: UFLIA/sledgehammer/QEpres/smtlib.866229.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.866229.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.866229.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 496/570: UFLIA/simplify2/front_end_suite/javafe.ast.TypeModifierPragmaVec.018.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.TypeModifierPragmaVec.018.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.TypeModifierPragmaVec.018.smt2: solved=True, runtime=0.37s, PAR-2=0.37s
+[DEBUG] Processing 497/570: UFLIA/sledgehammer/Arrow_Order/smtlib.681416.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.681416.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.681416.smt2: solved=True, runtime=5.42s, PAR-2=5.42s
+[DEBUG] Processing 498/570: UFLIA/boogie/WhileTrueLoop_Test..ctor.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/WhileTrueLoop_Test..ctor.smt2
+[DEBUG] Benchmark UFLIA/boogie/WhileTrueLoop_Test..ctor.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 499/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.670984.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.670984.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.670984.smt2: solved=True, runtime=0.57s, PAR-2=0.57s
+[DEBUG] Processing 500/570: UFLIA/simplify2/front_end_suite/javafe.ast.LocalVarDecl.004.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.LocalVarDecl.004.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.LocalVarDecl.004.smt2: solved=True, runtime=0.54s, PAR-2=0.54s
+[DEBUG] Processing 501/570: UFLIA/sledgehammer/QEpres/smtlib.617338.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/QEpres/smtlib.617338.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/QEpres/smtlib.617338.smt2: solved=True, runtime=210.80s, PAR-2=210.80s
+[DEBUG] Processing 502/570: UFLIA/sexpr/SES.PrettySx.Write_SES.Sx_notnull_System.IO.TextWriter_notnull.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sexpr/SES.PrettySx.Write_SES.Sx_notnull_System.IO.TextWriter_notnull.smt2
+[DEBUG] Benchmark UFLIA/sexpr/SES.PrettySx.Write_SES.Sx_notnull_System.IO.TextWriter_notnull.smt2: solved=True, runtime=0.67s, PAR-2=0.67s
+[DEBUG] Processing 503/570: UFLIA/simplify2/front_end_suite/javafe.util.BufferedCorrelatedReader.010.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.util.BufferedCorrelatedReader.010.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.util.BufferedCorrelatedReader.010.smt2: solved=True, runtime=0.38s, PAR-2=0.38s
+[DEBUG] Processing 504/570: UFLIA/sledgehammer/Hoare/smtlib.1028330.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Hoare/smtlib.1028330.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.1028330.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 505/570: UFLIA/tokeneer/clock/printtime-7.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/tokeneer/clock/printtime-7.smt2
+[DEBUG] Benchmark UFLIA/tokeneer/clock/printtime-7.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 506/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.638570.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.638570.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.638570.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 507/570: UFLIA/sledgehammer/StrongNorm/smtlib.841632.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/StrongNorm/smtlib.841632.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/StrongNorm/smtlib.841632.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 508/570: UFLIA/simplify2/front_end_suite/javafe.ast.CastExpr.002.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.CastExpr.002.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.CastExpr.002.smt2: solved=True, runtime=4.69s, PAR-2=4.69s
+[DEBUG] Processing 509/570: UFLIA/sexpr/SES.Nary..ctor_System.String_notnull_SES.Sx_notnull_SES.Sx_notnull.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sexpr/SES.Nary..ctor_System.String_notnull_SES.Sx_notnull_SES.Sx_notnull.smt2
+[DEBUG] Benchmark UFLIA/sexpr/SES.Nary..ctor_System.String_notnull_SES.Sx_notnull_SES.Sx_notnull.smt2: solved=True, runtime=36.05s, PAR-2=36.05s
+[DEBUG] Processing 510/570: UFLIA/grasshopper/uninstantiated/sls_dispose_loop_invariant_27_3.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/grasshopper/uninstantiated/sls_dispose_loop_invariant_27_3.smt2
+[DEBUG] Benchmark UFLIA/grasshopper/uninstantiated/sls_dispose_loop_invariant_27_3.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 511/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1225878.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1225878.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1225878.smt2: solved=True, runtime=0.40s, PAR-2=0.40s
+[DEBUG] Processing 512/570: UFLIA/simplify/javafe.filespace.PkgTree.480.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.filespace.PkgTree.480.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.filespace.PkgTree.480.smt2: solved=True, runtime=0.35s, PAR-2=0.35s
+[DEBUG] Processing 513/570: UFLIA/sledgehammer/TypeSafe/smtlib.759865.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TypeSafe/smtlib.759865.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TypeSafe/smtlib.759865.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 514/570: UFLIA/simplify/javafe.ast.ExprVec.136.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.ast.ExprVec.136.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.ast.ExprVec.136.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 515/570: UFLIA/simplify2/front_end_suite/javafe.parser.test.TestLex.025.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.parser.test.TestLex.025.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.parser.test.TestLex.025.smt2: solved=True, runtime=19.73s, PAR-2=19.73s
+[DEBUG] Processing 516/570: UFLIA/simplify2/front_end_suite/javafe.parser.Lex.009.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.parser.Lex.009.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.parser.Lex.009.smt2: solved=True, runtime=15.38s, PAR-2=15.38s
+[DEBUG] Processing 517/570: UFLIA/sledgehammer/Hoare/smtlib.1046125.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Hoare/smtlib.1046125.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.1046125.smt2: solved=True, runtime=1.97s, PAR-2=1.97s
+[DEBUG] Processing 518/570: UFLIA/simplify2/front_end_suite/javafe.tc.FieldDeclVec.012.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.tc.FieldDeclVec.012.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.tc.FieldDeclVec.012.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 519/570: UFLIA/simplify/javafe.filespace.LookAheadEnum.473.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.filespace.LookAheadEnum.473.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.filespace.LookAheadEnum.473.smt2: solved=True, runtime=0.41s, PAR-2=0.41s
+[DEBUG] Processing 520/570: UFLIA/sledgehammer/Hoare/smtlib.991505.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Hoare/smtlib.991505.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.991505.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 521/570: UFLIA/simplify/javafe.ast.DelegatingPrettyPrint.121.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.ast.DelegatingPrettyPrint.121.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.ast.DelegatingPrettyPrint.121.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 522/570: UFLIA/sledgehammer/TypeSafe/smtlib.866975.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TypeSafe/smtlib.866975.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TypeSafe/smtlib.866975.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 523/570: UFLIA/simplify2/front_end_suite/javafe.tc.TypeSig.008.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.tc.TypeSig.008.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.tc.TypeSig.008.smt2: solved=True, runtime=7.21s, PAR-2=7.21s
+[DEBUG] Processing 524/570: UFLIA/sledgehammer/FFT/smtlib.721396.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark UFLIA/sledgehammer/FFT/smtlib.721396.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.721396.smt2: solved=True, runtime=0.46s, PAR-2=0.46s
+[DEBUG] Processing 525/570: UFLIA/sledgehammer/TypeSafe/smtlib.855810.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TypeSafe/smtlib.855810.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TypeSafe/smtlib.855810.smt2: solved=True, runtime=0.32s, PAR-2=0.32s
+[DEBUG] Processing 526/570: UFLIA/boogie/Unsigned_test..ctor.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/Unsigned_test..ctor.smt2
+[DEBUG] Benchmark UFLIA/boogie/Unsigned_test..ctor.smt2: solved=True, runtime=0.32s, PAR-2=0.32s
+[DEBUG] Processing 527/570: UFLIA/simplify/javafe.ast.CatchClauseVec.67.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.ast.CatchClauseVec.67.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.ast.CatchClauseVec.67.smt2: solved=True, runtime=0.91s, PAR-2=0.91s
+[DEBUG] Processing 528/570: UFLIA/simplify/javafe.util.BufferedCorrelatedReader.778.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.util.BufferedCorrelatedReader.778.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.util.BufferedCorrelatedReader.778.smt2: solved=True, runtime=0.84s, PAR-2=0.84s
+[DEBUG] Processing 529/570: UFLIA/sexpr/SES.Sx.Beautify_System.String_notnull.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sexpr/SES.Sx.Beautify_System.String_notnull.smt2
+[DEBUG] Benchmark UFLIA/sexpr/SES.Sx.Beautify_System.String_notnull.smt2: solved=True, runtime=34.72s, PAR-2=34.72s
+[DEBUG] Processing 530/570: UFLIA/sledgehammer/Hoare/smtlib.777510.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Hoare/smtlib.777510.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.777510.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 531/570: UFLIA/boogie/ExposeVersion_A.set_Value_System.Int32-level_2.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/ExposeVersion_A.set_Value_System.Int32-level_2.smt2
+[DEBUG] Benchmark UFLIA/boogie/ExposeVersion_A.set_Value_System.Int32-level_2.smt2: solved=True, runtime=0.99s, PAR-2=0.99s
+[DEBUG] Processing 532/570: UFLIA/grasshopper/uninstantiated/contains_loop_invariant_47_3.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/grasshopper/uninstantiated/contains_loop_invariant_47_3.smt2
+[DEBUG] Benchmark UFLIA/grasshopper/uninstantiated/contains_loop_invariant_47_3.smt2: solved=True, runtime=43.36s, PAR-2=43.36s
+[DEBUG] Processing 533/570: UFLIA/simplify2/front_end_suite/javafe.tc.TypeSig.042.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.tc.TypeSig.042.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.tc.TypeSig.042.smt2: solved=True, runtime=11.20s, PAR-2=11.20s
+[DEBUG] Processing 534/570: UFLIA/grasshopper/instantiated/remove_loop_invariant_36_3.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/grasshopper/instantiated/remove_loop_invariant_36_3.smt2
+[DEBUG] Benchmark UFLIA/grasshopper/instantiated/remove_loop_invariant_36_3.smt2: solved=True, runtime=0.82s, PAR-2=0.82s
+[DEBUG] Processing 535/570: UFLIA/simplify2/front_end_suite/javafe.ast.SingleTypeImportDecl.005.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.SingleTypeImportDecl.005.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.SingleTypeImportDecl.005.smt2: solved=True, runtime=11.29s, PAR-2=11.29s
+[DEBUG] Processing 536/570: UFLIA/sledgehammer/StrongNorm/smtlib.867837.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/StrongNorm/smtlib.867837.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/StrongNorm/smtlib.867837.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 537/570: UFLIA/simplify2/front_end_suite/javafe.ast.ExprVec.020.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ExprVec.020.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.ExprVec.020.smt2: solved=True, runtime=2.18s, PAR-2=2.18s
+[DEBUG] Processing 538/570: UFLIA/grasshopper/uninstantiated/merge_postcondition_of_merge_64_2.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/grasshopper/uninstantiated/merge_postcondition_of_merge_64_2.smt2
+[DEBUG] Benchmark UFLIA/grasshopper/uninstantiated/merge_postcondition_of_merge_64_2.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 539/570: UFLIA/simplify2/front_end_suite/javafe.ast.CompoundName.012.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.CompoundName.012.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.CompoundName.012.smt2: solved=True, runtime=0.57s, PAR-2=0.57s
+[DEBUG] Processing 540/570: UFLIA/boogie/BoxedInt_BoxedInt.N_System.Int32.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/BoxedInt_BoxedInt.N_System.Int32.smt2
+[DEBUG] Benchmark UFLIA/boogie/BoxedInt_BoxedInt.N_System.Int32.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 541/570: UFLIA/sledgehammer/FFT/smtlib.725125.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/FFT/smtlib.725125.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.725125.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 542/570: UFLIA/simplify2/front_end_suite/javafe.ast.TypeDeclVec.012.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.TypeDeclVec.012.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.TypeDeclVec.012.smt2: solved=True, runtime=0.34s, PAR-2=0.34s
+[DEBUG] Processing 543/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1342022.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1342022.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1342022.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 544/570: UFLIA/simplify2/front_end_suite/javafe.ast.BlockStmt.004.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.BlockStmt.004.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.BlockStmt.004.smt2: solved=True, runtime=0.52s, PAR-2=0.52s
+[DEBUG] Processing 545/570: UFLIA/sledgehammer/TypeSafe/smtlib.1161724.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TypeSafe/smtlib.1161724.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TypeSafe/smtlib.1161724.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 546/570: UFLIA/sledgehammer/Arrow_Order/smtlib.855275.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.855275.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Arrow_Order/smtlib.855275.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 547/570: UFLIA/simplify/javafe.util.FilterCorrelatedReader.791.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify/javafe.util.FilterCorrelatedReader.791.smt2
+[DEBUG] Benchmark UFLIA/simplify/javafe.util.FilterCorrelatedReader.791.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 548/570: UFLIA/boogie/DefaultLoopInv0_A.N0_System.Int32-modifiesOnLoop-noinfer.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/DefaultLoopInv0_A.N0_System.Int32-modifiesOnLoop-noinfer.smt2
+[DEBUG] Benchmark UFLIA/boogie/DefaultLoopInv0_A.N0_System.Int32-modifiesOnLoop-noinfer.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 549/570: UFLIA/grasshopper/uninstantiated/insertion_sort_loop_check_heap_access_61_4.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/grasshopper/uninstantiated/insertion_sort_loop_check_heap_access_61_4.smt2
+[DEBUG] Benchmark UFLIA/grasshopper/uninstantiated/insertion_sort_loop_check_heap_access_61_4.smt2: solved=True, runtime=0.43s, PAR-2=0.43s
+[DEBUG] Processing 550/570: UFLIA/boogie/ExposeVersion_X.FieldUpdateByObjectCreationWithMethodQuery_X_notnull-level_2.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/ExposeVersion_X.FieldUpdateByObjectCreationWithMethodQuery_X_notnull-level_2.smt2
+[DEBUG] Benchmark UFLIA/boogie/ExposeVersion_X.FieldUpdateByObjectCreationWithMethodQuery_X_notnull-level_2.smt2: solved=True, runtime=0.70s, PAR-2=0.70s
+[DEBUG] Processing 551/570: UFLIA/simplify2/front_end_suite/javafe.PrintSpec.004.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.PrintSpec.004.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.PrintSpec.004.smt2: solved=True, runtime=1.05s, PAR-2=1.05s
+[DEBUG] Processing 552/570: UFLIA/sledgehammer/TwoSquares/smtlib.873238.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.873238.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.873238.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 553/570: UFLIA/sledgehammer/TypeSafe/smtlib.807440.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TypeSafe/smtlib.807440.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TypeSafe/smtlib.807440.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 554/570: UFLIA/grasshopper/instantiated/sls_insert_postcondition_of_sls_insert_28_4.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/grasshopper/instantiated/sls_insert_postcondition_of_sls_insert_28_4.smt2
+[DEBUG] Benchmark UFLIA/grasshopper/instantiated/sls_insert_postcondition_of_sls_insert_28_4.smt2: solved=True, runtime=0.37s, PAR-2=0.37s
+[DEBUG] Processing 555/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1211725.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1211725.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1211725.smt2: solved=True, runtime=1.91s, PAR-2=1.91s
+[DEBUG] Processing 556/570: UFLIA/simplify2/front_end_suite/javafe.ast.MethodInvocation.007.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.ast.MethodInvocation.007.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.ast.MethodInvocation.007.smt2: solved=True, runtime=0.56s, PAR-2=0.56s
+[DEBUG] Processing 557/570: UFLIA/sledgehammer/TwoSquares/smtlib.682032.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/TwoSquares/smtlib.682032.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/TwoSquares/smtlib.682032.smt2: solved=True, runtime=214.81s, PAR-2=214.81s
+[DEBUG] Processing 558/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1372208.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1372208.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.1372208.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 559/570: UFLIA/psyco/191.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/psyco/191.smt2
+[DEBUG] Benchmark UFLIA/psyco/191.smt2: solved=True, runtime=0.49s, PAR-2=0.49s
+[DEBUG] Processing 560/570: UFLIA/tokeneer/auditlog/init-30.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/tokeneer/auditlog/init-30.smt2
+[DEBUG] Benchmark UFLIA/tokeneer/auditlog/init-30.smt2: solved=True, runtime=0.25s, PAR-2=0.25s
+[DEBUG] Processing 561/570: UFLIA/sledgehammer/Hoare/smtlib.597470.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Hoare/smtlib.597470.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.597470.smt2: solved=True, runtime=0.39s, PAR-2=0.39s
+[DEBUG] Processing 562/570: UFLIA/boogie/InitialValuesBad_Test..ctor.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/boogie/InitialValuesBad_Test..ctor.smt2
+[DEBUG] Benchmark UFLIA/boogie/InitialValuesBad_Test..ctor.smt2: solved=True, runtime=0.36s, PAR-2=0.36s
+[DEBUG] Processing 563/570: UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.792321.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.792321.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Fundamental_Theorem_Algebra/smtlib.792321.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 564/570: UFLIA/grasshopper/uninstantiated/insert_invariant_35_2.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/grasshopper/uninstantiated/insert_invariant_35_2.smt2
+[DEBUG] Benchmark UFLIA/grasshopper/uninstantiated/insert_invariant_35_2.smt2: solved=True, runtime=0.26s, PAR-2=0.26s
+[DEBUG] Processing 565/570: UFLIA/sledgehammer/FFT/smtlib.581407.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/FFT/smtlib.581407.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/FFT/smtlib.581407.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 566/570: UFLIA/grasshopper/uninstantiated/filter_postcondition_of_filter_49_1.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/grasshopper/uninstantiated/filter_postcondition_of_filter_49_1.smt2
+[DEBUG] Benchmark UFLIA/grasshopper/uninstantiated/filter_postcondition_of_filter_49_1.smt2: solved=True, runtime=39.05s, PAR-2=39.05s
+[DEBUG] Processing 567/570: UFLIA/sledgehammer/Hoare/smtlib.1220932.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/Hoare/smtlib.1220932.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/Hoare/smtlib.1220932.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 568/570: UFLIA/simplify2/front_end_suite/javafe.tc.EnvForTypeSig.005.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.tc.EnvForTypeSig.005.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.tc.EnvForTypeSig.005.smt2: solved=True, runtime=0.46s, PAR-2=0.46s
+[DEBUG] Processing 569/570: UFLIA/simplify2/front_end_suite/javafe.filespace.ZipTree.002.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark UFLIA/simplify2/front_end_suite/javafe.filespace.ZipTree.002.smt2
+[DEBUG] Benchmark UFLIA/simplify2/front_end_suite/javafe.filespace.ZipTree.002.smt2: solved=True, runtime=0.33s, PAR-2=0.33s
+[DEBUG] Processing 570/570: UFLIA/sledgehammer/StrongNorm/smtlib.635124.smt2
+[DEBUG] Predicted solver: iProver for benchmark UFLIA/sledgehammer/StrongNorm/smtlib.635124.smt2
+[DEBUG] Benchmark UFLIA/sledgehammer/StrongNorm/smtlib.635124.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Results written to CSV: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/results/uflia_csv_based/test/run_20251216_000911_015954/results.csv
+[DEBUG] Solved 352/570 benchmarks (61.75%)
+[DEBUG] PAR-2 Score: 531762.47s total, 932.92s average
+
+================================================================================
+EXECUTION TIME SUMMARY
+================================================================================
+Model training time:         992.52 seconds ( 16.54 minutes)
+Prediction time:             138.16 seconds (  2.30 minutes)
+  - Avg per benchmark:         0.24 seconds
+--------------------------------------------------------------------------------
+Total execution time:       1130.67 seconds ( 18.84 minutes)
+================================================================================
+
+================================================================================
+PAR-2 PERFORMANCE SUMMARY
+================================================================================
+Benchmarks solved:              352 / 570 ( 61.75%)
+Benchmarks unsolved:            218 / 570 ( 38.25%)
+--------------------------------------------------------------------------------
+Total PAR-2 score:        531762.47 seconds
+Average PAR-2 score:         932.92 seconds
+Timeout value:              1200.00 seconds
+PAR-2 penalty factor:             2x timeout
+================================================================================
+
+[DEBUG] CSV results saved to: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/results/uflia_csv_based/test/run_20251216_000911_015954/results.csv
+[DEBUG] Configuration saved to: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/results/uflia_csv_based/test/run_20251216_000911_015954/config.json
+End time: Tue 16 Dec 2025 12:28:03 AM EST

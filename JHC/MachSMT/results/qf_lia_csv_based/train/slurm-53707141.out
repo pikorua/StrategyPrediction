@@ -1,0 +1,28 @@
+Job ID: 53707141
+Node: nc30349
+Start time: Mon 15 Dec 2025 09:08:24 PM EST
+[DEBUG] Loading test results from /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/QF_LIA/qf_lia_train_long.csv
+[DEBUG] Loaded results for 3860 unique benchmarks
+[DEBUG] Found 3860 unique benchmark paths in CSV
+[DEBUG] Found 3860 benchmark files from CSV
+[DEBUG] Selected 3860 benchmarks for processing
+
+================================================================================
+FEATURE CONFIGURATION
+================================================================================
+Using original MachSMT feature space (full grammatical construct list)
+Description features: DISABLED (prevents BERT model loading)
+Feature extraction timeout: 60 seconds
+Parallel cores: 16
+Feature dimensions will be printed after processing first benchmark
+================================================================================
+
+[DEBUG] Training MachSMT model...
+[DEBUG] Changed working directory to: /home/jchen688/scratch/non-incremental
+
+Initializing description feature model ('bert-base-uncased')...
+Using device: cpu
+✅ Model loaded successfully. Embedding dimension: 768
+Parsing Input File |████████████████████████████████████████| 19300/19300 [100%] in 6:07.1 (52.58/s) 
+on 3732: [machsmt] warning: Timeout after 60 seconds of compute_core_features on Benchmark(self.path=QF_LIA/2019-cmodelsdiff/labyrinth/0117-labyrinth-23-0.smt2, len(self.solvers)=5, self.logic=QF_LIA)
+Processing Benchmark Files |████████████████████████████████████████| 3860/3860 [100%] in 40:16.3 (1.60/s) 

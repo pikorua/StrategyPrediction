@@ -1,0 +1,425 @@
+Job ID: 53709140
+Node: nc31006
+Start time: Mon 15 Dec 2025 10:06:26 PM EST
+[DEBUG] Loading test results from /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/QF_LRA/qf_lra_test_long.csv
+[DEBUG] Loaded results for 119 unique benchmarks
+[DEBUG] Found 119 unique benchmark paths in CSV
+[DEBUG] Found 119 benchmark files from CSV
+[DEBUG] Selected 119 benchmarks for processing
+
+================================================================================
+FEATURE CONFIGURATION
+================================================================================
+Using original MachSMT feature space (full grammatical construct list)
+Description features: DISABLED (prevents BERT model loading)
+Feature extraction timeout: 60 seconds
+Parallel cores: 16
+Feature dimensions will be printed after processing first benchmark
+================================================================================
+
+[DEBUG] Training MachSMT model...
+[DEBUG] Changed working directory to: /home/jchen688/scratch/non-incremental
+
+Initializing description feature model ('bert-base-uncased')...
+Using device: cpu
+✅ Model loaded successfully. Embedding dimension: 768
+Parsing Input File |████████████████████████████████████████| 2380/2380 [100%] in 2:54.3 (13.65/s) 
+Processing Benchmark Files |████████████████████████████████████████| 476/476 [100%] in 6:41.1 (1.19/s) 
+[DEBUG] Changed back to: /lustre06/project/6001884/jchen688/github/z3alpha
+[DEBUG] Model trained in 1234.01 seconds
+[DEBUG] Configuration saved to: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/results/qf_lra_csv_based/test/run_20251215_220945_889880/config.json
+
+[DEBUG] Starting predictions on test benchmarks...
+[DEBUG] Processing 1/119: QF_LRA/LassoRanker/Ultimate/Canberra.bpl_Iteration1_Lasso_4-pieceTemplate.smt2
+
+================================================================================
+FEATURE SPACE DIMENSIONS
+================================================================================
+Total feature dimensions: 189
+================================================================================
+
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/Ultimate/Canberra.bpl_Iteration1_Lasso_4-pieceTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/Ultimate/Canberra.bpl_Iteration1_Lasso_4-pieceTemplate.smt2: solved=True, runtime=1.88s, PAR-2=1.88s
+[DEBUG] Processing 2/119: QF_LRA/TM/p5-driverlogNumeric_s9.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/TM/p5-driverlogNumeric_s9.smt2
+[DEBUG] Benchmark QF_LRA/TM/p5-driverlogNumeric_s9.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 3/119: QF_LRA/2019-ezsmt/travellingSalesperson/rand_70_300_1155482584_4.lp.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/2019-ezsmt/travellingSalesperson/rand_70_300_1155482584_4.lp.smt2
+[DEBUG] Benchmark QF_LRA/2019-ezsmt/travellingSalesperson/rand_70_300_1155482584_4.lp.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 4/119: QF_LRA/2017-Heizmann-UltimateInvariantSynthesis/_standard_running.i_4_2_2.bpl_7.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_LRA/2017-Heizmann-UltimateInvariantSynthesis/_standard_running.i_4_2_2.bpl_7.smt2
+[DEBUG] Benchmark QF_LRA/2017-Heizmann-UltimateInvariantSynthesis/_standard_running.i_4_2_2.bpl_7.smt2: solved=True, runtime=3.46s, PAR-2=3.46s
+[DEBUG] Processing 5/119: QF_LRA/LassoRanker/CooperatingT2/sas2.t2.c_Iteration3_Lasso_5-phaseTemplate.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/LassoRanker/CooperatingT2/sas2.t2.c_Iteration3_Lasso_5-phaseTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/CooperatingT2/sas2.t2.c_Iteration3_Lasso_5-phaseTemplate.smt2: solved=True, runtime=1.93s, PAR-2=1.93s
+[DEBUG] Processing 6/119: QF_LRA/LassoRanker/SV-COMP/GulwaniJainKoskinen-2009PLDI-Fig1_true-termination.c_Iteration1_Lasso_4-lexTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/SV-COMP/GulwaniJainKoskinen-2009PLDI-Fig1_true-termination.c_Iteration1_Lasso_4-lexTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/SV-COMP/GulwaniJainKoskinen-2009PLDI-Fig1_true-termination.c_Iteration1_Lasso_4-lexTemplate.smt2: solved=True, runtime=1.77s, PAR-2=1.77s
+[DEBUG] Processing 7/119: QF_LRA/2019-ezsmt/travellingSalesperson/rand_70_300_1155482584_8.lp.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/2019-ezsmt/travellingSalesperson/rand_70_300_1155482584_8.lp.smt2
+[DEBUG] Benchmark QF_LRA/2019-ezsmt/travellingSalesperson/rand_70_300_1155482584_8.lp.smt2: solved=True, runtime=2.14s, PAR-2=2.14s
+[DEBUG] Processing 8/119: QF_LRA/sc/sc-9.base.cvc.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/sc/sc-9.base.cvc.smt2
+[DEBUG] Benchmark QF_LRA/sc/sc-9.base.cvc.smt2: solved=True, runtime=0.30s, PAR-2=0.30s
+[DEBUG] Processing 9/119: QF_LRA/2019-ezsmt/Labyrinth/SCC_Strong/0043-labyrinth-13-0.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/2019-ezsmt/Labyrinth/SCC_Strong/0043-labyrinth-13-0.smt2
+[DEBUG] Benchmark QF_LRA/2019-ezsmt/Labyrinth/SCC_Strong/0043-labyrinth-13-0.smt2: solved=True, runtime=7.65s, PAR-2=7.65s
+[DEBUG] Processing 10/119: QF_LRA/sc/sc-29.induction3.cvc.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/sc/sc-29.induction3.cvc.smt2
+[DEBUG] Benchmark QF_LRA/sc/sc-29.induction3.cvc.smt2: solved=True, runtime=0.45s, PAR-2=0.45s
+[DEBUG] Processing 11/119: QF_LRA/LassoRanker/CooperatingT2/brp_withassume.t2.c_Iteration1_Loop_6-phaseTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/CooperatingT2/brp_withassume.t2.c_Iteration1_Loop_6-phaseTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/CooperatingT2/brp_withassume.t2.c_Iteration1_Loop_6-phaseTemplate.smt2: solved=True, runtime=387.04s, PAR-2=387.04s
+[DEBUG] Processing 12/119: QF_LRA/2019-ezsmt/travellingSalesperson/rand_70_300_1155482584_7.lp.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/2019-ezsmt/travellingSalesperson/rand_70_300_1155482584_7.lp.smt2
+[DEBUG] Benchmark QF_LRA/2019-ezsmt/travellingSalesperson/rand_70_300_1155482584_7.lp.smt2: solved=True, runtime=1.46s, PAR-2=1.46s
+[DEBUG] Processing 13/119: QF_LRA/latendresse/ecoliMILPglycerolYices3-300000.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark QF_LRA/latendresse/ecoliMILPglycerolYices3-300000.smt2
+[DEBUG] Benchmark QF_LRA/latendresse/ecoliMILPglycerolYices3-300000.smt2: solved=True, runtime=6.01s, PAR-2=6.01s
+[DEBUG] Processing 14/119: QF_LRA/sal/windowreal/windowreal-no_t_deadlock-12.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/sal/windowreal/windowreal-no_t_deadlock-12.smt2
+[DEBUG] Benchmark QF_LRA/sal/windowreal/windowreal-no_t_deadlock-12.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 15/119: QF_LRA/LassoRanker/CooperatingT2/brp_withassume.t2.c_Iteration1_Loop_7-phaseTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/CooperatingT2/brp_withassume.t2.c_Iteration1_Loop_7-phaseTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/CooperatingT2/brp_withassume.t2.c_Iteration1_Loop_7-phaseTemplate.smt2: solved=True, runtime=16.61s, PAR-2=16.61s
+[DEBUG] Processing 16/119: QF_LRA/2017-Heizmann-UltimateInvariantSynthesis/_gr2006.c.i_4_4_3.bpl_11.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/2017-Heizmann-UltimateInvariantSynthesis/_gr2006.c.i_4_4_3.bpl_11.smt2
+[DEBUG] Benchmark QF_LRA/2017-Heizmann-UltimateInvariantSynthesis/_gr2006.c.i_4_4_3.bpl_11.smt2: solved=True, runtime=12.50s, PAR-2=12.50s
+[DEBUG] Processing 17/119: QF_LRA/uart/uart-16.induction.cvc.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/uart/uart-16.induction.cvc.smt2
+[DEBUG] Benchmark QF_LRA/uart/uart-16.induction.cvc.smt2: solved=True, runtime=0.38s, PAR-2=0.38s
+[DEBUG] Processing 18/119: QF_LRA/LassoRanker/CooperatingT2/sas2.t2.c_Iteration7_Loop_7-phaseTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/CooperatingT2/sas2.t2.c_Iteration7_Loop_7-phaseTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/CooperatingT2/sas2.t2.c_Iteration7_Loop_7-phaseTemplate.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 19/119: QF_LRA/2019-ezsmt/blending/18.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/2019-ezsmt/blending/18.smt2
+[DEBUG] Benchmark QF_LRA/2019-ezsmt/blending/18.smt2: solved=True, runtime=0.21s, PAR-2=0.21s
+[DEBUG] Processing 20/119: QF_LRA/LassoRanker/Ultimate/BradleyMannaSipma-2005ICALP-Fig1-deterministic.bpl_Iteration1_Lasso_7-phaseTemplate.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/LassoRanker/Ultimate/BradleyMannaSipma-2005ICALP-Fig1-deterministic.bpl_Iteration1_Lasso_7-phaseTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/Ultimate/BradleyMannaSipma-2005ICALP-Fig1-deterministic.bpl_Iteration1_Lasso_7-phaseTemplate.smt2: solved=True, runtime=3.30s, PAR-2=3.30s
+[DEBUG] Processing 21/119: QF_LRA/LassoRanker/Ultimate/TelAviv-AmirMinimum.bpl_Iteration1_Loop_4-pieceTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/Ultimate/TelAviv-AmirMinimum.bpl_Iteration1_Loop_4-pieceTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/Ultimate/TelAviv-AmirMinimum.bpl_Iteration1_Loop_4-pieceTemplate.smt2: solved=True, runtime=12.60s, PAR-2=12.60s
+[DEBUG] Processing 22/119: QF_LRA/LassoRanker/CooperatingT2/firewire.t2.c_Iteration1_Lasso_3-lexTemplate.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/LassoRanker/CooperatingT2/firewire.t2.c_Iteration1_Lasso_3-lexTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/CooperatingT2/firewire.t2.c_Iteration1_Lasso_3-lexTemplate.smt2: solved=True, runtime=13.13s, PAR-2=13.13s
+[DEBUG] Processing 23/119: QF_LRA/LassoRanker/CooperatingT2/hongyi1.t2.c_Iteration9_Loop_4-lexTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/CooperatingT2/hongyi1.t2.c_Iteration9_Loop_4-lexTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/CooperatingT2/hongyi1.t2.c_Iteration9_Loop_4-lexTemplate.smt2: solved=True, runtime=3.67s, PAR-2=3.67s
+[DEBUG] Processing 24/119: QF_LRA/keymaera/bouncing-ball-simple-node1629.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/keymaera/bouncing-ball-simple-node1629.smt2
+[DEBUG] Benchmark QF_LRA/keymaera/bouncing-ball-simple-node1629.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 25/119: QF_LRA/sal/gasburner/gasburner-prop3-9.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/sal/gasburner/gasburner-prop3-9.smt2
+[DEBUG] Benchmark QF_LRA/sal/gasburner/gasburner-prop3-9.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 26/119: QF_LRA/sal/gasburner/gasburner-prop3-16.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/sal/gasburner/gasburner-prop3-16.smt2
+[DEBUG] Benchmark QF_LRA/sal/gasburner/gasburner-prop3-16.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 27/119: QF_LRA/sc/sc-17.induction2.cvc.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/sc/sc-17.induction2.cvc.smt2
+[DEBUG] Benchmark QF_LRA/sc/sc-17.induction2.cvc.smt2: solved=True, runtime=0.34s, PAR-2=0.34s
+[DEBUG] Processing 28/119: QF_LRA/LassoRanker/SV-COMP/CookSeeZuleger-2013TACAS-Fig7a_true-termination.c_Iteration1_Loop_3-pieceTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/SV-COMP/CookSeeZuleger-2013TACAS-Fig7a_true-termination.c_Iteration1_Loop_3-pieceTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/SV-COMP/CookSeeZuleger-2013TACAS-Fig7a_true-termination.c_Iteration1_Loop_3-pieceTemplate.smt2: solved=True, runtime=5.86s, PAR-2=5.86s
+[DEBUG] Processing 29/119: QF_LRA/DTP-Scheduling/constraints-temporal-machine-shop-2-3-A04.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/DTP-Scheduling/constraints-temporal-machine-shop-2-3-A04.smt2
+[DEBUG] Benchmark QF_LRA/DTP-Scheduling/constraints-temporal-machine-shop-2-3-A04.smt2: solved=True, runtime=0.21s, PAR-2=0.21s
+[DEBUG] Processing 30/119: QF_LRA/LassoRanker/CooperatingT2/p-46.t2.c_Iteration2_Lasso_6-phaseTemplate.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/LassoRanker/CooperatingT2/p-46.t2.c_Iteration2_Lasso_6-phaseTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/CooperatingT2/p-46.t2.c_Iteration2_Lasso_6-phaseTemplate.smt2: solved=True, runtime=6.53s, PAR-2=6.53s
+[DEBUG] Processing 31/119: QF_LRA/tta_startup/simple_startup_9nodes.bug.induct.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/tta_startup/simple_startup_9nodes.bug.induct.smt2
+[DEBUG] Benchmark QF_LRA/tta_startup/simple_startup_9nodes.bug.induct.smt2: solved=True, runtime=13.76s, PAR-2=13.76s
+[DEBUG] Processing 32/119: QF_LRA/LassoRanker/CooperatingT2/eric.t2.c_Iteration1_Loop_7-phaseTemplate.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/LassoRanker/CooperatingT2/eric.t2.c_Iteration1_Loop_7-phaseTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/CooperatingT2/eric.t2.c_Iteration1_Loop_7-phaseTemplate.smt2: solved=True, runtime=0.73s, PAR-2=0.73s
+[DEBUG] Processing 33/119: QF_LRA/uart/uart-39.induction.cvc.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/uart/uart-39.induction.cvc.smt2
+[DEBUG] Benchmark QF_LRA/uart/uart-39.induction.cvc.smt2: solved=True, runtime=1.32s, PAR-2=1.32s
+[DEBUG] Processing 34/119: QF_LRA/sc/sc-14.induction.cvc.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/sc/sc-14.induction.cvc.smt2
+[DEBUG] Benchmark QF_LRA/sc/sc-14.induction.cvc.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 35/119: QF_LRA/LassoRanker/Ultimate/GcdNew.bpl_Iteration1_Lasso_7-phaseTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/Ultimate/GcdNew.bpl_Iteration1_Lasso_7-phaseTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/Ultimate/GcdNew.bpl_Iteration1_Lasso_7-phaseTemplate.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 36/119: QF_LRA/clock_synchro/clocksynchro_10clocks.worst_case_skew.induct.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/clock_synchro/clocksynchro_10clocks.worst_case_skew.induct.smt2
+[DEBUG] Benchmark QF_LRA/clock_synchro/clocksynchro_10clocks.worst_case_skew.induct.smt2: solved=True, runtime=10.39s, PAR-2=10.39s
+[DEBUG] Processing 37/119: QF_LRA/tta_startup/simple_startup_9nodes.synchro.induct.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/tta_startup/simple_startup_9nodes.synchro.induct.smt2
+[DEBUG] Benchmark QF_LRA/tta_startup/simple_startup_9nodes.synchro.induct.smt2: solved=True, runtime=0.53s, PAR-2=0.53s
+[DEBUG] Processing 38/119: QF_LRA/LassoRanker/Ultimate/Braverman-2006CAV-Ex1-int.bpl_Iteration1_Loop_4-pieceTemplate.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/LassoRanker/Ultimate/Braverman-2006CAV-Ex1-int.bpl_Iteration1_Loop_4-pieceTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/Ultimate/Braverman-2006CAV-Ex1-int.bpl_Iteration1_Loop_4-pieceTemplate.smt2: solved=True, runtime=3.54s, PAR-2=3.54s
+[DEBUG] Processing 39/119: QF_LRA/2019-ezsmt/blending/7.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/2019-ezsmt/blending/7.smt2
+[DEBUG] Benchmark QF_LRA/2019-ezsmt/blending/7.smt2: solved=True, runtime=0.33s, PAR-2=0.33s
+[DEBUG] Processing 40/119: QF_LRA/tta_startup/simple_startup_15nodes.synchro.base.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/tta_startup/simple_startup_15nodes.synchro.base.smt2
+[DEBUG] Benchmark QF_LRA/tta_startup/simple_startup_15nodes.synchro.base.smt2: solved=True, runtime=0.37s, PAR-2=0.37s
+[DEBUG] Processing 41/119: QF_LRA/2019-ezsmt/travellingSalesperson/tsp_rand_70_300_1155482584_11.lp.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/2019-ezsmt/travellingSalesperson/tsp_rand_70_300_1155482584_11.lp.smt2
+[DEBUG] Benchmark QF_LRA/2019-ezsmt/travellingSalesperson/tsp_rand_70_300_1155482584_11.lp.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 42/119: QF_LRA/keymaera/bouncing-ball-inv-node1935.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/keymaera/bouncing-ball-inv-node1935.smt2
+[DEBUG] Benchmark QF_LRA/keymaera/bouncing-ball-inv-node1935.smt2: solved=True, runtime=0.21s, PAR-2=0.21s
+[DEBUG] Processing 43/119: QF_LRA/2017-Heizmann-UltimateInvariantSynthesis/_array_single_elem_init.i_4_2_2.bpl_7.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/2017-Heizmann-UltimateInvariantSynthesis/_array_single_elem_init.i_4_2_2.bpl_7.smt2
+[DEBUG] Benchmark QF_LRA/2017-Heizmann-UltimateInvariantSynthesis/_array_single_elem_init.i_4_2_2.bpl_7.smt2: solved=True, runtime=1001.48s, PAR-2=1001.48s
+[DEBUG] Processing 44/119: QF_LRA/LassoRanker/SV-COMP/Masse_true-termination.c_Iteration1_Lasso_4-pieceTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/SV-COMP/Masse_true-termination.c_Iteration1_Lasso_4-pieceTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/SV-COMP/Masse_true-termination.c_Iteration1_Lasso_4-pieceTemplate.smt2: solved=True, runtime=83.50s, PAR-2=83.50s
+[DEBUG] Processing 45/119: QF_LRA/LassoRanker/CooperatingT2/matrixsqrt.t2.c_Iteration12_Loop_7-phaseTemplate.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/LassoRanker/CooperatingT2/matrixsqrt.t2.c_Iteration12_Loop_7-phaseTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/CooperatingT2/matrixsqrt.t2.c_Iteration12_Loop_7-phaseTemplate.smt2: solved=True, runtime=1.09s, PAR-2=1.09s
+[DEBUG] Processing 46/119: QF_LRA/uart/uart-32.base.cvc.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/uart/uart-32.base.cvc.smt2
+[DEBUG] Benchmark QF_LRA/uart/uart-32.base.cvc.smt2: solved=True, runtime=13.37s, PAR-2=13.37s
+[DEBUG] Processing 47/119: QF_LRA/keymaera/water_tank-node17126.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/keymaera/water_tank-node17126.smt2
+[DEBUG] Benchmark QF_LRA/keymaera/water_tank-node17126.smt2: solved=True, runtime=0.21s, PAR-2=0.21s
+[DEBUG] Processing 48/119: QF_LRA/keymaera/water_tank-node23593.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/keymaera/water_tank-node23593.smt2
+[DEBUG] Benchmark QF_LRA/keymaera/water_tank-node23593.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 49/119: QF_LRA/LassoRanker/SV-COMP/TelAviv-Amir-Minimum_true-termination.c_Iteration1_Loop_2-pieceTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/SV-COMP/TelAviv-Amir-Minimum_true-termination.c_Iteration1_Loop_2-pieceTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/SV-COMP/TelAviv-Amir-Minimum_true-termination.c_Iteration1_Loop_2-pieceTemplate.smt2: solved=True, runtime=4.31s, PAR-2=4.31s
+[DEBUG] Processing 50/119: QF_LRA/LassoRanker/Ultimate/GulwaniResetBranchOnly.bpl_Iteration1_Lasso_7-phaseTemplate.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/LassoRanker/Ultimate/GulwaniResetBranchOnly.bpl_Iteration1_Lasso_7-phaseTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/Ultimate/GulwaniResetBranchOnly.bpl_Iteration1_Lasso_7-phaseTemplate.smt2: solved=True, runtime=4.33s, PAR-2=4.33s
+[DEBUG] Processing 51/119: QF_LRA/LassoRanker/CooperatingT2/ndes.t2.c_Iteration2_Loop_4-pieceTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/CooperatingT2/ndes.t2.c_Iteration2_Loop_4-pieceTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/CooperatingT2/ndes.t2.c_Iteration2_Loop_4-pieceTemplate.smt2: solved=True, runtime=6.67s, PAR-2=6.67s
+[DEBUG] Processing 52/119: QF_LRA/sc/sc-10.induction3.cvc.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/sc/sc-10.induction3.cvc.smt2
+[DEBUG] Benchmark QF_LRA/sc/sc-10.induction3.cvc.smt2: solved=True, runtime=0.28s, PAR-2=0.28s
+[DEBUG] Processing 53/119: QF_LRA/LassoRanker/SV-COMP/LeeJonesBen-Amram-2001POPL-Ex6_true-termination.c_Iteration1_Lasso_7-phaseTemplate.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/LassoRanker/SV-COMP/LeeJonesBen-Amram-2001POPL-Ex6_true-termination.c_Iteration1_Lasso_7-phaseTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/SV-COMP/LeeJonesBen-Amram-2001POPL-Ex6_true-termination.c_Iteration1_Lasso_7-phaseTemplate.smt2: solved=True, runtime=1.81s, PAR-2=1.81s
+[DEBUG] Processing 54/119: QF_LRA/LassoRanker/SV-COMP/GulwaniJainKoskinen-2009PLDI-Fig1_true-termination.c_Iteration1_Lasso_4-pieceTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/SV-COMP/GulwaniJainKoskinen-2009PLDI-Fig1_true-termination.c_Iteration1_Lasso_4-pieceTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/SV-COMP/GulwaniJainKoskinen-2009PLDI-Fig1_true-termination.c_Iteration1_Lasso_4-pieceTemplate.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 55/119: QF_LRA/2019-ezsmt/travellingSalesperson/tsp_rand_70_300_1155482584_5.lp.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/2019-ezsmt/travellingSalesperson/tsp_rand_70_300_1155482584_5.lp.smt2
+[DEBUG] Benchmark QF_LRA/2019-ezsmt/travellingSalesperson/tsp_rand_70_300_1155482584_5.lp.smt2: solved=True, runtime=3.19s, PAR-2=3.19s
+[DEBUG] Processing 56/119: QF_LRA/tta_startup/simple_startup_11nodes.synchro.base.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/tta_startup/simple_startup_11nodes.synchro.base.smt2
+[DEBUG] Benchmark QF_LRA/tta_startup/simple_startup_11nodes.synchro.base.smt2: solved=True, runtime=0.35s, PAR-2=0.35s
+[DEBUG] Processing 57/119: QF_LRA/2019-ezsmt/travellingSalesperson/rand_70_300_1155482584_5.lp.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/2019-ezsmt/travellingSalesperson/rand_70_300_1155482584_5.lp.smt2
+[DEBUG] Benchmark QF_LRA/2019-ezsmt/travellingSalesperson/rand_70_300_1155482584_5.lp.smt2: solved=True, runtime=0.29s, PAR-2=0.29s
+[DEBUG] Processing 58/119: QF_LRA/LassoRanker/Ultimate/SyntaxSupportDivision1.bpl_Iteration1_Lasso_6-phaseTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/Ultimate/SyntaxSupportDivision1.bpl_Iteration1_Lasso_6-phaseTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/Ultimate/SyntaxSupportDivision1.bpl_Iteration1_Lasso_6-phaseTemplate.smt2: solved=True, runtime=3.25s, PAR-2=3.25s
+[DEBUG] Processing 59/119: QF_LRA/LassoRanker/CooperatingT2/sumit.t2.c_Iteration2_Loop_7-phaseTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/CooperatingT2/sumit.t2.c_Iteration2_Loop_7-phaseTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/CooperatingT2/sumit.t2.c_Iteration2_Loop_7-phaseTemplate.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 60/119: QF_LRA/sc/sc-21.induction3.cvc.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/sc/sc-21.induction3.cvc.smt2
+[DEBUG] Benchmark QF_LRA/sc/sc-21.induction3.cvc.smt2: solved=True, runtime=0.37s, PAR-2=0.37s
+[DEBUG] Processing 61/119: QF_LRA/uart/uart-20-with-lemmas.induction.cvc.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/uart/uart-20-with-lemmas.induction.cvc.smt2
+[DEBUG] Benchmark QF_LRA/uart/uart-20-with-lemmas.induction.cvc.smt2: solved=True, runtime=0.46s, PAR-2=0.46s
+[DEBUG] Processing 62/119: QF_LRA/sal/pursuit/pursuit-safety-12.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/sal/pursuit/pursuit-safety-12.smt2
+[DEBUG] Benchmark QF_LRA/sal/pursuit/pursuit-safety-12.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 63/119: QF_LRA/uart/uart-30.base.cvc.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/uart/uart-30.base.cvc.smt2
+[DEBUG] Benchmark QF_LRA/uart/uart-30.base.cvc.smt2: solved=True, runtime=11.26s, PAR-2=11.26s
+[DEBUG] Processing 64/119: QF_LRA/LassoRanker/Ultimate/SyntaxSupportDivision1.bpl_Iteration1_Lasso_7-phaseTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/Ultimate/SyntaxSupportDivision1.bpl_Iteration1_Lasso_7-phaseTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/Ultimate/SyntaxSupportDivision1.bpl_Iteration1_Lasso_7-phaseTemplate.smt2: solved=True, runtime=11.66s, PAR-2=11.66s
+[DEBUG] Processing 65/119: QF_LRA/sc/sc-28.induction.cvc.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/sc/sc-28.induction.cvc.smt2
+[DEBUG] Benchmark QF_LRA/sc/sc-28.induction.cvc.smt2: solved=True, runtime=0.46s, PAR-2=0.46s
+[DEBUG] Processing 66/119: QF_LRA/2017-Heizmann-UltimateInvariantSynthesis/_hhk2008.c.i_3_3_2.bpl_8.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark QF_LRA/2017-Heizmann-UltimateInvariantSynthesis/_hhk2008.c.i_3_3_2.bpl_8.smt2
+[DEBUG] Benchmark QF_LRA/2017-Heizmann-UltimateInvariantSynthesis/_hhk2008.c.i_3_3_2.bpl_8.smt2: solved=True, runtime=0.67s, PAR-2=0.67s
+[DEBUG] Processing 67/119: QF_LRA/LassoRanker/SV-COMP/GulwaniJainKoskinen-2009PLDI-Fig1_true-termination.c_Iteration1_Lasso_6-nestedTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/SV-COMP/GulwaniJainKoskinen-2009PLDI-Fig1_true-termination.c_Iteration1_Lasso_6-nestedTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/SV-COMP/GulwaniJainKoskinen-2009PLDI-Fig1_true-termination.c_Iteration1_Lasso_6-nestedTemplate.smt2: solved=True, runtime=1.00s, PAR-2=1.00s
+[DEBUG] Processing 68/119: QF_LRA/sc/sc-16.induction3.cvc.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/sc/sc-16.induction3.cvc.smt2
+[DEBUG] Benchmark QF_LRA/sc/sc-16.induction3.cvc.smt2: solved=True, runtime=0.32s, PAR-2=0.32s
+[DEBUG] Processing 69/119: QF_LRA/2019-ezsmt/travellingSalesperson/rand_80_340_1159656267_13.lp.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/2019-ezsmt/travellingSalesperson/rand_80_340_1159656267_13.lp.smt2
+[DEBUG] Benchmark QF_LRA/2019-ezsmt/travellingSalesperson/rand_80_340_1159656267_13.lp.smt2: solved=True, runtime=5.84s, PAR-2=5.84s
+[DEBUG] Processing 70/119: QF_LRA/LassoRanker/Ultimate/MenloPark.bpl_Iteration1_Lasso_3-pieceTemplate.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/LassoRanker/Ultimate/MenloPark.bpl_Iteration1_Lasso_3-pieceTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/Ultimate/MenloPark.bpl_Iteration1_Lasso_3-pieceTemplate.smt2: solved=True, runtime=1.99s, PAR-2=1.99s
+[DEBUG] Processing 71/119: QF_LRA/LassoRanker/Ultimate/Cairo2.bpl_Iteration1_Lasso_7-phaseTemplate.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/LassoRanker/Ultimate/Cairo2.bpl_Iteration1_Lasso_7-phaseTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/Ultimate/Cairo2.bpl_Iteration1_Lasso_7-phaseTemplate.smt2: solved=True, runtime=1.93s, PAR-2=1.93s
+[DEBUG] Processing 72/119: QF_LRA/2019-ezsmt/travellingSalesperson/rand_80_340_1159656267_6.lp.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/2019-ezsmt/travellingSalesperson/rand_80_340_1159656267_6.lp.smt2
+[DEBUG] Benchmark QF_LRA/2019-ezsmt/travellingSalesperson/rand_80_340_1159656267_6.lp.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 73/119: QF_LRA/2019-ezsmt/travellingSalesperson/rand_80_340_1159656267_4.lp.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/2019-ezsmt/travellingSalesperson/rand_80_340_1159656267_4.lp.smt2
+[DEBUG] Benchmark QF_LRA/2019-ezsmt/travellingSalesperson/rand_80_340_1159656267_4.lp.smt2: solved=True, runtime=3.43s, PAR-2=3.43s
+[DEBUG] Processing 74/119: QF_LRA/LassoRanker/CooperatingT2/firewire.t2.c_Iteration3_Loop_4-pieceTemplate.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/LassoRanker/CooperatingT2/firewire.t2.c_Iteration3_Loop_4-pieceTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/CooperatingT2/firewire.t2.c_Iteration3_Loop_4-pieceTemplate.smt2: solved=True, runtime=6.04s, PAR-2=6.04s
+[DEBUG] Processing 75/119: QF_LRA/tta_startup/simple_startup_8nodes.abstract.induct.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/tta_startup/simple_startup_8nodes.abstract.induct.smt2
+[DEBUG] Benchmark QF_LRA/tta_startup/simple_startup_8nodes.abstract.induct.smt2: solved=True, runtime=10.60s, PAR-2=10.60s
+[DEBUG] Processing 76/119: QF_LRA/latendresse/ecoliFBAyicesTest-500.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_LRA/latendresse/ecoliFBAyicesTest-500.smt2
+[DEBUG] Benchmark QF_LRA/latendresse/ecoliFBAyicesTest-500.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 77/119: QF_LRA/LassoRanker/CooperatingT2/sas2.t2.c_Iteration6_Lasso_4-pieceTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/CooperatingT2/sas2.t2.c_Iteration6_Lasso_4-pieceTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/CooperatingT2/sas2.t2.c_Iteration6_Lasso_4-pieceTemplate.smt2: solved=True, runtime=430.25s, PAR-2=430.25s
+[DEBUG] Processing 78/119: QF_LRA/DTP-Scheduling/constraints-tms-2-3-light-07.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/DTP-Scheduling/constraints-tms-2-3-light-07.smt2
+[DEBUG] Benchmark QF_LRA/DTP-Scheduling/constraints-tms-2-3-light-07.smt2: solved=True, runtime=0.21s, PAR-2=0.21s
+[DEBUG] Processing 79/119: QF_LRA/LassoRanker/CooperatingT2/ndes.t2.c_Iteration3_Loop_4-pieceTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/CooperatingT2/ndes.t2.c_Iteration3_Loop_4-pieceTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/CooperatingT2/ndes.t2.c_Iteration3_Loop_4-pieceTemplate.smt2: solved=True, runtime=4.06s, PAR-2=4.06s
+[DEBUG] Processing 80/119: QF_LRA/sc/sc-20.induction2.cvc.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/sc/sc-20.induction2.cvc.smt2
+[DEBUG] Benchmark QF_LRA/sc/sc-20.induction2.cvc.smt2: solved=True, runtime=0.48s, PAR-2=0.48s
+[DEBUG] Processing 81/119: QF_LRA/LassoRanker/CooperatingT2/eric.t2.c_Iteration1_Lasso_2-pieceTemplate.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/LassoRanker/CooperatingT2/eric.t2.c_Iteration1_Lasso_2-pieceTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/CooperatingT2/eric.t2.c_Iteration1_Lasso_2-pieceTemplate.smt2: solved=True, runtime=3.28s, PAR-2=3.28s
+[DEBUG] Processing 82/119: QF_LRA/2017-Heizmann-UltimateInvariantSynthesis/_functions1.i_3_5_2.bpl_11.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/2017-Heizmann-UltimateInvariantSynthesis/_functions1.i_3_5_2.bpl_11.smt2
+[DEBUG] Benchmark QF_LRA/2017-Heizmann-UltimateInvariantSynthesis/_functions1.i_3_5_2.bpl_11.smt2: solved=True, runtime=316.09s, PAR-2=316.09s
+[DEBUG] Processing 83/119: QF_LRA/2017-Heizmann-UltimateInvariantSynthesis/_gr2006.c.i_4_4_3.bpl_7.smt2
+[DEBUG] Predicted solver: cvc5 for benchmark QF_LRA/2017-Heizmann-UltimateInvariantSynthesis/_gr2006.c.i_4_4_3.bpl_7.smt2
+[DEBUG] Benchmark QF_LRA/2017-Heizmann-UltimateInvariantSynthesis/_gr2006.c.i_4_4_3.bpl_7.smt2: solved=True, runtime=3.75s, PAR-2=3.75s
+[DEBUG] Processing 84/119: QF_LRA/LassoRanker/CooperatingT2/disj_nightmare.t2.c_Iteration2_Loop_4-pieceTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/CooperatingT2/disj_nightmare.t2.c_Iteration2_Loop_4-pieceTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/CooperatingT2/disj_nightmare.t2.c_Iteration2_Loop_4-pieceTemplate.smt2: solved=True, runtime=38.94s, PAR-2=38.94s
+[DEBUG] Processing 85/119: QF_LRA/LassoRanker/SV-COMP/LeeJonesBen-Amram-2001POPL-Ex6_true-termination.c_Iteration1_Lasso_4-pieceTemplate.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/LassoRanker/SV-COMP/LeeJonesBen-Amram-2001POPL-Ex6_true-termination.c_Iteration1_Lasso_4-pieceTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/SV-COMP/LeeJonesBen-Amram-2001POPL-Ex6_true-termination.c_Iteration1_Lasso_4-pieceTemplate.smt2: solved=True, runtime=1.83s, PAR-2=1.83s
+[DEBUG] Processing 86/119: QF_LRA/2019-ezsmt/routingMin/SCC_strong/d80.3.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/2019-ezsmt/routingMin/SCC_strong/d80.3.smt2
+[DEBUG] Benchmark QF_LRA/2019-ezsmt/routingMin/SCC_strong/d80.3.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 87/119: QF_LRA/miplib/danoint-66.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/miplib/danoint-66.smt2
+[DEBUG] Benchmark QF_LRA/miplib/danoint-66.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 88/119: QF_LRA/LassoRanker/CooperatingT2/ludcmp.t2.c_Iteration9_Loop_6-phaseTemplate.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/LassoRanker/CooperatingT2/ludcmp.t2.c_Iteration9_Loop_6-phaseTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/CooperatingT2/ludcmp.t2.c_Iteration9_Loop_6-phaseTemplate.smt2: solved=True, runtime=11.47s, PAR-2=11.47s
+[DEBUG] Processing 89/119: QF_LRA/tta_startup/simple_startup_12nodes.abstract.base.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/tta_startup/simple_startup_12nodes.abstract.base.smt2
+[DEBUG] Benchmark QF_LRA/tta_startup/simple_startup_12nodes.abstract.base.smt2: solved=True, runtime=0.27s, PAR-2=0.27s
+[DEBUG] Processing 90/119: QF_LRA/uart/uart-26.induction.cvc.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/uart/uart-26.induction.cvc.smt2
+[DEBUG] Benchmark QF_LRA/uart/uart-26.induction.cvc.smt2: solved=True, runtime=0.74s, PAR-2=0.74s
+[DEBUG] Processing 91/119: QF_LRA/2019-ezsmt/blending/28.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/2019-ezsmt/blending/28.smt2
+[DEBUG] Benchmark QF_LRA/2019-ezsmt/blending/28.smt2: solved=True, runtime=0.21s, PAR-2=0.21s
+[DEBUG] Processing 92/119: QF_LRA/LassoRanker/CooperatingT2/janne_complex.t2.c_Iteration3_Lasso_4-pieceTemplate.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/LassoRanker/CooperatingT2/janne_complex.t2.c_Iteration3_Lasso_4-pieceTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/CooperatingT2/janne_complex.t2.c_Iteration3_Lasso_4-pieceTemplate.smt2: solved=True, runtime=54.14s, PAR-2=54.14s
+[DEBUG] Processing 93/119: QF_LRA/sc/sc-29.induction2.cvc.smt2
+[DEBUG] Predicted solver: Z3alpha for benchmark QF_LRA/sc/sc-29.induction2.cvc.smt2
+[DEBUG] Benchmark QF_LRA/sc/sc-29.induction2.cvc.smt2: solved=True, runtime=0.67s, PAR-2=0.67s
+[DEBUG] Processing 94/119: QF_LRA/2019-ezsmt/routingMin/SCC_strong/d110.6.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/2019-ezsmt/routingMin/SCC_strong/d110.6.smt2
+[DEBUG] Benchmark QF_LRA/2019-ezsmt/routingMin/SCC_strong/d110.6.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 95/119: QF_LRA/LassoRanker/Ultimate/simple-scaled200.bpl_Iteration1_Lasso_4-phaseTemplate.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/LassoRanker/Ultimate/simple-scaled200.bpl_Iteration1_Lasso_4-phaseTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/Ultimate/simple-scaled200.bpl_Iteration1_Lasso_4-phaseTemplate.smt2: solved=True, runtime=15.30s, PAR-2=15.30s
+[DEBUG] Processing 96/119: QF_LRA/LassoRanker/Ultimate/Gcd.bpl_Iteration1_Lasso_4-pieceTemplate.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/LassoRanker/Ultimate/Gcd.bpl_Iteration1_Lasso_4-pieceTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/Ultimate/Gcd.bpl_Iteration1_Lasso_4-pieceTemplate.smt2: solved=True, runtime=8.27s, PAR-2=8.27s
+[DEBUG] Processing 97/119: QF_LRA/LassoRanker/Ultimate/simple-scaled100.bpl_Iteration1_Lasso_3-pieceTemplate.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/LassoRanker/Ultimate/simple-scaled100.bpl_Iteration1_Lasso_3-pieceTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/Ultimate/simple-scaled100.bpl_Iteration1_Lasso_3-pieceTemplate.smt2: solved=True, runtime=13.47s, PAR-2=13.47s
+[DEBUG] Processing 98/119: QF_LRA/spider_benchmarks/op_seen_less2.induction.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/spider_benchmarks/op_seen_less2.induction.smt2
+[DEBUG] Benchmark QF_LRA/spider_benchmarks/op_seen_less2.induction.smt2: solved=True, runtime=0.22s, PAR-2=0.22s
+[DEBUG] Processing 99/119: QF_LRA/LassoRanker/CooperatingT2/polyrank6.t2.c_Iteration1_Loop_7-phaseTemplate.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/LassoRanker/CooperatingT2/polyrank6.t2.c_Iteration1_Loop_7-phaseTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/CooperatingT2/polyrank6.t2.c_Iteration1_Loop_7-phaseTemplate.smt2: solved=True, runtime=12.86s, PAR-2=12.86s
+[DEBUG] Processing 100/119: QF_LRA/sc/sc-11.induction3.cvc.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/sc/sc-11.induction3.cvc.smt2
+[DEBUG] Benchmark QF_LRA/sc/sc-11.induction3.cvc.smt2: solved=True, runtime=0.34s, PAR-2=0.34s
+[DEBUG] Processing 101/119: QF_LRA/LassoRanker/Ultimate/simple-scaled200.bpl_Iteration1_Lasso_6-phaseTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/Ultimate/simple-scaled200.bpl_Iteration1_Lasso_6-phaseTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/Ultimate/simple-scaled200.bpl_Iteration1_Lasso_6-phaseTemplate.smt2: solved=True, runtime=6.68s, PAR-2=6.68s
+[DEBUG] Processing 102/119: QF_LRA/DTP-Scheduling/constraints-cooking09.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/DTP-Scheduling/constraints-cooking09.smt2
+[DEBUG] Benchmark QF_LRA/DTP-Scheduling/constraints-cooking09.smt2: solved=True, runtime=0.21s, PAR-2=0.21s
+[DEBUG] Processing 103/119: QF_LRA/uart/uart-10.base.cvc.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/uart/uart-10.base.cvc.smt2
+[DEBUG] Benchmark QF_LRA/uart/uart-10.base.cvc.smt2: solved=True, runtime=0.44s, PAR-2=0.44s
+[DEBUG] Processing 104/119: QF_LRA/2017-Heizmann-UltimateInvariantSynthesis/_standard_strcmp_ground.i_4_2_2.bpl_11.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/2017-Heizmann-UltimateInvariantSynthesis/_standard_strcmp_ground.i_4_2_2.bpl_11.smt2
+[DEBUG] Benchmark QF_LRA/2017-Heizmann-UltimateInvariantSynthesis/_standard_strcmp_ground.i_4_2_2.bpl_11.smt2: solved=True, runtime=63.09s, PAR-2=63.09s
+[DEBUG] Processing 105/119: QF_LRA/tropical-matrix/constraint-223827.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/tropical-matrix/constraint-223827.smt2
+[DEBUG] Benchmark QF_LRA/tropical-matrix/constraint-223827.smt2: solved=True, runtime=73.62s, PAR-2=73.62s
+[DEBUG] Processing 106/119: QF_LRA/LassoRanker/CooperatingT2/brp_withassume.t2.c_Iteration8_Loop_4-phaseTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/CooperatingT2/brp_withassume.t2.c_Iteration8_Loop_4-phaseTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/CooperatingT2/brp_withassume.t2.c_Iteration8_Loop_4-phaseTemplate.smt2: solved=True, runtime=4.20s, PAR-2=4.20s
+[DEBUG] Processing 107/119: QF_LRA/2019-ezsmt/routingMin/SCC_strong/d60.2.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/2019-ezsmt/routingMin/SCC_strong/d60.2.smt2
+[DEBUG] Benchmark QF_LRA/2019-ezsmt/routingMin/SCC_strong/d60.2.smt2: solved=True, runtime=0.23s, PAR-2=0.23s
+[DEBUG] Processing 108/119: QF_LRA/LassoRanker/Ultimate/Collatz.bpl_Iteration1_Loop_3-pieceTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/Ultimate/Collatz.bpl_Iteration1_Loop_3-pieceTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/Ultimate/Collatz.bpl_Iteration1_Loop_3-pieceTemplate.smt2: solved=True, runtime=4.32s, PAR-2=4.32s
+[DEBUG] Processing 109/119: QF_LRA/sc/sc-40.induction3.cvc.smt2
+[DEBUG] Predicted solver: SMTInterpol for benchmark QF_LRA/sc/sc-40.induction3.cvc.smt2
+[DEBUG] Benchmark QF_LRA/sc/sc-40.induction3.cvc.smt2: solved=True, runtime=3.38s, PAR-2=3.38s
+[DEBUG] Processing 110/119: QF_LRA/LassoRanker/CooperatingT2/sas2.t2.c_Iteration7_Loop_5-phaseTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/CooperatingT2/sas2.t2.c_Iteration7_Loop_5-phaseTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/CooperatingT2/sas2.t2.c_Iteration7_Loop_5-phaseTemplate.smt2: solved=True, runtime=2.74s, PAR-2=2.74s
+[DEBUG] Processing 111/119: QF_LRA/uart/uart-40.base.cvc.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/uart/uart-40.base.cvc.smt2
+[DEBUG] Benchmark QF_LRA/uart/uart-40.base.cvc.smt2: solved=True, runtime=32.46s, PAR-2=32.46s
+[DEBUG] Processing 112/119: QF_LRA/sc/sc-31.base.cvc.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/sc/sc-31.base.cvc.smt2
+[DEBUG] Benchmark QF_LRA/sc/sc-31.base.cvc.smt2: solved=True, runtime=2.92s, PAR-2=2.92s
+[DEBUG] Processing 113/119: QF_LRA/tta_startup/simple_startup_12nodes.synchro.base.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/tta_startup/simple_startup_12nodes.synchro.base.smt2
+[DEBUG] Benchmark QF_LRA/tta_startup/simple_startup_12nodes.synchro.base.smt2: solved=True, runtime=0.31s, PAR-2=0.31s
+[DEBUG] Processing 114/119: QF_LRA/LassoRanker/SV-COMP/aviad_true-termination.c_Iteration1_Loop_7-phaseTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/SV-COMP/aviad_true-termination.c_Iteration1_Loop_7-phaseTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/SV-COMP/aviad_true-termination.c_Iteration1_Loop_7-phaseTemplate.smt2: solved=False, runtime=1200.00s, PAR-2=2400.00s
+[DEBUG] Processing 115/119: QF_LRA/DTP-Scheduling/constraints-tempo-matrix3x3.pddl.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/DTP-Scheduling/constraints-tempo-matrix3x3.pddl.smt2
+[DEBUG] Benchmark QF_LRA/DTP-Scheduling/constraints-tempo-matrix3x3.pddl.smt2: solved=True, runtime=0.24s, PAR-2=0.24s
+[DEBUG] Processing 116/119: QF_LRA/miplib/danoint-50.smt2
+[DEBUG] Predicted solver: OpenSMT for benchmark QF_LRA/miplib/danoint-50.smt2
+[DEBUG] Benchmark QF_LRA/miplib/danoint-50.smt2: solved=True, runtime=0.38s, PAR-2=0.38s
+[DEBUG] Processing 117/119: QF_LRA/DTP-Scheduling/constraints-tempo-depth-7.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/DTP-Scheduling/constraints-tempo-depth-7.smt2
+[DEBUG] Benchmark QF_LRA/DTP-Scheduling/constraints-tempo-depth-7.smt2: solved=True, runtime=0.21s, PAR-2=0.21s
+[DEBUG] Processing 118/119: QF_LRA/uart/uart-28.base.cvc.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/uart/uart-28.base.cvc.smt2
+[DEBUG] Benchmark QF_LRA/uart/uart-28.base.cvc.smt2: solved=True, runtime=9.67s, PAR-2=9.67s
+[DEBUG] Processing 119/119: QF_LRA/LassoRanker/CooperatingT2/sas2.t2.c_Iteration7_Loop_6-phaseTemplate.smt2
+[DEBUG] Predicted solver: Yices2 for benchmark QF_LRA/LassoRanker/CooperatingT2/sas2.t2.c_Iteration7_Loop_6-phaseTemplate.smt2
+[DEBUG] Benchmark QF_LRA/LassoRanker/CooperatingT2/sas2.t2.c_Iteration7_Loop_6-phaseTemplate.smt2: solved=True, runtime=101.82s, PAR-2=101.82s
+[DEBUG] Results written to CSV: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/results/qf_lra_csv_based/test/run_20251215_220945_889880/results.csv
+[DEBUG] Solved 112/119 benchmarks (94.12%)
+[DEBUG] PAR-2 Score: 19727.77s total, 165.78s average
+
+================================================================================
+EXECUTION TIME SUMMARY
+================================================================================
+Model training time:        1234.01 seconds ( 20.57 minutes)
+Prediction time:             428.72 seconds (  7.15 minutes)
+  - Avg per benchmark:         3.60 seconds
+--------------------------------------------------------------------------------
+Total execution time:       1662.73 seconds ( 27.71 minutes)
+================================================================================
+
+================================================================================
+PAR-2 PERFORMANCE SUMMARY
+================================================================================
+Benchmarks solved:              112 / 119 ( 94.12%)
+Benchmarks unsolved:              7 / 119 (  5.88%)
+--------------------------------------------------------------------------------
+Total PAR-2 score:         19727.77 seconds
+Average PAR-2 score:         165.78 seconds
+Timeout value:              1200.00 seconds
+PAR-2 penalty factor:             2x timeout
+================================================================================
+
+[DEBUG] CSV results saved to: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/results/qf_lra_csv_based/test/run_20251215_220945_889880/results.csv
+[DEBUG] Configuration saved to: /home/jchen688/projects/def-vganesh/jchen688/github/z3alpha/JHC/AlgoSelect/DescriptionAgent/data/results/qf_lra_csv_based/test/run_20251215_220945_889880/config.json
+End time: Mon 15 Dec 2025 10:37:30 PM EST
